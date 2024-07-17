@@ -1,0 +1,62 @@
+---
+import Title2 from '../atoms/Title2.astro';
+import SkillsOnTerminal from './components/skills-on-terminal/skillsOnTerminal.astro';
+import TerminalIcon from './atoms/terminal-icon/TerminalIcon.astro';
+import './components/skills-on-terminal/skills-on-terminal.css'
+const props = Astro.props
+import './skills.css';
+import terminalIcon from '../skills/atoms/terminal-icon/terminal-icon.module.css';
+---
+
+<section id="skills">
+	
+	<SkillsOnTerminal />
+	<div class="text-content mx-5">
+		<Title2 contenido="Checked" />
+      <div class="terminal__skills">
+      <svg xmlns="http://www.w3.org/2000/svg" width="10rem" height="10rem" viewBox="1 1 20 24" {...props}>
+	  <path fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.474 17.306c3.013-3.224 5.922-5.411 9.576-8.508c1.094-.927 1.263-2.552.405-3.703c-.912-1.224-2.645-1.469-3.817-.496c-3.347 2.776-5.951 5.45-8.421 8.306c-.13.15-.195.225-.262.267a.52.52 0 0 1-.555.003c-.068-.041-.133-.115-.263-.262l-1.316-1.49a2.748 2.748 0 0 0-4.358.304a2.79 2.79 0 0 0 .253 3.406l2.064 2.29C6.323 19.135 7.095 19.992 8.022 20c.926.008 1.768-.892 3.452-2.694" color="green" />
+      </svg>
+	</div>
+	
+
+		
+	</div>
+
+</section>
+<section id="inProcess">
+	
+	
+	<div class="text-content mx-5">
+		<div class="text-center">
+		   <Title2 contenido="In progress" />
+	    </div>
+        <div class="terminal__skills ">
+
+			<svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" viewBox="0 0 48 48" {...props}>
+				<path fill="#5c6bc0" d="M40 40c-6.9 0-16 4-16 4V22s9-4 18-4z" />
+				<path fill="#7986cb" d="M8 40c6.9 0 16 4 16 4V22s-9-4-18-4z" />
+				<g fill="#ffb74d">
+					<circle cx="24" cy="12" r="8" />
+					<path d="M41 32h1c.6 0 1-.4 1-1v-4c0-.6-.4-1-1-1h-1c-1.7 0-3 1.3-3 3s1.3 3 3 3M7 26H6c-.6 0-1 .4-1 1v4c0 .6.4 1 1 1h1c1.7 0 3-1.3 3-3s-1.3-3-3-3" />
+				</g>
+			</svg>
+		</div>
+	</div>
+	 <div class="inProcessLogos">
+		<TerminalIcon
+			src="/assets/wordpress2.svg"
+			color="#4F43AF"
+			name="Wordpress"
+		/>
+		<TerminalIcon
+			src="/assets/php.svg"
+			color="#9A99A9"
+			name="Php"
+		/>
+        
+     </div>
+
+
+
+</section>

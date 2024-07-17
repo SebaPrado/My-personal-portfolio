@@ -1,0 +1,32 @@
+---
+import '../hero/hero.css';
+const { href, texto } = Astro.props;
+---
+<!-- {
+    title: 'CV',
+    icon: 'tabler:file-cv',
+    href: '../docs/CV Sebastian Prado (2).pdf',
+
+} -->
+<a class="primary button" href={'docs/CV Sebastian Prado (2).pdf'}> CV</a>
+
+<style>
+	.button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1.1rem 2.2rem;
+		background: var(--primary);
+		border-radius: 100px;
+		font-size: var(--text-x-large);
+		transition: 0.35s opacity;
+		max-width: max-content;
+		color: var(orange);
+	}
+	.button:hover {
+		opacity: 0.7;
+	}
+	.button:active {
+		opacity: 0.5;
+	}
+</style>
