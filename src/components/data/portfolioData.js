@@ -28,7 +28,7 @@ export const portafolioData = [
    
   },
   {
-    imgSrc: 'public/img/music.png',
+    imgSrc: '/img/music.png',
     title: 'E-commerce : Front-end',
     skills: ['JavaScript', 'Html', 'CSS', 'React', 'Bootstrap', 'Tailwind'],
     descripcion:
@@ -39,7 +39,7 @@ export const portafolioData = [
     
   },
   {
-    imgSrc:'public/img/dashboard.jpg',
+    imgSrc:'/img/dashboard.jpg',
       // 'https://i0.wp.com/themes.svn.wordpress.org/cafe-cafeteria/1.5.3/screenshot.png'
     title: 'E-commerce : Dashboard',
     skills: ['JavaScript', 'Html', 'CSS', 'React', 'Bootstrap', 'Tailwind'],
