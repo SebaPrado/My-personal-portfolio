@@ -17,7 +17,7 @@
  */
 export const portafolioData = [
   {
-    imgSrc: 'public/img/background image netflix.jpg',
+    imgSrc: '/img/background image netflix.jpg',
     title: 'Fakeflix',
     skills: ['React', 'JavaScript', 'Html', 'CSS'],
     descripcion:
