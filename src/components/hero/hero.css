@@ -69,6 +69,8 @@
 @media screen and (max-width: 768px) {
 	.hero {
 		padding: 12rem 0 5rem 0;
+		height: fit-content;
+		margin: 2rem;
 	}
 	.hero .hero__img {
 		max-width: 28rem;
@@ -80,6 +82,7 @@
 		flex-direction: column-reverse;
 		justify-content: center;
 		align-items: center;
+		
 	}
 	.hero .text__content {
 		align-items: center;

@@ -32,7 +32,7 @@ export const portafolioData = [
     title: 'E-commerce : Front-end',
     skills: ['JavaScript', 'Html', 'CSS', 'React', 'Bootstrap', 'Tailwind'],
     descripcion:
-      'E-commerce site featuring a public-facing section for buyers built with React-Redux. It includes an admin dashboard for managing the site, also using React and Redux. The backend API is a RESTful service built with Node.js, Express, Supabase and SQL.',
+      'E-commerce site featuring a public-facing section for buyers built with React-Redux. The backend API is a RESTful service built with Node.js, Express, Supabase and SQL.',
     demoURL: 'https://equalvision.vercel.app/',
     repoURL: 'https://github.com/SebaPrado',
     anim: 'fade-up',
@@ -40,11 +40,10 @@ export const portafolioData = [
   },
   {
     imgSrc:'/img/dashboard.jpg',
-      // 'https://i0.wp.com/themes.svn.wordpress.org/cafe-cafeteria/1.5.3/screenshot.png'
     title: 'E-commerce : Dashboard',
     skills: ['JavaScript', 'Html', 'CSS', 'React', 'Bootstrap', 'Tailwind'],
     descripcion:
-      'Using Node.js and NPM to create an application that utilizes Express as the framework, EJS as the view engine, and Sequelize for database interaction through models.',
+      'E-commerce dashboard site section for managing the site, built with React-Redux. . The backend API is a RESTful service built with Node.js, Express, Supabase and SQL.',
       demoURL: 'https://equalvision-admin.vercel.app/',
       repoURL: 'https://github.com/SebaPrado',
     anim: 'fade-left'
