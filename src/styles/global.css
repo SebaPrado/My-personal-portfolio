@@ -1,6 +1,6 @@
 :root {
 	/* color  */
-	--primary-0: #0c0526; /* gradiente  fondo izquierdo */
+	--primary-0: #111120; /* gradiente  fondo izquierdo */
 	--primary-10: #ff0000; /*?*/
 	--primary-20: #261672fa; /* gradiente  fondo derecho */
 	--primary-30: #f70606; /*?*/
@@ -73,7 +73,7 @@
 	box-sizing: border-box;
 }
 html {
-	font-family: var(--font-montserrat) !important;
+	/* font-family: var(--font-montserrat) !important; */
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
