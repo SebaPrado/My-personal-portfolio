@@ -51,6 +51,10 @@
   }
 }
 
+.text{
+  line-height:29px ;
+}
+
   .typed-out {
  /*
     overflow: hidden;
@@ -256,8 +260,8 @@
   overflow: hidden;
   border-right: 1px solid;
   line-height: 1;
-  width: 31ch; /* Ajustar al ancho del contenedor */
-  animation: typing 4s steps(31), blink 0.5s infinite step-end alternate;
+  width: 29ch; /* Ajustar al ancho del contenedor */
+  animation: typing 4s steps(29), blink 0.5s infinite step-end alternate;
 }
 
 /* Asegúrate de que el efecto de escritura funcione en la animación */
