@@ -17,16 +17,16 @@
  */
 export const portafolioData = [
   {
-    imgSrc: '/img/background image netflix.jpg',
-    title: 'Fakeflix',
-    skills: ['React', 'JavaScript', 'Html', 'CSS'],
+    imgSrc: 'img/fibras naturales.jpg',
+    title: 'La importadora',
+    skills: ['php', 'JavaScript', 'Html', 'CSS'],
     descripcion:
-      'This project was developed using Node, JavaScript, and CSS, incorporating Express as the framework and Redux for state management.',
-    demoURL: 'https://fakeflix-ruby.vercel.app/',
-    repoURL: 'https://github.com/SebaPrado/Fakeflix',
+      'This project was developed using Wordpress, Php  and CSS.',
+    demoURL: 'https://laimportadora.com.ar/',
     anim: 'fade-up',
    
-  },
+   },
+  
   {
     imgSrc: '/img/music.png',
     title: 'E-commerce : Front-end',
@@ -49,13 +49,13 @@ export const portafolioData = [
     anim: 'fade-left'
   },
   {
-    imgSrc: '/img/background image netflix.jpg',
-    title: 'Fakeflix',
-    skills: ['React', 'JavaScript', 'Html', 'CSS'],
+    imgSrc: '/img/aluminio.png',
+    title: 'Alusur S.A',
+    skills: [ 'JavaScript', 'Html', 'CSS', 'Bootstrap',],
     descripcion:
-      'This project was developed using Node, JavaScript, and CSS, incorporating Express as the framework and Redux for state management.',
-    demoURL: 'https://fakeflix-ruby.vercel.app/',
-    repoURL: 'https://github.com/SebaPrado/Fakeflix',
+      'This project was developed using Node, JavaScript, and CSS',
+    demoURL: 'http://alusur.com.uy/',
+    
     anim: 'fade-up',
    
   },
@@ -70,17 +70,18 @@ export const portafolioData = [
     anim: 'fade-up',
    
   },
-  {
-    imgSrc: '/img/background image netflix.jpg',
-    title: 'Fakeflix',
-    skills: ['React', 'JavaScript', 'Html', 'CSS'],
-    descripcion:
-      'This project was developed using Node, JavaScript, and CSS, incorporating Express as the framework and Redux for state management.',
-    demoURL: 'https://fakeflix-ruby.vercel.app/',
-    repoURL: 'https://github.com/SebaPrado/Fakeflix',
-    anim: 'fade-up',
+  
+  // {
+  //   imgSrc: '/img/background image netflix.jpg',
+  //   title: 'Fakeflix',
+  //   skills: ['React', 'JavaScript', 'Html', 'CSS'],
+  //   descripcion:
+  //     'This project was developed using Node, JavaScript, and CSS, incorporating Express as the framework and Redux for state management.',
+  //   demoURL: 'https://fakeflix-ruby.vercel.app/',
+  //   repoURL: 'https://github.com/SebaPrado/Fakeflix',
+  //   anim: 'fade-up',
    
-  },
+  // },
 ];
 
 const skillIcons = {
