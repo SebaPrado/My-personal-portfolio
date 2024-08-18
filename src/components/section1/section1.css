@@ -86,7 +86,7 @@
 }
 
 /* The typewriter cursor effect */
-@keyframes blink-caret {
+/* @keyframes blink-caret {
   from,
   to {
     border-color: transparent;
@@ -94,18 +94,20 @@
   50% {
     border-color: orange;
   }
-} 
+}  */
 
 .hero .hero__container {
   display: grid;
   grid-template-columns: 1fr auto;
   width: 100%;
   max-width: var(--max-width);
-  gap: 8rem;
+  gap: 6rem;
 }
 
 .hero .hero__text {
   font-size: var(--text-xx-large);
+  
+
 }
 
 .hero__container .text__content {
@@ -123,9 +125,9 @@
 
 .hero__container .hero__title p {
   font-size: var(--text-x-large);
-  font-weight: normal;
+  font-weight:600 !important;
   color: var(--primary-90);
-  max-width: 80%;
+  max-width: 90%;
 }
 
 @media screen and (max-width: 768px) {
@@ -230,29 +232,45 @@
  * animation tracking-in-contract
  * ----------------------------------------
  */
- @-webkit-keyframes tracking-in-contract {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
-}
+
 @keyframes tracking-in-contract {
   0% {
-    letter-spacing: 1em;
+    letter-spacing: 0.5em;
     opacity: 0;
   }
   40% {
-    opacity: 0.6;
+    opacity: 0.3;
   }
   100% {
     letter-spacing: normal;
     opacity: 1;
+    font-weight: 350;
   }
 }
+
+.typed-out {
+  display: block; /* Cambiado de block a inline-block */
+  font-family: monospace;
+  font-weight: 200;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid;
+  line-height: 1;
+  width: 31ch; /* Ajustar al ancho del contenedor */
+  animation: typing 4s steps(31), blink 0.5s infinite step-end alternate;
+}
+
+/* Asegúrate de que el efecto de escritura funcione en la animación */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+/* Efecto de parpadeo del cursor */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
