@@ -1,5 +1,5 @@
 .hero {
-  padding: 7rem 2.2rem 2.2rem;
+  padding: 1rem 2.2rem 2.2rem;
   width: 100%;
   max-height: 200vh;
   min-height: 130dvh;
@@ -18,7 +18,7 @@
 .hero::after {
   content: '';
   position: absolute;
-  height: 5rem;
+  height: 2rem;
   width: 100%;
   background: linear-gradient(0deg, var(--primary-0), #f1080800);
   bottom: 0;
@@ -26,15 +26,10 @@
 
 .hero .hero__img {
   width: 100%;
-  max-width: 27rem;
-  border-radius: 20%;
+  max-width: 26rem;
+  border-radius: 10%;
   height: auto;
-  background: linear-gradient(
-    to bottom,
-    rgba(59, 59, 66, 0.342),
-    rgba(4, 4, 31, 0.5)
-  );
-  opacity: 0.75;
+  opacity: 0.65 !important;
 }
 
 .slide-left {
@@ -56,28 +51,11 @@
 }
 
   .typed-out {
- /*
-    overflow: hidden;
-  border-right: 0.15em solid rgb(81, 175, 131);
-  white-space: nowrap;
-  font-size: 1.6rem;
-  width: 0;
-  animation: typing 2s steps(20, end) forwards;
-  */
+ 
     line-height: 2.9; /* Ajusta este valor según el espacio que quieras */
     font-weight: 200;
 }
 
-
-/*
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-} */
 
 /* The typing effect */
 @keyframes typing {
@@ -89,16 +67,6 @@
   }
 }
 
-/* The typewriter cursor effect */
-/* @keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}  */
 
 .hero .hero__container {
   display: grid;
