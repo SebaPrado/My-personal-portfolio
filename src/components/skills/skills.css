@@ -1,66 +1,63 @@
 #skills {
-	display: flex;
-	max-width: calc(var(--max-width) + 2.2rem);
-	padding: 1.1rem;
-	gap: 2.2rem;
-	margin: 4rem auto;
+  display: flex;
+  max-width: calc(var(--max-width) + 2.2rem);
+  padding: 1.1rem;
+  gap: 2.2rem;
+  margin: 4rem auto;
+  margin-top: 10rem;
 }
 
 #skills .text-content {
-	max-width: 40%;
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 1.1rem;
+  max-width: 40%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.1rem;
 }
 
 @media screen and (max-width: 768px) {
-	#skills {
-		flex-direction: column-reverse;
-	}
-	#skills .text-content {
-		max-width: 100%;
-	}
+  #skills {
+    flex-direction: column-reverse;
+  }
+  #skills .text-content {
+    max-width: 100%;
+  }
 }
 
-.inProcessLogos{
-	display: flex;
-	flex-direction: row;
-	width: 30rem;
-	justify-content: space-around;
+.inProcessLogos {
+  display: flex;
+  flex-direction: row;
+  width: 30rem;
+  justify-content: space-around;
 }
 
 #inProcess {
-	display: flex;
-	max-width: calc(var(--max-width) + 3.2rem);
-	padding: 1.1rem;
-	gap: 9.2rem;
-	margin: 4rem auto;
-
+  display: flex;
+  max-width: calc(var(--max-width) + 3.2rem);
+  padding: 1.1rem;
+  gap: 9.2rem;
+  margin: 4rem auto;
 }
 
 #inProcess .text-content {
-	max-width: 40%;
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 1.1rem;
+  max-width: 40%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.1rem;
 }
 @media screen and (max-width: 768px) {
-	#inProcess {
-		flex-direction: column;
-		gap: 1.1rem;
-	}
-	#inProcess .text-content {
-		max-width: 100%;
-	}
-	.inProcessLogos{
-		width: 100%;
-		justify-content: space-around;
-
-	}
+  #inProcess {
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+  #inProcess .text-content {
+    max-width: 100%;
+  }
+  .inProcessLogos {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
-
-

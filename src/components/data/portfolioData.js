@@ -47,7 +47,40 @@ export const portafolioData = [
       demoURL: 'https://equalvision-admin.vercel.app/',
       repoURL: 'https://github.com/SebaPrado',
     anim: 'fade-left'
-  }
+  },
+  {
+    imgSrc: '/img/background image netflix.jpg',
+    title: 'Fakeflix',
+    skills: ['React', 'JavaScript', 'Html', 'CSS'],
+    descripcion:
+      'This project was developed using Node, JavaScript, and CSS, incorporating Express as the framework and Redux for state management.',
+    demoURL: 'https://fakeflix-ruby.vercel.app/',
+    repoURL: 'https://github.com/SebaPrado/Fakeflix',
+    anim: 'fade-up',
+   
+  },
+  {
+    imgSrc: '/img/background image netflix.jpg',
+    title: 'Fakeflix',
+    skills: ['React', 'JavaScript', 'Html', 'CSS'],
+    descripcion:
+      'This project was developed using Node, JavaScript, and CSS, incorporating Express as the framework and Redux for state management.',
+    demoURL: 'https://fakeflix-ruby.vercel.app/',
+    repoURL: 'https://github.com/SebaPrado/Fakeflix',
+    anim: 'fade-up',
+   
+  },
+  {
+    imgSrc: '/img/background image netflix.jpg',
+    title: 'Fakeflix',
+    skills: ['React', 'JavaScript', 'Html', 'CSS'],
+    descripcion:
+      'This project was developed using Node, JavaScript, and CSS, incorporating Express as the framework and Redux for state management.',
+    demoURL: 'https://fakeflix-ruby.vercel.app/',
+    repoURL: 'https://github.com/SebaPrado/Fakeflix',
+    anim: 'fade-up',
+   
+  },
 ];
 
 const skillIcons = {
