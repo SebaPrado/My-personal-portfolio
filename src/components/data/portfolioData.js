@@ -21,7 +21,7 @@ export const portafolioData = [
     title: 'La importadora',
     skills: ['php', 'JavaScript', 'Html', 'CSS'],
     descripcion:
-      'This project was developed using Wordpress, Php  and CSS.',
+      'Young and dynamic company comprised of design professionals, specializing in importing high-quality products. This project was developed using Wordpress, Php  and CSS.',
     demoURL: 'https://laimportadora.com.ar/',
     anim: 'fade-up',
    
@@ -32,7 +32,7 @@ export const portafolioData = [
     title: 'E-commerce : Front-end',
     skills: ['JavaScript', 'Html', 'CSS', 'React', 'Bootstrap', 'Tailwind'],
     descripcion:
-      'E-commerce site featuring a public-facing section for buyers built with React-Redux. The backend API is a RESTful service built with Node.js, Express, Supabase and SQL.',
+      ' Practice E-commerce site featuring a public-facing section for buyers built with React-Redux. The backend API is a RESTful service built with Node.js, Express, Supabase and SQL.',
     demoURL: 'https://equalvision.vercel.app/',
     repoURL: 'https://github.com/SebaPrado',
     anim: 'fade-up',
@@ -53,7 +53,7 @@ export const portafolioData = [
     title: 'Alusur S.A',
     skills: [ 'JavaScript', 'Html', 'CSS', 'Bootstrap',],
     descripcion:
-      'This project was developed using Node, JavaScript, and CSS',
+      'Company dedicated to the efficient distribution and logistics of aluminum architectural systems, profiles, and glass.This project was developed using Node, JavaScript, and CSS',
     demoURL: 'http://alusur.com.uy/',
     
     anim: 'fade-up',
@@ -64,24 +64,13 @@ export const portafolioData = [
     title: 'Fakeflix',
     skills: ['React', 'JavaScript', 'Html', 'CSS'],
     descripcion:
-      'This project was developed using Node, JavaScript, and CSS, incorporating Express as the framework and Redux for state management.',
+      'Fakeflix is a practice project designed to showcase an engaging and user-friendly interface.  It highlights the ability to create a seamless browsing experience with efficient data management This project was developed using Node, JavaScript, and CSS, incorporating Express as the framework and Redux for state management.',
     demoURL: 'https://fakeflix-ruby.vercel.app/',
     repoURL: 'https://github.com/SebaPrado/Fakeflix',
     anim: 'fade-up',
    
   },
   
-  // {
-  //   imgSrc: '/img/background image netflix.jpg',
-  //   title: 'Fakeflix',
-  //   skills: ['React', 'JavaScript', 'Html', 'CSS'],
-  //   descripcion:
-  //     'This project was developed using Node, JavaScript, and CSS, incorporating Express as the framework and Redux for state management.',
-  //   demoURL: 'https://fakeflix-ruby.vercel.app/',
-  //   repoURL: 'https://github.com/SebaPrado/Fakeflix',
-  //   anim: 'fade-up',
-   
-  // },
 ];
 
 const skillIcons = {

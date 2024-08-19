@@ -8,6 +8,14 @@
 .base {
 	width: min-content;
 	color: var(--icon-color ) ;
+	transition: transform 0.5s ease-in-out;
+
+
+}
+.base:hover{
+	transform: scale(1.2);
+
+	
 }
 .icon {
 	font-size: 7rem;
@@ -29,3 +37,5 @@
 	mask-size: 100% 100%;
 
 }
+
+

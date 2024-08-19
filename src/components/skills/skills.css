@@ -8,6 +8,10 @@
   padding-top: 10rem;
 }
 
+.contenedorSkills{
+  border: solid salmon 3px;
+}
+
 #skills .text-content {
   max-width: 40%;
   flex: 1;
