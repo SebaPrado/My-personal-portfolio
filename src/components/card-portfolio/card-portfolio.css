@@ -3,7 +3,7 @@
 	height: 346px;  
 	overflow: hidden;
 	border-radius: 22px;
-	background:  #25086e; /*fondo card*/
+	background:  #8577a8; /*fondo card*/
 	position: relative;
 }
 
@@ -43,7 +43,7 @@
 	padding: 4px 22px;
 	font-size: var(--text-title);
 	font-weight: 200;
-	background: rgba(45, 50, 31, 0.514); /*fondo titulo */
+	background: rgba(67, 107, 86, 0.808); /*fondo titulo */
 	backdrop-filter: blur(10px);
 	z-index: 2;
 	transform: translateY(-100%);

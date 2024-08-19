@@ -1,8 +1,8 @@
 :root {
 	/* color  */
 	--primary-0: #111120; /* gradiente  fondo izquierdo */
-	--primary-10: #ff0000; /*?*/
-	--primary-20: #261672fa; /* gradiente  fondo derecho */
+	
+	--primary-20: #1d0d61fa; /* gradiente  fondo derecho */
 	--primary-30: #f70606; /*?*/
 	--primary-40: #f70707; /*?*/
 	--primary-50: #fa0101; /*?*/

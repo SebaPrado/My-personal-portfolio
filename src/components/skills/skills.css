@@ -1,24 +1,49 @@
 #skills {
+  position: relative;
   display: flex;
-  max-width: calc(var(--max-width) + 2.2rem);
-  padding: 1.1rem;
-  gap: 2.2rem;
-  margin: 4rem auto;
-  margin-top: 5rem;
-  padding-top: 10rem;
+  max-width: calc(var(--max-width) + 18.2rem);
+  padding: 5.1rem;
+  gap: 9.2rem;
+  background: rgba(11, 19, 60, 0.848);
+  background: radial-gradient(circle, rgb(16, 25, 69) 21%, rgb(3, 8, 36) 84%);
 }
 
+#skills::before {
+  content: ''; /* Required to display the pseudo-element */
+  position: absolute; /* Position it absolutely within #skills */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px; /* Set the height to cover the area you want */
+  background: linear-gradient(to bottom, rgb(2, 2, 45) 0%, rgba(5, 3, 36, 0.04) 100%);
+  pointer-events: none; /* Ensures it does not interfere with user interactions */
+}
+
+#skills::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 20, 0.007); /* Ajusta el color y opacidad aquí */
+  z-index: -1; /* Asegúrate de que el gradiente esté detrás del contenido */
+}
 .contenedorSkills{
   border: solid salmon 3px;
 }
 
 #skills .text-content {
+  
   max-width: 40%;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.1rem;
+}
+.text-content{
+  margin-right: 7rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -27,6 +52,11 @@
   }
   #skills .text-content {
     max-width: 100%;
+  }
+  .text-content{
+    align-items: center;
+    justify-content: center;
+    margin-right: 0 ;
   }
 }
 
@@ -38,11 +68,23 @@
 }
 
 #inProcess {
+  position: relative;
   display: flex;
-  max-width: calc(var(--max-width) + 3.2rem);
-  padding: 1.1rem;
+  max-width: calc(var(--max-width) + 18.2rem);
+  padding: 5.1rem;
   gap: 9.2rem;
-  margin: 4rem auto;
+  background: rgba(11, 19, 60, 0.848);
+  background: radial-gradient(circle, rgb(15, 24, 65) 21%, rgb(3, 8, 36) 84%);
+}
+#inProcess::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 19, 60, 0.5); /* Ajusta el color y opacidad aquí */
+  z-index: -1; /* Asegúrate de que el gradiente esté detrás del contenido */
 }
 
 #inProcess .text-content {
