@@ -7,13 +7,14 @@
 }
 .base {
 	width: min-content;
-	color: var(--icon-color ) ;
-	transition: transform 0.5s ease-in-out;
+	color: rgba(187, 192, 214, 0.85) ;
+	transition:  0.5s ease-in-out  ;
 
 
 }
 .base:hover{
 	transform: scale(1.2);
+	color: white;
 
 	
 }
