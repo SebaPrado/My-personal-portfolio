@@ -3,6 +3,7 @@
   display: flex;
   max-width: calc(var(--max-width) + 18.2rem);
   padding: 5.1rem;
+  padding-top: 10rem;
   gap: 9.2rem;
   background: radial-gradient(circle, rgb(24, 35, 92) 21%, rgb(5, 12, 49) 84%);
 }
