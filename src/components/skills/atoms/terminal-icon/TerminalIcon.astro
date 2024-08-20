@@ -9,6 +9,6 @@ const { name, src, color } = Astro.props;
 ---
 
 <div class={terminalIcon.base} style=`--icon-color: ${color};`>
-	<div class={terminalIcon.icon} style=`--svg: url('http://www.w3.org/2000/svg')`></div>
+	<div class={terminalIcon.icon} style=`--svg: url(${src})`></div>
 	<span class={terminalIcon.name}>{name}</span>
 </div>
