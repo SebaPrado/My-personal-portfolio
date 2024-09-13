@@ -179,7 +179,7 @@ function Home() {
             >
               <div className="column-content-s4 project-container">
                 <a
-                  href="https://alusur.com"
+                  href="https://alusur.com.uy"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
