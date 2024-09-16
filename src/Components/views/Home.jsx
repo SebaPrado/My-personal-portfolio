@@ -39,7 +39,7 @@ function Home() {
 
   const [displayedWord, setDisplayedWord] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const words = [" a twist", " designing mind"];
+  const words = [" a twist", "a designing mind"];
   const [wordIndex, setWordIndex] = useState(0);
 
   useEffect(() => {
@@ -100,9 +100,9 @@ function Home() {
             </div>
             <div className="container2-2">
               <p>
-                Hello, I'm Sebastian, a fullstack developer focusing in React,
-                NodeJs and WordPress. Closely related to designers, I will bring
-                your idea into reality.
+                Hello, I'm Sebastian, a fullstack developer specializing in
+                React, Node.js, and WordPress. Working closely with designers, I
+                bring your ideas to life.
               </p>
             </div>
           </div>
@@ -351,9 +351,9 @@ function Home() {
               </h4>
               <p>
                 Powered by mate—the South American drink that keeps me awake and
-                sharp—I’m always ready to deliver results on time.
-                Consider it my antioxidant secret weapon for staying focused and
-                ensuring your project is finished right on schedule.
+                sharp—I’m always ready to deliver results on time. Consider it
+                my antioxidant secret weapon for staying focused and ensuring
+                your project is finished right on schedule.
               </p>
             </div>
           </div>
