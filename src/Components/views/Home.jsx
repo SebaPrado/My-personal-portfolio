@@ -82,7 +82,7 @@ function Home() {
           <div className="h1Title">
             <h1 className="titulo-principal">
               A fullstack developer with{" "}
-              <span className="changing-text">{displayedWord}</span>
+              <span className="changing-text sebita">{displayedWord}</span>
             </h1>
           </div>
 
