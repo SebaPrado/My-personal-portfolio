@@ -314,7 +314,7 @@ function Home() {
                 </div>
                 <h5>Web development</h5>
                 <p>
-                  Plataforma interactiva que ofrece una variedad de juegos en línea, diseñada para entretener y educar a los usuarios.
+                Interactive platform that offers a variety of online games, designed to entertain, educate, and provide digital practice for users.
                 </p>
               </div>
             </div>

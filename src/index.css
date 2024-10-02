@@ -346,6 +346,9 @@ h5 {
     min-height: 16rem;
     font-size: calc(6vw + 1rem);
   }
+  .sebita{
+    font-size: calc(10vw + 1rem) !important;
+  }
 }
 
 /* Ajustes responsivos para el título principal */
@@ -354,12 +357,18 @@ h5 {
     min-height: 17.5rem;
     font-size: calc(7vw + 1.5rem);
   }
+  .sebita{
+    font-size: calc(12vw + 1.5rem) !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .titulo-principal {
     min-height: 18rem;
     font-size: calc(7vw + 1.2rem);
+  }
+  .sebita{
+    font-size: calc(10vw + 1.5rem) !important;
   }
 }
 
@@ -368,6 +377,9 @@ h5 {
     min-height: 15.3rem;
     font-size: calc(7vw + 1rem);
     margin-bottom: 0;
+  }
+  .sebita{
+    font-size: calc(9vw + 1.5rem) !important;
   }
   /* .h1Title{
     min-height: 15rem;
