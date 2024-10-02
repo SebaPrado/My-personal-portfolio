@@ -51,13 +51,13 @@ function Navbar() {
                   color="inherit"
                   aria-label="menu"
                   sx={{
-                    mr: 3,
+                    mr: 2,
                     mt: 1,
                     display: { xs: 'block', sm: 'none', md: 'none' },
                     color: 'white',
                     backgroundColor: 'black',
                     borderRadius: '30%',
-                    padding: '8px',
+                    padding: '10px 9px 4px 9px', 
                     '&:hover': {
                       backgroundColor: 'rgba(0, 0, 0, 0.8)',
                     },

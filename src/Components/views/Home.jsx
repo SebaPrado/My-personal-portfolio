@@ -181,7 +181,7 @@ function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="imageProject" src={alusur} alt="alsur"  />
+                  <img className="imageProject" src={alusur} alt="alusur"  />
                 </a>
               </div>
               <div className="column-footer-s4">
