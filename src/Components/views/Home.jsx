@@ -314,8 +314,7 @@ function Home() {
                 </div>
                 <h5>Web development</h5>
                 <p>
-                Interactive platform that offers a variety of online games, designed to entertain, educate, and provide digital practice for users.
-                </p>
+                Interactive platform that offers a variety of online games, designed to entertain, educate, and provide digital practice for users. Developed using React and Redux, with core-js as a foundational library.                </p>
               </div>
             </div>
             {/* ================   Proyect 5   ==================== */}
