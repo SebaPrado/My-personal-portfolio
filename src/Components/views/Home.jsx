@@ -169,59 +169,21 @@ function Home() {
                 </p>
               </div>
             </div>
-
-            {/* ================   Proyect 1   ==================== */}
-            {/* ================   Proyect 2   ==================== */}
-
+            {/* Proyecto 1: Alusur */}
             <div
               className="singleProyectContainer
 "
             >
               <div className="column-content-s4 project-container">
                 <a
-                  href="http://alusur.com.uy/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img className="imageProject" src={alusur} alt="alsur" />
-                </a>
-              </div>
-              <div className="column-footer-s4">
-                <div className="projectsFlexItems">
-                  <h4>
-                    <a
-                      href="https://alusur.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      Alusur sa
-                    </a>
-                  </h4>
-                  <h5>Web development</h5>
-                </div>
-                <p>
-                  Company dedicated to the efficient distribution and logistics
-                  of aluminum architectural systems, profiles, and glass.This
-                  project was developed using Node, JavaScript, and CSS
-                </p>
-              </div>
-            </div>
-
-            {/* ================   Proyect 2   ==================== */}
-            {/* ================   Proyect 3  ==================== */}
-
-            <div className="singleProyectContainer">
-              <div className="column-content-s4 project-container">
-                <a
-                  href="https://equalvision-admin.vercel.app/"
+                  href="https://alusur.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
                     className="imageProject"
-                    src={dashboard}
-                    alt=" dashboard"
+                    src={alusur}
+                    alt="alusur"
                   />
                 </a>
               </div>
@@ -229,45 +191,47 @@ function Home() {
                 <div className="projectsFlexItems">
                   <h4>
                     <a
-                      href="https://equalvision-admin.vercel.app/"
+                      href="https://alusur.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
                     >
-                      Backend e-commerce
+                      Alusur
                     </a>
                   </h4>
-                  <h5>Web development</h5>
                 </div>
+
+                <h5>Web development</h5>
+
                 <p>
-                  E-commerce dashboard site section for managing the site, built
-                  with React-Redux. . The backend API is a RESTful service built
-                  with Node.js, Express, Supabase and SQL.
+                  Sitio web para la empresa Alusur, especializado en soluciones
+                  de aluminio.
                 </p>
               </div>
             </div>
-
-            {/* ================   Proyect 3  ==================== */}
-            {/* ================   Proyect 4  ==================== */}
-
+            {/* Proyecto 2: Fakeflix */}
             <div
               className="singleProyectContainer
 "
             >
               <div className="column-content-s4 project-container">
                 <a
-                  href="https://fakeflix-ruby.vercel.app/"
+                  href="https://fakeflix.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="imageProject" src={movie} alt=" movie" />
+                  <img
+                    className="imageProject"
+                    src={movie}
+                    alt="fakeflix"
+                  />
                 </a>
               </div>
               <div className="column-footer-s4">
                 <div className="projectsFlexItems">
                   <h4>
                     <a
-                      href="https://fakeflix-ruby.vercel.app/"
+                      href="https://fakeflix.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
@@ -276,19 +240,172 @@ function Home() {
                     </a>
                   </h4>
                 </div>
-                <h5>Desktop app </h5>
+
+                <h5>Web development</h5>
 
                 <p>
-                  Fakeflix is a practice project designed to showcase an
-                  engaging and user-friendly interface. It highlights the
-                  ability to create a seamless browsing experience with
-                  efficient data management This project was developed using
-                  Node, JavaScript, and CSS, incorporating Express as the
-                  framework and Redux for state management.
+                  Plataforma de streaming ficticia creada para demostrar habilidades
+                  en desarrollo web.
                 </p>
               </div>
             </div>
-            {/* ================   Proyect 4  ==================== */}
+            {/* Proyecto 3: Backend de Equalvision */}
+            <div
+              className="singleProyectContainer
+"
+            >
+              <div className="column-content-s4 project-container">
+                <a
+                  href="https://equalvision-backend.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="imageProject"
+                    src="/equalvision-backend.png"
+                    alt="equalvision-backend"
+                  />
+                </a>
+              </div>
+              <div className="column-footer-s4">
+                <div className="projectsFlexItems">
+                  <h4>
+                    <a
+                      href="https://equalvision-backend.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      Backend de Equalvision
+                    </a>
+                  </h4>
+                </div>
+
+                <h5>Web development</h5>
+
+                <p>
+                  API RESTful para la plataforma Equalvision, construida con Node.js y Express.
+                </p>
+              </div>
+            </div>
+            {/* ==========================      PROYECTOS EXISTENTES         =====================  */}
+            {/* Proyecto 1: Juegos */}
+            <div
+              className="singleProyectContainer
+"
+            >
+              <div className="column-content-s4 project-container">
+                <a
+                  href="https://juegos.agesic.gub.uy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="imageProject"
+                    src="/juegos.png"
+                    alt="juegos"
+                  />
+                </a>
+              </div>
+              <div className="column-footer-s4">
+                <div className="projectsFlexItems">
+                  <h4>
+                    <a
+                      href="https://juegos.agesic.gub.uy/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      juegos
+                    </a>
+                  </h4>
+                </div>
+
+                <h5>Web development</h5>
+
+                <p>
+                  Sitio web dedicado a juegos interactivos y educativos.
+                </p>
+              </div>
+            </div>
+            {/* Proyecto 2: Loi */}
+            <div
+              className="singleProyectContainer
+"
+            >
+              <div className="column-content-s4 project-container">
+                <a
+                  href="https://loi.com.uy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="imageProject"
+                    src="/loi.png"
+                    alt="loi"
+                  />
+                </a>
+              </div>
+              <div className="column-footer-s4">
+                <div className="projectsFlexItems">
+                  <h4>
+                    <a
+                      href="https://loi.com.uy/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      loi
+                    </a>
+                  </h4>
+                </div>
+
+                <h5>Web development</h5>
+
+                <p>
+                  Plataforma de servicios digitales y soluciones tecnológicas.
+                </p>
+              </div>
+            </div>
+            {/* Proyecto 3: Pandapé */}
+            <div
+              className="singleProyectContainer
+"
+            >
+              <div className="column-content-s4 project-container">
+                <a
+                  href="https://www.pandape.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="imageProject"
+                    src="/pandape.png"
+                    alt="pandape"
+                  />
+                </a>
+              </div>
+              <div className="column-footer-s4">
+                <div className="projectsFlexItems">
+                  <h4>
+                    <a
+                      href="https://www.pandape.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      pandape
+                    </a>
+                  </h4>
+                </div>
+
+                <h5>Web development</h5>
+
+                <p>
+                  Software de recursos humanos que optimiza procesos de gestión.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
         {/* ==========================      PROJECTS         =====================  */}
