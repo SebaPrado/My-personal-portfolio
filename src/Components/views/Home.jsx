@@ -258,7 +258,7 @@ function Home() {
                       rel="noopener noreferrer"
                       className="project-link"
                     >
-                      Equalvision e-commerce
+                      Equalvision e-commerce (practice project)
                     </a>
                   </h4>
                 </div>
@@ -332,7 +332,7 @@ function Home() {
                       rel="noopener noreferrer"
                       className="project-link"
                     >
-                      Backend e-commerce
+                      Backend e-commerce (practice)
                     </a>
                   </h4>
                   <h5>Web development</h5>
@@ -366,7 +366,7 @@ function Home() {
                       rel="noopener noreferrer"
                       className="project-link"
                     >
-                      Fakeflix
+                      Fakeflix (practice project)
                     </a>
                   </h4>
                 </div>
