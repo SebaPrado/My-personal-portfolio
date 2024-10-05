@@ -226,7 +226,11 @@ function Home() {
                   </h4>
                 </div>
                 <h5>Web development</h5>
-                <p>Descripción del proyecto LOI.</p>
+                <p>
+                  E-commerce platform offering a wide range of products,
+                  providing a seamless shopping experience with secure payments
+                  methods..
+                </p>
               </div>
             </div>
             {/* ================   Proyect 7   ==================== */}
