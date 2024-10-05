@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import equalvision from "../../../public/equalFront.jpeg";
-import alusur from "../../../public/alusur.jpeg";
-import movie from "../../../public/fakeflix.jpeg";
-import dashboard from "../../../public/equalAdmin.jpeg";
-import matesito from "../../../public/matesito.png";
+import equalvision from "/equalFront.jpeg";
+import alusur from "/alusur.jpeg";
+import movie from "/fakeflix.jpeg";
+import dashboard from "/equalAdmin.jpeg";
+import matesito from "/matesito.png";
 
 import {
   FaHtml5,
@@ -136,7 +136,7 @@ function Home() {
                 >
                   <img
                     className="imageProject"
-                    src="../../../public/pandape.png"
+                    src="/pandape.png"
                     alt="pandape"
                   />
                 </a>
@@ -173,7 +173,7 @@ function Home() {
                 >
                   <img
                     className="imageProject"
-                    src="../../../public/juegos.png"
+                    src="/juegos.png"
                     alt="juegos"
                   />
                 </a>
@@ -212,7 +212,7 @@ function Home() {
                 >
                   <img
                     className="imageProject"
-                    src="../../../public/loi.png"
+                    src="/loi.png"
                     alt="loi"
                   />
                 </a>
