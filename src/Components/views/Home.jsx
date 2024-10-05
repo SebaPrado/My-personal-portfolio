@@ -86,7 +86,7 @@ function Home() {
 
           <div className="section2">
             <div className="container2-1">
-              <h5>Let's Talk</h5>
+              <h5>Let's Talk..</h5>
               <p>
                 <a
                   className="mail"
