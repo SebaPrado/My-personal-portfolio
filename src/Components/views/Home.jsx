@@ -125,9 +125,8 @@ function Home() {
         </section>
         <section className="sectionProjects container">
           <div className="column-container-s4">
-
-             {/* ================   Proyect 5   ==================== */}
-             <div className="singleProyectContainer">
+            {/* ================   Proyect 5   ==================== */}
+            <div className="singleProyectContainer">
               <div className="column-content-s4 project-container">
                 <a
                   href="https://www.pandape.com/"
@@ -156,8 +155,8 @@ function Home() {
                 </div>
                 <h5>Web development</h5>
                 <p>
-                  Plataforma de recursos humanos que optimiza procesos de
-                  reclutamiento y gestión de personal.
+                  Human resources platform that optimizes recruitment and
+                  personnel management processes.
                 </p>
               </div>
             </div>
@@ -210,11 +209,7 @@ function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
-                    className="imageProject"
-                    src="/loi.png"
-                    alt="loi"
-                  />
+                  <img className="imageProject" src="/loi.png" alt="loi" />
                 </a>
               </div>
               <div className="column-footer-s4">
@@ -384,8 +379,6 @@ function Home() {
               </div>
             </div>
             {/* ================   Proyect 4  ==================== */}
-
-           
           </div>
         </section>
         {/* ==========================      PROJECTS         =====================  */}
