@@ -124,13 +124,119 @@ function Home() {
           </div>
         </section>
         <section className="sectionProjects container">
-          {/* ================   Proyect 1   ==================== */}
-
           <div className="column-container-s4">
-            <div
-              className="singleProyectContainer
-"
-            >
+
+             {/* ================   Proyect 5   ==================== */}
+             <div className="singleProyectContainer">
+              <div className="column-content-s4 project-container">
+                <a
+                  href="https://www.pandape.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="imageProject"
+                    src="../../../public/pandape.png"
+                    alt="pandape"
+                  />
+                </a>
+              </div>
+              <div className="column-footer-s4">
+                <div className="projectsFlexItems">
+                  <h4>
+                    <a
+                      href="https://www.pandape.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      Pandapé
+                    </a>
+                  </h4>
+                </div>
+                <h5>Web development</h5>
+                <p>
+                  Plataforma de recursos humanos que optimiza procesos de
+                  reclutamiento y gestión de personal.
+                </p>
+              </div>
+            </div>
+            {/* ================   Proyect 5   ==================== */}
+
+            {/* ================   Proyect 6   ==================== */}
+            <div className="singleProyectContainer">
+              <div className="column-content-s4 project-container">
+                <a
+                  href="https://juegos.agesic.gub.uy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="imageProject"
+                    src="../../../public/juegos.png"
+                    alt="juegos"
+                  />
+                </a>
+              </div>
+              <div className="column-footer-s4">
+                <div className="projectsFlexItems">
+                  <h4>
+                    <a
+                      href="https://juegos.agesic.gub.uy/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      Juegos
+                    </a>
+                  </h4>
+                </div>
+                <h5>Web development</h5>
+                <p>
+                  Interactive platform that offers a variety of online games,
+                  designed to entertain, educate, and provide digital practice
+                  for users. Developed using React and Redux, with core-js as a
+                  foundational library.{" "}
+                </p>
+              </div>
+            </div>
+            {/* ================   Proyect 6   ==================== */}
+
+            {/* ================   Proyect 7   ==================== */}
+            <div className="singleProyectContainer">
+              <div className="column-content-s4 project-container">
+                <a
+                  href="https://loi.com.uy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="imageProject"
+                    src="../../../public/loi.png"
+                    alt="loi"
+                  />
+                </a>
+              </div>
+              <div className="column-footer-s4">
+                <div className="projectsFlexItems">
+                  <h4>
+                    <a
+                      href="https://loi.com.uy/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      LOI
+                    </a>
+                  </h4>
+                </div>
+                <h5>Web development</h5>
+                <p>Descripción del proyecto LOI.</p>
+              </div>
+            </div>
+            {/* ================   Proyect 7   ==================== */}
+            {/* ================   Proyect 1   ==================== */}
+            <div className="singleProyectContainer">
               <div className="column-content-s4 project-container">
                 <a
                   href="https://equalvision.vercel.app/"
@@ -167,21 +273,17 @@ function Home() {
                 </p>
               </div>
             </div>
-
             {/* ================   Proyect 1   ==================== */}
-            {/* ================   Proyect 2   ==================== */}
 
-            <div
-              className="singleProyectContainer
-"
-            >
+            {/* ================   Proyect 2   ==================== */}
+            <div className="singleProyectContainer">
               <div className="column-content-s4 project-container">
                 <a
                   href="http://alusur.com.uy/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="imageProject" src={alusur} alt="alusur"  />
+                  <img className="imageProject" src={alusur} alt="alusur" />
                 </a>
               </div>
               <div className="column-footer-s4">
@@ -205,10 +307,9 @@ function Home() {
                 </p>
               </div>
             </div>
-
             {/* ================   Proyect 2   ==================== */}
-            {/* ================   Proyect 3  ==================== */}
 
+            {/* ================   Proyect 3  ==================== */}
             <div className="singleProyectContainer">
               <div className="column-content-s4 project-container">
                 <a
@@ -220,7 +321,6 @@ function Home() {
                     className="imageProject"
                     src={dashboard}
                     alt=" dashboard"
-                   
                   />
                 </a>
               </div>
@@ -245,14 +345,10 @@ function Home() {
                 </p>
               </div>
             </div>
-
             {/* ================   Proyect 3  ==================== */}
-            {/* ================   Proyect 4  ==================== */}
 
-            <div
-              className="singleProyectContainer
-"
-            >
+            {/* ================   Proyect 4  ==================== */}
+            <div className="singleProyectContainer">
               <div className="column-content-s4 project-container">
                 <a
                   href="https://fakeflix-ruby.vercel.app/"
@@ -288,99 +384,8 @@ function Home() {
               </div>
             </div>
             {/* ================   Proyect 4  ==================== */}
-            {/* ================   Proyect 5   ==================== */}
-            <div className="singleProyectContainer">
-              <div className="column-content-s4 project-container">
-                <a
-                  href="https://juegos.agesic.gub.uy/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img className="imageProject" src="../../../public/juegos.png" alt="juegos"  />
-                </a>
-              </div>
-              <div className="column-footer-s4">
-                <div className="projectsFlexItems">
-                  <h4>
-                    <a
-                      href="https://juegos.agesic.gub.uy/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      Juegos
-                    </a>
-                  </h4>
-                </div>
-                <h5>Web development</h5>
-                <p>
-                Interactive platform that offers a variety of online games, designed to entertain, educate, and provide digital practice for users. Developed using React and Redux, with core-js as a foundational library.                </p>
-              </div>
-            </div>
-            {/* ================   Proyect 5   ==================== */}
 
-            {/* ================   Proyect 6   ==================== */}
-            <div className="singleProyectContainer">
-              <div className="column-content-s4 project-container">
-                <a
-                  href="https://loi.com.uy/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img className="imageProject" src="../../../public/loi.png" alt="loi"  />
-                </a>
-              </div>
-              <div className="column-footer-s4">
-                <div className="projectsFlexItems">
-                  <h4>
-                    <a
-                      href="https://loi.com.uy/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      LOI
-                    </a>
-                  </h4>
-                </div>
-                <h5>Web development</h5>
-                <p>
-                  Descripción del proyecto LOI.
-                </p>
-              </div>
-            </div>
-            {/* ================   Proyect 6   ==================== */}
-            {/* ================   Proyect 7   ==================== */}
-            <div className="singleProyectContainer">
-              <div className="column-content-s4 project-container" > {/* Se eliminó el borde */}
-                <a
-                  href="https://www.pandape.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img className="imageProject" src="../../../public/pandape.png" alt="pandape" />
-                </a>
-              </div>
-              <div className="column-footer-s4">
-                <div className="projectsFlexItems">
-                  <h4>
-                    <a
-                      href="https://www.pandape.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      Pandapé
-                    </a>
-                  </h4>
-                </div>
-                <h5>Web development</h5>
-                <p>
-                  Plataforma de recursos humanos que optimiza procesos de reclutamiento y gestión de personal.
-                </p>
-              </div>
-            </div>
-            {/* ================   Proyect 7   ==================== */}
+           
           </div>
         </section>
         {/* ==========================      PROJECTS         =====================  */}
