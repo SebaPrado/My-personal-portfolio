@@ -98,8 +98,8 @@ function Home() {
             </div>
             <div className="container2-2">
               <p>
-                Hellooo, I'm Sebastian, a fullstack developer specializing in
-                React, Node.js, and WordPress. Working closely with designers, I
+                Hello, I'm Sebastian, a fullstack developer specializing in
+                React, Node.js, and WordPress/PHP. Working closely with designers, I
                 bring your ideas to life.
               </p>
             </div>
@@ -221,11 +221,11 @@ function Home() {
                       rel="noopener noreferrer"
                       className="project-link"
                     >
-                      LOI
+                      La Oferta Irresistible
                     </a>
                   </h4>
                 </div>
-                <h5>Web development</h5>
+                <h5>Web development - Frontend</h5>
                 <p>
                   E-commerce platform offering a wide range of products,
                   providing a seamless shopping experience with secure payments
@@ -263,7 +263,7 @@ function Home() {
                   </h4>
                 </div>
 
-                <h5>Web development</h5>
+                <h5>Web development - Frontend</h5>
 
                 <p>
                   Practice E-commerce site featuring a public-facing section for
@@ -297,11 +297,11 @@ function Home() {
                       Alusur sa
                     </a>
                   </h4>
-                  <h5>Web development</h5>
+                  <h5>Web development - Frontend</h5>
                 </div>
                 <p>
                   Company dedicated to the efficient distribution and logistics
-                  of aluminum architectural systems, profiles, and glass.This
+                  of aluminum architectural systems, profiles, and glass. This
                   project was developed using Node, JavaScript, and CSS
                 </p>
               </div>
@@ -332,10 +332,10 @@ function Home() {
                       rel="noopener noreferrer"
                       className="project-link"
                     >
-                      Backend e-commerce (practice)
+                      Backend e-commerce (practice project)
                     </a>
                   </h4>
-                  <h5>Web development</h5>
+                    <h5>Web development - Backend</h5>
                 </div>
                 <p>
                   E-commerce dashboard site section for managing the site, built
