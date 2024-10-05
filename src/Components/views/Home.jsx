@@ -98,7 +98,7 @@ function Home() {
             </div>
             <div className="container2-2">
               <p>
-                Hello, I'm Sebastian, a fullstack developer specializing in
+                Hellooo, I'm Sebastian, a fullstack developer specializing in
                 React, Node.js, and WordPress. Working closely with designers, I
                 bring your ideas to life.
               </p>
