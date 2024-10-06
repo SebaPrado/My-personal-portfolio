@@ -156,7 +156,7 @@ function Home() {
                 <h5>Web development</h5>
                 <p>
                   Human resources platform that optimizes recruitment and
-                  personnel management processes.
+                  personnel management processes
                 </p>
               </div>
             </div>
