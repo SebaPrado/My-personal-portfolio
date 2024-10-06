@@ -99,8 +99,8 @@ function Home() {
             <div className="container2-2">
               <p>
                 Hello, I'm Sebastian, a fullstack developer specializing in
-                React, Node.js, and WordPress/PHP. Working closely with designers, I
-                bring your ideas to life.
+                React, Node.js, and WordPress/PHP. Working closely with
+                designers, I bring your ideas to life.
               </p>
             </div>
           </div>
@@ -335,7 +335,7 @@ function Home() {
                       Backend e-commerce (practice project)
                     </a>
                   </h4>
-                    <h5>Web development - Backend</h5>
+                  <h5>Web development - Backend</h5>
                 </div>
                 <p>
                   E-commerce dashboard site section for managing the site, built
