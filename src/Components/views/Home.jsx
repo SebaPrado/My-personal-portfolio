@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import equalvision from "/equalFront.jpeg";
-import alusur from "/alusur.jpeg";
+import alusur from "/Alusur.jpeg";
 import movie from "/fakeflix.jpeg";
 import dashboard from "/equalAdmin.jpeg";
 import matesito from "/matesito.png";
