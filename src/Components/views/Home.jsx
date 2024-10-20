@@ -79,7 +79,7 @@ function Home() {
         <section className="section1 containerLarge">
           <div className="h1Title">
             <h1 className="titulo-principal">
-              A fullstack web developer with{" "}
+              A fullstack developer with{" "}
               <span className="changing-text sebita">{displayedWord}</span>
             </h1>
           </div>
