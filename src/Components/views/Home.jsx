@@ -289,7 +289,7 @@ function Home() {
                 <div className="projectsFlexItems">
                   <h4>
                     <a
-                      href="https://alusur.com"
+                      href="https://alusur.com.uy"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
