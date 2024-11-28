@@ -1,3 +1,17 @@
+/* ============================    VARIABLES DE COLOR    ========================== */
+:root {
+  /* Colores principales */
+  --color1: rgb(2, 48, 71);
+  --color2: #219ebc;
+  --color3: #8ecae6;
+  --color4: rgb(174, 93, 66);
+  --color5: #ee6c4d;
+  --color6: #fca311;
+
+  --white: white;
+  --black: black;
+}
+
 /* ============================    ESTILOS GENERALES   ========================== */
 
 /* Estilos base */
@@ -11,8 +25,8 @@ body {
 }
 
 h1 {
-  color: rgb(3, 3, 3);
-  font-weight: 400; /* Reducimos el grosor de la letra */
+  color: rgb(18, 7, 7);
+  font-weight: 300; /* Reducimos el grosor de la letra */
 }
 
 h3 {
@@ -22,6 +36,11 @@ h3 {
 
 h5 {
   margin: 0;
+}
+
+#home {
+  z-index: 0;
+  position: relative;
 }
 
 /* ======    Tamano de letra responsiva   ====== */
@@ -170,7 +189,7 @@ h5 {
 }
 
 .custom-button:hover {
-  background-color: #fca311 !important;
+  background-color: #fcfcfc !important;
   color: rgb(0, 0, 0) !important;
 }
 
@@ -292,9 +311,9 @@ h5 {
 /* ============================   Section HERO1   ========================== */
 
 .containerLarge {
-  background-color: #fca211c7;
+  /* background-color: #fca211c7; */
   border-radius: 40px;
-  min-height: 15rem; /* Altura mínima base */
+  min-height: 3rem; /* Altura mínima base */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -343,11 +362,11 @@ h5 {
 
 @media screen and (max-width: 830px) {
   .titulo-principal {
-    min-height: 16rem;
+    min-height: 10rem;
     font-size: calc(6vw + 1rem);
   }
-  .sebita{
-    font-size: calc(10vw + 1rem) !important;
+  .displayedWord {
+    font-size: calc(6vw) !important;
   }
 }
 
@@ -357,18 +376,18 @@ h5 {
     min-height: 17.5rem;
     font-size: calc(7vw + 1.5rem);
   }
-  .sebita{
-    font-size: calc(12vw + 1.5rem) !important;
+  .displayedWord {
+    font-size: calc(6vw) !important;
   }
 }
 
 @media screen and (max-width: 600px) {
   .titulo-principal {
     min-height: 18rem;
-    font-size: calc(7vw + 1.2rem);
+    font-size: calc(7vw);
   }
-  .sebita{
-    font-size: calc(10vw + 1.5rem) !important;
+  .displayedWord {
+    font-size: calc(6vw) !important;
   }
 }
 
@@ -378,18 +397,16 @@ h5 {
     font-size: calc(7vw + 1rem);
     margin-bottom: 0;
   }
-  .sebita{
-    font-size: calc(9vw + 1.5rem) !important;
+  .displayedWord {
+    font-size: calc(5vw) !important;
   }
-  /* .h1Title{
-    min-height: 15rem;
-    margin-top: 30px;
-  } */
+  .h1Title {
+    position: absolute;
+    background-color: #85ed45;
+    z-index: 3;
+  }
 }
 
-.changing-text {
-  font-weight: 200;
-}
 /* ============================   Section HERO1 ========================== */
 
 /* ============================   Section HERO2 ========================== */
@@ -496,15 +513,24 @@ h5 {
   }
 }
 
-.sebita{
-  
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-size: 120px;
-    font-weight: 200;
-    font-style: normal;
-  
+.displayedWord {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-size: 55px;
+  font-weight: 50;
+  letter-spacing: 1px;
+  font-style: normal;
+  color: var(--color6);
+  text-shadow: 1px 1px 0 var(--color1), -1px -1px 0 var(--color1),
+    1px -1px 0 var(--color1), -1px 1px 0 var(--color1);
+  /* min-height: 50px; */
+  /* z-index: 1; */
+  /* position: relative; */
+  /* padding-top: 6rem; */
+
+  /* margin-left: 8.5rem; */
 }
+
 /* ============================   Section HERO2 ========================== */
 
 /* ============================   Section ENCABEZADO PROJECTS ========================== */
@@ -686,9 +712,10 @@ h5 {
 /* ============================    Section EXPERTISE    ========================== */
 
 .section5 {
-  background-color: black;
+  /* background-color: black; */
   color: white;
   padding: 56px;
+  position: relative;
 }
 
 .expertise-title {
@@ -697,7 +724,7 @@ h5 {
 }
 
 .section5 .titleH3 h3 {
-  color: white;
+  color: var(--color6);
 }
 
 .ecpertiseFlexContainer {
@@ -717,7 +744,7 @@ h5 {
 }
 
 .expertiseFlexItems h4 {
-  color: white;
+  color: var(--color6);
   font-size: 22px;
   line-height: 130%;
   margin-bottom: 30px;
@@ -873,6 +900,7 @@ h5 {
 /* ============================    Section TESTIMONIALS    ========================== */
 /* ============================    Section LET'S TALK    ========================== */
 .section-lets-talk {
+  position: relative;
   margin-top: 126px;
   margin-bottom: 10rem;
 }
@@ -888,31 +916,131 @@ h5 {
 }
 
 .lets-talk-flexItem h2 {
+  color: var(--color6);
   font-size: 140px;
   margin: 0;
   line-height: 1;
+  margin-bottom: 6rem;
+
+}
+/* 
+@keyframes scale-up {
+  to {scale: 1.5;}
 }
 
-.email-button {
-  background-color: black;
+@keyframes fade-away {
+  to {opacity: 0;}
+}
+.scaleAndFade{
+  view-timeline: --scroll;
+}
+
+.lets-talk-flexItem{
+  animation: 
+  scale-up both ease-in-out,
+  fade-away both linear;
+} */
+
+/* .appleExample{
+  position: relative;
+} */
+
+/* @keyframes scale-up {
+	to { scale: 1.5; }
+}
+
+@keyframes fade-away {
+	to { opacity: 0; }
+}
+
+
+
+section {
+	view-timeline: --scroll;
+}
+
+h1 span:first-child {
+	animation: fade-away both linear;
+	animation-timeline: --scroll;
+	animation-range: exit 20% exit 90%;
+}
+
+h1 span:last-child {
+	animation:
+		scale-up both ease-in-out,
+		fade-away both linear;
+	animation-timeline: --scroll;
+	animation-range:
+		exit 0% exit 100%,
+		exit 50% exit 90%;	
+}
+
+basic
+section {
+	position: relative;
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+  z-index: 2;
+}
+
+h1 span:first-of-type {
+	color: #09f;
+	font-size: 0.35em;
+}
+
+section:nth-of-type(1) {
+	height: 100vh;
+}
+
+section:nth-of-type(2) {
+	height: 140vh;
+}
+
+h1 {
+	display: grid;
+}
+
+h2 {
+	font-size: clamp(2rem, 5vw + 1rem, 6rem);
+	text-align: center;
+}
+
+section div {
+	width: 800px;
+	max-width: 100vw;
+	padding: 0 1rem;
+ 
+}
+
+:is(h1, h2) {
+	font-size: clamp(2.5rem, 7vw + 1rem, 10rem);
+	text-align: center;
+	line-height: 1;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	translate: -50% -50%;
+	width: 100%;
+}
+
+/* reset */
+/* *, *:after, *:before {
+	box-sizing: border-box;
+} */ */
+
+/* body {
+  background: #000;
   color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 25px;
-  display: inline-block;
-  margin-top: 5rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.email-button:hover {
-  transition: "color 0.3s ease";
-}
-.lets-talk-flexItem h2 {
-  font-size: 140px;
+  display: grid;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
   margin: 0;
-  line-height: 1;
-}
+  min-height: 100dvh;
+  overflow-x: hidden;
+  place-items: center;
+} */
 /* ============================    Section LET'S TALK    ========================== */
 
 /* ============================    SLIDER    ========================== */
@@ -1169,16 +1297,42 @@ header {
 
 /* Estilo para el correo electrónico */
 .email-link {
-  font-size: 20px !important;
-  line-height: 140% !important;
-  color: black !important;
+  /* font-size: 20px !important; */
+  line-height: 240% !important;
+  /* color: var(--color1); */
   text-decoration: underline !important;
   transition: font-weight 0.3s ease !important;
-  font-weight: normal !important;
+  font-weight: 400 !important;
+  letter-spacing: 1px !important;
+  /* text-shadow:#fcfcfc 1px solid;  */
+  max-width: max-content !important;
 }
 
 .email-link:hover {
-  font-weight: bold !important;
+  color: var(--color6);
+}
+
+.email-button {
+
+  background-color: var(--color6);
+  color: var(--color1)  !important;
+  padding: 14px 3vw;
+  text-decoration: none;
+  border-radius:  30px 2px;
+  display: inline;
+  margin-top: 5rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+  border: var(--white) 1px solid;
+
+}
+
+.email-button:hover {
+  transition: "background-color color 0.3s ease";
+  font-weight: bolder !important;
+
+  background-color: var(--white);
+  color: var(--color1) !important;
 }
 
 /* Ajustes responsivos para el correo electrónico */
@@ -1205,7 +1359,7 @@ header {
 @media (max-width: 768px) {
   .section-hero .email-link,
   .section-lets-talk .email-link {
-    font-size: 18px !important;
+    font-size: 17px !important;
   }
 }
 
@@ -1214,4 +1368,504 @@ header {
   .section-lets-talk .email-link {
     font-size: 16px !important;
   }
+}
+
+.home0section1 {
+  background-color: #ff8c00;
+  height: 150px;
+  display: grid;
+  place-items: center;
+}
+
+.home0section2 {
+  background-color: #85ed45;
+  height: 150px;
+  display: grid;
+  place-items: center;
+}
+
+/* Drag en Motion Framer  */
+
+.exampleContainer {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  margin: 10px;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  background: rgba(225, 39, 39, 0.916) !important;
+  border-radius: 30px;
+}
+
+.exampleItem {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: inherit;
+}
+
+.home0section3 {
+  background-color: rgba(0, 0, 255, 0.742);
+  height: 100vh;
+}
+
+/*  Scroll en Motion Framer   */
+.wrapperScroll {
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.containerScroll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+}
+
+.itemScroll {
+  width: inherit;
+  height: inherit;
+  background: rgba(244, 5, 5, 0.509);
+  transform-origin: 50% 100%;
+}
+
+.refreshd {
+  padding: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*----------                 Home  0                  --------- */
+
+.section4 {
+  height: 200px;
+  background-color: yellow;
+}
+/*----------                 Home  1                  --------- */
+
+.section1Home1 {
+  margin-top: 0px;
+}
+
+.sonRightContainer {
+  /* position: relative; */
+  /* width: 90%; */
+
+  height: 100vh;
+  /* align-content: center; */
+  /* object-fit: cover; */
+  /* margin: 0 auto; */
+  /* background-image: url("/dashboard.jpg"); */
+  /* background-size: cover; */
+  /* background-position: 100% center; */
+  /* background-repeat: no-repeat; */
+  /* border: white 2px solid; */
+}
+
+/* Degradado inferior */
+.sonRightContainer::after {
+  /* position: absolute; */
+  inset: 0; /* Esto es equivalente a top: 0; right: 0; bottom: 0; left: 0; */
+  background: linear-gradient
+    /* (
+      to bottom,
+      var(--color1) 0%,
+      rgba(157, 33, 33, 0.959) 20%,
+      rgba(156, 40, 40, 0.936) 90%,
+      var(--color1) 100%
+    ), */
+    linear-gradient(
+      to right,
+      var(--color1) 0%,
+      rgba(255, 255, 255, 0) 100%,
+      rgba(255, 255, 255, 0.234) 80%
+    );
+  pointer-events: none;
+}
+
+.h1Home1 {
+  /* height: 20vh !important; */
+
+  position: relative;
+  z-index: 1;
+  font-size: 3.3rem;
+  color: var(--color1);
+  letter-spacing: 35px;
+  font-weight: 400;
+  text-shadow: 0.4px 0.4px var(--color6), -0.4px -0.4px 0 var(--color6), 
+  0.4px -0.4px 0 var(--color6), -0.4px 0.4px 0 var(--color6); /* Cambiado a var(--color1) */
+  
+  /* border-top: #219ebc solid 1px ; */
+}
+
+.padreContainer {
+  width: 100vw;
+  display: flex;
+  /* justify-content: center; */
+  position: relative;
+  /* border: #f4f4f4 solid 2px; */
+}
+
+.titles-container {
+  width: 100%;
+  position: absolute;
+  left: 50%; /* Centrado horizontal */
+  top: 50%; /* Centrado vertical */
+  transform: translate(-50%, -50%); /* Ajuste para centrado perfecto */
+  text-align: center;
+  /* background-color: var(--color6); */
+  background: radial-gradient(circle, #c8c6c6eb 50%, rgba(26, 23, 19, 0) 100%);
+  /* border: #f0f0f0 4slider-iconpx solid; */
+}
+
+.titles-container2 {
+  width: 100%;
+  position: absolute;
+  left: 50%; /* Centrado horizontal */
+  top: calc(50% + 70px); /* Centrado vertical */
+  transform: translate(-50%, -50%); /* Ajuste para centrado perfecto */
+  text-align: center;
+}
+
+.sonLeftContainer {
+  width: 12%;
+  /* Añadido un gradiente en la parte derecha */
+  background: linear-gradient(
+    to left,
+    rgb(2, 48, 71) 10%,
+    rgba(255, 255, 255, 0) 90%
+  );
+  background-size: 10px 100%; /* Gradiente de 10px de ancho */
+  background-repeat: no-repeat; /* Evitar que se repita el gradiente */
+  background-position: right; /* Asegura que el gradiente esté en el lado derecho */
+}
+
+.sonRightContainer {
+  position: relative;
+  width: 88%;
+  justify-content: end;
+}
+/* .scale-up-bottom {
+  opacity: 0;
+  transform: scale(0.5);
+  transform-origin: center bottom;
+}
+
+.visible .scale-up-bottom {
+  animation: scale-up-bottom 2.4s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+}
+
+@keyframes scale-up-bottom {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    transform-origin: center bottom;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: center bottom;
+  }
+} */
+
+/* --------------            Section Personal presentation            --------  */
+
+.personalPresentation {
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.textPersonalSection {
+  width: 60%;
+  text-align: center;
+  color: var(--white);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .textPersonalSection {
+    width: 75%; /* Ancho para tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .textPersonalSection {
+    width: 85%; /* Ancho para mobile */
+  }
+}
+
+.letsTalk{
+  font-size: xx-large !important;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 3rem !important;
+}
+
+.profilePicture {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255);
+  opacity: 0.7;
+}
+
+.helloText {
+  line-height: 50px !important;
+  letter-spacing: 1.3px;
+  /* background-color: #85ed45; */
+}
+
+/* ------------------------           Section 2 ------------  */
+
+.section2Home1 {
+  margin-top: 7rem;
+  height: 300px;
+  background-color: #8ecae6;
+  position: relative;
+}
+
+.titleSectionTechnologies {
+  z-index: 1000;
+  color: black;
+}
+
+.section3Home1 {
+  position: relative;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color1);
+  margin-top: 12rem;
+}
+
+/* Añadido para crear la curva convexa en la parte superior */
+.section3Home1::before {
+  content: "";
+  position: absolute;
+  top: -50px; /* Ajusta según sea necesario */
+  left: 0;
+  right: 0;
+  height: 50px; /* Ajusta según sea necesario */
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 100% 40% 0 0; /* Crea la curva convexa */
+  z-index: 1; /* Asegura que esté detrás del contenido */
+}
+.section3Home1::after {
+  content: "";
+  position: absolute;
+  top: 150px; /* Ajusta según sea necesario */
+  left: 0;
+  right: -20px;
+  height: 90px; /* Ajusta según sea necesario */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.35
+  ); /* Cambiado a 30% de transparencia */
+  border-radius: 0 0% 100% 40%; /* Crea la curva convexa */
+  z-index: 1; /* Asegura que esté detrás del contenido */
+}
+.section3Home1 p {
+  margin: 0;
+  font-size: 20px;
+}
+
+/*  -------------      fm      ------------------- */
+
+.fm1 {
+  position: absolute;
+}
+
+.card {
+  font-size: 64px;
+  width: 200px;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 0 1px hsl(0deg 0% 0% / 0.075), 0 0 2px hsl(0deg 0% 0% / 0.075),
+    0 0 4px hsl(0deg 0% 0% / 0.075), 0 0 8px hsl(0deg 0% 0% / 0.075),
+    0 0 16px hsl(0deg 0% 0% / 0.075);
+  transform-origin: 10% 60%;
+  border: var(--white) 1px solid;
+}
+
+.card-container {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: -120px;
+  /* border:green 2px solid; */
+  margin-left: 20px; /* Aplica un margen a todos los contenedores de tarjetas */
+}
+
+.splash {
+  /* border: yellow 2px solid; */
+  position: absolute;
+  bottom: -100px;
+  left: 53.5%; /* Centra horizontalmente */
+  transform: translateX(-50%) scaleX(1); /* Ajusta para centrar completamente y estira un 25% */
+  right: 0;
+  top: -120px;
+  clip-path: path(
+    "M 0 303.5 C 0 292.454 8.995 285.101 20 283.5 L 460 219.5 C 470.085 218.033 480 228.454 480 239.5 L 500 430 C 500 441.046 491.046 450 480 450 L 20 450 C 8.954 450 0 441.046 0 430 Z"
+  );
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias líneas */
+  /* border: yellow 2px solid; */
+}
+
+.card-container {
+  width: 100%; /* Cada tarjeta ocupa el 50% del ancho */
+  height: auto;
+  /* border: yellow 2px solid; */
+}
+
+.card {
+  border-radius: 1%;
+}
+/* .card-container:nth-child(2n) {} */
+/* margin-left: 60px;  */
+/* margin-top: 30px; */
+
+/* ------------------- */
+
+circle,
+rect,
+line {
+  stroke-width: 2px;
+  stroke-linecap: round;
+  fill: transparent;
+}
+
+.framerMotion2 {
+  display: flex;
+  justify-content: center;
+}
+
+/* .buttonmotion{
+  position: relative;
+} */
+
+.section7 {
+  position: relative;
+}
+
+.titleH3section7 {
+  margin-top: -100px !important;
+  color: var(--color6);
+}
+
+.section7 h4 {
+  color: var(--color6);
+  font-size: 22px;
+  line-height: 130%;
+  margin-bottom: 30px;
+  font-weight: 300;
+  word-spacing: 1.9px;
+}
+
+/* ----------      slider         ----- */
+
+.sliderContainer {
+  position: relative;
+  margin: 100px 0 0 200px; /* Añadido: margen superior, derecho, inferior e izquierdo */
+  width: 75%; /* Añadido: ancho del 70% */
+  height: 450px; /* Añadido: altura de 450px */
+  display: flex; /* Añadido: para usar flexbox */
+  justify-content: center; /* Añadido: centrar contenido horizontalmente */
+  gap: 10px; /* Añadido: espacio entre elementos */
+  margin-bottom: 3rem;
+}
+
+.sliderContainer img {
+  width: 10%; /* Añadido: ancho del 10% */
+  height: 100%; /* Añadido: altura del 100% */
+  object-fit: cover; /* Añadido: ajuste de objeto */
+  border-radius: 10px; /* Añadido: radio de borde de 10px */
+  border: 2px solid white; /* Añadido: borde de 2px blanco */
+  transition: all ease-in-out 0.5s; /* Añadido: transición de 0.5 segundos */
+}
+
+.sliderContainer img:hover {
+  width: 25%;
+}
+
+/*  -------------- blur from animate css -------------*/
+
+/* ----------------------------------------------
+  Generated by AnimatiSS
+  Licensed under FreeBSD License
+  URL: https://xsgames.co/animatiss
+  Twitter: @xsgames_
+---------------------------------------------- */
+.hidden {
+  visibility: hidden;
+}
+.blur-in-expand {
+  animation: blur-in-expand 0.5s linear both;
+}
+@keyframes blur-in-expand {
+  0% {
+    transform: scale(0);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes show{
+  from {
+    opacity: 0;
+    scale: 20%;
+  }
+  to{
+    opacity: 1;
+    scale: 100%;
+  }
+}
+.scrollAnimation{
+  view-timeline-name: --reveal;
+
+  animation-name: show;
+  animation-fill-mode: both;
+
+  animation-timeline: --reveal;
+  animation-range: entry 25% cover 35%;
+  
 }

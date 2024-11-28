@@ -4,6 +4,7 @@ import { AppBar, Toolbar, IconButton, Button, Drawer, List, ListItem, ListItemTe
 import MenuIcon from '@mui/icons-material/Menu';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import resumePDF from '../../public/CV Sebastian Prado.pdf';
+import zIndex from '@mui/material/styles/zIndex';
 
 const theme = createTheme({
   typography: {
@@ -44,7 +45,7 @@ function Navbar() {
       <div className=''>    
         <ThemeProvider theme={theme}>
           <Box className="main-container sticky">
-            <AppBar position="static" className="custom-app-bar" sx={{ backgroundColor: 'black' }}>
+            <AppBar position="static" className="custom-app-bar" sx={{ backgroundColor: 'var(--color1)' }}>
               <Toolbar className="custom-toolbar">
                 <IconButton
                   edge="start"
@@ -55,7 +56,7 @@ function Navbar() {
                     mt: 1,
                     display: { xs: 'block', sm: 'none', md: 'none' },
                     color: 'white',
-                    backgroundColor: 'black',
+                    backgroundColor: 'var(--color2)',
                     borderRadius: '30%',
                     padding: '10px 9px 4px 9px', 
                     '&:hover': {
@@ -68,7 +69,7 @@ function Navbar() {
                 </IconButton>
                 <Box className="button-container" sx={{ display: { xs: 'none', sm: 'flex', md: 'flex' } }}>
                   {menuItems.map((item) => (
-                    <Button key={item.label} className="custom-button" sx={{ color: 'white' }} onClick={item.onClick}>
+                    <Button key={item.label} className="custom-button" sx={{ color: 'var(--color6)' }} onClick={item.onClick}>
                       {item.label}
                     </Button>
                   ))}

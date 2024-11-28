@@ -4,23 +4,23 @@ import App from "./App.jsx";
 import "./index.css";
 
 function Root() {
-  useEffect(() => {
-    const mainContainer = document.querySelector('.main-container');
+  // useEffect(() => {
+  //   const mainContainer = document.querySelector('.main-container');
     
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        mainContainer.classList.add('scrolled');
-      } else {
-        mainContainer.classList.remove('scrolled');
-      }
-    };
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 0) {
+  //       mainContainer.classList.add('scrolled');
+  //     } else {
+  //       mainContainer.classList.remove('scrolled');
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   return (
     <StrictMode>

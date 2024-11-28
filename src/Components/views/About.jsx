@@ -1,5 +1,70 @@
 import React, { useState, useEffect } from "react";
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var string = "sebastian";
+function arrayMasLargo(string) {
+  var arrayOriginal = string.split("");
+  // console.log(arrayOriginal);
+
+  var array0 = [];
+  var array1 = [];
+
+  for (let i = 0; i < arrayOriginal.length; i++) {
+    const element = arrayOriginal[i];
+
+    if (!array1.includes(element)) {
+      //linea 38
+      array1.push(element);
+      console.log(array1);
+    } else {
+     
+      array0 = [...array1];
+      //  console.log(array1);
+      //  console.log(array0);
+      array1 = [element];
+      console.log(array1);
+    }
+
+    if (array1.length >= array0.length) {
+      //linea 52
+      array0 = array1;
+    }
+  }
+
+  return array0;
+}
+
+console.log(arrayMasLargo(string));
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 function About() {
   return (
     <>
@@ -51,19 +116,23 @@ function About() {
         <div className="flexbox-item flexbox-item8"> flexbox 8 </div>
         <div className="flexbox-item flexbox-item9">flexbox 9 </div>
       </div>
-{/* ====================        parallax effect ===================*/}
+      {/* ====================        parallax effect ===================*/}
       <div className="wrapper">
         <header>
           <img src="/public/alusur.jpeg" alt="alusur" className="background" />
-          <img src="/public/equalFront.jpeg" alt="equal" className="foreground" />
+          <img
+            src="/public/equalFront.jpeg"
+            alt="equal"
+            className="foreground"
+          />
           <h2>Welcome!</h2>
           <section>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            dolorum, vel totam eos quibusdam nulla architecto fugit unde
-            voluptates quam nesciunt aperiam aspernatur aliquid quis, sequi
-            ipsum numquam voluptas ullam?
-          </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              dolorum, vel totam eos quibusdam nulla architecto fugit unde
+              voluptates quam nesciunt aperiam aspernatur aliquid quis, sequi
+              ipsum numquam voluptas ullam?
+            </p>
           </section>
         </header>
       </div>

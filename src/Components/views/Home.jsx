@@ -4,6 +4,9 @@ import alusur from "/alusur.jpeg";
 import movie from "/fakeflix.jpeg";
 import dashboard from "/equalAdmin.jpeg";
 import matesito from "/matesito.png";
+import { motion } from "framer-motion"
+
+
 
 import {
   FaHtml5,
@@ -38,7 +41,7 @@ function Home() {
 
   const [displayedWord, setDisplayedWord] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const words = [" a twist", "a designing mind"];
+  const words = ["with a twist", " with a designing mind"];
   const [wordIndex, setWordIndex] = useState(0);
 
   useEffect(() => {
@@ -79,7 +82,7 @@ function Home() {
         <section className="section1 containerLarge">
           <div className="h1Title">
             <h1 className="titulo-principal">
-              A fullstack developer with{" "}
+              A Website Developer{" "}
               <span className="changing-text sebita">{displayedWord}</span>
             </h1>
           </div>
