@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import "animate.css";
 
 import {
   FaHtml5,
@@ -157,7 +158,6 @@ function FramerMotion() {
           <div className="titles-container2">
             <h2 className=" displayedWord">{displayedWord}</h2>
           </div>
-        
         </div>
       </section>
 
@@ -183,7 +183,6 @@ function FramerMotion() {
             </p>
             <p className="letsTalk">Let's Talk...</p>
             <p>
-              
               <a
                 href="mailto:sebastian.pradomelesi@gmail.com "
                 className="email-button email-link"
@@ -220,18 +219,18 @@ function FramerMotion() {
         <div className="titleH3">
           <h3>Your partner in development</h3>
         </div>
-        <div className="ecpertiseFlexContainer">
-          <div className="expertiseFlexItems">
+        <div className="ecpertiseFlexContainer ">
+          <div className="expertiseFlexItems ">
             <h4>
               <span className="dot"></span> Launch Your E-commerce Site from
               Scratch
             </h4>
             <p>
               Ready to transform your vision into a fully functional e-commerce
-              platform. With a focus on security and seamless user experience, I
-              build e-commerce solutions that not only look great but drive
-              results. Customized product pages, offer sections , display by
-              categories and secure checkout processes, every detail is crafted.
+              platform. I build e-commerce solutions that not only look great
+              but drive results. Customized product pages, offer sections ,
+              display by categories and secure checkout processes, every detail
+              is crafted.
             </p>
           </div>
 
@@ -240,11 +239,10 @@ function FramerMotion() {
               <span className="dot"></span>Fullstack Developer for Your Team
             </h4>
             <p>
-              Looking for a reliable fullstack developer to integrate seamlessly
+              Looking for a reliable fullstack developer to integrate 
               into your team? I bring expertise in front-end and back-end
-              technologies, ensuring clean code, and a focus on finding
-              solutions. With a collaborative mindset and the ability to adapt
-              to your workflows, I’m here to help you accelerate project
+              technologies, with a focus on finding
+              solutions. With a collaborative mindset, I’m here to help you accelerate project
               timelines and enhance productivity, considering I offer both
               hour-rate and achievement alternatives.
             </p>
@@ -318,13 +316,11 @@ function FramerMotion() {
         </div>
       </section>
       <section className="section-lets-talk container">
-          <div className="lets-talk-flexContainer">
-            <div className="lets-talk-flexItem">
-            
-              <h2>Let's talk!</h2>
-              
-              <p>
-            
+        <div className="lets-talk-flexContainer">
+          <div className="lets-talk-flexItem">
+            <h2>Let's talk!</h2>
+
+            <p>
               <a
                 href="mailto:sebastian.pradomelesi@gmail.com "
                 className="email-button email-link"
@@ -334,9 +330,9 @@ function FramerMotion() {
                 sebastian.pradomelesi@gmail.com
               </a>
             </p>
-            </div>
           </div>
-        </section>
+        </div>
+      </section>
     </div>
   );
 }
