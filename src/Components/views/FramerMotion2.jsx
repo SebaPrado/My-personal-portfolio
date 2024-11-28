@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import  "animate.css";
+
 
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
@@ -151,6 +153,9 @@ export default function FramerMotion2() {
         <section>
           <h3>Y todo con sólo CSS</h3>
         </section>
+      </div>
+      <div className="animateCss animate__bounce">
+        <h3 className="animate__bounce">Animated css </h3>
       </div>
     </div>
   );

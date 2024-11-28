@@ -921,7 +921,12 @@ h5 {
   margin: 0;
   line-height: 1;
   margin-bottom: 6rem;
+}
 
+.animateCss {
+  position: relative;
+  background-color: #85ed45;
+  height: 300px;
 }
 /* 
 @keyframes scale-up {
@@ -952,7 +957,6 @@ h5 {
 @keyframes fade-away {
 	to { opacity: 0; }
 }
-
 
 
 section {
@@ -1028,7 +1032,8 @@ section div {
 /* reset */
 /* *, *:after, *:before {
 	box-sizing: border-box;
-} */ */
+} */
+*/
 
 /* body {
   background: #000;
@@ -1313,18 +1318,16 @@ header {
 }
 
 .email-button {
-
   background-color: var(--color6);
-  color: var(--color1)  !important;
+  color: var(--color1) !important;
   padding: 14px 3vw;
   text-decoration: none;
-  border-radius:  30px 2px;
+  border-radius: 30px 2px;
   display: inline;
   margin-top: 5rem;
   font-weight: bold;
   transition: 0.3s ease;
   border: var(--white) 1px solid;
-
 }
 
 .email-button:hover {
@@ -1507,9 +1510,9 @@ header {
   color: var(--color1);
   letter-spacing: 35px;
   font-weight: 400;
-  text-shadow: 0.4px 0.4px var(--color6), -0.4px -0.4px 0 var(--color6), 
-  0.4px -0.4px 0 var(--color6), -0.4px 0.4px 0 var(--color6); /* Cambiado a var(--color1) */
-  
+  text-shadow: 0.4px 0.4px var(--color6), -0.4px -0.4px 0 var(--color6),
+    0.4px -0.4px 0 var(--color6), -0.4px 0.4px 0 var(--color6); /* Cambiado a var(--color1) */
+
   /* border-top: #219ebc solid 1px ; */
 }
 
@@ -1611,7 +1614,7 @@ header {
   }
 }
 
-.letsTalk{
+.letsTalk {
   font-size: xx-large !important;
   font-weight: 600;
   letter-spacing: 2px;
@@ -1848,18 +1851,17 @@ line {
   }
 }
 
-
-@keyframes show{
+@keyframes show {
   from {
     opacity: 0;
     scale: 20%;
   }
-  to{
+  to {
     opacity: 1;
     scale: 100%;
   }
 }
-.scrollAnimation{
+.scrollAnimation {
   view-timeline-name: --reveal;
 
   animation-name: show;
@@ -1867,5 +1869,4 @@ line {
 
   animation-timeline: --reveal;
   animation-range: entry 25% cover 35%;
-  
 }
