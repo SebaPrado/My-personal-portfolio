@@ -365,9 +365,9 @@ h5 {
     min-height: 10rem;
     font-size: calc(6vw + 1rem);
   }
-  .displayedWord {
+  /* .displayedWord {
     font-size: calc(6vw) !important;
-  }
+  } */
 }
 
 /* Ajustes responsivos para el título principal */
@@ -377,7 +377,7 @@ h5 {
     font-size: calc(7vw + 1.5rem);
   }
   .displayedWord {
-    font-size: calc(6vw) !important;
+    font-size: calc(55px) !important;
   }
 }
 
@@ -387,7 +387,7 @@ h5 {
     font-size: calc(7vw);
   }
   .displayedWord {
-    font-size: calc(6vw) !important;
+    font-size: calc(40px) !important;
   }
 }
 
@@ -511,24 +511,6 @@ h5 {
   .container2-2 p {
     font-size: 14px;
   }
-}
-
-.displayedWord {
-  font-family: "Caveat", cursive;
-  font-optical-sizing: auto;
-  font-size: 55px;
-  font-weight: 50;
-  letter-spacing: 1px;
-  font-style: normal;
-  color: var(--color6);
-  text-shadow: 1px 1px 0 var(--color1), -1px -1px 0 var(--color1),
-    1px -1px 0 var(--color1), -1px 1px 0 var(--color1);
-  /* min-height: 50px; */
-  /* z-index: 1; */
-  /* position: relative; */
-  /* padding-top: 6rem; */
-
-  /* margin-left: 8.5rem; */
 }
 
 /* ============================   Section HERO2 ========================== */
@@ -1477,72 +1459,110 @@ header {
   /* background-size: cover; */
   /* background-position: 100% center; */
   /* background-repeat: no-repeat; */
-  /* border: white 2px solid; */
+  border: white 2px solid;
 }
 
-/* Degradado inferior */
-.sonRightContainer::after {
-  /* position: absolute; */
-  inset: 0; /* Esto es equivalente a top: 0; right: 0; bottom: 0; left: 0; */
-  background: linear-gradient
-    /* (
-      to bottom,
-      var(--color1) 0%,
-      rgba(157, 33, 33, 0.959) 20%,
-      rgba(156, 40, 40, 0.936) 90%,
-      var(--color1) 100%
-    ), */
-    linear-gradient(
-      to right,
-      var(--color1) 0%,
-      rgba(255, 255, 255, 0) 100%,
-      rgba(255, 255, 255, 0.234) 80%
-    );
-  pointer-events: none;
-}
-
-.h1Home1 {
-  /* height: 20vh !important; */
-
+.heroBigContainer {
   position: relative;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Apilamos los elementos verticalmente */
+  align-items: center; /* Centramos horizontalmente */
+  border: #e90303 solid 2px;
+}
+
+.heroH1Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle, #c8c6c6eb 20%, rgba(26, 23, 19, 0) 97%);
+  width: 100%;
+  position: relative;
+  /* left: 50%; 
+  top: 50%;  */
+  /* transform: translate(-50%, -50%);  */
+  background: radial-gradient(circle, #c8c6c6eb 20%, rgba(26, 23, 19, 0) 97%);
+  /* border: #eaf20a 4px solid; */
+  /* height: 10rem; */
+  /* margin-top: 20vh; */
+}
+
+.heroH1 {
+  height: fit-content;
   z-index: 1;
   font-size: 3.3rem;
   color: var(--color1);
-  letter-spacing: 35px;
+  letter-spacing: 3.8vw;
   font-weight: 400;
   text-shadow: 0.4px 0.4px var(--color6), -0.4px -0.4px 0 var(--color6),
     0.4px -0.4px 0 var(--color6), -0.4px 0.4px 0 var(--color6); /* Cambiado a var(--color1) */
-
-  /* border-top: #219ebc solid 1px ; */
+  /* border: #219ebc solid 1px ; */
 }
 
-.padreContainer {
-  width: 100vw;
-  display: flex;
-  /* justify-content: center; */
+.prueba {
+  width: 100%;
   position: relative;
-  /* border: #f4f4f4 solid 2px; */
+  min-height: 0px;
+  background-color: #ee6c4d;
 }
 
-.titles-container {
+.heroH2Container {
+  min-height: 10px;
+  /* text-align: start; */
   width: 100%;
   position: absolute;
-  left: 50%; /* Centrado horizontal */
-  top: 50%; /* Centrado vertical */
-  transform: translate(-50%, -50%); /* Ajuste para centrado perfecto */
+  /* left: 50%;  */
+  /* Centrado horizontal */
+  /* top: calc(48.5%); */
+  /* Centrado vertical */
+  transform: translate(0%, -90px);
+  /* Ajuste para centrado perfecto */
   text-align: center;
-  /* background-color: var(--color6); */
-  background: radial-gradient(circle, #c8c6c6eb 50%, rgba(26, 23, 19, 0) 100%);
-  /* border: #f0f0f0 4slider-iconpx solid; */
+  border: #fca311 1px solid;
+}
+.displayedWord {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-size: 55px;
+  font-weight: 50;
+  letter-spacing: 1px;
+  font-style: normal;
+  color: var(--color6);
+  text-shadow: 1px 1px 0 var(--color1), -1px -1px 0 var(--color1),
+    1px -1px 0 var(--color1), -1px 1px 0 var(--color1);
+    border: #85ed45 1px solid;
 }
 
-.titles-container2 {
-  width: 100%;
-  position: absolute;
-  left: 50%; /* Centrado horizontal */
-  top: calc(50% + 70px); /* Centrado vertical */
-  transform: translate(-50%, -50%); /* Ajuste para centrado perfecto */
-  text-align: center;
+.padre {
+  width: 300px; /* Cambia esto según el tamaño deseado */
+  height: 300px;
+  background-color: lightblue;
+  position: relative; /* Establece como referencia para los elementos hijos */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.hijo {
+  width: 200px;
+  height: 50px;
+  background-color: coral;
+  position: relative; /* Establece como referencia para el nieto */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.nieto {
+  width: 170px;
+  height: 20px;
+  background-color: lightgreen;
+  position: absolute; /* Para ajustar la posición relativa al div hijo */
+  top: 38px;
+  /* left: 200px; */
 }
 
 .sonLeftContainer {
@@ -1651,30 +1671,31 @@ header {
   color: black;
 }
 
-.section3Home1 {
+.iconsSection{
   position: relative;
   height: 150px;
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color1);
   margin-top: 12rem;
+  z-index: 2;
 }
 
 /* Añadido para crear la curva convexa en la parte superior */
-.section3Home1::before {
+.iconsSection::before {
   content: "";
   position: absolute;
   top: -50px; /* Ajusta según sea necesario */
   left: 0;
   right: 0;
   height: 50px; /* Ajusta según sea necesario */
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 253, 253, 0.4);
   border-radius: 100% 40% 0 0; /* Crea la curva convexa */
-  z-index: 1; /* Asegura que esté detrás del contenido */
+  z-index: 10; /* Asegura que esté detrás del contenido */
 }
-.section3Home1::after {
+.iconsSection::after {
   content: "";
   position: absolute;
   top: 150px; /* Ajusta según sea necesario */
@@ -1685,12 +1706,12 @@ header {
     255,
     255,
     255,
-    0.35
+    0.40
   ); /* Cambiado a 30% de transparencia */
   border-radius: 0 0% 100% 40%; /* Crea la curva convexa */
   z-index: 1; /* Asegura que esté detrás del contenido */
 }
-.section3Home1 p {
+.iconsSection p {
   margin: 0;
   font-size: 20px;
 }

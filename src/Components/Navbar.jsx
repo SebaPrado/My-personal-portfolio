@@ -4,7 +4,6 @@ import { AppBar, Toolbar, IconButton, Button, Drawer, List, ListItem, ListItemTe
 import MenuIcon from '@mui/icons-material/Menu';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import resumePDF from '../../public/CV Sebastian Prado.pdf';
-import zIndex from '@mui/material/styles/zIndex';
 
 const theme = createTheme({
   typography: {

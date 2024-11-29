@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import "animate.css";
+import Navbar from "../Navbar";
 
 import {
   FaHtml5,
@@ -102,7 +103,7 @@ function FramerMotion() {
           setDisplayedWord(currentWord.slice(0, displayedWord.length + 1));
           timer = setTimeout(typeEffect, 250);
         } else {
-          timer = setTimeout(() => setIsDeleting(true), 4000);
+          timer = setTimeout(() => setIsDeleting(true), 9000);
         }
       } else {
         if (displayedWord.length > 0) {
@@ -111,7 +112,7 @@ function FramerMotion() {
         } else {
           setIsDeleting(false);
           setWordIndex((prev) => (prev + 1) % words.length);
-          timer = setTimeout(typeEffect, 250);
+          timer = setTimeout(typeEffect, 50);
         }
       }
     };
@@ -149,14 +150,24 @@ function FramerMotion() {
   return (
     <div>
       <section>
-        <div className="padreContainer">
-          <div className="sonLeftContainer"></div>
-          <div className="sonRightContainer "></div>
-          <div className="titles-container ">
-            <h1 className="h1Home1">Website developer</h1>
+        {/* <div className="navbar-container">
+          <Navbar />
+        </div> */}
+        <div className="heroBigContainer">
+          <div className="heroH1Container">
+            <h1 className="heroH1">Website developer</h1>
           </div>
-          <div className="titles-container2">
-            <h2 className=" displayedWord">{displayedWord}</h2>
+          <div className="prueba">
+            <div className="heroH2Container">
+              <h2 className="displayedWord">{displayedWord}</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="padre">
+          <div class="hijo">
+            <h4>hijo</h4>
+            <div class="nieto">nieto </div>
           </div>
         </div>
       </section>
@@ -196,7 +207,7 @@ function FramerMotion() {
         </div>
       </section>
 
-      <section className="section3Home1">
+      <section className="iconsSection ">
         <div className="slider-container">
           <div className="slider-icons">
             {techIcons.map((tech, index) => (
@@ -239,12 +250,12 @@ function FramerMotion() {
               <span className="dot"></span>Fullstack Developer for Your Team
             </h4>
             <p>
-              Looking for a reliable fullstack developer to integrate 
-              into your team? I bring expertise in front-end and back-end
-              technologies, with a focus on finding
-              solutions. With a collaborative mindset, I’m here to help you accelerate project
-              timelines and enhance productivity, considering I offer both
-              hour-rate and achievement alternatives.
+              Looking for a reliable fullstack developer to integrate into your
+              team? I bring expertise in front-end and back-end technologies,
+              with a focus on finding solutions. With a collaborative mindset,
+              I’m here to help you accelerate project timelines and enhance
+              productivity, considering I offer both hour-rate and achievement
+              alternatives.
             </p>
           </div>
 
