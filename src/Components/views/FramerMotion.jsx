@@ -191,15 +191,17 @@ function FramerMotion() {
               Let's bring your vision to life!
             </p>
             <p className="letsTalk  scrollAnimation">Let's Talk...</p>
-            <p>
+            <p >
+              <div>
               <a
                 href="mailto:sebastian.pradomelesi@gmail.com "
-                className="email-button email-link"
+                className="email-button email-link "
                 onMouseEnter={(e) => (e.target.style.color = "orange")}
                 onMouseLeave={(e) => (e.target.style.color = "white")}
               >
                 sebastian.pradomelesi@gmail.com
               </a>
+              </div>
             </p>
           </div>
         </div>
