@@ -297,8 +297,11 @@ function FramerMotion() {
       </section>
 
       <section className="section7 containerLarge ">
+      <div className="titleH3">
+          <h3>Your partner in development</h3>
+        </div>
         <div className="titleH3section7">
-          <h3>Abilities </h3>
+          {/* <h3>Abilities </h3> */}
           <h4>Check the cards in your hand with me on your team...</h4>
         </div>
         <div>
