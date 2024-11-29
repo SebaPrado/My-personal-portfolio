@@ -765,13 +765,14 @@ h5 {
   background-color: #f0f0f0;
   overflow: hidden;
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  padding-left: calc(50vw - 50%);
-  padding-right: calc(50vw - 50%);
+  /* left: 50%; */
+  /* right: 50%; */
+  /* margin-left: -50vw; */
+  /* margin-right: -50vw; */
+  /* padding-left: calc(50vw - 50%); */
+  /* padding-right: calc(50vw - 50%); */
   margin-top: 3rem; /* Añadimos un margen superior por defecto */
+  /* z-index: 30; */
 }
 
 @media (max-width: 480px) {
@@ -782,14 +783,14 @@ h5 {
 
 .slider-container {
   width: 100vw;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  margin-left: -5vw;
+  margin-right: -5vw;
 }
 
 .slider-icons {
   display: flex;
-  animation: slide 20s linear infinite;
-  width: 200%;
+  animation: slide 30s linear infinite;
+  /* width: 100%; */
 }
 
 .slider-icon {
@@ -1533,7 +1534,7 @@ header {
   color: var(--color6);
   text-shadow: 1px 1px 0 var(--color1), -1px -1px 0 var(--color1),
     1px -1px 0 var(--color1), -1px 1px 0 var(--color1);
-    border: #85ed45 1px solid;
+  border: #85ed45 1px solid;
 }
 
 .padre {
@@ -1657,21 +1658,21 @@ header {
   /* background-color: #85ed45; */
 }
 
-/* ------------------------           Section 2 ------------  */
+/* ------------------------           Section 2   ICONS   ------------  */
 
-.section2Home1 {
+/* .section2Home1 {
   margin-top: 7rem;
   height: 300px;
   background-color: #8ecae6;
   position: relative;
-}
+} */
 
-.titleSectionTechnologies {
+/* .titleSectionTechnologies {
   z-index: 1000;
   color: black;
-}
+} */
 
-.iconsSection{
+.iconsSection {
   position: relative;
   height: 150px;
   background-color: rgba(255, 255, 255, 0.4);
@@ -1687,34 +1688,31 @@ header {
 .iconsSection::before {
   content: "";
   position: absolute;
-  top: -50px; /* Ajusta según sea necesario */
+  top: -90px; /* Ajusta según sea necesario */
   left: 0;
   right: 0;
-  height: 50px; /* Ajusta según sea necesario */
+  height: 90px; /* Ajusta según sea necesario */
   background-color: rgba(255, 253, 253, 0.4);
   border-radius: 100% 40% 0 0; /* Crea la curva convexa */
   z-index: 10; /* Asegura que esté detrás del contenido */
 }
+
+/* Añadido para crear la curva convexa en la parte inferior */
 .iconsSection::after {
   content: "";
   position: absolute;
   top: 150px; /* Ajusta según sea necesario */
   left: 0;
-  right: -20px;
+  right: -0px;
   height: 90px; /* Ajusta según sea necesario */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.40
-  ); /* Cambiado a 30% de transparencia */
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 0 0% 100% 40%; /* Crea la curva convexa */
-  z-index: 1; /* Asegura que esté detrás del contenido */
 }
-.iconsSection p {
+
+/* .iconsSection p {
   margin: 0;
   font-size: 20px;
-}
+} */
 
 /*  -------------      fm      ------------------- */
 

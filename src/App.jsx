@@ -149,7 +149,7 @@ function App() {
     if (init) {
       return (
         <>
-          <Particles
+          {/* <Particles
             id="tsparticles"
             particlesLoaded={particlesLoaded}
             options={options}
@@ -161,7 +161,7 @@ function App() {
               height: '100%',
               zIndex: -1
             }}
-          />
+          /> */}
           <RouterProvider router={router} />
         </>
       );
