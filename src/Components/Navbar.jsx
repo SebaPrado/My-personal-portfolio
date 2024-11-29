@@ -56,12 +56,12 @@ function Navbar() {
                     mr: 2,
                     mt: 1,
                     display: { xs: 'block', sm: 'none', md: 'none' },
-                    color: 'var(--color1)',
-                    backgroundColor: 'var(--white)',
+                    color: 'var(--color6)',
+                    backgroundColor: 'var(--color1)',
                     borderRadius: '30%',
                     padding: '10px 9px 4px 9px', 
                     '&:hover': {
-                      backgroundColor:'var(--color6)',
+                      backgroundColor:'var(--white)',
                     },
                   }}
                   onClick={toggleDrawer(true)}

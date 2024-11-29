@@ -361,12 +361,9 @@ h5 {
 }
 
 @media screen and (max-width: 830px) {
-  .titulo-principal {
+  /* .titulo-principal {
     min-height: 10rem;
     font-size: calc(6vw + 1rem);
-  }
-  /* .displayedWord {
-    font-size: calc(6vw) !important;
   } */
 }
 
@@ -376,18 +373,12 @@ h5 {
     min-height: 17.5rem;
     font-size: calc(7vw + 1.5rem);
   }
-  .displayedWord {
-    font-size: calc(55px) !important;
-  }
 }
 
 @media screen and (max-width: 600px) {
   .titulo-principal {
     min-height: 18rem;
     font-size: calc(7vw);
-  }
-  .displayedWord {
-    font-size: calc(40px) !important;
   }
 }
 
@@ -397,9 +388,7 @@ h5 {
     font-size: calc(7vw + 1rem);
     margin-bottom: 0;
   }
-  .displayedWord {
-    font-size: calc(5vw) !important;
-  }
+
   .h1Title {
     position: absolute;
     background-color: #85ed45;
@@ -700,26 +689,33 @@ h5 {
   position: relative;
 }
 
-.expertise-title {
+/* .expertise-title {
   font-size: 64px;
   line-height: 110%;
+} */
+
+.titleH3 h3 {
+  color: var(--white);
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 200;
+  letter-spacing: 2.5px;
+  word-spacing: 4px;
 }
 
-.section5 .titleH3 h3 {
-  color: var(--color6);
-}
-
-.ecpertiseFlexContainer {
+.expertiseFlexContainer {
   width: 100%;
   display: flex;
-  row-gap: 40px;
+  row-gap: 10px;
   column-gap: 2rem;
   margin-bottom: 3rem;
   flex-wrap: wrap;
   justify-content: space-between;
+
 }
 
 .expertiseFlexItems {
+  box-sizing: border-box;
   width: 46%;
   max-width: 442px;
   height: fit-content;
@@ -728,6 +724,7 @@ h5 {
 .expertiseFlexItems h4 {
   color: var(--color6);
   font-size: 22px;
+  font-weight: 300;
   line-height: 130%;
   margin-bottom: 30px;
 }
@@ -738,6 +735,22 @@ h5 {
 .expertiseFlexItems p {
   font-size: 20px;
   line-height: 140%;
+}
+@media (max-width: 768px) {
+  .expertiseFlexContainer {
+    justify-content: center;
+  }
+  .titleH3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #85ed45; */
+  }
+  .expertiseFlexItems {
+    width: 100%;
+    justify-content: center;
+
+  }
 }
 
 @media (max-width: 552px) {
@@ -1046,8 +1059,6 @@ section div {
   animation: slide 40s linear infinite;
   width: 100%;
 }
-
-
 
 .icon {
   font-size: 2rem;
@@ -1445,24 +1456,12 @@ header {
 }
 /*----------                 Home  1                  --------- */
 
-.section1Home1 {
-  margin-top: 0px;
-}
 
-.sonRightContainer {
-  /* position: relative; */
-  /* width: 90%; */
 
-  height: 100vh;
-  /* align-content: center; */
-  /* object-fit: cover; */
-  /* margin: 0 auto; */
-  /* background-image: url("/dashboard.jpg"); */
-  /* background-size: cover; */
-  /* background-position: 100% center; */
-  /* background-repeat: no-repeat; */
-  border: white 2px solid;
-}
+/*----------                 FRAMERMOTION 1 HERO                  --------- */
+/*----------                 FRAMERMOTION 1 HERO                  --------- */
+/*----------                 FRAMERMOTION 1 HERO                  --------- */
+
 
 .heroBigContainer {
   position: relative;
@@ -1472,7 +1471,7 @@ header {
   justify-content: center;
   flex-direction: column; /* Apilamos los elementos verticalmente */
   align-items: center; /* Centramos horizontalmente */
-  border: #e90303 solid 2px;
+  /* border: #e90303 solid 2px; */
 }
 
 .heroH1Container {
@@ -1504,28 +1503,14 @@ header {
   /* border: #219ebc solid 1px ; */
 }
 
-.prueba {
-  width: 100%;
-  position: relative;
-  min-height: 0px;
-  background-color: #ee6c4d;
-}
-
 .heroH2Container {
-  min-height: 10px;
-  /* text-align: start; */
-  width: 100%;
-  position: absolute;
-  /* left: 50%;  */
-  /* Centrado horizontal */
-  /* top: calc(48.5%); */
-  /* Centrado vertical */
-  transform: translate(0%, -90px);
-  /* Ajuste para centrado perfecto */
-  text-align: center;
-  border: #fca311 1px solid;
+  display: flex;
+  justify-content: center;
+  /* border: orange 1px dotted; */
 }
 .displayedWord {
+  margin-top: -30px;
+  position: absolute;
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
   font-size: 55px;
@@ -1535,80 +1520,46 @@ header {
   color: var(--color6);
   text-shadow: 1px 1px 0 var(--color1), -1px -1px 0 var(--color1),
     1px -1px 0 var(--color1), -1px 1px 0 var(--color1);
-  border: #85ed45 1px solid;
+  /* border: #85ed45 1px solid; */
 }
 
-.padre {
-  width: 300px; /* Cambia esto según el tamaño deseado */
-  height: 300px;
-  background-color: lightblue;
-  position: relative; /* Establece como referencia para los elementos hijos */
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-}
-
-.hijo {
-  width: 200px;
-  height: 50px;
-  background-color: coral;
-  position: relative; /* Establece como referencia para el nieto */
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-}
-
-.nieto {
-  width: 170px;
-  height: 20px;
-  background-color: lightgreen;
-  position: absolute; /* Para ajustar la posición relativa al div hijo */
-  top: 38px;
-  /* left: 200px; */
-}
-
-.sonLeftContainer {
-  width: 12%;
-  /* Añadido un gradiente en la parte derecha */
-  background: linear-gradient(
-    to left,
-    rgb(2, 48, 71) 10%,
-    rgba(255, 255, 255, 0) 90%
-  );
-  background-size: 10px 100%; /* Gradiente de 10px de ancho */
-  background-repeat: no-repeat; /* Evitar que se repita el gradiente */
-  background-position: right; /* Asegura que el gradiente esté en el lado derecho */
-}
-
-.sonRightContainer {
-  position: relative;
-  width: 88%;
-  justify-content: end;
-}
-/* .scale-up-bottom {
-  opacity: 0;
-  transform: scale(0.5);
-  transform-origin: center bottom;
-}
-
-.visible .scale-up-bottom {
-  animation: scale-up-bottom 2.4s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
-}
-
-@keyframes scale-up-bottom {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-    transform-origin: center bottom;
+@media (width <= 480px) {
+  .heroH1 {
+    font-size: 2em;
   }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-    transform-origin: center bottom;
+  .displayedWord {
+    font-size: calc(32px);
+    margin-top: -25px;
+    /* color: rosybrown; */
   }
-} */
+}
+@media (480px <= width <= 600px) {
+  .heroH1 {
+    font-size: 2.3em;
+  }
+  .displayedWord {
+    font-size: calc(35px);
+    margin-top: -27px;
+    /* color: green ; */
+  }
+}
+@media (600px <= width <= 768px) {
+  .heroH1 {
+    font-size: 2.8em;
+  }
+  .displayedWord {
+    font-size: calc(40px);
+    /* color: blue ; */
+  }
+}
+@media (768px <= width <= 1200px) {
+  .displayedWord {
+    font-size: calc(40px);
+    /* color: white ; */
+  }
+}
 
-/* --------------            Section Personal presentation            --------  */
+/* --------------            Section 2 Personal presentation            --------  */
 
 .personalPresentation {
   position: relative;
@@ -1891,16 +1842,13 @@ line {
   animation-range: entry 25% cover 35%;
 }
 
-
-              
-.transLeft{
-  transition: .5s, color .10s;
-      -webkit-transition: .5s, color .10s;
-      -moz-transition: .5s, color .10s;
+.transLeft {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
 }
-.transLeft:hover{
+.transLeft:hover {
   transform: translatex(-20px);
-      -webkit-transform: translatex(-20px);
-      -moz-transform: translatex(-20px);
+  -webkit-transform: translatex(-20px);
+  -moz-transform: translatex(-20px);
 }
-            

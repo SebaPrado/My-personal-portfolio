@@ -162,17 +162,12 @@ function FramerMotion() {
           </div>
           <div className="prueba">
             <div className="heroH2Container">
-              <h2 className="displayedWord">{displayedWord}</h2>
+                <h2 className="displayedWord">{displayedWord}</h2>
             </div>
           </div>
         </div>
 
-        <div class="padre">
-          <div class="hijo">
-            <h4>hijo</h4>
-            <div class="nieto">nieto </div>
-          </div>
-        </div>
+        
       </section>
 
       <section className="Section1Home1">
@@ -195,7 +190,7 @@ function FramerMotion() {
               ensures that your ideas are perfectly reflected in the project.
               Let's bring your vision to life!
             </p>
-            <p className="letsTalk ">Let's Talk...</p>
+            <p className="letsTalk  scrollAnimation">Let's Talk...</p>
             <p>
               <a
                 href="mailto:sebastian.pradomelesi@gmail.com "
@@ -233,10 +228,10 @@ function FramerMotion() {
         <div className="titleH3">
           <h3>Your partner in development</h3>
         </div>
-        <div className="ecpertiseFlexContainer ">
+        <div className="expertiseFlexContainer ">
           <div className="expertiseFlexItems ">
             <h4>
-              <span className="dot"></span> Launch Your E-commerce Site from
+              Launch Your E-commerce Site from
               Scratch
             </h4>
             <p>
