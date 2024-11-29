@@ -5,9 +5,9 @@ import Navbar from "./Navbar";
 function Layout() {
   return (
     <div >
-      {/* <div className="navbar-container">
+      <div className="navbar-container">
       <Navbar />
-      </div> */}
+      </div>
       <Outlet />
     </div>
   );

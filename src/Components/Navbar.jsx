@@ -50,16 +50,18 @@ function Navbar() {
                   edge="start"
                   color="inherit"
                   aria-label="menu"
+                  border= "inherit 2px solid"
+
                   sx={{
                     mr: 2,
                     mt: 1,
                     display: { xs: 'block', sm: 'none', md: 'none' },
-                    color: 'white',
-                    backgroundColor: 'var(--color2)',
+                    color: 'var(--color1)',
+                    backgroundColor: 'var(--white)',
                     borderRadius: '30%',
                     padding: '10px 9px 4px 9px', 
                     '&:hover': {
-                      backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                      backgroundColor:'var(--color6)',
                     },
                   }}
                   onClick={toggleDrawer(true)}

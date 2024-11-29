@@ -82,6 +82,9 @@ function FramerMotion() {
     { icon: FaGithub, name: "Github" },
     { icon: SiInsomnia, name: "Insomnia" },
     { icon: FaFigma, name: "Figma" },
+    { icon: FaHtml5, name: "HTML" },
+    { icon: FaCss3, name: "CSS" },
+    { icon: IoLogoJavascript, name: "JavaScript" },
   ];
 
   const food = [
@@ -192,7 +195,7 @@ function FramerMotion() {
               ensures that your ideas are perfectly reflected in the project.
               Let's bring your vision to life!
             </p>
-            <p className="letsTalk">Let's Talk...</p>
+            <p className="letsTalk ">Let's Talk...</p>
             <p>
               <a
                 href="mailto:sebastian.pradomelesi@gmail.com "
@@ -213,13 +216,13 @@ function FramerMotion() {
             {techIcons.map((tech, index) => (
               <div key={index} className="slider-icon">
                 <tech.icon className="icon" />
-                <span className="icon-name">{tech.name}</span>
+                <span className="icon-name">{tech.name} </span>
               </div>
             ))}
             {techIcons.map((tech, index) => (
-              <div key={`duplicate-${index}`} className="slider-icon">
+              <div key={index} className="slider-icon">
                 <tech.icon className="icon" />
-                <span className="icon-name">{tech.name}</span>
+                <span className="icon-name">{tech.name} </span>
               </div>
             ))}
           </div>

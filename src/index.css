@@ -789,15 +789,18 @@ h5 {
 
 .slider-icons {
   display: flex;
-  animation: slide 30s linear infinite;
+  animation: slide 3s linear infinite;
   /* width: 100%; */
 }
 
 .slider-icon {
-  margin: 12px 30px;
+  /* margin: 12px 30px; */
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.slider-icon {
+  margin: 18px 50px;
 }
 
 .icon {
@@ -1040,13 +1043,11 @@ section div {
 
 .slider-icons {
   display: flex;
-  animation: slide 20s linear infinite;
+  animation: slide 40s linear infinite;
   width: 100%;
 }
 
-.slider-icon {
-  margin: 18px 50px;
-}
+
 
 .icon {
   font-size: 2rem;
@@ -1681,7 +1682,7 @@ header {
   justify-content: center;
   color: var(--color1);
   margin-top: 12rem;
-  z-index: 2;
+  z-index: 20;
 }
 
 /* Añadido para crear la curva convexa en la parte superior */
@@ -1889,3 +1890,17 @@ line {
   animation-timeline: --reveal;
   animation-range: entry 25% cover 35%;
 }
+
+
+              
+.transLeft{
+  transition: .5s, color .10s;
+      -webkit-transition: .5s, color .10s;
+      -moz-transition: .5s, color .10s;
+}
+.transLeft:hover{
+  transform: translatex(-20px);
+      -webkit-transform: translatex(-20px);
+      -moz-transform: translatex(-20px);
+}
+            
