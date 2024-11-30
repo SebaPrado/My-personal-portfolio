@@ -1804,16 +1804,22 @@ line {
 }
 
 .sliderContainer img {
+  background-color: #f0f0f0;
   width: 10%; /* Añadido: ancho del 10% */
+  opacity: 0.9;
   height: 100%; /* Añadido: altura del 100% */
   object-fit: cover; /* Añadido: ajuste de objeto */
   border-radius: 1px; /* Añadido: radio de borde de 10px */
-  border: 1px solid var(--color1); 
+  /* border: 1px solid var(--color1);  */
   transition: all ease-in-out 0.5s; /* Añadido: transición de 0.5 segundos */
 }
 
 .sliderContainer img:hover {
   width: 30%;
+  opacity: 1;
+  /* scale: 1.02; */
+  /* z-index: 3; */
+  /* border: var(--white) 10px 2px 3px 10px solid; */
 }
 
 

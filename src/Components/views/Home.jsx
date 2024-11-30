@@ -4,9 +4,6 @@ import alusur from "/alusur.jpeg";
 import movie from "/fakeflix.jpeg";
 import dashboard from "/equalAdmin.jpeg";
 import matesito from "/matesito.png";
-import { motion } from "framer-motion"
-
-
 
 import {
   FaHtml5,
