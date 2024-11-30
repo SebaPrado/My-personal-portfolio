@@ -708,7 +708,7 @@ h5 {
 }
 
 .expertiseFlexContainer {
-  width: 100%;
+  /* width: 80%; */
   display: flex;
   row-gap: 10px;
   column-gap: 2rem;
@@ -721,7 +721,7 @@ h5 {
 .expertiseFlexItems {
   box-sizing: border-box;
   width: 46%;
-  max-width: 442px;
+  /* max-width: 442px; */
   height: fit-content;
 }
 
@@ -1790,11 +1790,16 @@ line {
   word-spacing: 1.9px;
 }
 
-/* ----------      slider         ----- */
+/* ----------------       slider         ----------- */
+/* ----------------       slider         ----------- */
+/* ----------------       slider         ----------- */
+
+
 
 .sliderContainer {
   position: relative;
-  margin: 100px 10px 100px 10px; /* Añadido: margen superior, derecho, inferior e izquierdo */
+  /* background-color: #fefefe50; */
+  margin: 30px 10px 30px 10px; /* Añadido: margen superior, derecho, inferior e izquierdo */
   width: 100%; /* Añadido: ancho del 70% */
   height: 600px; /* Añadido: altura de 450px */
   display: flex; /* Añadido: para usar flexbox */
@@ -1803,9 +1808,8 @@ line {
   /* margin-bottom: 3rem; */
 }
 
-.sliderContainer img {
-  background-color: #f0f0f0;
-  width: 10%; /* Añadido: ancho del 10% */
+.sliderContainer img{
+  width: 12%; /* Añadido: ancho del 10% */
   opacity: 0.9;
   height: 100%; /* Añadido: altura del 100% */
   object-fit: cover; /* Añadido: ajuste de objeto */
@@ -1820,6 +1824,35 @@ line {
   /* scale: 1.02; */
   /* z-index: 3; */
   /* border: var(--white) 10px 2px 3px 10px solid; */
+}
+
+@media (768px <= width <= 960px){
+  .sliderContainer {
+    background-color: green;
+    /* width: 14%; */
+  }
+}
+@media (width <= 768px) {
+  .sliderContainer img {
+    width: 80%;
+    height: 200px;
+    margin-top: 20px;
+  }
+  .sliderContainer{
+    /* background-color: #ae5d42; */
+    margin-top: 200px;
+    margin-bottom: 380px;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .sliderContainer img:hover {
+    width: 80%;
+    
+  }
+  
 }
 
 

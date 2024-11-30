@@ -235,10 +235,8 @@ function FramerMotion() {
             <h4>Launch Your E-commerce Site from Scratch</h4>
             <p>
               Ready to transform your vision into a fully functional e-commerce
-              platform. I build e-commerce solutions that not only look great
-              but drive results. Customized product pages, offer sections ,
-              display by categories and secure checkout processes, every detail
-              is crafted.
+              platform. Customized product pages, offer sections, display by
+              categories and secure checkout processes, every detail is crafted.
             </p>
           </div>
 
@@ -248,11 +246,9 @@ function FramerMotion() {
             </h4>
             <p>
               Looking for a reliable fullstack developer to integrate into your
-              team? I bring expertise in front-end and back-end technologies,
-              with a focus on finding solutions. With a collaborative mindset,
-              I’m here to help you accelerate project timelines and enhance
-              productivity, considering I offer both hour-rate and achievement
-              alternatives.
+              team? With a focus on finding solutions, I’m here to help you
+              accelerate project timelines and enhance productivity, considering
+              I offer both achievement alternatives or hour-rate.
             </p>
           </div>
 
@@ -298,28 +294,37 @@ function FramerMotion() {
       {/* ========================      SLIDER      ===========================  */}
 
       <section>
-         <div className="sliderContainer">
-          {/*<div>
-            <img className="projectImage" src="/alusur.jpg" alt="Alusur" />
-          </div>
-          <div>
-            <img className="projectImage" src="/alusur.jpg" alt="Alusur" />
-          </div>
-          <div>
-            <img className="projectImage" src="/alusur.jpg" alt="Alusur" />
-          </div>
-          <div>
-            <img className="projectImage" src="/alusur.jpg" alt="Alusur" />
-          </div> */}
-
+        <div className="sliderContainer">
           <img src="/juegos.png" alt="Juegos" />
-            <img className="projectImage" src="/alusur.jpg" alt="Alusur" />
-
+          <img className="projectImage" src="/alusur.jpg" alt="Alusur" />
           <img src="/dashboard.jpg" alt="E-commerce dashboard" />
           <img src="/equal2.png" alt="E-commerce" />
           <img src="/fake3.png" alt="Fakeflix" />
+
         </div>
       </section>
+
+      {/* <section>
+        <div className="sliderContainer">
+          
+          <div>
+            <img src="/juegos.png" alt="Juegos" />
+          </div>{" "}
+          <div>
+            <img src="/juegos.png" alt="Juegos" />
+          </div>{" "}
+          <div>
+            <img src="/juegos.png" alt="Juegos" />
+          </div>{" "}
+          <div>
+            <img src="/juegos.png" alt="Juegos" />
+          </div>{" "}
+          <div>
+            <img src="/juegos.png" alt="Juegos" />
+          </div>
+        </div>
+      </section> */}
+
 
       {/* =====================        LETS TALK         ======================== */}
 
@@ -371,7 +376,7 @@ function FramerMotion() {
       <section>
         <footer className="footer ">
           <div className="footer-content">
-            <p>&copy; 2024 Sebastian Prado. All rights reserved.</p>
+            <p>&copy; 2024 Sebastian Prado.</p>
             <div className="social-icons">
               <a
                 href="https://github.com/SebaPrado"
