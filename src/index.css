@@ -1104,7 +1104,8 @@ section div {
 /* ==================        footer     ================================== */
 
 .footer {
-  background-color: #ff8c00 !important;
+  position: relative;
+  background-color:rgba(252, 163, 17, 0.8);
   color: black !important;
   padding: 20px 0 !important;
   display: block !important; /* Asegura que el footer se muestre */
