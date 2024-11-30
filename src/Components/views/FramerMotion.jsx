@@ -298,12 +298,26 @@ function FramerMotion() {
       {/* ========================      SLIDER      ===========================  */}
 
       <section>
-        <div className="sliderContainer">
-          <img src="/alusur.jpg" alt="Alusur" />
-          <img src="/fake.png" alt="Fakeflix" />
-          <img src="/juegos.png" alt="Fakeflix" />
-          <img src="/fake2.png" alt="Fakeflix" />
-          {/* <img src="/fake3.png" alt="Fake3" /> */}
+         <div className="sliderContainer">
+          {/*<div>
+            <img className="projectImage" src="/alusur.jpg" alt="Alusur" />
+          </div>
+          <div>
+            <img className="projectImage" src="/alusur.jpg" alt="Alusur" />
+          </div>
+          <div>
+            <img className="projectImage" src="/alusur.jpg" alt="Alusur" />
+          </div>
+          <div>
+            <img className="projectImage" src="/alusur.jpg" alt="Alusur" />
+          </div> */}
+
+          <img src="/juegos.png" alt="Juegos" />
+            <img className="projectImage" src="/alusur.jpg" alt="Alusur" />
+
+          <img src="/dashboard.jpg" alt="E-commerce dashboard" />
+          <img src="/equal2.png" alt="E-commerce" />
+          <img src="/fake3.png" alt="Fakeflix" />
         </div>
       </section>
 

@@ -1,10 +1,10 @@
 /* ============================    VARIABLES DE COLOR    ========================== */
 :root {
   /* Colores principales */
-  --color1: rgb(2, 48, 71);
+  --color1: #023047;
   --color2: #219ebc;
   --color3: #8ecae6;
-  --color4: rgb(174, 93, 66);
+  --color4: #ae5d42;
   --color5: #ee6c4d;
   --color6: #fca311;
 
@@ -1049,7 +1049,7 @@ section div {
 /* *, *:after, *:before {
 	box-sizing: border-box;
 } */
-*/
+
 
 /* body {
   background: #000;
@@ -1064,7 +1064,10 @@ section div {
 } */
 /* ============================    Section LET'S TALK    ========================== */
 
-/* ============================    SLIDER    ========================== */
+/* ============================   Projects  SLIDER    ========================== */
+
+
+
 .slider-container {
   width: 100vw;
   margin-left: -50vw;
@@ -1791,26 +1794,36 @@ line {
 
 .sliderContainer {
   position: relative;
-  margin: 100px 0 0 200px; /* Añadido: margen superior, derecho, inferior e izquierdo */
-  width: 75%; /* Añadido: ancho del 70% */
-  height: 450px; /* Añadido: altura de 450px */
+  margin: 100px 10px 100px 10px; /* Añadido: margen superior, derecho, inferior e izquierdo */
+  width: 100%; /* Añadido: ancho del 70% */
+  height: 600px; /* Añadido: altura de 450px */
   display: flex; /* Añadido: para usar flexbox */
   justify-content: center; /* Añadido: centrar contenido horizontalmente */
-  gap: 10px; /* Añadido: espacio entre elementos */
-  margin-bottom: 3rem;
+  /* Añadido: espacio entre elementos */
+  /* margin-bottom: 3rem; */
 }
 
 .sliderContainer img {
   width: 10%; /* Añadido: ancho del 10% */
   height: 100%; /* Añadido: altura del 100% */
   object-fit: cover; /* Añadido: ajuste de objeto */
-  border-radius: 10px; /* Añadido: radio de borde de 10px */
-  border: 2px solid white; /* Añadido: borde de 2px blanco */
+  border-radius: 1px; /* Añadido: radio de borde de 10px */
+  border: 1px solid var(--color1); 
   transition: all ease-in-out 0.5s; /* Añadido: transición de 0.5 segundos */
 }
 
 .sliderContainer img:hover {
-  width: 25%;
+  width: 30%;
+}
+
+
+
+.imageContainer {
+  display: inline;
+  background-color: white;
+} 
+.projectImage {
+ opacity: 0.55; /* Aplica opacidad a la imagen */
 }
 
 /*  -------------- blur from animate css -------------*/
