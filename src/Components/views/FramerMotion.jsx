@@ -13,7 +13,7 @@ import {
   FaFigma,
   FaGithub,
   FaLinkedin,
-  FaInstagram
+  FaInstagram,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiRedux, SiInsomnia } from "react-icons/si";
@@ -164,12 +164,10 @@ function FramerMotion() {
           </div>
           <div className="prueba">
             <div className="heroH2Container">
-                <h2 className="displayedWord">{displayedWord}</h2>
+              <h2 className="displayedWord">{displayedWord}</h2>
             </div>
           </div>
         </div>
-
-        
       </section>
 
       <section className="Section1Home1">
@@ -193,16 +191,16 @@ function FramerMotion() {
               Let's bring your vision to life!
             </p>
             <p className="letsTalk  scrollAnimation">Let's Talk...</p>
-            <p >
+            <p>
               <div>
-              <a
-                href="mailto:sebastian.pradomelesi@gmail.com "
-                className="email-button email-link "
-                onMouseEnter={(e) => (e.target.style.color = "orange")}
-                onMouseLeave={(e) => (e.target.style.color = "white")}
-              >
-                sebastian.pradomelesi@gmail.com
-              </a>
+                <a
+                  href="mailto:sebastian.pradomelesi@gmail.com "
+                  className="email-button email-link "
+                  onMouseEnter={(e) => (e.target.style.color = "orange")}
+                  onMouseLeave={(e) => (e.target.style.color = "white")}
+                >
+                  sebastian.pradomelesi@gmail.com
+                </a>
               </div>
             </p>
           </div>
@@ -234,10 +232,7 @@ function FramerMotion() {
         </div>
         <div className="expertiseFlexContainer ">
           <div className="expertiseFlexItems ">
-            <h4>
-              Launch Your E-commerce Site from
-              Scratch
-            </h4>
+            <h4>Launch Your E-commerce Site from Scratch</h4>
             <p>
               Ready to transform your vision into a fully functional e-commerce
               platform. I build e-commerce solutions that not only look great
@@ -300,37 +295,20 @@ function FramerMotion() {
         </div>
       </section>
 
-      <section className="section7 containerLarge ">
-      <div className="titleH3">
-          <h3>Your partner in development</h3>
-        </div>
-        <div className="titleH3section7">
-          {/* <h3>Abilities </h3> */}
-          <h4>Check the cards in your hand with me on your team...</h4>
-        </div>
-        <div>
-          <div className="card-grid">
-            {food.map(([image, hueA, hueB], index) => (
-              <Card
-                image={image}
-                hueA={hueA}
-                hueB={hueB}
-                index={index}
-                key={index}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ========================      SLIDER      ===========================  */}
+
       <section>
         <div className="sliderContainer">
-          <img src="/fakeflix.jpeg" alt="Fakeflix" />
-          <img src="/fakeflix.jpeg" alt="Fakeflix" />
-          <img src="/fakeflix.jpeg" alt="Fakeflix" />
-          <img src="/fakeflix.jpeg" alt="Fakeflix" />
-          <img src="/fakeflix.jpeg" alt="Fakeflix" />
+          <img src="/alusur.jpg" alt="Alusur" />
+          <img src="/fake.png" alt="Fakeflix" />
+          <img src="/juegos.png" alt="Fakeflix" />
+          <img src="/fake2.png" alt="Fakeflix" />
+          <img src="/fake3.png" alt="Fake3" />
         </div>
       </section>
+
+      {/* =====================        LETS TALK         ======================== */}
+
       <section className="section-lets-talk container">
         <div className="lets-talk-flexContainer">
           <div className="lets-talk-flexItem">
@@ -349,35 +327,62 @@ function FramerMotion() {
           </div>
         </div>
       </section>
-      <section>
-      <footer className="footer ">
-        <div className="footer-content">
-          <p>&copy; 2024 Sebastian Prado. All rights reserved.</p>
-          <div className="social-icons">
-            <a
-              href="https://github.com/SebaPrado"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/sebastian-prado-b05862281/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://www.instagram.com/sebastian_prado31/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram />
-            </a>
+
+      {/* ======================       CARDS         ========================  */}
+
+      {/* <section className="section7 containerLarge ">
+      <div className="titleH3">
+          <h3>Your partner in development</h3>
+        </div>
+        <div className="titleH3section7">
+          <h4>Check the cards in your hand with me on your team...</h4>
+        </div>
+        <div>
+          <div className="card-grid">
+            {food.map(([image, hueA, hueB], index) => (
+              <Card
+                image={image}
+                hueA={hueA}
+                hueB={hueB}
+                index={index}
+                key={index}
+              />
+            ))}
           </div>
         </div>
-      </footer>
+      </section> */}
+
+      {/* =====================         FOOTER        ======================== */}
+
+      <section>
+        <footer className="footer ">
+          <div className="footer-content">
+            <p>&copy; 2024 Sebastian Prado. All rights reserved.</p>
+            <div className="social-icons">
+              <a
+                href="https://github.com/SebaPrado"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sebastian-prado-b05862281/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://www.instagram.com/sebastian_prado31/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
+              </a>
+            </div>
+          </div>
+        </footer>
       </section>
     </div>
   );
