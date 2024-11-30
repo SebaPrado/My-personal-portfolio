@@ -690,7 +690,6 @@ h5 {
   padding: 56px;
   position: relative;
   background-color: var(--color1);
-
 }
 
 /* .expertise-title {
@@ -715,7 +714,6 @@ h5 {
   margin-bottom: 3rem;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .expertiseFlexItems {
@@ -750,14 +748,12 @@ h5 {
   background-color: var(--color1);
   padding-top: 10px;
   padding-bottom: 10px;
-
-
 }
 @media (max-width: 768px) {
   .expertiseFlexContainer {
     justify-content: center;
   }
-  .titleH3{
+  .titleH3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -766,7 +762,6 @@ h5 {
   .expertiseFlexItems {
     width: 100%;
     justify-content: center;
-
   }
 }
 
@@ -1050,7 +1045,6 @@ section div {
 	box-sizing: border-box;
 } */
 
-
 /* body {
   background: #000;
   color: white;
@@ -1065,8 +1059,6 @@ section div {
 /* ============================    Section LET'S TALK    ========================== */
 
 /* ============================   Projects  SLIDER    ========================== */
-
-
 
 .slider-container {
   width: 100vw;
@@ -1108,7 +1100,7 @@ section div {
 
 .footer {
   position: relative;
-  background-color:rgba(252, 163, 17, 0.8);
+  background-color: rgba(252, 163, 17, 0.8);
   color: black !important;
   padding: 20px 0 !important;
   display: block !important; /* Asegura que el footer se muestre */
@@ -1477,12 +1469,9 @@ header {
 }
 /*----------                 Home  1                  --------- */
 
-
-
 /*----------                 FRAMERMOTION 1 HERO                  --------- */
 /*----------                 FRAMERMOTION 1 HERO                  --------- */
 /*----------                 FRAMERMOTION 1 HERO                  --------- */
-
 
 .heroBigContainer {
   position: relative;
@@ -1794,7 +1783,7 @@ line {
 /* ----------------       slider         ----------- */
 /* ----------------       slider         ----------- */
 
-.projectsSection{
+.projectsSection {
   position: relative;
 }
 
@@ -1810,13 +1799,13 @@ line {
   /* margin-bottom: 3rem; */
 }
 
-.sliderContainer img{
-  width: 12%; /* Añadido: ancho del 10% */
+.sliderContainer img {
+  width: 15%; /* Añadido: ancho del 10% */
   opacity: 0.9;
   height: 100%; /* Añadido: altura del 100% */
   object-fit: cover; /* Añadido: ajuste de objeto */
-  border-radius: 1px; /* Añadido: radio de borde de 10px */
-  /* border: 1px solid var(--color1);  */
+  border-radius: 5px; /* Añadido: radio de borde de 10px */
+  border: 1px solid var(--color1);
   transition: all ease-in-out 0.5s; /* Añadido: transición de 0.5 segundos */
 }
 
@@ -1828,10 +1817,43 @@ line {
   /* border: var(--white) 10px 2px 3px 10px solid; */
 }
 
-@media (768px <= width <= 960px){
-  .sliderContainer {
-    background-color: green;
-    /* width: 14%; */
+.sliderContainer div {
+  width: 15%; /* Añadido: ancho del 10% */
+  opacity: 0.9;
+  height: 100%; /* Añadido: altura del 100% */
+  object-fit: cover; /* Añadido: ajuste de objeto */
+  border-radius: 5px; /* Añadido: radio de borde de 10px */
+  border: 1px solid var(--color1);
+  transition: all ease-in-out 0.5s; /* Añadido: transición de 0.5 segundos */
+}
+
+.sliderContainer div:hover {
+  width: 30%;
+  opacity: 1;
+  /* scale: 1.02; */
+  /* z-index: 3; */
+  /* border: var(--white) 10px 2px 3px 10px solid; */
+}
+
+.divola {
+  /* position: relative; */
+  background-image: url(/juegos.png); /* Imagen de fondo */
+}
+.divola h4 {
+  display: none;
+}
+
+.divola:hover h4 {
+  display:block }
+
+
+@media (768px <= width <= 960px) {
+  .sliderContainer img {
+    width: 19%;
+  }
+  
+  .divola h4:hover {
+    display: block;
   }
 }
 @media (width <= 768px) {
@@ -1841,10 +1863,8 @@ line {
     margin-top: 20px;
     opacity: 1;
     border-radius: 30px 2px;
-
-
   }
-  .sliderContainer{
+  .sliderContainer {
     /* background-color: #ae5d42; */
     margin-top: 200px;
     margin-bottom: 380px;
@@ -1856,19 +1876,15 @@ line {
   }
   .sliderContainer img:hover {
     width: 80%;
-    
   }
-  
 }
-
-
 
 .imageContainer {
   display: inline;
   background-color: white;
-} 
+}
 .projectImage {
- opacity: 0.55; /* Aplica opacidad a la imagen */
+  opacity: 0.55; /* Aplica opacidad a la imagen */
 }
 
 /*  -------------- blur from animate css -------------*/
@@ -1928,7 +1944,3 @@ line {
   -webkit-transform: translatex(-20px);
   -moz-transform: translatex(-20px);
 }
-
-
-              
-      

@@ -34,8 +34,8 @@ function Navbar() {
 
   const menuItems = [
     { label: 'Home', onClick: () => scrollToSection('home') },
-    { label: 'Projects', onClick: () => scrollToSection('projects') },
     { label: 'Expertise', onClick: () => scrollToSection('expertise') },
+    { label: 'Projects', onClick: () => scrollToSection('projects') },
     { label: 'Resume', onClick: handleResumeClick },
   ];
 

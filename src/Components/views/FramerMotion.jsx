@@ -154,10 +154,8 @@ function FramerMotion() {
 
   return (
     <div>
-      <section>
-        {/* <div className="navbar-container">
-          <Navbar />
-        </div> */}
+      <section id="home">
+        
         <div className="heroBigContainer">
           <div className="heroH1Container">
             <h1 className="heroH1">Website developer</h1>
@@ -293,7 +291,7 @@ function FramerMotion() {
 
       {/* ========================      SLIDER      ===========================  */}
 
-      <section className="projectsSection">
+      <section className="projectsSection containerLarge" id="projects">
 
        <div className="titleH3">
           <h3>Some projects to check out </h3>
@@ -306,6 +304,7 @@ function FramerMotion() {
           <img src="/dashboard.jpg" alt="E-commerce dashboard" />
           <img src="/equal2.png" alt="E-commerce" />
           <img src="/fake3.png" alt="Fakeflix" />
+          {/* <div className="divola"><h4>Titulo</h4></div> */}
         </div>
       </section>
 
