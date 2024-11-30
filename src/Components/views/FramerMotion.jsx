@@ -303,7 +303,7 @@ function FramerMotion() {
           <img src="/fake.png" alt="Fakeflix" />
           <img src="/juegos.png" alt="Fakeflix" />
           <img src="/fake2.png" alt="Fakeflix" />
-          <img src="/fake3.png" alt="Fake3" />
+          {/* <img src="/fake3.png" alt="Fake3" /> */}
         </div>
       </section>
 
