@@ -1794,7 +1794,9 @@ line {
 /* ----------------       slider         ----------- */
 /* ----------------       slider         ----------- */
 
-
+.projectsSection{
+  position: relative;
+}
 
 .sliderContainer {
   position: relative;
@@ -1837,6 +1839,10 @@ line {
     width: 80%;
     height: 200px;
     margin-top: 20px;
+    opacity: 1;
+    border-radius: 30px 2px;
+
+
   }
   .sliderContainer{
     /* background-color: #ae5d42; */

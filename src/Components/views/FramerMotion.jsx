@@ -293,14 +293,19 @@ function FramerMotion() {
 
       {/* ========================      SLIDER      ===========================  */}
 
-      <section>
+      <section className="projectsSection">
+
+       <div className="titleH3">
+          <h3>Some projects to check out </h3>
+        </div>
+       
         <div className="sliderContainer">
+        
           <img src="/juegos.png" alt="Juegos" />
           <img className="projectImage" src="/alusur.jpg" alt="Alusur" />
           <img src="/dashboard.jpg" alt="E-commerce dashboard" />
           <img src="/equal2.png" alt="E-commerce" />
           <img src="/fake3.png" alt="Fakeflix" />
-
         </div>
       </section>
 
@@ -324,7 +329,6 @@ function FramerMotion() {
           </div>
         </div>
       </section> */}
-
 
       {/* =====================        LETS TALK         ======================== */}
 
