@@ -1519,7 +1519,7 @@ header {
   /* border: orange 1px dotted; */
 }
 .displayedWord {
-  margin-top: -30px;
+  margin-top: -39px;
   position: absolute;
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
@@ -1559,12 +1559,18 @@ header {
   }
   .displayedWord {
     font-size: calc(40px);
+    margin-top: -30px;
+    /* background-color: #219ebc; */
+
     /* color: blue ; */
   }
 }
 @media (768px <= width <= 1200px) {
   .displayedWord {
-    font-size: calc(40px);
+    font-size: calc(50px);
+    margin-top: -37px;
+
+    /* background-color: #85ed45; */
     /* color: white ; */
   }
 }
