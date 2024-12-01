@@ -175,9 +175,10 @@ function FramerMotion() {
               <img
                 ref={animatedDivRef}
                 className="profilePicture hidden"
-                src="public/fotoperfil.png"
+                src="/fotoperfil.png"
                 alt=""
               />
+
             </div>
             <p className="helloText scrollAnimation">
               Hey ! I'm Seb, a full stack developer specializing in{" "}
