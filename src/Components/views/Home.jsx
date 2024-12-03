@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import equalvision from "/equalFront.jpeg";
+import equalvision from "/equal2.png";
 // import alusur from "/alusur.jpeg";
 import movie from "/fakeflix.jpeg";
 import dashboard from "/dashboard.jpg";
