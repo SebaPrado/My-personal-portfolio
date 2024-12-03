@@ -1,20 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 var string = "sebastian";
 function arrayMasLargo(string) {
   var arrayOriginal = string.split("");
