@@ -18,7 +18,6 @@ import React, { useState, useEffect } from "react";
 var string = "sebastian";
 function arrayMasLargo(string) {
   var arrayOriginal = string.split("");
-  // console.log(arrayOriginal);
 
   var array0 = [];
   var array1 = [];
@@ -27,20 +26,16 @@ function arrayMasLargo(string) {
     const element = arrayOriginal[i];
 
     if (!array1.includes(element)) {
-      //linea 38
       array1.push(element);
       console.log(array1);
     } else {
-     
       array0 = [...array1];
-      //  console.log(array1);
-      //  console.log(array0);
+
       array1 = [element];
       console.log(array1);
     }
 
     if (array1.length >= array0.length) {
-      //linea 52
       array0 = array1;
     }
   }
@@ -49,21 +44,6 @@ function arrayMasLargo(string) {
 }
 
 console.log(arrayMasLargo(string));
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 function About() {
   return (
