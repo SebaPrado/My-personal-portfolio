@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import equalvision from "/equalFront.jpeg";
 // import alusur from "/alusur.jpeg";
 import movie from "/fakeflix.jpeg";
-import dashboard from "/equalAdmin.jpeg";
+import dashboard from "/dashboard.jpg";
 import matesito from "/matesito.png";
 
 import {
