@@ -338,7 +338,7 @@ function FramerMotion() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/fake3.png" alt="Fakeflix" />
+              <img src="/thewildrobot.png" alt="Fakeflix" />
             </a>
           </div>
           {/* <div className="divola"><h4>Titulo</h4></div> */}
