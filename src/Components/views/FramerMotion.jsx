@@ -155,7 +155,6 @@ function FramerMotion() {
   return (
     <div>
       <section id="home">
-        
         <div className="heroBigContainer">
           <div className="heroH1Container">
             <h1 className="heroH1">Website developer</h1>
@@ -178,7 +177,6 @@ function FramerMotion() {
                 src="/fotoperfil.png"
                 alt=""
               />
-
             </div>
             <p className="helloText scrollAnimation">
               Hey ! I'm Seb, a full stack developer specializing in{" "}
@@ -293,18 +291,56 @@ function FramerMotion() {
       {/* ========================      SLIDER      ===========================  */}
 
       <section className="projectsSection containerLarge" id="projects">
-
-       <div className="titleH3">
+        <div className="titleH3">
           <h3>Some projects to check out </h3>
         </div>
-       
+
         <div className="sliderContainer">
-        
-          <img src="/juegos.png" alt="Juegos" />
-          <img className="projectImage" src="/alusur.jpg" alt="Alusur" />
-          <img src="/dashboard.jpg" alt="E-commerce dashboard" />
-          <img src="/equal2.png" alt="E-commerce" />
-          <img src="/fake3.png" alt="Fakeflix" />
+          <div className="sliderDiv">
+            <a
+              href="https://juegos.agesic.gub.uy/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/juegos.png" alt="Juegos" />
+            </a>
+          </div>
+          <div className="sliderDiv">
+            <a
+              href="https://alusur.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="projectImage" src="/alusur.jpg" alt="Alusur" />
+            </a>
+          </div>
+          <div className="sliderDiv">
+            <a
+              href="https://equalvisionshop.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/equal2.png" alt="E-commerce" />
+            </a>
+          </div>
+          <div className="sliderDiv">
+            <a
+              href="https://equalvisiondashboard.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/dashboard.jpg" alt="E-commerce dashboard" />
+            </a>
+          </div>
+          <div className="sliderDiv">
+            <a
+              href="https://fakeflix-ruby.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/fake3.png" alt="Fakeflix" />
+            </a>
+          </div>
           {/* <div className="divola"><h4>Titulo</h4></div> */}
         </div>
       </section>
