@@ -181,8 +181,8 @@ function FramerMotion() {
             <p className="helloText scrollAnimation">
               Hey ! I'm Seb, a full stack developer specializing in{" "}
               <strong>React</strong> and
-              <strong> Node.js</strong>. I design and develop websites for
-              businesses and individuals. My focus on{" "}
+              <strong> Node.js</strong>. I develop websites for businesses and
+              individuals. My focus on{" "}
               <strong>personalized service from start to finish </strong>
               ensures that your ideas are perfectly reflected in the project.
               Let's bring your vision to life!
@@ -228,6 +228,8 @@ function FramerMotion() {
           <h3>Your partner in development</h3>
         </div>
         <div className="expertiseFlexContainer ">
+          {/* ---------------------       Ecommerce   ------------------------- */}
+
           <div className="expertiseFlexItems ">
             <h4>Launch Your E-commerce Site from Scratch</h4>
             <p>
@@ -235,7 +237,14 @@ function FramerMotion() {
               platform. Customized product pages, offer sections, display by
               categories and secure checkout processes, every detail is crafted.
             </p>
+            <p>
+              Ready to transform your vision into a fully functional e-commerce
+              platform. Customized product pages, offer sections, display by
+              categories and secure checkout processes, every detail is crafted.
+            </p>
           </div>
+
+          {/* ---------------------       Fullstack   ------------------------- */}
 
           <div className="expertiseFlexItems">
             <h4>
@@ -248,6 +257,8 @@ function FramerMotion() {
               I offer both achievement alternatives or hour-rate.
             </p>
           </div>
+
+          {/* ---------------------       Figma    ------------------------- */}
 
           <div className="expertiseFlexItems">
             <h4>
@@ -264,6 +275,9 @@ function FramerMotion() {
               finish that enhances the user experience across all devices.
             </p>
           </div>
+
+          {/* ---------------------       Mate     ------------------------- */} 
+
           <div className="expertiseFlexItems">
             <h4>
               Mate drinker
@@ -283,6 +297,40 @@ function FramerMotion() {
               sharp—I’m always ready to deliver results on time. Consider it my
               antioxidant secret weapon for staying focused and ensuring your
               project is finished right on schedule.
+            </p>
+          </div>
+
+          <div className="expertiseFlexItems">
+            <h4>
+              <span className="dot"></span>Transform Figma Designs into
+              Responsive, Animated Experiences with FramerMotion and other JS
+              libraries
+            </h4>
+            <p>
+              Turn static Figma files into dynamic, fully responsive interfaces
+              with engaging animations. Using Framer and Notion, I create
+              interactive, visually compelling experiences that retain the
+              integrity of your design vision. Let’s bring your design to life
+              with seamless transitions, rich interactions, and a pixel-perfect
+              finish that enhances the user experience across all devices.
+            </p>
+          </div>
+
+          {/* ---------------------       Figma    ------------------------- */}
+
+          <div className="expertiseFlexItems">
+            <h4>
+              <span className="dot"></span>Transform Figma Designs into
+              Responsive, Animated Experiences with FramerMotion and other JS
+              libraries
+            </h4>
+            <p>
+              Turn static Figma files into dynamic, fully responsive interfaces
+              with engaging animations. Using Framer and Notion, I create
+              interactive, visually compelling experiences that retain the
+              integrity of your design vision. Let’s bring your design to life
+              with seamless transitions, rich interactions, and a pixel-perfect
+              finish that enhances the user experience across all devices.
             </p>
           </div>
         </div>
