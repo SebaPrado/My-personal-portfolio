@@ -276,7 +276,7 @@ function FramerMotion() {
             </p>
           </div>
 
-          {/* ---------------------       Mate     ------------------------- */} 
+          {/* ---------------------       Mate     ------------------------- */}
 
           <div className="expertiseFlexItems">
             <h4>
@@ -300,30 +300,80 @@ function FramerMotion() {
             </p>
           </div>
 
+          {/* ---------------------       Backend     ------------------------- */}
+
           <div className="expertiseFlexItems">
             <h4>
-              <span className="dot"></span>Transform Figma Designs into
-              Responsive, Animated Experiences with FramerMotion and other JS
-              libraries
+              <span className="dot"></span> Your Back-end Developer
             </h4>
             <p>
-              Turn static Figma files into dynamic, fully responsive interfaces
-              with engaging animations. Using Framer and Notion, I create
-              interactive, visually compelling experiences that retain the
-              integrity of your design vision. Let’s bring your design to life
-              with seamless transitions, rich interactions, and a pixel-perfect
-              finish that enhances the user experience across all devices.
+              I build backend infrastructures using{" "}
+              <span>
+                {" "}
+                <strong>Node.js</strong>
+              </span>{" "}
+              and
+              <span>
+                <strong> Express</strong>
+              </span>
+              , building{" "}
+              <span>
+                <strong>RESTful APIs </strong>
+              </span>
+              with asynchronous functions for data handling. Middleware for{" "}
+              <span>
+                <strong>authentication </strong>
+              </span>
+              and route controllers are integrated to manage operations. I work
+              with databases like
+              <span>
+                <strong> MongoDB</strong>
+              </span>
+              ,{" "}
+              <span>
+                <strong>MySQL</strong>
+              </span>
+              , and
+              <span>
+                <strong> PostgreSQL</strong>
+              </span>{" "}
+              to address storage needs. I organize code following the
+              <span>
+                <strong> MVC architecture</strong>
+              </span>{" "}
+              pattern, separating{" "}
+              <span>
+                <strong>Models </strong>
+              </span>
+              for data structures and{" "}
+              <span>
+                <strong>Controllers</strong>
+              </span>{" "}
+              for business logic.
+              <span>
+                <strong> CRUD operations</strong>
+              </span>{" "}
+              (Create, Read, Update, Delete) are implemented and tested using
+              tools like{" "}
+              <span>
+                <strong>Insomnia</strong>
+              </span>
+              . Authentication systems are implemented using sessions with{" "}
+              <span>
+                <strong>Passport.js</strong>
+              </span>{" "}
+              and API authentication with
+              <span>
+                <strong> JWT</strong>
+              </span>
+              .
             </p>
           </div>
 
           {/* ---------------------       Figma    ------------------------- */}
 
           <div className="expertiseFlexItems">
-            <h4>
-              <span className="dot"></span>Transform Figma Designs into
-              Responsive, Animated Experiences with FramerMotion and other JS
-              libraries
-            </h4>
+            <h4>Your Front-end Developer</h4>
             <p>
               Turn static Figma files into dynamic, fully responsive interfaces
               with engaging animations. Using Framer and Notion, I create
@@ -337,6 +387,8 @@ function FramerMotion() {
       </section>
 
       {/* ========================      SLIDER      ===========================  */}
+
+      {/*                               SLIDER                                   */}
 
       <section className="projectsSection containerLarge" id="projects">
         <div className="titleH3">

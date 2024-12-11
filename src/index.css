@@ -1943,3 +1943,16 @@ line {
   -webkit-transform: translatex(-20px);
   -moz-transform: translatex(-20px);
 }
+
+
+.node{
+  display: inline;
+  position: relative;
+}
+.node2{
+  position: absolute;
+  background-image: url(/juegos.png);
+  height: 30px ;
+  width: 30px;
+
+}
