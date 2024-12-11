@@ -370,17 +370,50 @@ function FramerMotion() {
             </p>
           </div>
 
-          {/* ---------------------       Figma    ------------------------- */}
+          {/* ---------------------       Front end     ------------------------- */}
 
           <div className="expertiseFlexItems">
             <h4>Your Front-end Developer</h4>
             <p>
-              Turn static Figma files into dynamic, fully responsive interfaces
-              with engaging animations. Using Framer and Notion, I create
-              interactive, visually compelling experiences that retain the
-              integrity of your design vision. Let’s bring your design to life
-              with seamless transitions, rich interactions, and a pixel-perfect
-              finish that enhances the user experience across all devices.
+              I created the user interface using{" "}
+              <span>
+                <strong>React.js</strong>
+              </span>
+              , implementing a{" "}
+              <span>
+                <strong>component-based architecture</strong>
+              </span>{" "}
+              for better code reusability. I used{" "}
+              <span>
+                <strong>React Router</strong>
+              </span>{" "}
+              to create a smooth navigation experience.
+            </p>
+            <p>
+              I developed API integrations through{" "}
+              <span>
+                <strong>Axios</strong>
+              </span>{" "}
+              to handle all backend communications and data fetching operations.
+            </p>
+            <p>
+              For state management, I implemented{" "}
+              <span>
+                <strong>Redux</strong>
+              </span>{" "}
+              to handle global application state, along with{" "}
+              <span>
+                <strong>React Hooks</strong>
+              </span>{" "}
+              for local states. This helped manage
+              <span>
+                <strong>shopping cart functionality</strong>
+              </span>{" "}
+              and{" "}
+              <span>
+                <strong>user authentication status</strong>
+              </span>
+              .
             </p>
           </div>
         </div>
