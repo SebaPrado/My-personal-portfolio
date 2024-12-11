@@ -231,7 +231,10 @@ function FramerMotion() {
           {/* ---------------------       Backend     ------------------------- */}
 
           <div className="expertiseFlexItems">
-            <h4>
+            {/* <div class="containerrot">
+              <div class="rotacion">Rotando</div>
+            </div> */}
+            <h4 className="rotacion">
               <span className="dot"></span> Your Back-end Developer
             </h4>
             <p>
@@ -307,8 +310,8 @@ function FramerMotion() {
 
           {/* ---------------------       Front end     ------------------------- */}
 
-          <div className="expertiseFlexItems">
-            <h4>Your Front-end Developer</h4>
+          <div className="expertiseFlexItems impar">
+            <h4 className="rotacion">Your Front-end Developer</h4>
             <p>
               I create user interfaces using{" "}
               <span>
@@ -351,27 +354,12 @@ function FramerMotion() {
               .
             </p>
           </div>
-          {/* ---------------------       Ecommerce   ------------------------- */}
-
-          <div className="expertiseFlexItems ">
-            <h4>Launch Your E-commerce Site from Scratch</h4>
-            <p>
-              Ready to transform your vision into a fully functional e-commerce
-              platform. Customized product pages, offer sections, display by
-              categories and secure checkout processes, every detail is crafted.
-            </p>
-            <p>
-              Ready to transform your vision into a fully functional e-commerce
-              platform. Customized product pages, offer sections, display by
-              categories and secure checkout processes, every detail is crafted.
-            </p>
-          </div>
 
           {/* ---------------------       Fullstack   ------------------------- */}
 
           <div className="expertiseFlexItems">
-            <h4>
-              <span className="dot"></span>A Developer for Your Team
+            <h4 className="rotacion">
+              A Developer for Your Team
             </h4>
             <p>
               Looking for a reliable fullstack developer to integrate into your
@@ -381,29 +369,43 @@ function FramerMotion() {
             </p>
           </div>
 
+          {/* ---------------------       Ecommerce   ------------------------- */}
+
+          <div className="expertiseFlexItems impar ">
+            <h4 className="rotacion">Launch Your E-commerce Site from Scratch</h4>
+            <p>
+              Ready to transform your vision into a fully functional e-commerce
+              platform. Customized product pages, offer sections, display by
+              categories and secure checkout processes, every detail is crafted.
+            </p>
+            <p>
+              Ready to transform your vision into a fully functional e-commerce
+              platform. Customized product pages, offer sections, display by
+              categories and secure checkout processes, every detail is crafted.
+            </p>
+          </div>
+
           {/* ---------------------       Figma    ------------------------- */}
 
           <div className="expertiseFlexItems">
-            <h4>
-              <span className="dot"></span>Transform Figma Designs into
-              Responsive, Animated Experiences with FramerMotion and other JS
-              libraries
+            <h4 className="rotacion">
+              Transform Figma Designs into
+              Responsive, Animated Experiences.
             </h4>
             <p>
-              Turn static Figma files into dynamic, fully responsive interfaces
-              with engaging animations. Using Framer and Notion, I create
-              interactive, visually compelling experiences that retain the
-              integrity of your design vision. Let’s bring your design to life
-              with seamless transitions, rich interactions, and a pixel-perfect
-              finish that enhances the user experience across all devices.
+              Turn static Figma files into dynamic, fully responsive interfaces.
+              Using handcrafted CSS or Js libraries ( FramerMotion , Swiper ,
+              tailwind ) , I create interactive, visually compelling experiences
+              that retain the integrity of your design vision. Let’s bring your
+              design to life
             </p>
           </div>
 
           {/* ---------------------       Mate     ------------------------- */}
 
-          <div className="expertiseFlexItems">
-            <h4>
-              Mate drinker
+          <div className="expertiseFlexItems impar">
+            <h4 className="rotacion ">
+              The secret weapon
               <img
                 src={matesito}
                 alt="Mate"
@@ -422,8 +424,6 @@ function FramerMotion() {
               project is finished right on schedule.
             </p>
           </div>
-
-          
         </div>
       </section>
 
