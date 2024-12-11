@@ -228,6 +228,129 @@ function FramerMotion() {
           <h3>Your partner in development</h3>
         </div>
         <div className="expertiseFlexContainer ">
+          {/* ---------------------       Backend     ------------------------- */}
+
+          <div className="expertiseFlexItems">
+            <h4>
+              <span className="dot"></span> Your Back-end Developer
+            </h4>
+            <p>
+              I build backend infrastructures using{" "}
+              <span>
+                {" "}
+                <strong>Node.js</strong>
+              </span>{" "}
+              and
+              <span>
+                <strong> Express</strong>
+              </span>
+              , building{" "}
+              <span>
+                <strong>RESTful APIs </strong>
+              </span>
+              with asynchronous functions for data handling. Middlewares for{" "}
+              <span>
+                <strong>Authentication </strong>
+              </span>
+              and route controllers are integrated to manage operations.
+            </p>
+            <p>
+              I organize code following the
+              <span>
+                <strong> MVC architecture</strong>
+              </span>{" "}
+              pattern, separating{" "}
+              <span>
+                <strong>Models </strong>
+              </span>
+              for data structures and{" "}
+              <span>
+                <strong>Controllers</strong>
+              </span>{" "}
+              for business logic.
+              <span>
+                <strong> CRUD operations</strong>
+              </span>{" "}
+              (Create, Read, Update, Delete) are implemented and tested using
+              tools like{" "}
+              <span>
+                <strong>Insomnia. </strong>
+              </span>
+            </p>
+            <p>
+              I work with databases like
+              <span>
+                <strong> MongoDB</strong>
+              </span>
+              ,{" "}
+              <span>
+                <strong>MySQL</strong>
+              </span>
+              , and
+              <span>
+                <strong> PostgreSQL</strong>
+              </span>{" "}
+              to address storage needs.
+            </p>{" "}
+            <p>
+              Authentication systems are implemented using sessions with{" "}
+              <span>
+                <strong>Passport.js</strong>
+              </span>{" "}
+              and API authentication with
+              <span>
+                <strong> JWT</strong>
+              </span>
+              .
+            </p>
+          </div>
+
+          {/* ---------------------       Front end     ------------------------- */}
+
+          <div className="expertiseFlexItems">
+            <h4>Your Front-end Developer</h4>
+            <p>
+              I create user interfaces using{" "}
+              <span>
+                <strong>React.js</strong>
+              </span>
+              , implementing a{" "}
+              <span>
+                <strong> Components architecture</strong>
+              </span>{" "}
+              for code reusability and efficiency. I use{" "}
+              <span>
+                <strong>React Router</strong>
+              </span>{" "}
+              to create a smooth navigation experience.
+            </p>
+            <p>
+              I developed API integrations through{" "}
+              <span>
+                <strong>Axios</strong>
+              </span>{" "}
+              to handle all backend communications and data fetching operations.
+            </p>
+            <p>
+              For state management, I implemented{" "}
+              <span>
+                <strong>Redux</strong>
+              </span>{" "}
+              to handle global application state, along with{" "}
+              <span>
+                <strong>React Hooks</strong>
+              </span>{" "}
+              for local states. This way I manage
+              <span>
+                <strong> e-commerces functionalities</strong>
+              </span>{" "}
+              and{" "}
+              <span>
+                <strong> users authentication status</strong>
+              </span>
+              .
+            </p>
+          </div>
           {/* ---------------------       Ecommerce   ------------------------- */}
 
           <div className="expertiseFlexItems ">
@@ -248,7 +371,7 @@ function FramerMotion() {
 
           <div className="expertiseFlexItems">
             <h4>
-              <span className="dot"></span>Fullstack Developer for Your Team
+              <span className="dot"></span>A Developer for Your Team
             </h4>
             <p>
               Looking for a reliable fullstack developer to integrate into your
@@ -300,122 +423,7 @@ function FramerMotion() {
             </p>
           </div>
 
-          {/* ---------------------       Backend     ------------------------- */}
-
-          <div className="expertiseFlexItems">
-            <h4>
-              <span className="dot"></span> Your Back-end Developer
-            </h4>
-            <p>
-              I build backend infrastructures using{" "}
-              <span>
-                {" "}
-                <strong>Node.js</strong>
-              </span>{" "}
-              and
-              <span>
-                <strong> Express</strong>
-              </span>
-              , building{" "}
-              <span>
-                <strong>RESTful APIs </strong>
-              </span>
-              with asynchronous functions for data handling. Middleware for{" "}
-              <span>
-                <strong>authentication </strong>
-              </span>
-              and route controllers are integrated to manage operations. I work
-              with databases like
-              <span>
-                <strong> MongoDB</strong>
-              </span>
-              ,{" "}
-              <span>
-                <strong>MySQL</strong>
-              </span>
-              , and
-              <span>
-                <strong> PostgreSQL</strong>
-              </span>{" "}
-              to address storage needs. I organize code following the
-              <span>
-                <strong> MVC architecture</strong>
-              </span>{" "}
-              pattern, separating{" "}
-              <span>
-                <strong>Models </strong>
-              </span>
-              for data structures and{" "}
-              <span>
-                <strong>Controllers</strong>
-              </span>{" "}
-              for business logic.
-              <span>
-                <strong> CRUD operations</strong>
-              </span>{" "}
-              (Create, Read, Update, Delete) are implemented and tested using
-              tools like{" "}
-              <span>
-                <strong>Insomnia</strong>
-              </span>
-              . Authentication systems are implemented using sessions with{" "}
-              <span>
-                <strong>Passport.js</strong>
-              </span>{" "}
-              and API authentication with
-              <span>
-                <strong> JWT</strong>
-              </span>
-              .
-            </p>
-          </div>
-
-          {/* ---------------------       Front end     ------------------------- */}
-
-          <div className="expertiseFlexItems">
-            <h4>Your Front-end Developer</h4>
-            <p>
-              I created the user interface using{" "}
-              <span>
-                <strong>React.js</strong>
-              </span>
-              , implementing a{" "}
-              <span>
-                <strong>component-based architecture</strong>
-              </span>{" "}
-              for better code reusability. I used{" "}
-              <span>
-                <strong>React Router</strong>
-              </span>{" "}
-              to create a smooth navigation experience.
-            </p>
-            <p>
-              I developed API integrations through{" "}
-              <span>
-                <strong>Axios</strong>
-              </span>{" "}
-              to handle all backend communications and data fetching operations.
-            </p>
-            <p>
-              For state management, I implemented{" "}
-              <span>
-                <strong>Redux</strong>
-              </span>{" "}
-              to handle global application state, along with{" "}
-              <span>
-                <strong>React Hooks</strong>
-              </span>{" "}
-              for local states. This helped manage
-              <span>
-                <strong>shopping cart functionality</strong>
-              </span>{" "}
-              and{" "}
-              <span>
-                <strong>user authentication status</strong>
-              </span>
-              .
-            </p>
-          </div>
+          
         </div>
       </section>
 
