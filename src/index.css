@@ -1843,7 +1843,7 @@ line {
 }
 
 @media (768px <= width <= 960px) {
-  .sliderContainer img {
+  .sliderDiv {
     width: 19%;
   }
 
@@ -1852,7 +1852,7 @@ line {
   }
 }
 @media (width <= 768px) {
-  .sliderContainer img {
+  .sliderDiv{
     width: 80%;
     height: 200px;
     margin-top: 20px;
@@ -1869,7 +1869,7 @@ line {
     width: 100%;
     align-items: center;
   }
-  .sliderContainer img:hover {
+  .sliderDiv:hover {
     width: 80%;
   }
 }
