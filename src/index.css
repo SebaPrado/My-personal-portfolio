@@ -1795,7 +1795,7 @@ line {
 
 .sliderContainer {
   position: relative;
-  /* background-color: #fefefe50; */
+  background-color: #fefefe50;
   margin: 30px 10px 30px 10px; /* Añadido: margen superior, derecho, inferior e izquierdo */
   width: 100%; /* Añadido: ancho del 70% */
   height: 600px; /* Añadido: altura de 450px */
@@ -1845,6 +1845,8 @@ line {
 @media (768px <= width <= 960px) {
   .sliderDiv {
     width: 19%;
+    background-color: green;
+    /* height:fit-content !important; */
   }
 
   .divola h4:hover {

@@ -436,7 +436,7 @@ function FramerMotion() {
           <h3>Some projects to check out </h3>
         </div>
 
-        <div className="sliderContainer">
+        <div className="sliderContainer mt-5">
           <div className="sliderDiv">
             <a
               href="https://juegos.agesic.gub.uy/"
