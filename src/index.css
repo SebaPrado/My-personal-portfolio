@@ -503,10 +503,6 @@ h5 {
   }
 }
 
-
-.green {
-  background-color: green;
-}
 /* ============================   Section HERO2 ========================== */
 
 /* ============================   Section ENCABEZADO PROJECTS ========================== */
@@ -1858,12 +1854,12 @@ line {
   }
 }
 @media (width <= 768px) {
-  .sliderDiv{
+  .sliderDiv {
     width: 80%;
     height: 200px;
     margin-top: 20px;
     opacity: 1;
-    border-radius:  2px;
+    border-radius: 2px;
 
     /* background-color: #85ed45; */
   }
@@ -1923,11 +1919,16 @@ line {
     opacity: 0;
     scale: 20%;
   }
-  30%{
+  30% {
     opacity: 0.4;
   }
-  50% {
+  50%,
+  70% {
     opacity: 1;
+    scale: 100%;
+  }
+  100% {
+    opacity: 0;
     scale: 100%;
   }
 }
@@ -1968,9 +1969,8 @@ line {
   20% {
     transform: rotate(0deg);
   }
-  30%{
+  30% {
     opacity: 1;
-
   }
   100% {
     transform: rotate(0deg);
@@ -1979,7 +1979,6 @@ line {
 
 /* -------------      efecto rotacion FIN      ---------- */
 
-
-.impar{
+.impar {
   margin-top: 5vw;
 }
