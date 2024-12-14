@@ -178,6 +178,7 @@ function FramerMotion() {
                 alt=""
               />
             </div>
+            <div></div>
             <p className="helloText scrollAnimation">
               Hey ! I'm Seb, a full stack developer specializing in{" "}
               <strong>React</strong> and
