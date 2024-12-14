@@ -1966,7 +1966,7 @@ line {
     opacity: 0;
     transform: rotate(10deg);
   }
-  20% {
+  30% {
     transform: rotate(0deg);
   }
   30% {
