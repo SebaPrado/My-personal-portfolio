@@ -1919,11 +1919,14 @@ line {
 }
 
 @keyframes show {
-  from {
+  0% {
     opacity: 0;
     scale: 20%;
   }
-  to {
+  30%{
+    opacity: 0.4;
+  }
+  50% {
     opacity: 1;
     scale: 100%;
   }
@@ -1935,7 +1938,7 @@ line {
   animation-fill-mode: both;
 
   animation-timeline: --reveal;
-  animation-range: entry 25% cover 35%;
+  /* animation-range: entry 15% cover 45%; */
 }
 
 .transLeft {
