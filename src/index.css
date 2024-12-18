@@ -146,6 +146,7 @@ h5 {
     margin-right: 16px;
     padding-left: 16px;
     padding-right: 16px;
+    padding-top: 0px;
   }
   .navbarContainerLarge {
     margin-left: 8px;
@@ -1941,6 +1942,17 @@ line {
   animation-timeline: --reveal;
   /* animation-range: entry 15% cover 45%; */
 }
+
+/* @media (width <= 768px) {
+    .sliderDiv {
+      width: 80%;
+      height: 200px;
+      margin-top: 20px;
+      opacity: 1;
+      border-radius: 2px;
+  
+      /* background-color: #85ed45; */
+    } */
 
 .transLeft {
   transition: 0.5s, color 0.1s;
