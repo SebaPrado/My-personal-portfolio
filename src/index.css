@@ -1950,15 +1950,10 @@ line {
   }
   .rotacion {
     opacity: 1 !important;
-    animation: none;
+    animation: none !important;
     /* background-color: red !important; */
     animation-timeline: none !important;
   }
-  @keyframes rotate-in {
-    0% {
-      opacity: 1;
-      transform: rotate(5deg);
-    }}
 }
 
 .transLeft {

@@ -179,18 +179,18 @@ function FramerMotion() {
               />
             </div>
             <div className=" green scrollAnimation ">
-            <p className="helloText ">
-              Hey ! I'm Seb, a full stack developer specializing in{" "}
-              <strong>React</strong> and
-              <strong> Node.js</strong>. I develop websites for businesses and
-              individuals. My focus on{" "}
-              <strong>personalized service from start to finish </strong>
-              ensures that your ideas are perfectly reflected in the project.
-              Let's bring your vision to life!
-            </p>
-            <p className="letsTalk  ">Let's Talk...</p>
+              <p className="helloText ">
+                Hey ! I'm Seb, a full stack developer specializing in{" "}
+                <strong>React</strong> and
+                <strong> Node.js</strong>. I develop websites for businesses and
+                individuals. My focus on{" "}
+                <strong>personalized service from start to finish </strong>
+                ensures that your ideas are perfectly reflected in the project.
+                Let's bring your vision to life!
+              </p>
+              <p className="letsTalk  ">Let's Talk...</p>
             </div>
-            <p>
+            
               <div>
                 <a
                   href="mailto:sebastian.pradomelesi@gmail.com "
@@ -201,7 +201,7 @@ function FramerMotion() {
                   sebastian.pradomelesi@gmail.com
                 </a>
               </div>
-            </p>
+            
           </div>
         </div>
       </section>
@@ -360,9 +360,7 @@ function FramerMotion() {
           {/* ---------------------       Fullstack   ------------------------- */}
 
           <div className="expertiseFlexItems">
-            <h4 className="rotacion">
-              A Developer for Your Team
-            </h4>
+            <h4 className="rotacion">A Developer for Your Team</h4>
             <p>
               Looking for a reliable fullstack developer to integrate into your
               team? With a focus on finding solutions, I’m here to help you
@@ -374,7 +372,9 @@ function FramerMotion() {
           {/* ---------------------       Ecommerce   ------------------------- */}
 
           <div className="expertiseFlexItems impar ">
-            <h4 className="rotacion">Launch Your E-commerce Site from Scratch</h4>
+            <h4 className="rotacion">
+              Launch Your E-commerce Site from Scratch
+            </h4>
             <p>
               Ready to transform your vision into a fully functional e-commerce
               platform. Customized product pages, offer sections, display by
@@ -386,8 +386,7 @@ function FramerMotion() {
 
           <div className="expertiseFlexItems">
             <h4 className="rotacion">
-              Transform Figma Designs into
-              Responsive, Animated Experiences.
+              Transform Figma Designs into Responsive, Animated Experiences.
             </h4>
             <p>
               Turn static Figma files into dynamic, fully responsive interfaces.
