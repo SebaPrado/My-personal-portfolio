@@ -380,11 +380,6 @@ function FramerMotion() {
               platform. Customized product pages, offer sections, display by
               categories and secure checkout processes, every detail is crafted.
             </p>
-            <p>
-              Ready to transform your vision into a fully functional e-commerce
-              platform. Customized product pages, offer sections, display by
-              categories and secure checkout processes, every detail is crafted.
-            </p>
           </div>
 
           {/* ---------------------       Figma    ------------------------- */}
