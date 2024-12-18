@@ -1946,14 +1946,19 @@ line {
 @media (width <= 450px) {
   .scrollAnimation {
     animation-name: none;
-    background-color: #85ed45;
+    /* background-color: #85ed45; */
   }
   .rotacion {
     opacity: 1 !important;
+    animation: none;
     /* background-color: red !important; */
     animation-timeline: none !important;
-    /* z-index: 30; */
   }
+  @keyframes rotate-in {
+    0% {
+      opacity: 1;
+      transform: rotate(5deg);
+    }}
 }
 
 .transLeft {
