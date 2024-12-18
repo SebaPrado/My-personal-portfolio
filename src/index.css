@@ -1943,16 +1943,18 @@ line {
   /* animation-range: entry 15% cover 45%; */
 }
 
-/* @media (width <= 768px) {
-    .sliderDiv {
-      width: 80%;
-      height: 200px;
-      margin-top: 20px;
-      opacity: 1;
-      border-radius: 2px;
-  
-      /* background-color: #85ed45; */
-    } */
+@media (width <= 450px) {
+  .scrollAnimation {
+    animation-name: none;
+    background-color: #85ed45;
+  }
+  .rotacion {
+    opacity: 1 !important;
+    /* background-color: red !important; */
+    animation-timeline: none !important;
+    /* z-index: 30; */
+  }
+}
 
 .transLeft {
   transition: 0.5s, color 0.1s;
