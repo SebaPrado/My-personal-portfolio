@@ -190,18 +190,17 @@ function FramerMotion() {
               </p>
               <p className="letsTalk  ">Let's Talk...</p>
             </div>
-            
-              <div>
-                <a
-                  href="mailto:sebastian.pradomelesi@gmail.com "
-                  className="email-button email-link "
-                  onMouseEnter={(e) => (e.target.style.color = "orange")}
-                  onMouseLeave={(e) => (e.target.style.color = "white")}
-                >
-                  sebastian.pradomelesi@gmail.com
-                </a>
-              </div>
-            
+
+            <div>
+              <a
+                href="mailto:sebastian.pradomelesi@gmail.com "
+                className="email-button email-link "
+                onMouseEnter={(e) => (e.target.style.color = "orange")}
+                onMouseLeave={(e) => (e.target.style.color = "white")}
+              >
+                sebastian.pradomelesi@gmail.com
+              </a>
+            </div>
           </div>
         </div>
       </section>
