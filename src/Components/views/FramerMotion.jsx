@@ -481,27 +481,7 @@ function FramerMotion() {
         </div>
       </section>
 
-      {/* <section>
-        <div className="sliderContainer">
-          
-          <div>
-            <img src="/juegos.png" alt="Juegos" />
-          </div>{" "}
-          <div>
-            <img src="/juegos.png" alt="Juegos" />
-          </div>{" "}
-          <div>
-            <img src="/juegos.png" alt="Juegos" />
-          </div>{" "}
-          <div>
-            <img src="/juegos.png" alt="Juegos" />
-          </div>{" "}
-          <div>
-            <img src="/juegos.png" alt="Juegos" />
-          </div>
-        </div>
-      </section> */}
-
+      
       {/* =====================        LETS TALK         ======================== */}
 
       <section className="section-lets-talk container">
