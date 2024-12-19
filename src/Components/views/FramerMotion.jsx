@@ -180,7 +180,7 @@ function FramerMotion() {
             </div>
             <div className=" green scrollAnimation ">
               <p className="helloText ">
-                Hey ! I'm Seb, a full stack developer specializing in{" "}
+                Hey ! I'm Sebastian, a full stack developer specializing in{" "}
                 <strong>React</strong> and
                 <strong> Node.js</strong>. I develop websites for businesses and
                 individuals. My focus on{" "}
