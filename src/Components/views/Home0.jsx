@@ -170,12 +170,12 @@ function Home0() {
           <svg
             style={{
               width: 300,
-              height: 200,
+              height: 100,
               background: "orange",
               borderRadius: 30,
             }}
           >
-            <motion.path
+            {/* <motion.path
               style={{
                 stroke: "rgba(119, 0, 255, 0.4)", // Color morado
                 strokeWidth: 10, // Grosor de la línea
@@ -198,7 +198,7 @@ function Home0() {
                 duration: 19, // Duración total en segundos
                 times: [0, 0.16, 0.33, 0.5, 0.66, 0.83], // Tiempos específicos para cada forma
               }}
-            />
+            /> */}
           </svg>
         </div>
         <div>
