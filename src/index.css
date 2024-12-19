@@ -1978,7 +1978,7 @@ line {
 @keyframes rotate-in {
   0% {
     opacity: 0;
-    transform: rotate(8deg);
+    transform: rotate(9deg);
   }
   50% {
     transform: rotate(0deg);
