@@ -142,7 +142,7 @@ function Home0() {
             />
           </motion.div>
         </div>
-        {/* <div className="wrapperScroll">
+        <div className="wrapperScroll">
         <motion.div
           className="containerScroll"
           style={{
@@ -165,7 +165,7 @@ function Home0() {
             Este div se moverá según los botones
           </motion.div>
         </div>
-      </div> */}
+      </div>
         <div>
           <svg
             style={{
