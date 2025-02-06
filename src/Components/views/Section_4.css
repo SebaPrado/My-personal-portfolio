@@ -1,0 +1,94 @@
+@media screen and (max-width: 480px) {
+  .section3 {
+    margin-top: 0;
+  }
+}
+
+h3 {
+  transform: rotate(4deg);
+  color: var(--color1) !important;
+}
+#projects {
+  background-color: var(--color1);
+  background: linear-gradient(to right, var(--white), var(--color1));
+
+  width: 99vw;
+  border-radius: 30px 2px;
+}
+.section_projects {
+  padding-top: 7rem;
+  position: relative;
+  transform: rotate(-4deg);
+  border-radius: 10px;
+}
+
+.sliderContainer {
+  transform: rotate(4deg);
+
+  position: relative;
+  /* background-color: #fc050550; */
+  margin: 8rem 10px 8rem 10px; /* Añadido: margen superior, derecho, inferior e izquierdo */
+  width: 100%; /* Añadido: ancho del 70% */
+  height: 600px; /* Añadido: altura de 450px */
+  display: flex; /* Añadido: para usar flexbox */
+  justify-content: center; /* Añadido: centrar contenido horizontalmente */
+  /* Añadido: espacio entre elementos */
+  /* margin-bottom: 3rem; */
+}
+
+.sliderDiv {
+  width: 15%; /* Añadido: ancho del 10% */
+  opacity: 1;
+  height: 100%; /* Añadido: altura del 100% */
+  object-fit: cover; /* Añadido: ajuste de objeto */
+  border: 1px solid var(--white);
+  transition: all ease-in-out 0.5s; /* Añadido: transición de 0.5 segundos */
+}
+
+.sliderDiv img {
+  object-fit: cover; /* Añadido: ajuste de objeto */
+  width: 100%;
+  height: 100%;
+  opacity: 0.97;
+  border-radius: 3px; /* Añadido: radio de borde de 10px */
+}
+
+.sliderDiv:hover {
+  width: 30%;
+  opacity: 1;
+  /* scale: 1.02; */
+  /* z-index: 3; */
+  border: var(--white) 10px 2px 3px 10px solid;
+}
+
+@media (width <= 768px) {
+  .sliderDiv {
+    width: 80%;
+    height: 200px;
+    margin-top: 20px;
+    opacity: 1;
+    border-radius: 2px;
+
+    /* background-color: #85ed45; */
+  }
+  .sliderContainer {
+    /* background-color: #ae5d42; */
+    /* margin-top: 200px; */
+    margin-bottom: 120px;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+  }
+  .sliderDiv:hover {
+    width: 82%;
+  }
+}
+
+@media (768px <= width <= 960px) {
+  .sliderDiv {
+    width: 19%;
+  }
+}

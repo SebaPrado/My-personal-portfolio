@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useViewportScroll, useTransform } from "framer-motion";
 import { useState } from "react";
-import Home1 from "./Home1";
 import { useEffect, useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 // import { loadSlim } from "@tsparticles/slim"; 

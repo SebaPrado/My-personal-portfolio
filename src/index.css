@@ -15,27 +15,27 @@
 }
 
 .loading-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh !important; /* Ocupa toda la altura de la ventana */
-    font-size: 24px; /* Tamaño de fuente */
-    transition: opacity 1.5s ease;
-    opacity: 1; /* Transición suave para el desvanecimiento */
-    background-color: var(--color1);
-  }
-  
-  .fade-out {
-    opacity: 0; 
-  }
-  .fade-in {
-    opacity: 1; /* Visibilidad completa */
-    transition: opacity 1.5s ease; /* Transición suave */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh !important; /* Ocupa toda la altura de la ventana */
+  font-size: 24px; /* Tamaño de fuente */
+  transition: opacity 1.5s ease;
+  opacity: 1; /* Transición suave para el desvanecimiento */
+  background-color: var(--color1);
+}
+
+.fade-out {
+  opacity: 0;
+}
+.fade-in {
+  opacity: 1; /* Visibilidad completa */
+  transition: opacity 1.5s ease; /* Transición suave */
 }
 
 .fade-out-else {
-    opacity: 0; /* Desvanecimiento */
-    transition: opacity 1.5s ease; /* Transición suave */
+  opacity: 0; /* Desvanecimiento */
+  transition: opacity 1.5s ease; /* Transición suave */
 }
 
 /* ============================    ESTILOS GENERALES   ========================== */
@@ -219,7 +219,7 @@ h5 {
 }
 
 .custom-button:hover {
-  background-color:var(--color1)!important;
+  background-color: var(--color1) !important;
   color: rgb(255, 255, 255) !important;
 }
 
@@ -557,9 +557,6 @@ h5 {
 }
 
 @media screen and (max-width: 480px) {
-  .section3 {
-    margin-top: 0;
-  }
   .titleH3 h3 {
     margin-bottom: 30px;
   }
@@ -712,15 +709,6 @@ h5 {
 
 /* ============================    Section EXPERTISE    ========================== */
 
-.section5 {
-  /* background-color: black; */
-  color: white;
-  margin-top: 150px;
-  padding: 56px;
-  position: relative;
-  background-color: var(--color1);
-}
-
 /* .expertise-title {
   font-size: 64px;
   line-height: 110%;
@@ -735,62 +723,12 @@ h5 {
   word-spacing: 4px;
 }
 
-.expertiseFlexContainer {
-  /* width: 80%; */
-  display: flex;
-  row-gap: 10px;
-  column-gap: 2rem;
-  margin-bottom: 3rem;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.expertiseFlexItems {
-  box-sizing: border-box;
-  width: 46%;
-  /* max-width: 442px; */
-  height: fit-content;
-}
-
-.expertiseFlexItems h4 {
-  color: var(--white);
-  padding: 45px;
-  padding-left: 25px;
-  margin-top: 30px;
-  background-color: var(--color1);
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 130%;
-  margin-bottom: 30px;
-  border: var(--white) 1px solid;
-  border-radius: 2px 30px;
-}
-/* .dot {
-  background-color: white;
-} */
-
-.expertiseFlexItems p {
-  font-size: 20px;
-  line-height: 140%;
-  color: var(--color6);
-  letter-spacing: 1.5px;
-  background-color: var(--color1);
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 @media (max-width: 768px) {
-  .expertiseFlexContainer {
-    justify-content: center;
-  }
   .titleH3 {
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: #85ed45; */
-  }
-  .expertiseFlexItems {
-    width: 100%;
-    justify-content: center;
   }
 }
 
@@ -803,11 +741,6 @@ h5 {
   .ecpertiseFlexContainer {
     justify-content: space-around;
     row-gap: 0px;
-  }
-
-  .expertiseFlexItems {
-    width: 100%;
-    /* max-width: 400px; */
   }
 }
 
@@ -834,7 +767,6 @@ h5 {
     margin-top: 3rem; /* Aumentamos el margen superior para pantallas pequeñas */
   }
 }
-
 
 .slider-icons {
   display: flex;
@@ -1083,14 +1015,6 @@ section div {
 /* ============================    Section LET'S TALK    ========================== */
 
 /* ============================   Projects  SLIDER    ========================== */
-
-
-
-
-
-
-
-
 
 @keyframes slide {
   0% {
@@ -1528,7 +1452,6 @@ header {
 .heroH2Container {
   display: flex;
   justify-content: center;
-  /* border: orange 1px dotted; */
 }
 .displayedWord {
   margin-top: -39px;
@@ -1589,9 +1512,6 @@ header {
 
 /* --------------            Section 2 Personal presentation            --------  */
 
-
-
-
 /* Ajustes responsivos */
 @media (max-width: 768px) {
   .textPersonalSection {
@@ -1604,12 +1524,6 @@ header {
     width: 85%; /* Ancho para mobile */
   }
 }
-
-
-
-
-
-
 
 /* ------------------------           Section 2   ICONS   ------------  */
 
@@ -1624,10 +1538,6 @@ header {
   z-index: 1000;
   color: black;
 } */
-
-
-
-
 
 /* .iconsSection p {
   margin: 0;
@@ -1741,46 +1651,7 @@ line {
 /* ----------------       slider         ----------- */
 /* ----------------       slider         ----------- */
 
-.projectsSection {
-  position: relative;
-}
 
-.sliderContainer {
-  position: relative;
-  /* background-color: #fefefe50; */
-  margin: 30px 10px 30px 10px; /* Añadido: margen superior, derecho, inferior e izquierdo */
-  width: 100%; /* Añadido: ancho del 70% */
-  height: 600px; /* Añadido: altura de 450px */
-  display: flex; /* Añadido: para usar flexbox */
-  justify-content: center; /* Añadido: centrar contenido horizontalmente */
-  /* Añadido: espacio entre elementos */
-  /* margin-bottom: 3rem; */
-}
-
-.sliderDiv {
-  width: 15%; /* Añadido: ancho del 10% */
-  opacity: 1;
-  height: 100%; /* Añadido: altura del 100% */
-  object-fit: cover; /* Añadido: ajuste de objeto */
-  border: 1px solid var(--color1);
-  transition: all ease-in-out 0.5s; /* Añadido: transición de 0.5 segundos */
-}
-
-.sliderDiv img {
-  object-fit: cover; /* Añadido: ajuste de objeto */
-  width: 100%;
-  height: 100%;
-  opacity: 0.97;
-  border-radius: 3px; /* Añadido: radio de borde de 10px */
-}
-
-.sliderDiv:hover {
-  width: 30%;
-  opacity: 1;
-  /* scale: 1.02; */
-  /* z-index: 3; */
-  border: var(--white) 10px 2px 3px 10px solid;
-}
 
 .divola {
   /* position: relative; */
@@ -1794,42 +1665,11 @@ line {
   display: block;
 }
 
-@media (768px <= width <= 960px) {
-  .sliderDiv {
-    width: 19%;
-    /* background-color: green; */
-    /* height:fit-content !important; */
-  }
-
+/* @media (768px <= width <= 960px) {
   .divola h4:hover {
     display: block;
   }
-}
-@media (width <= 768px) {
-  .sliderDiv {
-    width: 80%;
-    height: 200px;
-    margin-top: 20px;
-    opacity: 1;
-    border-radius: 2px;
-
-    /* background-color: #85ed45; */
-  }
-  .sliderContainer {
-    /* background-color: #ae5d42; */
-    /* margin-top: 200px; */
-    margin-bottom: 120px;
-
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
-    align-items: center;
-  }
-  .sliderDiv:hover {
-    width: 82%;
-  }
-}
+} */
 
 .imageContainer {
   display: inline;
@@ -1883,15 +1723,6 @@ line {
   }
 }
 
-
-@media (width <= 450px) {
-  .rotacion {
-    opacity: 1 !important;
-    animation: none !important;
-    animation-timeline: none !important;
-  }
-}
-
 .transLeft {
   transition: 0.5s, color 0.1s;
   -webkit-transition: 0.5s, color 0.1s;
@@ -1902,36 +1733,3 @@ line {
   -webkit-transform: translatex(-20px);
   -moz-transform: translatex(-20px);
 }
-
-/* -------------      efecto rotacion      ---------- */
-
-.rotacion {
-  display: flex;
-  opacity: 0;
-  animation: rotate-in 2s ease-in forwards;
-  animation-timeline: view();
-}
-@keyframes rotate-in {
-  0% {
-    opacity: 0;
-    transform: rotate(9deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  30% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-/* -------------      efecto rotacion FIN      ---------- */
-
-.impar {
-  margin-top: 5vw;
-}
-
-
-

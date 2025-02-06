@@ -5,7 +5,6 @@ import About from "./Components/views/About";
 import NotFound from "./Components/views/NotFound";
 import Home from "./Components/views/Home";
 import Home0 from "./Components/views/Home0";
-import Home1 from "./Components/views/Home1";
 import FramerMotion from "./Components/views/FramerMotion";
 import FramerMotion2 from "./Components/views/FramerMotion2";
 
@@ -34,10 +33,7 @@ const router = createBrowserRouter([
         path: "home0",
         element: <Home0 />,
       },
-      {
-        path: "home1",
-        element: <Home1 />,
-      },
+      
       {
         path: "fm",
         element: <FramerMotion />,
