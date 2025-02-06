@@ -10,6 +10,8 @@
 
   --white: white;
   --black: black;
+
+  background-color:  var(--color1);
 }
 
 /* ============================    ESTILOS GENERALES   ========================== */
