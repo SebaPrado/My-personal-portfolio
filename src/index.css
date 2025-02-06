@@ -11,14 +11,40 @@
   --white: white;
   --black: black;
 
-  background-color:  var(--color1);
+  /* background-color:  var(--color1); */
+}
+
+.loading-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important; /* Ocupa toda la altura de la ventana */
+    font-size: 24px; /* Tamaño de fuente */
+    transition: opacity 1.5s ease;
+    opacity: 1; /* Transición suave para el desvanecimiento */
+    background-color: var(--color1);
+  }
+  
+  .fade-out {
+    opacity: 0; 
+  }
+  .fade-in {
+    opacity: 1; /* Visibilidad completa */
+    transition: opacity 1.5s ease; /* Transición suave */
+}
+
+.fade-out-else {
+    opacity: 0; /* Desvanecimiento */
+    transition: opacity 1.5s ease; /* Transición suave */
 }
 
 /* ============================    ESTILOS GENERALES   ========================== */
 
 /* Estilos base */
 body {
+  background-color: var(--color1); /* Aplica el color de fondo a todo el body */
   margin: 0;
+  /* margin-top: 50px; */
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;

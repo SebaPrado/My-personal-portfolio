@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import "animate.css";
 import Navbar from "../Navbar";
+import Hero from "./Hero.jsx";
 
 import {
   FaHtml5,
@@ -155,7 +156,8 @@ function FramerMotion() {
   return (
     <div>
       <section id="home">
-        <div className="heroBigContainer">
+        {Hero ? <Hero /> : <p>Error al cargar el componente Hero.</p>}
+        {/* <div className="heroBigContainer">
           <div className="heroH1Container">
             <h1 className="heroH1">Website developer</h1>
           </div>
@@ -164,7 +166,7 @@ function FramerMotion() {
               <h2 className="displayedWord">{displayedWord}</h2>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       <section className="Section1Home1">
@@ -362,7 +364,7 @@ function FramerMotion() {
             <h4 className="rotacion">A Developer for Your Team</h4>
             <p>
               Looking for a reliable fullstack developer to integrate into your
-              team? With a focus on finding solutions, I’m here to help you
+              team? With a focus on finding solutions, I'm here to help you
               accelerate project timelines and enhance productivity, considering
               I offer both achievement alternatives or hour-rate.
             </p>
@@ -391,7 +393,7 @@ function FramerMotion() {
               Turn static Figma files into dynamic, fully responsive interfaces.
               Using handcrafted CSS or Js libraries ( FramerMotion , Swiper ,
               tailwind ) , I create interactive, visually compelling experiences
-              that retain the integrity of your design vision. Let’s bring your
+              that retain the integrity of your design vision. Let's bring your
               design to life
             </p>
           </div>
@@ -414,7 +416,7 @@ function FramerMotion() {
             </h4>
             <p>
               Powered by mate—the South American drink that keeps me awake and
-              sharp—I’m always ready to deliver results on time. Consider it my
+              sharp—I'm always ready to deliver results on time. Consider it my
               antioxidant secret weapon for staying focused and ensuring your
               project is finished right on schedule.
             </p>
@@ -481,7 +483,6 @@ function FramerMotion() {
         </div>
       </section>
 
-      
       {/* =====================        LETS TALK         ======================== */}
 
       <section className="section-lets-talk container">

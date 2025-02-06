@@ -1,0 +1,82 @@
+/* src/Components/views/Hero.css */
+.hero {
+  background-color: rgb(255, 255, 255); /* Ejemplo de estilo */
+  color: var(--color1); /* Ejemplo de estilo */
+  padding: 20px; /* Ejemplo de estilo */
+  height: 79vh; /* Ocupa el 100% de la altura de la ventana en pantallas grandes */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: ; */
+  z-index: 9999;
+  margin: 20px;
+  border-radius: 20px;
+  padding-left: 3rem;
+}
+
+.presentacion {
+  /* Sin rotación */
+  font-size: 3rem; /* Tamaño de letra para el nombre */
+  margin-bottom: 20px; /* Margen inferior */
+  background-color: var(--color1);
+  margin-top: -40px;
+  border-radius: 10px;
+}
+
+.mi_nombre {
+  transform: rotate(-8deg); /* Rotación de -8 grados */
+  font-size: 2.5rem; /* Tamaño de letra para el nombre */
+  background-color: var(--color1);
+  color: white;
+  border-radius: 10px;
+  padding-left: 45px;
+  border: 1px solid white;
+}
+
+.hablity_agriculturalengineer {
+  transform: rotate(-8deg); /* Rotación de -8 grados */
+  font-size: 1.8rem; /* Tamaño de letra para habilidades */
+  margin: 10px 0; /* Margen superior e inferior */
+  background-color: var(--color3);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.hablity_ai_agent_creator {
+  transform: rotate(-8deg); /* Rotación de -8 grados */
+  font-size: 1.8rem; /* Tamaño de letra para habilidades */
+  margin: 10px 0; /* Margen superior e inferior */
+  background-color: var(--color3);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.hablity_ {
+  transform: rotate(-8deg); /* Rotación de -8 grados */
+  font-size: 1.8rem; /* Tamaño de letra para habilidades */
+  margin: 10px 0; /* Margen superior e inferior */
+  background-color: var(--color3);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh; /* Ajusta la altura para dispositivos móviles */
+  }
+
+  .presentacion {
+    font-size: 2.5rem; /* Tamaño de letra para el nombre en móviles */
+  }
+
+  .mi_nombre {
+    font-size: 2rem; /* Tamaño de letra para el nombre en móviles */
+  }
+
+  .hablity_agriculturalengineer,
+  .hablity_ai_agent_creator,
+  .hablity_ {
+    font-size: 1.4rem; /* Tamaño de letra para habilidades en móviles */
+  }
+}
