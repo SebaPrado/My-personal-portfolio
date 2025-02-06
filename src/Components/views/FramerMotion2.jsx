@@ -25,7 +25,7 @@ export default function FramerMotion2() {
         style={{ position: "relative", background: "none" }}
       >
         <motion.svg
-          width="600"
+          width="800"
           height="600"
           viewBox="0 0 600 600"
           initial="hidden"

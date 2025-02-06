@@ -1,0 +1,78 @@
+.helloText {
+font-size: 23px !important;
+  line-height: 50px !important;
+  letter-spacing: 1.3px;
+  color: var(--color1);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.personalPresentation {
+  margin-top: 20rem;
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.textPersonalSection {
+  width: 90%;
+  text-align: center;
+  /* color: var(--white); */
+}
+
+.profilePicture {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255);
+  opacity: 0.7;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.scrollAnimation {
+  view-timeline-name: --reveal;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --reveal;
+}
+
+@media (width <= 450px) {
+  .scrollAnimation {
+    animation-name: none;
+  }
+}
+
+.letsTalk {
+    font-size: 40px !important;
+    /* font-weight: 400; */
+    letter-spacing: 1px;
+    margin-bottom: 3rem !important;
+    color: var(--color1);
+  }
+  .email-button {
+    background-color: var(--color1);
+    color: var(--white) !important;
+    padding: 19px 7vw;
+    text-decoration: none;
+    border-radius: 30px 2px;
+    display: inline;
+    margin-top: 5rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+    /* border: var(--white) 1px solid; */
+  }
+
+  .email-button:hover {
+    transition: "background-color color 0.3s ease";
+    font-weight: bolder !important;
+  
+    background-color: var(--color3);
+    color: var(--color1) !important;
+  }
+  

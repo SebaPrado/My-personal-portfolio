@@ -1,9 +1,9 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Components/Layout";
-import Home from "./Components/views/Home";
 import About from "./Components/views/About";
 import NotFound from "./Components/views/NotFound";
+import Home from "./Components/views/Home";
 import Home0 from "./Components/views/Home0";
 import Home1 from "./Components/views/Home1";
 import FramerMotion from "./Components/views/FramerMotion";
@@ -25,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "home",
+        element: <Home/>,
       },
       {
         path: "home0",

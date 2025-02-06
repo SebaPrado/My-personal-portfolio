@@ -1,23 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import "animate.css";
 import Navbar from "../Navbar";
 import Hero from "./Hero.jsx";
 
-import {
-  FaHtml5,
-  FaCss3,
-  FaReact,
-  FaNodeJs,
-  FaBootstrap,
-  FaGitAlt,
-  FaFigma,
-  FaGithub,
-  FaLinkedin,
-  FaInstagram,
-} from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiRedux, SiInsomnia } from "react-icons/si";
+
 import matesito from "/matesito.png";
 
 const cardVariants = (index) => ({
@@ -128,30 +115,7 @@ function FramerMotion() {
     return () => clearTimeout(timer);
   }, [displayedWord, isDeleting, wordIndex, words]);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.replace("hidden", "blur-in-expand");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    const animatedDiv = animatedDivRef.current;
-    if (animatedDiv) {
-      observer.observe(animatedDiv);
-    }
-
-    return () => {
-      if (animatedDiv) {
-        observer.unobserve(animatedDiv);
-      }
-    };
-  }, []);
+ 
 
   return (
     <div>
@@ -180,7 +144,7 @@ function FramerMotion() {
                 alt=""
               />
             </div>
-            <div className=" green scrollAnimation ">
+            <div className=" scrollAnimation ">
               <p className="helloText ">
                 Hey ! I'm Sebastian, a full stack developer specializing in{" "}
                 <strong>React</strong> and

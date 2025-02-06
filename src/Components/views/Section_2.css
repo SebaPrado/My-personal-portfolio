@@ -1,0 +1,33 @@
+.iconsSection {
+    position: relative;
+    height: 150px;
+    background-color: rgba(202, 62, 62, 0.973);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color1);
+    margin-top: 12rem;
+    z-index: 20;
+  }
+  
+.slider-container {
+    width: 100vw;
+    margin-left: -5vw;
+    margin-right: -5vw;
+  }
+  .slider-container {
+    width: 100vw;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  .slider-icons {
+    display: flex;
+    animation: slide 40s linear infinite;
+    width: 100%;
+  }
+  .icon {
+    font-size: 2rem;
+  }
+  .iconName {
+    margin-top: 9px;
+  }

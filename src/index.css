@@ -42,7 +42,7 @@
 
 /* Estilos base */
 body {
-  background-color: var(--color1); /* Aplica el color de fondo a todo el body */
+  background-color: var(--white); /* Aplica el color de fondo a todo el body */
   margin: 0;
   /* margin-top: 50px; */
   padding: 0;
@@ -219,8 +219,8 @@ h5 {
 }
 
 .custom-button:hover {
-  background-color: #fcfcfc !important;
-  color: rgb(0, 0, 0) !important;
+  background-color:var(--color1)!important;
+  color: rgb(255, 255, 255) !important;
 }
 
 /* Estilos para el contenedor principal */
@@ -835,11 +835,6 @@ h5 {
   }
 }
 
-.slider-container {
-  width: 100vw;
-  margin-left: -5vw;
-  margin-right: -5vw;
-}
 
 .slider-icons {
   display: flex;
@@ -1089,25 +1084,13 @@ section div {
 
 /* ============================   Projects  SLIDER    ========================== */
 
-.slider-container {
-  width: 100vw;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
 
-.slider-icons {
-  display: flex;
-  animation: slide 40s linear infinite;
-  width: 100%;
-}
 
-.icon {
-  font-size: 2rem;
-}
 
-.iconName {
-  margin-top: 9px;
-}
+
+
+
+
 
 @keyframes slide {
   0% {
@@ -1606,18 +1589,8 @@ header {
 
 /* --------------            Section 2 Personal presentation            --------  */
 
-.personalPresentation {
-  position: relative;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
 
-.textPersonalSection {
-  width: 60%;
-  text-align: center;
-  color: var(--white);
-}
+
 
 /* Ajustes responsivos */
 @media (max-width: 768px) {
@@ -1632,28 +1605,11 @@ header {
   }
 }
 
-.letsTalk {
-  font-size: xx-large !important;
-  font-weight: 400;
-  letter-spacing: 5px;
-  margin-bottom: 3rem !important;
-}
 
-.profilePicture {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255);
-  opacity: 0.7;
-}
 
-.helloText {
-  line-height: 50px !important;
-  letter-spacing: 1.3px;
-  /* background-color: #85ed45; */
-}
+
+
+
 
 /* ------------------------           Section 2   ICONS   ------------  */
 
@@ -1669,17 +1625,7 @@ header {
   color: black;
 } */
 
-.iconsSection {
-  position: relative;
-  height: 150px;
-  background-color: rgba(255, 255, 255, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color1);
-  margin-top: 12rem;
-  z-index: 20;
-}
+
 
 /* Añadido para crear la curva convexa en la parte superior */
 .iconsSection::before {
@@ -1924,9 +1870,7 @@ line {
   URL: https://xsgames.co/animatiss
   Twitter: @xsgames_
 ---------------------------------------------- */
-.hidden {
-  visibility: hidden;
-}
+
 .blur-in-expand {
   animation: blur-in-expand 0.5s linear both;
 }
@@ -1961,25 +1905,12 @@ line {
     scale: 100%;
   }
 }
-.scrollAnimation {
-  view-timeline-name: --reveal;
 
-  animation-name: show;
-  animation-fill-mode: both;
-
-  animation-timeline: --reveal;
-  /* animation-range: entry 15% cover 45%; */
-}
 
 @media (width <= 450px) {
-  .scrollAnimation {
-    animation-name: none;
-    /* background-color: #85ed45; */
-  }
   .rotacion {
     opacity: 1 !important;
     animation: none !important;
-    /* background-color: red !important; */
     animation-timeline: none !important;
   }
 }

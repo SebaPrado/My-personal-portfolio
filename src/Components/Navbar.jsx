@@ -44,7 +44,7 @@ function Navbar() {
       <div className=''>    
         <ThemeProvider theme={theme}>
           <Box className="main-container sticky">
-            <AppBar position="static" className="custom-app-bar" sx={{ backgroundColor: 'var(--color1)' }}>
+            <AppBar position="static" className="custom-app-bar" sx={{ backgroundColor: 'var(--white)' }}>
               <Toolbar className="custom-toolbar">
                 <IconButton
                   edge="start"
@@ -56,8 +56,8 @@ function Navbar() {
                     mr: 2,
                     mt: 1,
                     display: { xs: 'block', sm: 'none', md: 'none' },
-                    color: 'var(--color6)',
-                    backgroundColor: 'var(--color1)',
+                    color: 'var(--color6)', // hamburguesa
+                    backgroundColor: 'var(--color1)', // fondo btn hamburguesa
                     borderRadius: '30%',
                     padding: '10px 9px 4px 9px', 
                     '&:hover': {
@@ -70,7 +70,7 @@ function Navbar() {
                 </IconButton>
                 <Box className="button-container" sx={{ display: { xs: 'none', sm: 'flex', md: 'flex' } }}>
                   {menuItems.map((item) => (
-                    <Button key={item.label} className="custom-button" sx={{ color: 'var(--color6)' }} onClick={item.onClick}>
+                    <Button key={item.label} className="custom-button" sx={{ color: 'var(--color1)' }} onClick={item.onClick}>
                       {item.label}
                     </Button>
                   ))}
@@ -93,7 +93,7 @@ function Navbar() {
             <List>
               {menuItems.map((item) => (
                 <ListItem button key={item.label} onClick={() => { item.onClick(); toggleDrawer(false)(); }}>
-                  <ListItemText primary={item.label} sx={{ color: 'white', textAlign: 'center' }} />
+                  <ListItemText primary={item.label} sx={{ color: 'var(--color3)', textAlign: 'center' }} />
                 </ListItem>
               ))}
             </List>

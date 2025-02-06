@@ -1,69 +1,122 @@
 /* src/Components/views/Hero.css */
 .hero {
-  background-color: rgb(255, 255, 255); /* Ejemplo de estilo */
-  color: var(--color1); /* Ejemplo de estilo */
-  padding: 20px; /* Ejemplo de estilo */
-  height: 79vh; /* Ocupa el 100% de la altura de la ventana en pantallas grandes */
+  /* background-color:rgb(224, 224, 224);  */
+  color: var(--color1); 
+  /* padding: 20px; */
+  /* height: 100vh;  */
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* align-items: ; */
   z-index: 9999;
   margin: 20px;
+  margin-top: -15px;
+  /* margin-left: 3rem; */
   border-radius: 20px;
-  padding-left: 3rem;
+  border-radius: 30px 2px;
 }
 
 .presentacion {
   /* Sin rotación */
-  font-size: 3rem; /* Tamaño de letra para el nombre */
-  margin-bottom: 20px; /* Margen inferior */
-  background-color: var(--color1);
-  margin-top: -40px;
-  border-radius: 10px;
+  /* font-size: 3rem;  */
+  /* margin-bottom: 20px;  */
+  /* background-color: var(--white); */
+  /* margin-top: 0px; */
+  /* border-radius: 10px; */
+  /* z-index: 1; */
+  /* border-radius:  2px 30px; */
+  /* border: 1px solid var(--color1); */
+  padding-left: 3rem;
+
 }
 
 .mi_nombre {
-  transform: rotate(-8deg); /* Rotación de -8 grados */
-  font-size: 2.5rem; /* Tamaño de letra para el nombre */
-  background-color: var(--color1);
-  color: white;
+  transform: rotate(-6deg); 
+  font-size: 3rem; /* Tamaño de letra para el nombre */
+  background: linear-gradient(to right, var(--color1),  var(--color3)); 
+  /* background-color: aquamarine; */
+  color: var(--color6);
   border-radius: 10px;
+  padding: 15px;
   padding-left: 45px;
-  border: 1px solid white;
+  padding-top: 12rem;
+  /* padding-bottom: 5rem; */
+
+  border-radius: 30px 2px;
+  height: 100vh;
+  /* margin-top: 31rem; */
+  margin-bottom: 3rem;
+  align-content: center;
+  line-height: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.letters{
+  transform: rotate(6deg); 
+  /* background-color: aquamarine; */
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+
 }
 
 .hablity_agriculturalengineer {
-  transform: rotate(-8deg); /* Rotación de -8 grados */
+  transform: rotate(-6deg); 
   font-size: 1.8rem; /* Tamaño de letra para habilidades */
-  margin: 10px 0; /* Margen superior e inferior */
-  background-color: var(--color3);
-  padding: 5px;
-  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: -30rem;
+  /* margin-left: -1rem; */
+  background: linear-gradient(to right, var(--color1), var(--white)); 
+  padding: 15px;
+  /* border-radius: 10px; */
+  color:var(--white);
+  padding-left: 14vw;
+  margin-right: -1vw;
+  border-radius: 30px 2px;
+  font-weight: 300;
+ 
 }
 
 .hablity_ai_agent_creator {
-  transform: rotate(-8deg); /* Rotación de -8 grados */
+  transform: rotate(-6deg); /* Rotación de -8 grados */
   font-size: 1.8rem; /* Tamaño de letra para habilidades */
-  margin: 10px 0; /* Margen superior e inferior */
-  background-color: var(--color3);
-  border-radius: 10px;
-  padding: 5px;
+  margin: 20px 0; /* Margen superior e inferior */
+  background: linear-gradient(to right, var(--white), var(--color1)); 
+  margin-left: 5rem;
+
+
+  /* border-radius: 10px; */
+  padding: 15px;
+  color:var(--color1);
+
+  padding-left: 15vw;
+  border-radius:  2px 30px;
+  font-weight: 300;
+
 }
 
-.hablity_ {
-  transform: rotate(-8deg); /* Rotación de -8 grados */
+.hablity_web_developer{
+  transform: rotate(-6deg); /* Rotación de -8 grados */
   font-size: 1.8rem; /* Tamaño de letra para habilidades */
-  margin: 10px 0; /* Margen superior e inferior */
-  background-color: var(--color3);
-  padding: 5px;
-  border-radius: 10px;
+  margin: 20px 0; /* Margen superior e inferior */
+  background: linear-gradient(to right, var(--color1), var(--white)); 
+  padding: 15px;
+  color:var(--white);
+  padding-left: 24vw;
+  border-radius: 30px 2px;
+  font-weight: 300;
+
+
+
 }
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
-  .hero {
-    height: 60vh; /* Ajusta la altura para dispositivos móviles */
+  .mi_nombre {
+    padding-top: 4rem;
+    /* padding-bottom: 3rem; */
   }
 
   .presentacion {
@@ -80,3 +133,16 @@
     font-size: 1.4rem; /* Tamaño de letra para habilidades en móviles */
   }
 }
+
+/* .sebas_picture{
+    display: flex;
+    margin-top: 7rem;
+    justify-content: center;
+}
+
+.personalPresentation {
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  } */
