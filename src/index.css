@@ -1627,30 +1627,7 @@ header {
 
 
 
-/* Añadido para crear la curva convexa en la parte superior */
-.iconsSection::before {
-  content: "";
-  position: absolute;
-  top: -90px; /* Ajusta según sea necesario */
-  left: 0;
-  right: 0;
-  height: 90px; /* Ajusta según sea necesario */
-  background-color: rgba(255, 253, 253, 0.4);
-  border-radius: 100% 40% 0 0; /* Crea la curva convexa */
-  z-index: 10; /* Asegura que esté detrás del contenido */
-}
 
-/* Añadido para crear la curva convexa en la parte inferior */
-.iconsSection::after {
-  content: "";
-  position: absolute;
-  top: 150px; /* Ajusta según sea necesario */
-  left: 0;
-  right: -0px;
-  height: 90px; /* Ajusta según sea necesario */
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 0 0% 100% 40%; /* Crea la curva convexa */
-}
 
 /* .iconsSection p {
   margin: 0;

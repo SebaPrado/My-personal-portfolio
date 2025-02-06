@@ -60,22 +60,22 @@ function FramerMotion() {
   const [wordIndex, setWordIndex] = useState(0);
   const sectionRef = useRef(null);
 
-  const techIcons = [
-    { icon: FaHtml5, name: "HTML" },
-    { icon: FaCss3, name: "CSS" },
-    { icon: IoLogoJavascript, name: "JavaScript" },
-    { icon: FaReact, name: "React" },
-    { icon: FaNodeJs, name: "NodeJS" },
-    { icon: SiRedux, name: "Redux" },
-    { icon: FaBootstrap, name: "Bootstrap" },
-    { icon: FaGitAlt, name: "Git" },
-    { icon: FaGithub, name: "Github" },
-    { icon: SiInsomnia, name: "Insomnia" },
-    { icon: FaFigma, name: "Figma" },
-    { icon: FaHtml5, name: "HTML" },
-    { icon: FaCss3, name: "CSS" },
-    { icon: IoLogoJavascript, name: "JavaScript" },
-  ];
+//   const techIcons = [
+//     { icon: FaHtml5, name: "HTML" },
+//     { icon: FaCss3, name: "CSS" },
+//     { icon: IoLogoJavascript, name: "JavaScript" },
+//     { icon: FaReact, name: "React" },
+//     { icon: FaNodeJs, name: "NodeJS" },
+//     { icon: SiRedux, name: "Redux" },
+//     { icon: FaBootstrap, name: "Bootstrap" },
+//     { icon: FaGitAlt, name: "Git" },
+//     { icon: FaGithub, name: "Github" },
+//     { icon: SiInsomnia, name: "Insomnia" },
+//     { icon: FaFigma, name: "Figma" },
+//     { icon: FaHtml5, name: "HTML" },
+//     { icon: FaCss3, name: "CSS" },
+//     { icon: IoLogoJavascript, name: "JavaScript" },
+//   ];
 
   const food = [
     ["public/logoseba.png", 30, 40],
@@ -173,7 +173,7 @@ function FramerMotion() {
 
       <section className="iconsSection ">
         <div className="slider-container">
-          <div className="slider-icons">
+          {/* <div className="slider-icons">
             {techIcons.map((tech, index) => (
               <div key={index} className="slider-icon">
                 <tech.icon className="icon" />
@@ -186,7 +186,7 @@ function FramerMotion() {
                 <span className="icon-name">{tech.name} </span>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -494,7 +494,7 @@ function FramerMotion() {
 
       {/* =====================         FOOTER        ======================== */}
 
-      <section>
+      {/* <section>
         <footer className="footer ">
           <div className="footer-content">
             <p>&copy; 2024 Sebastian Prado.</p>
@@ -523,7 +523,7 @@ function FramerMotion() {
             </div>
           </div>
         </footer>
-      </section>
+      </section> */}
     </div>
   );
 }

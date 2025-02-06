@@ -56,9 +56,9 @@ font-size: 23px !important;
     color: var(--color1);
   }
   .email-button {
-    background-color: var(--color1);
+    background: linear-gradient(to right, var(--color2), var(--color1)); 
     color: var(--white) !important;
-    padding: 19px 7vw;
+    padding: 14px 5vw;
     text-decoration: none;
     border-radius: 30px 2px;
     display: inline;

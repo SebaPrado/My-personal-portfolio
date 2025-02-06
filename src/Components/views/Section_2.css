@@ -1,33 +1,60 @@
 .iconsSection {
-    position: relative;
-    height: 150px;
-    background-color: rgba(202, 62, 62, 0.973);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color1);
-    margin-top: 12rem;
-    z-index: 20;
-  }
-  
+  position: relative;
+  height: 150px;
+  background: linear-gradient(to right, var(--white), var(--color1)); 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  margin-top: 12rem;
+  z-index: 20;
+}
+
+/* Añadido para crear la curva convexa en la parte superior */
+.iconsSection::before {
+  content: "";
+  position: absolute;
+  top: -90px; /* Ajusta según sea necesario */
+  left: 0;
+  right: 0;
+  height: 90px; /* Ajusta según sea necesario */
+  background: linear-gradient(to right, var(--white), var(--color1)); 
+  border-radius: 100% 40% 0 0; /* Crea la curva convexa */
+  z-index: 10; /* Asegura que esté detrás del contenido */
+}
+
+/* Añadido para crear la curva convexa en la parte inferior */
+.iconsSection::after {
+  content: "";
+  position: absolute;
+  top: 150px; /* Ajusta según sea necesario */
+  left: 0;
+  right: -0px;
+  height: 90px; /* Ajusta según sea necesario */
+  background: linear-gradient(to right, var(--white), var(--color1)); 
+
+  border-radius: 0 0% 100% 40%; /* Crea la curva convexa */
+}
+
 .slider-container {
-    width: 100vw;
-    margin-left: -5vw;
-    margin-right: -5vw;
-  }
-  .slider-container {
-    width: 100vw;
-    margin-left: -50vw;
-    margin-right: -50vw;
-  }
-  .slider-icons {
-    display: flex;
-    animation: slide 40s linear infinite;
-    width: 100%;
-  }
-  .icon {
-    font-size: 2rem;
-  }
-  .iconName {
-    margin-top: 9px;
-  }
+  width: 100vw;
+  margin-left: -5vw;
+  margin-right: -5vw;
+}
+.slider-container {
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.slider-icons {
+  display: flex;
+  animation: slide 40s linear infinite;
+  width: 100%;
+}
+.icon {
+  font-size: 2rem;
+}
+.iconName {
+  margin-top: 9px;
+}
