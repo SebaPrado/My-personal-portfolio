@@ -1,7 +1,7 @@
 .iconsSection {
   position: relative;
   height: 150px;
-  background: linear-gradient(to right, var(--white), var(--color1)); 
+  background: linear-gradient(to right, var(--color1), #0384c5af); 
 
   display: flex;
   align-items: center;
@@ -9,6 +9,7 @@
   color: var(--white);
   margin-top: 12rem;
   z-index: 20;
+  /* margin-bottom: -2px !important; */
 }
 
 /* Añadido para crear la curva convexa en la parte superior */
@@ -19,7 +20,7 @@
   left: 0;
   right: 0;
   height: 90px; /* Ajusta según sea necesario */
-  background: linear-gradient(to right, var(--white), var(--color1)); 
+  background: linear-gradient(to right, var(--color1), #0384c5af); 
   border-radius: 100% 40% 0 0; /* Crea la curva convexa */
   z-index: 10; /* Asegura que esté detrás del contenido */
 }
@@ -32,7 +33,7 @@
   left: 0;
   right: -0px;
   height: 90px; /* Ajusta según sea necesario */
-  background: linear-gradient(to right, var(--white), var(--color1)); 
+  background: linear-gradient(to right, var(--color1),  #0384c5af); 
 
   border-radius: 0 0% 100% 40%; /* Crea la curva convexa */
 }

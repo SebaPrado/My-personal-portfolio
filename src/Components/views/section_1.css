@@ -35,6 +35,9 @@ font-size: 23px !important;
   visibility: hidden;
 }
 
+
+/*   --------------------      texto   \/   -------------------------------- */
+
 .scrollAnimation {
   view-timeline-name: --reveal;
   animation-name: show;
@@ -42,11 +45,49 @@ font-size: 23px !important;
   animation-timeline: --reveal;
 }
 
+
+.blur-in-expand {
+    animation: blur-in-expand 0.5s linear both;
+  }
+  @keyframes blur-in-expand {
+    0% {
+      transform: scale(0);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes show {
+    0% {
+      opacity: 0;
+      scale: 20%;
+    }
+    30% {
+      opacity: 1;
+    }
+    40%,
+    60%, 70% {
+      opacity: 1;
+      scale: 100%;
+    }
+    100% {
+      opacity: 0;
+      scale: 100%;
+    }
+  }
+
 @media (width <= 450px) {
   .scrollAnimation {
     animation-name: none;
   }
 }
+
+/*   --------------------      texto   /\   -------------------------------- */
 
 .letsTalk {
     font-size: 40px !important;
@@ -55,9 +96,14 @@ font-size: 23px !important;
     margin-bottom: 3rem !important;
     color: var(--color1);
   }
+
+
+/*   --------------------      boton   \/   -------------------------------- */
+
+
   .email-button {
     background: linear-gradient(to right, var(--color2), var(--color1)); 
-    color: var(--white) !important;
+    color: var(--color6) !important;
     padding: 14px 5vw;
     text-decoration: none;
     border-radius: 30px 2px;
@@ -73,6 +119,7 @@ font-size: 23px !important;
     font-weight: bolder !important;
   
     background-color: var(--color3);
-    color: var(--color1) !important;
+    color: var(--color6) !important;
   }
+/*   --------------------      boton   /\   -------------------------------- */
   

@@ -349,19 +349,6 @@ h5 {
   justify-content: center;
 }
 
-/* Ajustes responsivos para el contenedor */
-/* @media (min-width: 1300px) {
-  .containerLarge {
-    min-height: 18rem;
-  }
-} */
-
-/* @media (min-width: 768px) and (max-width: 1299px) {
-  .containerLarge {
-    min-height: 18rem !important;
-  }
-} */
-
 @media (min-width: 600px) and (max-width: 767px) {
   .containerLarge {
     margin-top: 3rem;
@@ -1688,40 +1675,7 @@ line {
   Twitter: @xsgames_
 ---------------------------------------------- */
 
-.blur-in-expand {
-  animation: blur-in-expand 0.5s linear both;
-}
-@keyframes blur-in-expand {
-  0% {
-    transform: scale(0);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    filter: blur(0);
-    opacity: 1;
-  }
-}
 
-@keyframes show {
-  0% {
-    opacity: 0;
-    scale: 20%;
-  }
-  30% {
-    opacity: 0.4;
-  }
-  40%,
-  60% {
-    opacity: 1;
-    scale: 100%;
-  }
-  100% {
-    opacity: 0;
-    scale: 100%;
-  }
-}
 
 .transLeft {
   transition: 0.5s, color 0.1s;

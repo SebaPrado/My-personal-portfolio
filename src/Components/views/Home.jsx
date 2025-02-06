@@ -6,6 +6,7 @@ import Section_1 from "./Section_1.jsx";
 import Section_2 from "./Section_2.jsx";
 import Section_3 from "./Section_3.jsx";
 import Section_4 from "./Section_4.jsx";
+import Section_5 from "./Section_5.jsx"
 
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 const cardVariants = (index) => ({
@@ -138,8 +139,8 @@ function FramerMotion() {
         <Section_2 />
       </section>
 
-      <section className="section5 containerLarge" id="expertise">
-        <Section_3 />
+      <section className="section3 containerLarge">
+        <Section_3/>
       </section>
 
       {/* ========================   Section 4_SLIDER      ===========================  */}
@@ -148,6 +149,10 @@ function FramerMotion() {
         <div className="containerLarge">
           <Section_4 />
         </div>
+      </section>
+
+      <section>
+        <Section_5/>
       </section>
 
       {/* ========================      section_4      ===========================  */}
