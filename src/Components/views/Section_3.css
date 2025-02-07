@@ -1,11 +1,32 @@
+.seccciones{
+    transform: rotate(-4deg); 
+    font-size: 3rem; 
+    background: linear-gradient(to right, var(--color1),  var(--color4)); 
+    color: var(--white);
+    border-radius: 10px;
+    padding: 35px;
+    padding-left: 45px;
+    padding-top: 7rem;
+    border-radius: 30px 2px;
+    height: fit-content;
+    margin-bottom: 5rem;
+    align-content: center;
+    line-height: 4rem;
+    font-weight: 200;
+    letter-spacing: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+}
+
 .section3 {
   color: white;
   margin-top: 150px;
   /* background-color: var(--color3); */
 }
 
-p{
-    font-size: 20px !important;
+p {
+  font-size: 20px !important;
 }
 
 @media (max-width: 768px) {
@@ -29,27 +50,37 @@ p{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: bisque;
 }
-.uno{
- background-color: aqua;
+.uno {
+  /* background-color: rgba(0, 255, 255, 0.263); */
 }
-.dos{
- background-color: red;
+.dos {
+  /* background-color: rgba(0, 255, 255, 0.263); */
+}
 
-}
-.expertiseFlexItems h4 {
+.list_title_div {
   color: var(--white);
-  padding: 35px;
-  padding-left: 25px;
-  margin-top: 60px;
-  background: linear-gradient(to right, var(--color1), var(--color2));
-  font-size: 22px;
-  font-weight: 300;
+  padding-left: 3rem;
+  padding-right: 5rem;
+  margin-top: 10px;
+  background: linear-gradient(to right, var(--color1), var(--color4));
+  font-size: 24px;
+  /* font-weight: 500 !important; */
   line-height: 130%;
   margin-bottom: 70px;
   border: var(--white) 1px solid;
   border-radius: 2px 30px;
   flex-grow: 1;
+}
+.list_title_div h4{
+  font-weight: 300 ;
+
+
+}
+
+.content_sub_container {
+  margin-bottom: 75px;
 }
 
 .expertiseFlexItems p {
@@ -89,8 +120,8 @@ p{
 }
 @keyframes rotate-in {
   0% {
-    opacity: 0;
-    transform: rotate(7deg);
+    opacity: 0.4;
+    transform: rotate(-4deg);
   }
   50% {
     transform: rotate(0deg);
@@ -105,3 +136,38 @@ p{
 }
 
 /* -------------      efecto rotacion FIN      ---------- */
+
+/* -------------      efecto expancion container      ---------- */
+
+.content {
+  /* Base styles */
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.collapsed {
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+}
+
+.expanded {
+  max-height: 500px; /* Ajusta según tu contenido */
+  opacity: 1;
+  padding: 1rem 0;
+}
+
+.expandir {
+  padding: 10px;
+  margin-top: 8px;
+  height: 16px;
+  rotate: -90deg;
+}
+.contraer {
+  padding: 10px;
+  margin-top: 8px;
+  height: 16px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}

@@ -14,21 +14,40 @@ const Section_3 = () => {
 
   return (
     <div className="expertiseFlexContainer ">
+      <div className="seccciones">
+        <div className="letters_s"> I am</div>
+        <div className="letters">Sebastian Prado.</div>
+      </div>
       {/* ---------------------       Backend     ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton">
+        <div className="h4_boton rotacion list_title_div">
           <div className="uno">
-            <h4 className="rotacion" onClick={() => toggleSection("backend")}>
-              Your Back-end Developer {expandedSections.backend ? " --" : " +"}
-            </h4>
+            <h4>Your Back-end Developer</h4>
           </div>
-          <div className="dos"> + </div>
+          <div className="dos" onClick={() => toggleSection("backend")}>
+            {expandedSections.backend ? (
+              <img
+                src="/contraer.svg"
+                alt="Contraer"
+                className="contraer cursor-pointer"
+              />
+            ) : (
+              <img
+                src="/contraer.svg"
+                alt="Expandir"
+                className="expandir cursor-pointer"
+              />
+            )}
+          </div>
         </div>
-        {expandedSections.backend && (
-          <div
-            style={{ transition: "max-height 0.5s ease", overflow: "hidden" }}
-          >
+        {/* Nota: Ya no usamos && para condicionar el render */}
+        <div
+          className={`content ${
+            expandedSections.backend ? "expanded" : "collapsed"
+          }`}
+        >
+          <div className="content_sub_container">
             <p>
               I build backend infrastructures using{" "}
               <span>
@@ -99,17 +118,39 @@ const Section_3 = () => {
               .
             </p>
           </div>
-        )}
+        </div>
       </div>
 
       {/* ---------------------       Front end     ------------------------- */}
 
-      <div className="expertiseFlexItems impar">
-        <h4 className="rotacion" onClick={() => toggleSection("frontend")}>
-          Your Front-end Developer {expandedSections.frontend ? " --" : " +"}
-        </h4>
-        {expandedSections.frontend && (
-          <div>
+      <div className="expertiseFlexItems">
+        <div className="h4_boton rotacion list_title_div">
+          <div className="uno">
+            <h4>Your Front-end Developer</h4>
+          </div>
+          <div className="dos" onClick={() => toggleSection("frontend")}>
+            {expandedSections.frontend ? (
+              <img
+                src="/contraer.svg"
+                alt="Contraer"
+                className="contraer cursor-pointer"
+              />
+            ) : (
+              <img
+                src="/contraer.svg"
+                alt="Expandir"
+                className="expandir cursor-pointer"
+              />
+            )}
+          </div>
+        </div>
+
+        <div
+          className={`content ${
+            expandedSections.frontend ? "expanded" : "collapsed"
+          }`}
+        >
+          <div className="content_sub_container">
             <p>
               I create user interfaces using{" "}
               <span>
@@ -152,17 +193,38 @@ const Section_3 = () => {
               .
             </p>
           </div>
-        )}
+        </div>
       </div>
 
       {/* ---------------------       Fullstack   ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <h4 className="rotacion" onClick={() => toggleSection("fullstack")}>
-          A Developer for Your Team {expandedSections.fullstack ? " --" : " +"}
-        </h4>
-        {expandedSections.fullstack && (
-          <div>
+        <div className="h4_boton rotacion list_title_div">
+          <div className="uno">
+            <h4>A Developer for Your Team</h4>
+          </div>
+          <div className="dos" onClick={() => toggleSection("fullstack")}>
+            {expandedSections.fullstack ? (
+              <img
+                src="/contraer.svg"
+                alt="Contraer"
+                className="contraer cursor-pointer"
+              />
+            ) : (
+              <img
+                src="/contraer.svg"
+                alt="Expandir"
+                className="expandir cursor-pointer"
+              />
+            )}
+          </div>
+        </div>
+        <div
+          className={`content ${
+            expandedSections.fullstack ? "expanded" : "collapsed"
+          }`}
+        >
+          <div className="content_sub_container">
             <p>
               Looking for a reliable fullstack developer to integrate into your
               team? With a focus on finding solutions, I'm here to help you
@@ -170,57 +232,136 @@ const Section_3 = () => {
               I offer both achievement alternatives or hour-rate.
             </p>
           </div>
-        )}
+        </div>
       </div>
 
       {/* ---------------------       Ecommerce   ------------------------- */}
 
-      <div className="expertiseFlexItems impar ">
-        <h4 className="rotacion">Launch Your E-commerce Site from Scratch</h4>
-        <p>
-          Ready to transform your vision into a fully functional e-commerce
-          platform. Customized product pages, offer sections, display by
-          categories and secure checkout processes, every detail is crafted.
-        </p>
+      <div className="expertiseFlexItems">
+        <div className="h4_boton rotacion list_title_div">
+          <div className="uno">
+            <h4>Launch Your E-commerce Site from Scratch</h4>
+          </div>
+          <div className="dos" onClick={() => toggleSection("commerce")}>
+            {expandedSections.commerce ? (
+              <img
+                src="/contraer.svg"
+                alt="Contraer"
+                className="contraer cursor-pointer"
+              />
+            ) : (
+              <img
+                src="/contraer.svg"
+                alt="Expandir"
+                className="expandir cursor-pointer"
+              />
+            )}
+          </div>
+        </div>
+        <div
+          className={`content ${
+            expandedSections.commerce ? "expanded" : "collapsed"
+          }`}
+        >
+          <div className="content_sub_container">
+            <p>
+              Ready to transform your vision into a fully functional e-commerce
+              platform. Customized product pages, offer sections, display by
+              categories and secure checkout processes, every detail is crafted.
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* ---------------------       Figma    ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <h4 className="rotacion">
-          Transform Figma Designs into Responsive, Animated Experiences.
-        </h4>
-        <p>
-          Turn static Figma files into dynamic, fully responsive interfaces.
-          Using handcrafted CSS or Js libraries ( FramerMotion , Swiper ,
-          tailwind ) , I create interactive, visually compelling experiences
-          that retain the integrity of your design vision. Let's bring your
-          design to life
-        </p>
+        <div className="h4_boton rotacion list_title_div">
+          <div className="uno">
+            <h4>
+              Transform Figma Designs into Responsive, Animated Experiences.
+            </h4>
+          </div>
+          <div className="dos" onClick={() => toggleSection("designs")}>
+            {expandedSections.designs ? (
+              <img
+                src="/contraer.svg"
+                alt="Contraer"
+                className="contraer cursor-pointer"
+              />
+            ) : (
+              <img
+                src="/contraer.svg"
+                alt="Expandir"
+                className="expandir cursor-pointer"
+              />
+            )}
+          </div>
+        </div>
+        <div
+          className={`content ${
+            expandedSections.designs ? "expanded" : "collapsed"
+          }`}
+        >
+          <div className="content_sub_container">
+            <p>
+              Turn static Figma files into dynamic, fully responsive interfaces.
+              Using handcrafted CSS or Js libraries ( FramerMotion , Swiper ,
+              tailwind ) , I create interactive, visually compelling experiences
+              that retain the integrity of your design vision. Let's bring your
+              design to life
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* ---------------------       Mate     ------------------------- */}
 
-      <div className="expertiseFlexItems impar">
-        <h4 className="rotacion ">
-          The secret weapon
-          <img
-            src={matesito}
-            alt="Mate"
-            style={{
-              width: "28.8px",
-              height: "28.8px",
-              marginLeft: "8px",
-              verticalAlign: "middle",
-            }}
-          />
-        </h4>
-        <p>
-          Powered by mate—the South American drink that keeps me awake and
-          sharp—I'm always ready to deliver results on time. Consider it my
-          antioxidant secret weapon for staying focused and ensuring your
-          project is finished right on schedule.
-        </p>
+      <div className="expertiseFlexItems">
+        <div className="h4_boton rotacion list_title_div">
+          <div className="uno">
+            <h4>The secret weapon</h4>
+          </div>
+          <div className="dos" onClick={() => toggleSection("weapon")}>
+            {expandedSections.weapon ? (
+              <img
+                src="/contraer.svg"
+                alt="Contraer"
+                className="contraer cursor-pointer"
+              />
+            ) : (
+              <img
+                src="/contraer.svg"
+                alt="Expandir"
+                className="expandir cursor-pointer"
+              />
+            )}
+          </div>
+        </div>
+        <div
+          className={`content ${
+            expandedSections.weapon ? "expanded" : "collapsed"
+          }`}
+        >
+          <div className="content_sub_container">
+            <img
+              src={matesito}
+              alt="Mate"
+              style={{
+                width: "28.8px",
+                height: "28.8px",
+                marginLeft: "8px",
+                verticalAlign: "middle",
+              }}
+            />
+            <p>
+              Powered by mate—the South American drink that keeps me awake and
+              sharp—I'm always ready to deliver results on time. Consider it my
+              antioxidant secret weapon for staying focused and ensuring your
+              project is finished right on schedule.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

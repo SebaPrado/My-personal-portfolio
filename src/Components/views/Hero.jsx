@@ -33,7 +33,7 @@ const Hero = () => {
     <div className="hero">
       <div className="presentacion">
         <div className="mi_nombre">
-          <div className="letters">I am </div>
+          <div className="letters_s"> I am</div>
           <div className="letters">Sebastian Prado.</div>
         </div>
       </div>
