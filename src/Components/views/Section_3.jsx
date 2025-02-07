@@ -15,15 +15,17 @@ const Section_3 = () => {
   return (
     <div className="expertiseFlexContainer ">
       <div className="seccciones">
-        <div className="letters_s"> I am</div>
-        <div className="letters">Sebastian Prado.</div>
+        <div>
+          <div className="letters_s"> Full-stack</div>
+          <div className="letters">Developer.</div>
+        </div>
       </div>
       {/* ---------------------       Backend     ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton rotacion list_title_div">
-          <div className="uno">
-            <h4>Your Back-end Developer</h4>
+        <div className="h4_boton rotacion list_title_div ">
+          <div>
+            <h4>Back-end </h4>
           </div>
           <div className="dos" onClick={() => toggleSection("backend")}>
             {expandedSections.backend ? (
@@ -126,7 +128,7 @@ const Section_3 = () => {
       <div className="expertiseFlexItems">
         <div className="h4_boton rotacion list_title_div">
           <div className="uno">
-            <h4>Your Front-end Developer</h4>
+            <h4>Front-end </h4>
           </div>
           <div className="dos" onClick={() => toggleSection("frontend")}>
             {expandedSections.frontend ? (
@@ -198,7 +200,7 @@ const Section_3 = () => {
 
       {/* ---------------------       Fullstack   ------------------------- */}
 
-      <div className="expertiseFlexItems">
+      {/* <div className="expertiseFlexItems">
         <div className="h4_boton rotacion list_title_div">
           <div className="uno">
             <h4>A Developer for Your Team</h4>
@@ -233,14 +235,14 @@ const Section_3 = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* ---------------------       Ecommerce   ------------------------- */}
 
       <div className="expertiseFlexItems">
         <div className="h4_boton rotacion list_title_div">
           <div className="uno">
-            <h4>Launch Your E-commerce Site from Scratch</h4>
+            <h4> E-commerce from Scratch</h4>
           </div>
           <div className="dos" onClick={() => toggleSection("commerce")}>
             {expandedSections.commerce ? (
@@ -279,7 +281,7 @@ const Section_3 = () => {
         <div className="h4_boton rotacion list_title_div">
           <div className="uno">
             <h4>
-              Transform Figma Designs into Responsive, Animated Experiences.
+              Figma Designs into responsive, animated UIs.
             </h4>
           </div>
           <div className="dos" onClick={() => toggleSection("designs")}>

@@ -18,7 +18,9 @@ function Layout() {
   if (loading) {
     return (
       <div className={`loading-icon ${fadeOut ? "fade-out" : ""}`}>
+        <h2 className="loading">
         Starting...
+        </h2>
       </div>
     );
   } else {

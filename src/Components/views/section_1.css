@@ -1,7 +1,7 @@
 .helloText {
-font-size: 23px !important;
+font-size: 20px !important;
   line-height: 50px !important;
-  letter-spacing: 1.3px;
+  /* letter-spacing: 1px; */
   color: var(--color1);
   margin-top: 50px;
   margin-bottom: 50px;
@@ -102,8 +102,8 @@ font-size: 23px !important;
 
 
   .email-button {
-    background: linear-gradient(to right, var(--color2), var(--color1)); 
-    color: var(--color6) !important;
+    background: linear-gradient(to right, var(--color4), var(--color1)); 
+    color: var(--white) !important;
     padding: 14px 5vw;
     text-decoration: none;
     border-radius: 30px 2px;
@@ -119,7 +119,7 @@ font-size: 23px !important;
     font-weight: bolder !important;
   
     background-color: var(--color3);
-    color: var(--color6) !important;
+    color: var(--white) !important;
   }
 /*   --------------------      boton   /\   -------------------------------- */
   
