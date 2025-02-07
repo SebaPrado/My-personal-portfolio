@@ -4,9 +4,11 @@ import "animate.css";
 import Hero from "./Hero.jsx";
 import Section_1 from "./Section_1.jsx";
 import Section_2 from "./Section_2.jsx";
-import Section_3 from "./Section_3.jsx";
+import Section_3_1 from "./Section_3_1.jsx";
+import Section_3_2 from "./Section_3_2.jsx";
+import Section_3_3 from "./Section_3_3.jsx";
 import Section_4 from "./Section_4.jsx";
-import Section_5 from "./Section_5.jsx"
+import Section_5 from "./Section_5.jsx";
 
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 const cardVariants = (index) => ({
@@ -140,7 +142,10 @@ function FramerMotion() {
       </section>
 
       <section className="section3 containerLarge">
-        <Section_3/>
+        <Section_3_1 />
+      </section>
+      <section className="section3 containerLarge">
+        <Section_3_2 />
       </section>
 
       {/* ========================   Section 4_SLIDER      ===========================  */}
@@ -152,7 +157,7 @@ function FramerMotion() {
       </section>
 
       <section>
-        <Section_5/>
+        <Section_5 />
       </section>
 
       {/* ========================      section_4      ===========================  */}
