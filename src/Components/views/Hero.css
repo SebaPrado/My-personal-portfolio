@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   background: linear-gradient(to right, var(--color1), #fdfffd); 
-  transform: rotate(-6deg); 
+  transform: rotate(-3deg); 
   height: 100vh;
   width: 90%;
   margin-left: 55px;
@@ -18,9 +18,10 @@
   /* background-color:  greenyellow; */
 }
 .mi_nombre {
-  font-size: 2.2rem; 
+  font-size: 3rem;
+  /* color: #efc955; */
   color:var(--white);
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 0.2rem;
   display: flex;
   flex-direction: column;
@@ -28,11 +29,11 @@
   /* background-color: aquamarine; */
 }
 .letters_s{
-    transform: rotate(6deg); 
+    transform: rotate(3deg); 
     margin-left: 2.5rem;
 }
 .letters{
-  transform: rotate(6deg); 
+  transform: rotate(3deg); 
   margin-left: 2rem;
 }
 .hablity_agriculturalengineer {
@@ -51,10 +52,9 @@
 .hablity_ai_agent_creator {
   font-size: 1.5rem; 
   margin: 20px 0; 
-  background: linear-gradient(to right, var(--color3), var(--white)); 
+  background: linear-gradient(to right,var(--white),  #c09614 ); 
   margin-right: 2rem;
   margin-left: 3rem;
-
   padding: 15px;
   color:var(--color1);
   padding-left: 15vw;
@@ -65,21 +65,24 @@
 .hablity_web_developer{
     margin-left: -1rem;
   font-size: 1.5rem; 
-  background: linear-gradient(to right,  var(--color2) ,#01293f); 
-
-
+  background: linear-gradient(to right,  rgb(187, 249, 196), var(--color1)); 
   padding: 15px;
-  color:var(--white);
+  color:var(--color1);
   padding-left: 24vw;
   border-radius: 30px 2px;
   font-weight: 400;
 }
 
 /* Estilos responsivos */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .mi_nombre {
     padding-top: 4rem;
     /* padding-bottom: 3rem; */
+  }
+  .hero{
+    /* padding-top: 30px; */
+   height: fit-content;
+   padding-bottom: 25vh;
   }
 
   .presentacion {

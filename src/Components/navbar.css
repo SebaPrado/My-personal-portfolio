@@ -1,4 +1,9 @@
-/* ============================         NAVBAR         ==========================
+/* ============================         NAVBAR         ==========================*/
+
+.nav{
+    /* background-color: rgb(249, 150, 20);
+    border: 2px solid red; */
+}
 
 /* Estilos para el AppBar */
 .custom-app-bar {
@@ -37,22 +42,39 @@
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 100%;
+    width: 60%;
+    /* width: 100%; */
     background-color: transparent;
+    /* background-color: antiquewhite; */
     transition: background-color 0.3s ease;
   }
+
   
   .main-container.scrolled {
     background-color: rgba(255, 255, 255, 0.8);
   }
   
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 20%;
+    z-index: 1;
+  } 
   /* Estilos responsivos */
   @media screen and (max-width: 600px) {
     .main-container {
-      background-color: transparent; /* Fondo transparente en pantallas pequeñas */
+      background-color: transparent; 
+      /* background-color: greenyellow; */
       padding-top: 0;
       padding-bottom: 0;
+      width: 100% !important;
     }
+    .sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      } 
   
     .custom-app-bar {
       max-width: 100%;
@@ -139,10 +161,6 @@
     display: none;
   }
   
-  .sticky {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-  } */
+ 
 
   /* ============================       NAVBAR      ========================== */

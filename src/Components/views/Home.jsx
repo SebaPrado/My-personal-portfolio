@@ -167,7 +167,7 @@ function FramerMotion() {
 
       {/* =====================        LETS TALK         ======================== */}
 
-      <section className="section-lets-talk container">
+      <section className="section-lets-talk ">
         <div className="lets-talk-flexContainer">
           <div className="lets-talk-flexItem">
             <h2>Let's talk!</h2>

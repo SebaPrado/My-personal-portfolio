@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="hablity_agriculturalengineer"> Agricultural engineer</div>
-      <div className="hablity_ai_agent_creator"> Ai agents creator</div>
+      <div className="hablity_ai_agent_creator"> Ai agent creator</div>
       <div className="hablity_web_developer"> Fullstack web developer</div>
     </div>
   );

@@ -42,9 +42,10 @@ function Navbar() {
 
   return (
     <>  
-      <div className=''>    
+      <div className='nav'>    
         <ThemeProvider theme={theme}>
           <Box className="main-container sticky">
+            {/* <div className='nav'> */}
             <AppBar position="static" className="custom-app-bar" sx={{ backgroundColor: 'var(--color1)' }}>  
               <Toolbar className="custom-toolbar">
                 <IconButton
@@ -78,6 +79,7 @@ function Navbar() {
                 </Box>
               </Toolbar>
             </AppBar>
+          {/* </div> */}
           </Box>
           <Drawer
             anchor="top"

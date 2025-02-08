@@ -15,15 +15,18 @@ const Section_3_2 = () => {
   return (
     <div className="expertiseFlexContainer ">
       <div className="seccciones bkc2">
-        <div>
-          <div className="letters_s"> AI</div>
-          <div className="letters">Developer.</div>
+        <div className="titles">
+          <div> AI</div>
+          <div>Developer.</div>
         </div>
       </div>
       {/* ---------------------       Backend     ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton bkc2_subtitle rotacion list_title_div ">
+        <div
+          className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
+          onClick={() => toggleSection("backend")}
+        >
           <div>
             <h4> Open AI developer </h4>
           </div>
@@ -128,7 +131,10 @@ const Section_3_2 = () => {
       {/* ---------------------       Front end     ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton bkc2_subtitle rotacion list_title_div">
+        <div
+          className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
+          onClick={() => toggleSection("frontend")}
+        >
           <div className="uno">
             <h4> Webs AI Assistants</h4>
           </div>
@@ -202,12 +208,13 @@ const Section_3_2 = () => {
         </div>
       </div>
 
-    
-
       {/* ---------------------       Ecommerce   ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton bkc2_subtitle rotacion list_title_div">
+        <div
+          className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
+          onClick={() => toggleSection("commerce")}
+        >
           <div className="uno">
             <h4> sebasApi - OpenAI - Whstsapp agent</h4>
           </div>
@@ -248,7 +255,10 @@ const Section_3_2 = () => {
       {/* ---------------------       Figma    ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton bkc2_subtitle rotacion list_title_div">
+        <div
+          className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
+          onClick={() => toggleSection("designs")}
+        >
           <div className="uno">
             <h4>Prompt engineering.</h4>
           </div>
@@ -274,13 +284,16 @@ const Section_3_2 = () => {
           }`}
         >
           <div className="content_sub_container">
-            <p>
-              Turn static Figma files into dynamic, fully responsive interfaces.
-              Using handcrafted CSS or Js libraries ( FramerMotion , Swiper ,
-              tailwind ) , I create interactive, visually compelling experiences
-              that retain the integrity of your design vision. Let's bring your
-              design to life
-            </p>
+            <ul>
+              <li>
+                {" "}
+                Turn static Figma files into dynamic, fully responsive
+                interfaces. Using handcrafted CSS or Js libraries ( FramerMotion
+                , Swiper , tailwind ) , I create interactive, visually
+                compelling experiences that retain the integrity of your design
+                vision. Let's bring your design to life
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -288,11 +301,14 @@ const Section_3_2 = () => {
       {/* ---------------------       Mate     ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton bkc2_subtitle rotacion list_title_div">
+        <div
+          className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
+          onClick={() => toggleSection("weapon")}
+        >
           <div className="uno">
             <h4>The strategy</h4>
           </div>
-          <div className="dos" onClick={() => toggleSection("weapon")}>
+          <div className="dos">
             {expandedSections.weapon ? (
               <img
                 src="/contraer.svg"

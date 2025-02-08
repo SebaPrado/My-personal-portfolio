@@ -15,19 +15,22 @@ const Section_3_3 = () => {
   return (
     <div className="expertiseFlexContainer ">
       <div className="seccciones bkc3">
-        <div>
-          <div className="letters_s"> Full-stack</div>
-          <div className="letters">Developer.</div>
+        <div className="titles">
+          <div> Full-stack</div>
+          <div>Developer.</div>
         </div>
       </div>
       {/* ---------------------       Backend     ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton bkc3_subtitle rotacion list_title_div ">
+        <div
+          className="h4_boton bkc3_subtitle rotacion list_title_div cursor-pointer"
+          onClick={() => toggleSection("backend")}
+        >
           <div>
             <h4>Back-end </h4>
           </div>
-          <div className="dos" onClick={() => toggleSection("backend")}>
+          <div className="dos">
             {expandedSections.backend ? (
               <img
                 src="/contraer.svg"
@@ -128,11 +131,14 @@ const Section_3_3 = () => {
       {/* ---------------------       Front end     ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton bkc3_subtitle rotacion list_title_div">
+        <div
+          className="h4_boton bkc3_subtitle rotacion list_title_div cursor-pointer"
+          onClick={() => toggleSection("frontend")}
+        >
           <div className="uno">
             <h4>Front-end </h4>
           </div>
-          <div className="dos" onClick={() => toggleSection("frontend")}>
+          <div className="dos">
             {expandedSections.frontend ? (
               <img
                 src="/contraer.svg"
@@ -205,11 +211,14 @@ const Section_3_3 = () => {
       {/* ---------------------       Ecommerce   ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton bkc3_subtitle rotacion list_title_div">
+        <div
+          className="h4_boton bkc3_subtitle rotacion list_title_div cursor-pointer"
+          onClick={() => toggleSection("commerce")}
+        >
           <div className="uno">
             <h4> E-commerce from Scratch</h4>
           </div>
-          <div className="dos" onClick={() => toggleSection("commerce")}>
+          <div className="dos">
             {expandedSections.commerce ? (
               <img
                 src="/contraer.svg"
@@ -246,11 +255,14 @@ const Section_3_3 = () => {
       {/* ---------------------       Figma    ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton bkc3_subtitle rotacion list_title_div">
+        <div
+          className="h4_boton bkc3_subtitle rotacion list_title_div cursor-pointer"
+          onClick={() => toggleSection("designs")}
+        >
           <div className="uno">
             <h4>Figma Designs into responsive, animated UIs.</h4>
           </div>
-          <div className="dos" onClick={() => toggleSection("designs")}>
+          <div className="dos">
             {expandedSections.designs ? (
               <img
                 src="/contraer.svg"
@@ -272,13 +284,15 @@ const Section_3_3 = () => {
           }`}
         >
           <div className="content_sub_container">
-            <p>
-              Turn static Figma files into dynamic, fully responsive interfaces.
-              Using handcrafted CSS or Js libraries ( FramerMotion , Swiper ,
-              tailwind ) , I create interactive, visually compelling experiences
-              that retain the integrity of your design vision. Let's bring your
-              design to life
-            </p>
+            <ul>
+              <li>
+                Turn static Figma files into dynamic, fully responsive
+                interfaces. Using handcrafted CSS or Js libraries ( FramerMotion
+                , Swiper , tailwind ) , I create interactive, visually
+                compelling experiences that retain the integrity of your design
+                vision. Let's bring your design to life
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -286,11 +300,14 @@ const Section_3_3 = () => {
       {/* ---------------------       Mate     ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton bkc3_subtitle rotacion list_title_div">
+        <div
+          className="h4_boton bkc3_subtitle rotacion list_title_div cursor-pointer"
+          onClick={() => toggleSection("weapon")}
+        >
           <div className="uno">
             <h4>The secret weapon</h4>
           </div>
-          <div className="dos" onClick={() => toggleSection("weapon")}>
+          <div className="dos">
             {expandedSections.weapon ? (
               <img
                 src="/contraer.svg"
