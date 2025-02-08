@@ -17,21 +17,21 @@ const Section_3_2 = () => {
       <div className="seccciones bkc2">
         <div className="titles">
           <div> AI</div>
-          <div>Developer.</div>
+          <div> Integration & Development</div>
         </div>
       </div>
-      {/* ---------------------       Backend     ------------------------- */}
 
+      {/* ---------------------       1 AI Assistant Development    ------------------------- */}
       <div className="expertiseFlexItems">
         <div
           className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
-          onClick={() => toggleSection("backend")}
+          onClick={() => toggleSection("customAI")}
         >
-          <div>
-            <h4> Open AI developer </h4>
+          <div className="uno">
+            <h4> AI Assistant Development</h4>
           </div>
           <div className="dos">
-            {expandedSections.backend ? (
+            {expandedSections.customAI ? (
               <img
                 src="/contraer.svg"
                 alt="Contraer"
@@ -46,100 +46,40 @@ const Section_3_2 = () => {
             )}
           </div>
         </div>
-        {/* Nota: Ya no usamos && para condicionar el render */}
         <div
           className={`content ${
-            expandedSections.backend ? "expanded" : "collapsed"
+            expandedSections.customAI ? "expanded" : "collapsed"
           }`}
         >
           <div className="content_sub_container">
             <ul>
               <li>
-                I build backend infrastructures using{" "}
-                <span>
-                  {" "}
-                  <strong>Node.js</strong>
-                </span>{" "}
-                and
-                <span>
-                  <strong> Express</strong>
-                </span>
-                , building{" "}
-                <span>
-                  <strong>RESTful APIs </strong>
-                </span>
-                with asynchronous functions for data handling. Middlewares for{" "}
-                <span>
-                  <strong>Authentication </strong>
-                </span>
-                and route controllers are integrated to manage operations.
+                Built a custom Node.js API that interfaces with
+                OpenAI's platform for comprehensive AI assistant management
               </li>
               <li>
-                I organize code following the
-                <span>
-                  <strong> MVC architecture</strong>
-                </span>{" "}
-                pattern, separating{" "}
-                <span>
-                  <strong>Models </strong>
-                </span>
-                for data structures and{" "}
-                <span>
-                  <strong>Controllers</strong>
-                </span>{" "}
-                for business logic.
-                <span>
-                  <strong> CRUD operations</strong>
-                </span>{" "}
-                (Create, Read, Update, Delete) are implemented and tested using
-                tools like{" "}
-                <span>
-                  <strong>Insomnia. </strong>
-                </span>
+                Full lifecycle control of AI agents, including creation,
+                modification, and monitoring of Assistants, Threads, Messages, Runs, States.
               </li>
               <li>
-                I work with databases like
-                <span>
-                  <strong> MongoDB</strong>
-                </span>
-                ,{" "}
-                <span>
-                  <strong>MySQL</strong>
-                </span>
-                , and
-                <span>
-                  <strong> PostgreSQL</strong>
-                </span>{" "}
-                to address storage needs.
-              </li>
-              <li>
-                Authentication systems are implemented using sessions with{" "}
-                <span>
-                  <strong>Passport.js</strong>
-                </span>{" "}
-                and API authentication with
-                <span>
-                  <strong> JWT</strong>
-                </span>
-                .
+                I connect Open AI, Databases, Google sheets, Calendly , Whatsapp/Instagram API  . 
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* ---------------------       Front end     ------------------------- */}
-
+      {/* ---------------------       2    ------------------------- */}
       <div className="expertiseFlexItems">
         <div
           className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
-          onClick={() => toggleSection("frontend")}
+          onClick={() => toggleSection("aiWidget")}
         >
           <div className="uno">
-            <h4> Webs AI Assistants</h4>
+            <h4>AI websites Widget </h4>
           </div>
           <div className="dos">
-            {expandedSections.frontend ? (
+            {expandedSections.aiWidget ? (
               <img
                 src="/contraer.svg"
                 alt="Contraer"
@@ -154,72 +94,41 @@ const Section_3_2 = () => {
             )}
           </div>
         </div>
-
         <div
           className={`content ${
-            expandedSections.frontend ? "expanded" : "collapsed"
+            expandedSections.aiWidget ? "expanded" : "collapsed"
           }`}
         >
           <div className="content_sub_container">
             <ul>
               <li>
-                I create user interfaces using{" "}
-                <span>
-                  <strong>React.js</strong>
-                </span>
-                , implementing a{" "}
-                <span>
-                  <strong> Components architecture</strong>
-                </span>{" "}
-                for code reusability and efficiency. I use{" "}
-                <span>
-                  <strong>React Router</strong>
-                </span>{" "}
-                to create a smooth navigation experience.
+                Developed a plug-and-play AI assistant widget deployable via
+                simple script integration
               </li>
               <li>
-                I developed API integrations through{" "}
-                <span>
-                  <strong>Axios</strong>
-                </span>{" "}
-                to handle all backend communications and data fetching
-                operations.
+                A 24/7 automated sales and support solution that
+                seamlessly integrates into any website
               </li>
               <li>
-                For state management, I implemented{" "}
-                <span>
-                  <strong>Redux</strong>
-                </span>{" "}
-                to handle global application state, along with{" "}
-                <span>
-                  <strong>React Hooks</strong>
-                </span>{" "}
-                for local states. This way I manage
-                <span>
-                  <strong> e-commerces functionalities</strong>
-                </span>{" "}
-                and{" "}
-                <span>
-                  <strong> users authentication status</strong>
-                </span>
+                Built with Webpack for optimal performance and minimal resource
+                consumption
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* ---------------------       Ecommerce   ------------------------- */}
-
+      {/* ---------------------       3  ------------------------- */}
       <div className="expertiseFlexItems">
         <div
           className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
-          onClick={() => toggleSection("commerce")}
+          onClick={() => toggleSection("aiTraining")}
         >
           <div className="uno">
-            <h4> sebasApi - OpenAI - Whstsapp agent</h4>
+            <h4> Prompt Engineering and training</h4>
           </div>
           <div className="dos">
-            {expandedSections.commerce ? (
+            {expandedSections.aiTraining ? (
               <img
                 src="/contraer.svg"
                 alt="Contraer"
@@ -236,34 +145,38 @@ const Section_3_2 = () => {
         </div>
         <div
           className={`content ${
-            expandedSections.commerce ? "expanded" : "collapsed"
+            expandedSections.aiTraining ? "expanded" : "collapsed"
           }`}
         >
           <div className="content_sub_container">
             <ul>
               <li>
-                Ready to transform your vision into a fully functional
-                e-commerce platform. Customized product pages, offer sections,
-                display by categories and secure checkout processes, every
-                detail is crafted.
+                Expert in prompt engineering for specialized business use cases
+              </li>
+              <li>
+                Implementation of fine-tuning strategies for enhanced AI
+                performance
+              </li>
+              <li>
+                Development of custom training workflows for specific industry
+                requirements
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* ---------------------       Figma    ------------------------- */}
-
+      {/* ---------------------      4   ------------------------- */}
       <div className="expertiseFlexItems">
         <div
           className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
-          onClick={() => toggleSection("designs")}
+          onClick={() => toggleSection("socialIntegration")}
         >
           <div className="uno">
-            <h4>Prompt engineering.</h4>
+            <h4>Social Platform APIs Integration</h4>
           </div>
           <div className="dos">
-            {expandedSections.designs ? (
+            {expandedSections.socialIntegration ? (
               <img
                 src="/contraer.svg"
                 alt="Contraer"
@@ -280,18 +193,67 @@ const Section_3_2 = () => {
         </div>
         <div
           className={`content ${
-            expandedSections.designs ? "expanded" : "collapsed"
+            expandedSections.socialIntegration ? "expanded" : "collapsed"
           }`}
         >
           <div className="content_sub_container">
             <ul>
               <li>
-                {" "}
-                Turn static Figma files into dynamic, fully responsive
-                interfaces. Using handcrafted CSS or Js libraries ( FramerMotion
-                , Swiper , tailwind ) , I create interactive, visually
-                compelling experiences that retain the integrity of your design
-                vision. Let's bring your design to life
+                Integration of AI assistants across major social media platforms
+              </li>
+              <li>
+                Development of META-connected solutions for enhanced customer
+                reach
+              </li>
+              <li>Creation of multi-channel AI communication systems</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* ---------------------      5    ------------------------- */}
+      <div className="expertiseFlexItems">
+        <div
+          className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
+          onClick={() => toggleSection("autonomousAI")}
+        >
+          <div className="uno">
+            <h4>Function calling tool</h4>
+          </div>
+          <div className="dos">
+            {expandedSections.autonomousAI ? (
+              <img
+                src="/contraer.svg"
+                alt="Contraer"
+                className="contraer cursor-pointer"
+              />
+            ) : (
+              <img
+                src="/contraer.svg"
+                alt="Expandir"
+                className="expandir cursor-pointer"
+              />
+            )}
+          </div>
+        </div>
+        <div
+          className={`content ${
+            expandedSections.autonomousAI ? "expanded" : "collapsed"
+          }`}
+        >
+          <div className="content_sub_container">
+            <ul>
+              <li>
+                Development of AI systems capable of executing code through
+                OpenAI's function calling
+              </li>
+              <li>
+                Creation of self-managing AI agents that can generate and
+                maintain data based on customer interactions
+              </li>
+              <li>
+                Implementation of context-aware decision-making systems for
+                automated operations
               </li>
             </ul>
           </div>
