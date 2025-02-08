@@ -1,102 +1,96 @@
-/* src/Components/views/Hero.css */
 .hero {
-  color: var(--color1); 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 20px;
-  margin-top: -15px;
+  background: linear-gradient(to right, var(--color1), #fdfffd); 
+  transform: rotate(-6deg); 
+  height: 100vh;
+  width: 90%;
+  margin-left: 55px;
   border-radius: 30px 2px;
+  margin-bottom: 3rem;
+  padding-top: 3.8rem;
 }
 
 .presentacion {
   padding-left: 4rem;
   padding-right: -8rem;
-
+  margin-bottom: 3rem !important;
+  /* background-color:  greenyellow; */
+  
 
 }
 
 .mi_nombre {
-  transform: rotate(-6deg); 
-  font-size: 3rem; 
-  background: linear-gradient(to right, var(--color1),  #149e6eb5); 
-  color:var(--color7);
-  border-radius: 10px;
-  padding: 15px;
-  padding-left: 45px;
-  padding-top: 12rem;
-  border-radius: 30px 2px;
-  height: 100vh;
-  margin-bottom: 3rem;
-  align-content: center;
-  line-height: 4rem;
-  font-weight: 300;
+  font-size: 2.2rem; 
+  color:var(--white);
+  font-weight: 200;
   letter-spacing: 0.2rem;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  /* background-color: aquamarine; */
-}
-
-.letters{
-  transform: rotate(6deg); 
-  margin-left: 2rem;
-  margin-bottom: 1rem;
+  gap: 15px;
   /* background-color: aquamarine; */
 }
 
 .letters_s{
     transform: rotate(6deg); 
     margin-left: 2.5rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     /* background-color: aquamarine; */
 }
 
+.letters{
+  transform: rotate(6deg); 
+  margin-left: 2rem;
+    /* margin-bottom: 1rem; */
+
+  /* background-color: aquamarine; */
+}
+
 .hablity_agriculturalengineer {
-  transform: rotate(-6deg); 
-  font-size: 1.8rem; /* Tamaño de letra para habilidades */
-  margin-bottom: 20px;
-  margin-top: -30rem;
-  /* margin-left: -1rem; */
-  background: linear-gradient(to right, var(--color1), var(--white)); 
+  /* transform: rotate(-6deg);  */
+  font-size: 1.5rem; 
+  /* margin-top: -30rem; */
+  /* background: linear-gradient(to right, #055237, #01263ab3);  */
+  background: linear-gradient(to right,  var(--white), #0f4300f1); 
+  margin-left: 1rem;
+ 
   padding: 15px;
-  /* border-radius: 10px; */
-  color:var(--white);
+  color:var(--color1);
   padding-left: 14vw;
   margin-right: -1vw;
   border-radius: 30px 2px;
-  font-weight: 300;
+  font-weight: 200;
  
 }
 
 .hablity_ai_agent_creator {
-  transform: rotate(-6deg); /* Rotación de -8 grados */
-  font-size: 1.8rem; /* Tamaño de letra para habilidades */
-  margin: 20px 0; /* Margen superior e inferior */
+  /* transform: rotate(-6deg);  */
+  font-size: 1.5rem; /* Tamaño de letra para habilidades */
+  margin: 20px 0; 
   background: linear-gradient(to right, var(--white), var(--color1)); 
-  margin-left: 5rem;
+  margin-right: 2rem;
+  margin-left: 3rem;
 
-
-  /* border-radius: 10px; */
   padding: 15px;
   color:var(--color1);
-
   padding-left: 15vw;
   border-radius:  2px 30px;
-  font-weight: 300;
+  font-weight: 200;
 
 }
 
 .hablity_web_developer{
-  transform: rotate(-6deg); /* Rotación de -8 grados */
-  font-size: 1.8rem; /* Tamaño de letra para habilidades */
-  margin: 20px 0; /* Margen superior e inferior */
-  background: linear-gradient(to right, var(--color1), var(--white)); 
+    margin-left: -1rem;
+  font-size: 1.5rem; 
+  background: linear-gradient(to right,  var(--color2) ,#01293f); 
+
+
   padding: 15px;
   color:var(--white);
   padding-left: 24vw;
   border-radius: 30px 2px;
-  font-weight: 300;
+  font-weight: 200;
 
 
 

@@ -147,6 +147,9 @@ function FramerMotion() {
       <section className="section3 containerLarge">
         <Section_3_2 />
       </section>
+      <section className="section3 containerLarge">
+        <Section_3_3 />
+      </section>
 
       {/* ========================   Section 4_SLIDER      ===========================  */}
 

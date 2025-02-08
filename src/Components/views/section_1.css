@@ -102,7 +102,8 @@ font-size: 20px !important;
 
 
   .email-button {
-    background: linear-gradient(to right, var(--color4), var(--color1)); 
+    /* background: linear-gradient(to right, var(--color4), var(--color5));  */
+    background-color: var(--color1);
     color: var(--white) !important;
     padding: 14px 5vw;
     text-decoration: none;
@@ -118,7 +119,7 @@ font-size: 20px !important;
     transition: "background-color color 0.3s ease";
     font-weight: bolder !important;
   
-    background-color: var(--color3);
+    background-color: var(--color1);
     color: var(--white) !important;
   }
 /*   --------------------      boton   /\   -------------------------------- */

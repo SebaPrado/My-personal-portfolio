@@ -14,18 +14,18 @@ const Section_3_2 = () => {
 
   return (
     <div className="expertiseFlexContainer ">
-      <div className="seccciones">
+      <div className="seccciones bkc2">
         <div>
-          <div className="letters_s"> Full-stack</div>
+          <div className="letters_s"> AI</div>
           <div className="letters">Developer.</div>
         </div>
       </div>
       {/* ---------------------       Backend     ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton rotacion list_title_div ">
+        <div className="h4_boton bkc2_subtitle rotacion list_title_div ">
           <div>
-            <h4>Back-end </h4>
+            <h4> Open AI developer </h4>
           </div>
           <div className="dos" onClick={() => toggleSection("backend")}>
             {expandedSections.backend ? (
@@ -128,9 +128,9 @@ const Section_3_2 = () => {
       {/* ---------------------       Front end     ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton rotacion list_title_div">
+        <div className="h4_boton bkc2_subtitle rotacion list_title_div">
           <div className="uno">
-            <h4>Front-end </h4>
+            <h4> Webs AI Assistants</h4>
           </div>
           <div className="dos" onClick={() => toggleSection("frontend")}>
             {expandedSections.frontend ? (
@@ -202,51 +202,14 @@ const Section_3_2 = () => {
         </div>
       </div>
 
-      {/* ---------------------       Fullstack   ------------------------- */}
-
-      {/* <div className="expertiseFlexItems">
-        <div className="h4_boton rotacion list_title_div">
-          <div className="uno">
-            <h4>A Developer for Your Team</h4>
-          </div>
-          <div className="dos" onClick={() => toggleSection("fullstack")}>
-            {expandedSections.fullstack ? (
-              <img
-                src="/contraer.svg"
-                alt="Contraer"
-                className="contraer cursor-pointer"
-              />
-            ) : (
-              <img
-                src="/contraer.svg"
-                alt="Expandir"
-                className="expandir cursor-pointer"
-              />
-            )}
-          </div>
-        </div>
-        <div
-          className={`content ${
-            expandedSections.fullstack ? "expanded" : "collapsed"
-          }`}
-        >
-          <div className="content_sub_container">
-            <p>
-              Looking for a reliable fullstack developer to integrate into your
-              team? With a focus on finding solutions, I'm here to help you
-              accelerate project timelines and enhance productivity, considering
-              I offer both achievement alternatives or hour-rate.
-            </p>
-          </div>
-        </div>
-      </div> */}
+    
 
       {/* ---------------------       Ecommerce   ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton rotacion list_title_div">
+        <div className="h4_boton bkc2_subtitle rotacion list_title_div">
           <div className="uno">
-            <h4> E-commerce from Scratch</h4>
+            <h4> sebasApi - OpenAI - Whstsapp agent</h4>
           </div>
           <div className="dos" onClick={() => toggleSection("commerce")}>
             {expandedSections.commerce ? (
@@ -285,9 +248,9 @@ const Section_3_2 = () => {
       {/* ---------------------       Figma    ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton rotacion list_title_div">
+        <div className="h4_boton bkc2_subtitle rotacion list_title_div">
           <div className="uno">
-            <h4>Figma Designs into responsive, animated UIs.</h4>
+            <h4>Prompt engineering.</h4>
           </div>
           <div className="dos" onClick={() => toggleSection("designs")}>
             {expandedSections.designs ? (
@@ -325,9 +288,9 @@ const Section_3_2 = () => {
       {/* ---------------------       Mate     ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton rotacion list_title_div">
+        <div className="h4_boton bkc2_subtitle rotacion list_title_div">
           <div className="uno">
-            <h4>The secret weapon</h4>
+            <h4>The strategy</h4>
           </div>
           <div className="dos" onClick={() => toggleSection("weapon")}>
             {expandedSections.weapon ? (

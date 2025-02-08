@@ -14,18 +14,18 @@ const Section_3_1 = () => {
 
   return (
     <div className="expertiseFlexContainer ">
-      <div className="seccciones">
+      <div className="seccciones bkc1">
         <div>
-          <div className="letters_s"> Full-stack</div>
-          <div className="letters">Developer.</div>
+          <div className="letters_s"> Agricultural</div>
+          <div className="letters">Engineer.</div>
         </div>
       </div>
       {/* ---------------------       Backend     ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton rotacion list_title_div ">
+        <div className="h4_boton bkc1_subtitle rotacion list_title_div ">
           <div>
-            <h4>Back-end </h4>
+            <h4>Project manager </h4>
           </div>
           <div className="dos" onClick={() => toggleSection("backend")}>
             {expandedSections.backend ? (
@@ -128,9 +128,9 @@ const Section_3_1 = () => {
       {/* ---------------------       Front end     ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton rotacion list_title_div">
+        <div className="h4_boton bkc1_subtitle rotacion list_title_div">
           <div className="uno">
-            <h4>Front-end </h4>
+            <h4> Precision agricuture </h4>
           </div>
           <div className="dos" onClick={() => toggleSection("frontend")}>
             {expandedSections.frontend ? (
@@ -244,9 +244,9 @@ const Section_3_1 = () => {
       {/* ---------------------       Ecommerce   ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton rotacion list_title_div">
+        <div className="h4_boton bkc1_subtitle rotacion list_title_div">
           <div className="uno">
-            <h4> E-commerce from Scratch</h4>
+            <h4> Farming background</h4>
           </div>
           <div className="dos" onClick={() => toggleSection("commerce")}>
             {expandedSections.commerce ? (
@@ -283,7 +283,7 @@ const Section_3_1 = () => {
       </div>
 
       {/* ---------------------       Figma    ------------------------- */}
-
+{/* 
       <div className="expertiseFlexItems">
         <div className="h4_boton rotacion list_title_div">
           <div className="uno">
@@ -320,12 +320,12 @@ const Section_3_1 = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* ---------------------       Mate     ------------------------- */}
 
       <div className="expertiseFlexItems">
-        <div className="h4_boton rotacion list_title_div">
+        <div className="h4_boton bkc1_subtitle rotacion list_title_div">
           <div className="uno">
             <h4>The secret weapon</h4>
           </div>

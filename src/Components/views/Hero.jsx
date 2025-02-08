@@ -3,32 +3,31 @@ import "./Hero.css";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const animatedDivRef = useRef(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.replace("hidden", "blur-in-expand");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
 
-    const animatedDivRef = useRef(null);
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.replace("hidden", "blur-in-expand");
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.5 }
-      );
-  
-      const animatedDiv = animatedDivRef.current;
+    const animatedDiv = animatedDivRef.current;
+    if (animatedDiv) {
+      observer.observe(animatedDiv);
+    }
+
+    return () => {
       if (animatedDiv) {
-        observer.observe(animatedDiv);
+        observer.unobserve(animatedDiv);
       }
-  
-      return () => {
-        if (animatedDiv) {
-          observer.unobserve(animatedDiv);
-        }
-      };
-    }, []);
+    };
+  }, []);
   return (
     <div className="hero">
       <div className="presentacion">
@@ -39,20 +38,7 @@ const Hero = () => {
       </div>
       <div className="hablity_agriculturalengineer"> Agricultural engineer</div>
       <div className="hablity_ai_agent_creator"> Ai agents creator</div>
-
       <div className="hablity_web_developer"> Fullstack web developer</div>
-
-      <div>
-        {/* <div className="personalPresentation "></div> */}
-      {/* <div className="sebas_picture">
-          <img
-            ref={animatedDivRef}
-            className="profilePicture hidden"
-            src="/fotoperfil.png"
-            alt=""
-          />
-        </div> */}
-      </div>
     </div>
   );
 };
