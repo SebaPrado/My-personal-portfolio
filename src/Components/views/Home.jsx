@@ -144,7 +144,7 @@ function FramerMotion() {
       <section className="section3 containerLarge">
         <Section_3_1 />
       </section>
-      <section className="section3 containerLarge">
+      <section className="section3 containerLarge" id="ai">
         <Section_3_2 />
       </section>
       <section className="section3 containerLarge">

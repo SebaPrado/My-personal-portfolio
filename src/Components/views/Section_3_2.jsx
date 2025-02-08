@@ -30,7 +30,7 @@ const Section_3_2 = () => {
           <div>
             <h4> Open AI developer </h4>
           </div>
-          <div className="dos" onClick={() => toggleSection("backend")}>
+          <div className="dos">
             {expandedSections.backend ? (
               <img
                 src="/contraer.svg"
@@ -138,7 +138,7 @@ const Section_3_2 = () => {
           <div className="uno">
             <h4> Webs AI Assistants</h4>
           </div>
-          <div className="dos" onClick={() => toggleSection("frontend")}>
+          <div className="dos">
             {expandedSections.frontend ? (
               <img
                 src="/contraer.svg"
@@ -218,7 +218,7 @@ const Section_3_2 = () => {
           <div className="uno">
             <h4> sebasApi - OpenAI - Whstsapp agent</h4>
           </div>
-          <div className="dos" onClick={() => toggleSection("commerce")}>
+          <div className="dos">
             {expandedSections.commerce ? (
               <img
                 src="/contraer.svg"
@@ -262,7 +262,7 @@ const Section_3_2 = () => {
           <div className="uno">
             <h4>Prompt engineering.</h4>
           </div>
-          <div className="dos" onClick={() => toggleSection("designs")}>
+          <div className="dos">
             {expandedSections.designs ? (
               <img
                 src="/contraer.svg"
