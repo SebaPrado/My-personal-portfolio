@@ -11,16 +11,12 @@
   margin-bottom: 3rem;
   padding-top: 3.8rem;
 }
-
 .presentacion {
   padding-left: 4rem;
   padding-right: -8rem;
   margin-bottom: 3rem !important;
   /* background-color:  greenyellow; */
-  
-
 }
-
 .mi_nombre {
   font-size: 2.2rem; 
   color:var(--white);
@@ -31,41 +27,28 @@
   gap: 15px;
   /* background-color: aquamarine; */
 }
-
 .letters_s{
     transform: rotate(6deg); 
     margin-left: 2.5rem;
-    /* margin-bottom: 1rem; */
-    /* background-color: aquamarine; */
 }
-
 .letters{
   transform: rotate(6deg); 
   margin-left: 2rem;
-    /* margin-bottom: 1rem; */
-
-  /* background-color: aquamarine; */
 }
-
 .hablity_agriculturalengineer {
-  /* transform: rotate(-6deg);  */
   font-size: 1.5rem; 
-  /* margin-top: -30rem; */
-  /* background: linear-gradient(to right, #055237, #01263ab3);  */
-  background: linear-gradient(to right,  var(--white), #0f4300f1); 
+  background: linear-gradient(to right,  var(--white), #023047); 
   margin-left: 1rem;
- 
   padding: 15px;
   color:var(--color1);
   padding-left: 14vw;
   margin-right: -1vw;
   border-radius: 30px 2px;
-  font-weight: 200;
+  font-weight: 400;
  
 }
 
 .hablity_ai_agent_creator {
-  /* transform: rotate(-6deg);  */
   font-size: 1.5rem; /* Tamaño de letra para habilidades */
   margin: 20px 0; 
   background: linear-gradient(to right, var(--white), var(--color1)); 
@@ -76,8 +59,7 @@
   color:var(--color1);
   padding-left: 15vw;
   border-radius:  2px 30px;
-  font-weight: 200;
-
+  font-weight: 400;
 }
 
 .hablity_web_developer{
@@ -90,10 +72,7 @@
   color:var(--white);
   padding-left: 24vw;
   border-radius: 30px 2px;
-  font-weight: 200;
-
-
-
+  font-weight: 400;
 }
 
 /* Estilos responsivos */
