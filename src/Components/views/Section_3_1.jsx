@@ -261,7 +261,7 @@ const Section_3_1 = () => {
           onClick={() => toggleSection("weapon")}
         >
           <div className="uno">
-            <h4>My family</h4>
+            <h4>Family</h4>
           </div>
           <div className="dos" >
             {expandedSections.weapon ? (
