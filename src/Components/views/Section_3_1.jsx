@@ -16,8 +16,8 @@ const Section_3_1 = () => {
     <div className="expertiseFlexContainer ">
       <div className="seccciones bkc1">
         <div className="titles">
-          <div> Agricultural</div>
-          <div>Engineer.</div>
+          <div> About myself</div>
+          {/* <div>Engineer.</div> */}
         </div>
       </div>
       {/* ---------------------       Backend     ------------------------- */}
@@ -28,7 +28,7 @@ const Section_3_1 = () => {
           onClick={() => toggleSection("backend")}
         >
           <div>
-            <h4>Project manager </h4>
+            <h4>Agricultural Engineer</h4>
           </div>
           <div className="dos">
             {expandedSections.backend ? (
@@ -135,7 +135,7 @@ const Section_3_1 = () => {
           onClick={() => toggleSection("frontend")}
         >
           <div className="uno">
-            <h4> Precision agricuture </h4>
+            <h4> Life in Australia </h4>
           </div>
           <div className="dos" >
             {expandedSections.frontend ? (
@@ -261,7 +261,7 @@ const Section_3_1 = () => {
           onClick={() => toggleSection("weapon")}
         >
           <div className="uno">
-            <h4>The secret weapon</h4>
+            <h4>My family</h4>
           </div>
           <div className="dos" >
             {expandedSections.weapon ? (

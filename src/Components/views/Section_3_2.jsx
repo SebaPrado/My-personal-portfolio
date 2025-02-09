@@ -54,15 +54,17 @@ const Section_3_2 = () => {
           <div className="content_sub_container">
             <ul>
               <li>
-                Built a custom Node.js API that interfaces with
-                OpenAI's platform for comprehensive AI assistant management
+                Built a custom Node.js API that interfaces with OpenAI's
+                platform for comprehensive AI assistant management
               </li>
               <li>
                 Full lifecycle control of AI agents, including creation,
-                modification, and monitoring of Assistants, Threads, Messages, Runs, States.
+                modification, and monitoring of Assistants, Threads, Messages,
+                Runs, States.
               </li>
               <li>
-                I connect Open AI, Databases, Google sheets, Calendly , Whatsapp/Instagram API  . 
+                I connect Open AI, Databases, Google sheets, Calendly and
+                Whatsapp/Instagram API .
               </li>
             </ul>
           </div>
@@ -106,8 +108,8 @@ const Section_3_2 = () => {
                 simple script integration
               </li>
               <li>
-                A 24/7 automated sales and support solution that
-                seamlessly integrates into any website
+                A 24/7 automated sales and support Agent that seamlessly
+                integrates into any website
               </li>
               <li>
                 Built with Webpack for optimal performance and minimal resource
@@ -151,15 +153,14 @@ const Section_3_2 = () => {
           <div className="content_sub_container">
             <ul>
               <li>
-                Expert in prompt engineering for specialized business use cases
+                Prompt engineering for specialized business use cases
               </li>
               <li>
                 Implementation of fine-tuning strategies for enhanced AI
                 performance
               </li>
               <li>
-                Development of custom training workflows for specific industry
-                requirements
+                Development of static and dinamic context base for the assistant's training
               </li>
             </ul>
           </div>
@@ -243,17 +244,14 @@ const Section_3_2 = () => {
         >
           <div className="content_sub_container">
             <ul>
+              <li> This is probably the most important feature I could learn, despite is not a complex one</li>
               <li>
-                Development of AI systems capable of executing code through
-                OpenAI's function calling
+                With this tool I make AI agents capable of executing code . Through
+                function calling, I can ask the agent to determine whether to execute an Axios call or any function , asking the client for any parameter it needs to excecute the code.
               </li>
               <li>
-                Creation of self-managing AI agents that can generate and
-                maintain data based on customer interactions
-              </li>
-              <li>
-                Implementation of context-aware decision-making systems for
-                automated operations
+                It is an Implementation of context-aware decision-making systems for
+                automated operations.
               </li>
             </ul>
           </div>
