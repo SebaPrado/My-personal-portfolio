@@ -152,15 +152,14 @@ const Section_3_2 = () => {
         >
           <div className="content_sub_container">
             <ul>
-              <li>
-                Prompt engineering for specialized business use cases
-              </li>
+              <li>Prompt engineering for specialized business use cases</li>
               <li>
                 Implementation of fine-tuning strategies for enhanced AI
                 performance
               </li>
               <li>
-                Development of static and dinamic context base for the assistant's training
+                Development of static and dinamic context base for the
+                assistant's training
               </li>
             </ul>
           </div>
@@ -244,20 +243,76 @@ const Section_3_2 = () => {
         >
           <div className="content_sub_container">
             <ul>
-              <li> This is probably the most important feature I could learn, despite is not a complex one</li>
               <li>
-                With this tool I make AI agents capable of executing code . Through
-                function calling, I can ask the agent to determine whether to execute an Axios call or any function , asking the client for any parameter it needs to excecute the code.
+                {" "}
+                This is probably the most important feature I could learn,
+                despite is not a complex one
               </li>
               <li>
-                It is an Implementation of context-aware decision-making systems for
-                automated operations.
+                With this tool I make AI agents capable of executing code .
+                Through function calling, I can ask the agent to determine
+                whether to execute an Axios call or any function , asking the
+                client for any parameter it needs to excecute the code.
+              </li>
+              <li>
+                It is an Implementation of context-aware decision-making systems
+                for automated operations.
               </li>
             </ul>
           </div>
         </div>
       </div>
-
+      {/* ---------------------      5    ------------------------- */}
+      <div className="expertiseFlexItems">
+        <div
+          className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
+          onClick={() => toggleSection("autonomousAI")}
+        >
+          <div className="uno">
+            <h4>LangChain </h4>
+          </div>
+          <div className="dos">
+            {expandedSections.autonomousAI ? (
+              <img
+                src="/contraer.svg"
+                alt="Contraer"
+                className="contraer cursor-pointer"
+              />
+            ) : (
+              <img
+                src="/contraer.svg"
+                alt="Expandir"
+                className="expandir cursor-pointer"
+              />
+            )}
+          </div>
+        </div>
+        <div
+          className={`content ${
+            expandedSections.autonomousAI ? "expanded" : "collapsed"
+          }`}
+        >
+          <div className="content_sub_container">
+            <ul>
+              <li>
+                {" "}
+                This is probably the most important feature I could learn,
+                despite is not a complex one
+              </li>
+              <li>
+                With this tool I make AI agents capable of executing code .
+                Through function calling, I can ask the agent to determine
+                whether to execute an Axios call or any function , asking the
+                client for any parameter it needs to excecute the code.
+              </li>
+              <li>
+                It is an Implementation of context-aware decision-making systems
+                for automated operations.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       {/* ---------------------       Mate     ------------------------- */}
 
       <div className="expertiseFlexItems">
