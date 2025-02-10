@@ -166,7 +166,7 @@ p {
 }
 
 .expanded {
-  max-height: 500px;
+  /* max-height: 600px; */
   opacity: 1;
   /* padding: 1rem 0; */
   /* transform: rotate(4deg); */

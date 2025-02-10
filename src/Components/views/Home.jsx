@@ -188,27 +188,7 @@ function FramerMotion() {
 
       {/* ======================       CARDS         ========================  */}
 
-      {/* <section className="section7 containerLarge ">
-      <div className="titleH3">
-          <h3>Your partner in development</h3>
-        </div>
-        <div className="titleH3section7">
-          <h4>Check the cards in your hand with me on your team...</h4>
-        </div>
-        <div>
-          <div className="card-grid">
-            {food.map(([image, hueA, hueB], index) => (
-              <Card
-                image={image}
-                hueA={hueA}
-                hueB={hueB}
-                index={index}
-                key={index}
-              />
-            ))}
-          </div>
-        </div>
-      </section> */}
+    
 
       {/* =====================         FOOTER        ======================== */}
 

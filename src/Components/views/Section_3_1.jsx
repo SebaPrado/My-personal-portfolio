@@ -127,7 +127,7 @@ const Section_3_1 = () => {
             <ul>
               <li>
                 I have a very high <strong>English level</strong> as I lived in
-                Australia for 5.5 years and took several international English
+                Australia for 5.5 years and took international English
                 exams to objectively prove this skill (Proven English level:
                 Superior - C1 / PTE - 90 pts && CAE - band 8).
               </li>
@@ -189,9 +189,9 @@ const Section_3_1 = () => {
                 <strong>.. My balanced life ..</strong>
               </li>
               <li>
-                I never went without anything on my childhood
-                <strong>.. even though ..</strong> I had to drive cars at age 11
-                and trucks by age 15 to help on my dad's farm.
+                I never went without anything on my happy childhood
+                <strong>.. even though ..</strong> I had to drive tractors at age 11
+                and trucks by age 15 to asume responsibilies on my dad's farm.
               </li>
               <li>
                 Never missed a single day at school{" "}
@@ -205,13 +205,17 @@ const Section_3_1 = () => {
               <li>
                 I've been travelling away from home for a while{" "}
                 <strong>.. even though .. </strong> I have the best family and
-                friends supporting me back home
+                friends want me back home
               </li>
 
               <li>
                 I've learned to enjoy failures (so many failures...){" "}
                 <strong>.. even though .. </strong>I'm always working for
                 success.
+              </li>
+              <li>
+                I have big plans for the future{" "}
+                <strong>.. even though .. </strong> Life is now
               </li>
             </ul>
           </div>
@@ -220,7 +224,7 @@ const Section_3_1 = () => {
 
       {/* ---------------------       Family     ------------------------- */}
 
-      <div className="expertiseFlexItems">
+      {/* <div className="expertiseFlexItems">
         <div
           className="h4_boton bkc1_subtitle rotacion list_title_div cursor-pointer"
           onClick={() => toggleSection("weapon")}
@@ -270,7 +274,7 @@ const Section_3_1 = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

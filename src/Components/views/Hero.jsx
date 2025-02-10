@@ -36,9 +36,9 @@ const Hero = () => {
           <div className="letters">Sebastian Prado.</div>
         </div>
       </div>
-      <div className="hablity_agriculturalengineer"> Agricultural engineer</div>
-      <div className="hablity_ai_agent_creator"> Ai agent creator</div>
-      <div className="hablity_web_developer"> Fullstack web developer</div>
+      <div className="hablity_agriculturalengineer skill"> Agricultural engineer</div>
+      <div className="hablity_ai_agent_creator skill"> Ai agent creator</div>
+      <div className="hablity_web_developer skill"> Fullstack web developer</div>
     </div>
   );
 };

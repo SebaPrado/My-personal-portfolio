@@ -28,7 +28,7 @@ const Section_3_2 = () => {
           onClick={() => toggleSection("customAI")}
         >
           <div className="uno">
-            <h4> AI Assistant Development</h4>
+            <h4> AI Agents Developer</h4>
           </div>
           <div className="dos">
             {expandedSections.customAI ? (
@@ -54,17 +54,17 @@ const Section_3_2 = () => {
           <div className="content_sub_container">
             <ul>
               <li>
-                Built a custom Node.js API that interfaces with OpenAI's
-                platform for comprehensive AI assistant management
+                I create a custom Node.js API that interfaces with OpenAI's
+                platform for comprehensive AI assistants management
               </li>
               <li>
-                Full lifecycle control of AI agents, including creation,
-                modification, and monitoring of Assistants, Threads, Messages,
-                Runs, States.
+                Complete lifecycle control, including creation, modification,
+                and monitoring of Assistants, Threads, Messages, Executions, and
+                States.
               </li>
               <li>
-                I connect Open AI, Databases, Google sheets, Calendly and
-                Whatsapp/Instagram API .
+                I connect Open AI, Databases, Google sheets, Calendly,
+                Whatsapp/Instagram API, etc .
               </li>
             </ul>
           </div>
@@ -112,8 +112,8 @@ const Section_3_2 = () => {
                 integrates into any website
               </li>
               <li>
-                Built with Webpack for optimal performance and minimal resource
-                consumption
+                Built with Nodejs + React + Webpack for performance and minimal
+                resource consumption
               </li>
             </ul>
           </div>
@@ -153,14 +153,12 @@ const Section_3_2 = () => {
           <div className="content_sub_container">
             <ul>
               <li>Prompt engineering for specialized business use cases</li>
-              <li>
-                Implementation of fine-tuning strategies for enhanced AI
-                performance
-              </li>
+              <li>Implementation of fine-tuning strategies.</li>
               <li>
                 Development of static and dinamic context base for the
                 assistant's training
               </li>
+              <li>Evaluation-Validation , Hyperparameter Tuning.</li>
             </ul>
           </div>
         </div>
@@ -201,11 +199,7 @@ const Section_3_2 = () => {
               <li>
                 Integration of AI assistants across major social media platforms
               </li>
-              <li>
-                Development of META-connected solutions for enhanced customer
-                reach
-              </li>
-              <li>Creation of multi-channel AI communication systems</li>
+              <li>Development of META-connected agents.</li>
             </ul>
           </div>
         </div>
@@ -218,7 +212,7 @@ const Section_3_2 = () => {
           onClick={() => toggleSection("autonomousAI")}
         >
           <div className="uno">
-            <h4>Function calling tool</h4>
+            <h4> Open AI Function calling </h4>
           </div>
           <div className="dos">
             {expandedSections.autonomousAI ? (
@@ -244,19 +238,17 @@ const Section_3_2 = () => {
           <div className="content_sub_container">
             <ul>
               <li>
-                {" "}
-                This is probably the most important feature I could learn,
-                despite is not a complex one
+                Allow the AI agent freedom of action and the necessary
+                programming tools to act autonomously and execute functions of
+                significant scope.
               </li>
               <li>
-                With this tool I make AI agents capable of executing code .
-                Through function calling, I can ask the agent to determine
-                whether to execute an Axios call or any function , asking the
-                client for any parameter it needs to excecute the code.
+                AI agents capable of executing code . Through function calling,
+                the agent determine whether to execute any call or function ,
+                asking the client for any parameter needed to excecute the code.
               </li>
               <li>
-                It is an Implementation of context-aware decision-making systems
-                for automated operations.
+                Context-aware decision-making systems for automated operations.
               </li>
             </ul>
           </div>
@@ -266,13 +258,13 @@ const Section_3_2 = () => {
       <div className="expertiseFlexItems">
         <div
           className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
-          onClick={() => toggleSection("autonomousAI")}
+          onClick={() => toggleSection("LangChain")}
         >
           <div className="uno">
             <h4>LangChain </h4>
           </div>
           <div className="dos">
-            {expandedSections.autonomousAI ? (
+            {expandedSections.LangChain ? (
               <img
                 src="/contraer.svg"
                 alt="Contraer"
@@ -289,25 +281,29 @@ const Section_3_2 = () => {
         </div>
         <div
           className={`content ${
-            expandedSections.autonomousAI ? "expanded" : "collapsed"
+            expandedSections.LangChain ? "expanded" : "collapsed"
           }`}
         >
           <div className="content_sub_container">
             <ul>
               <li>
-                {" "}
-                This is probably the most important feature I could learn,
-                despite is not a complex one
+                Custom LangChain agents using the OpenAI API
+                integration, implementing memory chains for context
+                retention + conversational abilities.
               </li>
               <li>
-                With this tool I make AI agents capable of executing code .
-                Through function calling, I can ask the agent to determine
-                whether to execute an Axios call or any function , asking the
-                client for any parameter it needs to excecute the code.
+                Built sequential chain architectures to break down tasks
+                into manageable steps (ConversationChain)
               </li>
               <li>
-                It is an Implementation of context-aware decision-making systems
-                for automated operations.
+                Created document retrieval systems using Vector
+                stores and embeddings, enabling processing of
+                text datasets + Long term conversation memory with ChatHistory or Upstash .
+              </li>
+              <li>
+                Implemented LangChain tools for API orchestration, allowing
+                seamless integration with external services while maintaining
+                proper error handling and rate limiting.
               </li>
             </ul>
           </div>
