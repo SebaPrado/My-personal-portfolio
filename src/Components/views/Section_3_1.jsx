@@ -28,7 +28,7 @@ const Section_3_1 = () => {
           onClick={() => toggleSection("backend")}
         >
           <div>
-            <h4>Agricultural Engineer</h4>
+            <h4>Agricultural Engineering </h4>
           </div>
           <div className="dos">
             {expandedSections.backend ? (
@@ -54,73 +54,34 @@ const Section_3_1 = () => {
           <div className="content_sub_container">
             <ul>
               <li>
-                I build backend infrastructures using{" "}
+                Bachelor's degree in{" "}
                 <span>
                   {" "}
-                  <strong>Node.js</strong>
-                </span>{" "}
-                and
-                <span>
-                  <strong> Express</strong>
-                </span>
-                , building{" "}
-                <span>
-                  <strong>RESTful APIs </strong>
-                </span>
-                with asynchronous functions for data handling. Middlewares for{" "}
-                <span>
-                  <strong>Authentication </strong>
-                </span>
-                and route controllers are integrated to manage operations.
-              </li>
-              <li>
-                I organize code following the
-                <span>
-                  <strong> MVC architecture</strong>
-                </span>{" "}
-                pattern, separating{" "}
-                <span>
-                  <strong>Models </strong>
-                </span>
-                for data structures and{" "}
-                <span>
-                  <strong>Controllers</strong>
-                </span>{" "}
-                for business logic.
-                <span>
-                  <strong> CRUD operations</strong>
-                </span>{" "}
-                (Create, Read, Update, Delete) are implemented and tested using
-                tools like{" "}
-                <span>
-                  <strong>Insomnia. </strong>
+                  <strong>Agricultural engineering (2009-2013)</strong>
                 </span>
               </li>
               <li>
-                I work with databases like
+                <strong> Maize seed chamber agronomist | 2018-2019. </strong>
+                <br />
+                <span></span> Overseeing registration processes for imported
+                corn seeds incorporating IRM technology, ensuring compliance
+                with agricultural standards. <span></span>
                 <span>
-                  <strong> MongoDB</strong>
-                </span>
-                ,{" "}
-                <span>
-                  <strong>MySQL</strong>
-                </span>
-                , and
-                <span>
-                  <strong> PostgreSQL</strong>
+                  Managing agricultural practices for Insect Resistance
+                  Biotechnologies for 125 businesses
                 </span>{" "}
-                to address storage needs.
+                <span></span> <span></span>
               </li>
               <li>
-                Authentication systems are implemented using sessions with{" "}
-                <span>
-                  <strong>Passport.js</strong>
-                </span>{" "}
-                and API authentication with
-                <span>
-                  <strong> JWT</strong>
-                </span>
-                .
+                <strong>Private agricultural advisory | 2019 2020 </strong>
+                <br />
+                Developing Sustainable Dairy Land Management Plans. Soil erosion
+                analysis and hydric loss.
+              </li>
+              <li>
+                <strong>Agricultural engineer | 2021 2023</strong>
+                <br />
+                Prescision agriculture specialist | Subsoil manuring proyects | Nutrient balance analyst for 1200 winter crop hectares
               </li>
             </ul>
           </div>
@@ -137,7 +98,7 @@ const Section_3_1 = () => {
           <div className="uno">
             <h4> Life in Australia </h4>
           </div>
-          <div className="dos" >
+          <div className="dos">
             {expandedSections.frontend ? (
               <img
                 src="/contraer.svg"
@@ -263,7 +224,7 @@ const Section_3_1 = () => {
           <div className="uno">
             <h4>Family</h4>
           </div>
-          <div className="dos" >
+          <div className="dos">
             {expandedSections.weapon ? (
               <img
                 src="/contraer.svg"
