@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "commit-push": "git add . && git commit -m \"Auto-commit $(date)\" && git push origin main"
+    "commit-push": "git add . && git commit -m \"sebas\" && git push origin main"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",

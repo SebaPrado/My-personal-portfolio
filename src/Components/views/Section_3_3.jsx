@@ -260,7 +260,7 @@ const Section_3_3 = () => {
           onClick={() => toggleSection("designs")}
         >
           <div className="uno">
-            <h4>Figma Designs into responsive, animated UIs.</h4>
+            <h4>Figma files into responsive, animated UIs.</h4>
           </div>
           <div className="dos">
             {expandedSections.designs ? (
