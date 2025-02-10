@@ -19,7 +19,7 @@ function Layout() {
     return (
       <div className={`loading-icon ${fadeOut ? "fade-out" : ""}`}>
         <h2 className="loading">
-        Starting...
+        Loading...
         </h2>
       </div>
     );
