@@ -125,21 +125,21 @@ const Section_3_1 = () => {
           <div className="content_sub_container">
             <ul>
               <li>
-                I have a very high <strong>English level</strong> as I lived in
+                I have a high <strong>English level</strong> as I lived in
                 Australia for 5.5 years and took international English exams to
                 objectively prove this skill (Proven English level: Superior -
                 C1 / PTE - 90 pts && CAE - band 8).
               </li>
               <li>
-                Have studied <strong>Trading </strong> as additional education .
+                I studied <strong>Trading </strong> as additional education .
                 Got the management of a small invest account of (50K).. and
                 developed a tiny Bot that so far is making an (non)incredible
                 amount of 185 u$s / month..(I know, invest it in the S&P500 and
                 get more + secure money)
               </li>
               <li>
-                I obtained the{" "}
-                <strong> Animal Traceability Certificate </strong>. This way, I
+                I obtained an{" "}
+                <strong> Cattle Traceability Certificate </strong>. This way, I
                 help agricultural producers record the traceability history of
                 their herd, thereby adding more value to the meat in various
                 international markets.
@@ -188,24 +188,20 @@ const Section_3_1 = () => {
                 <strong>.. My balanced life ..</strong>
               </li>
               <li>
-                I never went without anything on my happy childhood
+                I had a great happy childhood
                 <strong>.. even though ..</strong> I had to drive tractors at
                 age 11 and trucks by age 15 to asume responsibilies on my dad's
                 farm.
               </li>
-              <li>
-                Never missed a single day at school{" "}
-                <strong>.. even though .. </strong> I grew up in a really hard
-                working family.
-              </li>
+              
               <li>
                 Always taking one step in the risky unknown{" "}
                 <strong>.. even though .. </strong> My logical intelligence.
               </li>
               <li>
-                I've been travelling away from home for a while{" "}
-                <strong>.. even though .. </strong> I have the best family and
-                friends want me back home
+                I've been travelling away from home{" "}
+                <strong>.. even though .. </strong> I have great family and
+                friends missing me back home
               </li>
 
               <li>
@@ -215,7 +211,7 @@ const Section_3_1 = () => {
               </li>
               <li>
                 I have big plans for the future{" "}
-                <strong>.. even though .. </strong> Life is now
+                <strong>.. even though .. </strong> Life is today
               </li>
             </ul>
           </div>

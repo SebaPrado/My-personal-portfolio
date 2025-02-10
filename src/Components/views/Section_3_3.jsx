@@ -329,18 +329,20 @@ const Section_3_3 = () => {
           }`}
         >
           <div className="content_sub_container">
-            <img
-              src={matesito}
-              alt="Mate"
-              style={{
-                width: "28.8px",
-                height: "28.8px",
-                marginLeft: "8px",
-                verticalAlign: "middle",
-              }}
-            />
+         
             <ul>
               <li>
+              <img
+                  src={matesito}
+                  alt="Mate"
+                  style={{
+                    width: "28.8px",
+                    height: "28.8px",
+                    marginLeft: "8px",
+                    verticalAlign: "middle",
+                  }}
+                />
+                <p></p>
                 Powered by mate—the South American drink that keeps me awake and
                 sharp—I'm always ready to deliver results on time. Consider it
                 my antioxidant secret weapon for staying focused and ensuring

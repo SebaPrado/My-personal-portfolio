@@ -165,7 +165,7 @@ const Section_3_2 = () => {
       </div>
 
       {/* ---------------------      4   ------------------------- */}
-      <div className="expertiseFlexItems">
+      {/* <div className="expertiseFlexItems">
         <div
           className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
           onClick={() => toggleSection("socialIntegration")}
@@ -203,7 +203,7 @@ const Section_3_2 = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* ---------------------      5    ------------------------- */}
       <div className="expertiseFlexItems">
@@ -287,18 +287,18 @@ const Section_3_2 = () => {
           <div className="content_sub_container">
             <ul>
               <li>
-                Custom LangChain agents using the OpenAI API
-                integration, implementing memory chains for context
-                retention + conversational abilities.
+                Custom LangChain agents using the OpenAI API integration,
+                implementing memory chains for context retention +
+                conversational abilities.
               </li>
               <li>
-                Built sequential chain architectures to break down tasks
-                into manageable steps (ConversationChain)
+                Built sequential chain architectures to break down tasks into
+                manageable steps (ConversationChain)
               </li>
               <li>
-                Created document retrieval systems using Vector
-                stores and embeddings, enabling processing of
-                text datasets + Long term conversation memory with ChatHistory or Upstash .
+                Created document retrieval systems using Vector stores and
+                embeddings, enabling processing of text datasets + Long term
+                conversation memory with ChatHistory or Upstash .
               </li>
               <li>
                 Implemented LangChain tools for API orchestration, allowing
@@ -341,22 +341,25 @@ const Section_3_2 = () => {
           }`}
         >
           <div className="content_sub_container">
-            <img
-              src={matesito}
-              alt="Mate"
-              style={{
-                width: "28.8px",
-                height: "28.8px",
-                marginLeft: "8px",
-                verticalAlign: "middle",
-              }}
-            />
             <ul>
               <li>
-                Powered by mate—the South American drink that keeps me awake and
-                sharp—I'm always ready to deliver results on time. Consider it
-                my antioxidant secret weapon for staying focused and ensuring
-                your project is finished right on schedule.
+                To invest loads of time and effort, so I don't miss the upcoming
+                'new industrial revolution'..
+              </li>
+              <li>
+                <img
+                  src={matesito}
+                  alt="Mate"
+                  style={{
+                    width: "28.8px",
+                    height: "28.8px",
+                    marginLeft: "8px",
+                    verticalAlign: "middle",
+                  }}
+                />
+                <p></p>
+                Always powered by 'mate' ,the South American antioxidant herb
+                that keeps me awake and sharp for hours !
               </li>
             </ul>
           </div>
