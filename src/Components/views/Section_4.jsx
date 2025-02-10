@@ -5,7 +5,7 @@ const Section_4 = () => {
   return (
     <div>
       <div className="titleH3">
-        <h3>Some projects to check out </h3>
+        <h3>Some projects to check out. </h3>
       </div>
 
       <div className="sliderContainer mt-5">
