@@ -16,8 +16,7 @@ const Section_3_1 = () => {
     <div className="expertiseFlexContainer ">
       <div className="seccciones bkc1">
         <div className="titles">
-          <div> About myself</div>
-          {/* <div>Engineer.</div> */}
+          <div>About myself</div>
         </div>
       </div>
       {/* ---------------------      Agricultural Engineering      ------------------------- */}
@@ -127,9 +126,9 @@ const Section_3_1 = () => {
             <ul>
               <li>
                 I have a very high <strong>English level</strong> as I lived in
-                Australia for 5.5 years and took international English
-                exams to objectively prove this skill (Proven English level:
-                Superior - C1 / PTE - 90 pts && CAE - band 8).
+                Australia for 5.5 years and took international English exams to
+                objectively prove this skill (Proven English level: Superior -
+                C1 / PTE - 90 pts && CAE - band 8).
               </li>
               <li>
                 Have studied <strong>Trading </strong> as additional education .
@@ -190,8 +189,9 @@ const Section_3_1 = () => {
               </li>
               <li>
                 I never went without anything on my happy childhood
-                <strong>.. even though ..</strong> I had to drive tractors at age 11
-                and trucks by age 15 to asume responsibilies on my dad's farm.
+                <strong>.. even though ..</strong> I had to drive tractors at
+                age 11 and trucks by age 15 to asume responsibilies on my dad's
+                farm.
               </li>
               <li>
                 Never missed a single day at school{" "}

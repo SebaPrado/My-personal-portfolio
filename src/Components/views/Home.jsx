@@ -137,16 +137,14 @@ function FramerMotion() {
         <Section_1 />
       </section>
 
-      <section>
-        <Section_2 />
-      </section>
+      {/* ========================   AI developer    ===========================  */}
 
-      <section className="section3 containerLarge">
-        <Section_3_1 />
-      </section>
       <section className="section3 containerLarge" id="ai">
         <Section_3_2 />
       </section>
+
+      {/* ========================   Fullstack developer    ===========================  */}
+
       <section className="section3 containerLarge">
         <Section_3_3 />
       </section>
@@ -159,11 +157,21 @@ function FramerMotion() {
         </div>
       </section>
 
+      {/* ========================   About myself      ===========================  */}
+
+      <section className="section3 containerLarge">
+        <Section_3_1 />
+      </section>
+
+      {/* ========================   technologies icons  slider      ===========================  */}
+      <section>
+        <Section_2 />
+      </section>
+
+      {/* ========================   Empty      ===========================  */}
       <section>
         <Section_5 />
       </section>
-
-      {/* ========================      section_4      ===========================  */}
 
       {/* =====================        LETS TALK         ======================== */}
 
@@ -185,10 +193,6 @@ function FramerMotion() {
           </div>
         </div>
       </section>
-
-      {/* ======================       CARDS         ========================  */}
-
-    
 
       {/* =====================         FOOTER        ======================== */}
 

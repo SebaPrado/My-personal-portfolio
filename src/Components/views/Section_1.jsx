@@ -38,7 +38,7 @@ const Section_1 = () => {
             alt=""
           />
         </div>
-        <div className=" green scrollAnimation ">
+        <div className="  scrollAnimation ">
           <p className="helloText ">
             Hey ! I'm Sebastian, a full stack developer specializing in{" "}
             <strong>React</strong> and
@@ -48,10 +48,10 @@ const Section_1 = () => {
             ensures that your ideas are perfectly reflected in the project.
             Let's bring your vision to life!
           </p>
-          <p className="letsTalk  ">Let's Talk...</p>
+          {/* <p className="letsTalk  ">Let's Talk...</p> */}
         </div>
 
-        <div>
+        {/* <div>
           <a
             href="mailto:sebastian.pradomelesi@gmail.com "
             className="email-button email-link "
@@ -60,7 +60,7 @@ const Section_1 = () => {
           >
             sebastian.pradomelesi@gmail.com
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

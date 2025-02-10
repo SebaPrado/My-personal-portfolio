@@ -893,6 +893,9 @@ section div {
   justify-content: space-between;
   align-items: center;
 }
+.footer-content p{
+    font-size: 15px !important;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   .footer {
@@ -929,7 +932,7 @@ section div {
 }
 
 .social-icons a:hover {
-  color: white;
+  color: rgb(122, 151, 187);
 }
 
 /* ============================    SLIDER    ========================== */
@@ -1418,16 +1421,14 @@ header {
   position: relative;
   padding-top: 20px;
   margin-bottom: -120px;
-  /* border:green 2px solid; */
-  margin-left: 20px; /* Aplica un margen a todos los contenedores de tarjetas */
+  margin-left: 20px; 
 }
 
 .splash {
-  /* border: yellow 2px solid; */
   position: absolute;
   bottom: -100px;
-  left: 53.5%; /* Centra horizontalmente */
-  transform: translateX(-50%) scaleX(1); /* Ajusta para centrar completamente y estira un 25% */
+  left: 53.5%; 
+  transform: translateX(-50%) scaleX(1);
   right: 0;
   top: -120px;
   clip-path: path(
@@ -1438,13 +1439,11 @@ header {
 .card-grid {
   display: flex;
   flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias líneas */
-  /* border: yellow 2px solid; */
 }
 
 .card-container {
   width: 100%; /* Cada tarjeta ocupa el 50% del ancho */
   height: auto;
-  /* border: yellow 2px solid; */
 }
 
 .card {
