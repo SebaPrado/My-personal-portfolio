@@ -41,8 +41,8 @@ const Section_1 = () => {
         <div className="  scrollAnimation ">
           <p className="helloText ">
             Hey ! I'm Sebastian, a full stack developer specializing in{" "}
-            <strong>React</strong> and
-            <strong> Node.js</strong>. I develop websites for businesses and
+            <strong>Open AI </strong>,  <strong>Node.js </strong> and
+            <strong> React </strong>. I develop both Websites and Agents AI for businesses and
             individuals. My focus on{" "}
             <strong>personalized service from start to finish </strong>
             ensures that your ideas are perfectly reflected in the project.

@@ -1,16 +1,11 @@
 /* ============================         NAVBAR         ==========================*/
 
-.nav {
-  /* background-color: rgb(249, 150, 20);
-    border: 2px solid red; */
-}
-
 /* Estilos para el AppBar */
 .custom-app-bar {
   width: 100%;
   max-width: 640px;
   height: 62px;
-  background-color:#02304779 !important;
+  background-color: #02304779 !important;
 }
 
 /* Estilos para el contenedor de botones */
@@ -28,7 +23,7 @@
   border-radius: 9999px !important;
   padding: 2px 16px !important;
   height: calc(100% - 12px) !important;
-  color:  #ffffff !important;
+  color: #ffffff !important;
   font-family: "Montserrat", sans-serif !important;
   letter-spacing: 1px !important;
   /* font-weight: bolder !important; */
@@ -46,7 +41,6 @@
   padding-top: 20px;
   padding-bottom: 20px;
   width: 60%;
-  background-color: transparent;
   transition: background-color 0.3s ease;
 }
 
@@ -60,6 +54,19 @@
   left: 20%;
   z-index: 1;
 }
+
+@media screen and (min-width: 1100px) {
+  .main-container {
+    width: 50%;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 25%;
+    z-index: 1;
+  }
+}
+
 /* Estilos responsivos */
 @media screen and (max-width: 600px) {
   .main-container {

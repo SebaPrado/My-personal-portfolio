@@ -98,7 +98,7 @@ const Section_3_1 = () => {
           onClick={() => toggleSection("frontend")}
         >
           <div className="uno">
-            <h4> Secondary skills </h4>
+            <h4> Other skills </h4>
           </div>
           <div className="dos">
             {expandedSections.frontend ? (
