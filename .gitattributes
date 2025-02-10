@@ -1,0 +1,23 @@
+# Configuración por defecto: normalize line endings para archivos de texto
+* text=auto
+
+# Archivos que definitivamente deben usar LF
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Archivos binarios que no deben modificarse
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
