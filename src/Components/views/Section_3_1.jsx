@@ -20,7 +20,7 @@ const Section_3_1 = () => {
           {/* <div>Engineer.</div> */}
         </div>
       </div>
-      {/* ---------------------       Backend     ------------------------- */}
+      {/* ---------------------      Agricultural Engineering      ------------------------- */}
 
       <div className="expertiseFlexItems">
         <div
@@ -61,7 +61,7 @@ const Section_3_1 = () => {
                 </span>
               </li>
               <li>
-                <strong> Maize seed chamber agronomist | 2018-2019. </strong>
+                <strong>Agronomist | Maize seed chamber | 2018-2019. </strong>
                 <br />
                 <span></span> Overseeing registration processes for imported
                 corn seeds incorporating IRM technology, ensuring compliance
@@ -75,20 +75,23 @@ const Section_3_1 = () => {
               <li>
                 <strong>Private agricultural advisory | 2019 2020 </strong>
                 <br />
-                Developing Sustainable Dairy Land Management Plans. Soil erosion
-                analysis and hydric loss.
+                Developing Sustainable Dairy Land Management Plans. Soil and
+                hydric erosion loss mitigation .
               </li>
               <li>
-                <strong>Agricultural engineer | 2021 2023</strong>
+                <strong>
+                  Agricultural engineer | Yaloak estate | 2021 2023
+                </strong>
                 <br />
-                Prescision agriculture specialist | Subsoil manuring proyects | Nutrient balance analyst for 1200 winter crop hectares
+                Prescision agriculture specialist | Subsoil manuring proyects |
+                Nutrient balance analyst for 1200 winter crop hectares
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* ---------------------       Front end     ------------------------- */}
+      {/* ---------------------       Secondary skills    ------------------------- */}
 
       <div className="expertiseFlexItems">
         <div
@@ -96,7 +99,7 @@ const Section_3_1 = () => {
           onClick={() => toggleSection("frontend")}
         >
           <div className="uno">
-            <h4> Life in Australia </h4>
+            <h4> Secondary skills </h4>
           </div>
           <div className="dos">
             {expandedSections.frontend ? (
@@ -123,54 +126,33 @@ const Section_3_1 = () => {
           <div className="content_sub_container">
             <ul>
               <li>
-                I create user interfaces using{" "}
-                <span>
-                  <strong>React.js</strong>
-                </span>
-                , implementing a{" "}
-                <span>
-                  <strong> Components architecture</strong>
-                </span>{" "}
-                for code reusability and efficiency. I use{" "}
-                <span>
-                  <strong>React Router</strong>
-                </span>{" "}
-                to create a smooth navigation experience.
+                I have a very high <strong>English level</strong> as I lived in
+                Australia for 5.5 years and took several international English
+                exams to objectively prove this skill (Proven English level:
+                Superior - C1 / PTE - 90 pts && CAE - band 8).
               </li>
               <li>
-                I developed API integrations through{" "}
-                <span>
-                  <strong>Axios</strong>
-                </span>{" "}
-                to handle all backend communications and data fetching
-                operations.
+                Have studied <strong>Trading </strong> as additional education .
+                Got the management of a small invest account of (50K).. and
+                developed a tiny Bot that so far is making an (non)incredible
+                amount of 185 u$s / month..(I know, invest it in the S&P500 and
+                get more + secure money)
               </li>
               <li>
-                For state management, I implemented{" "}
-                <span>
-                  <strong>Redux</strong>
-                </span>{" "}
-                to handle global application state, along with{" "}
-                <span>
-                  <strong>React Hooks</strong>
-                </span>{" "}
-                for local states. This way I manage
-                <span>
-                  <strong> e-commerces functionalities</strong>
-                </span>{" "}
-                and{" "}
-                <span>
-                  <strong> users authentication status</strong>
-                </span>
+                I obtained the{" "}
+                <strong> Animal Traceability Certificate </strong>. This way, I
+                help agricultural producers record the traceability history of
+                their herd, thereby adding more value to the meat in various
+                international markets.
               </li>
+              <li>Great tennis player</li>
+              <li>Even better surfer..</li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* ---------------------       Fullstack   ------------------------- */}
-
-      {/* ---------------------       Ecommerce   ------------------------- */}
+      {/* ---------------------       Farming background     ------------------------- */}
 
       <div className="expertiseFlexItems">
         <div
@@ -178,7 +160,7 @@ const Section_3_1 = () => {
           onClick={() => toggleSection("commerce")}
         >
           <div className="uno">
-            <h4> Farming background</h4>
+            <h4> Some balance</h4>
           </div>
           <div className="dos">
             {expandedSections.commerce ? (
@@ -204,17 +186,39 @@ const Section_3_1 = () => {
           <div className="content_sub_container">
             <ul>
               <li>
-                Ready to transform your vision into a fully functional
-                e-commerce platform. Customized product pages, offer sections,
-                display by categories and secure checkout processes, every
-                detail is crafted.
+                <strong>.. My balanced life ..</strong>
+              </li>
+              <li>
+                I never went without anything on my childhood
+                <strong>.. even though ..</strong> I had to drive cars at age 11
+                and trucks by age 15 to help on my dad's farm.
+              </li>
+              <li>
+                Never missed a single day at school{" "}
+                <strong>.. even though .. </strong> I grew up in a really hard
+                working family.
+              </li>
+              <li>
+                Always taking one step in the risky unknown{" "}
+                <strong>.. even though .. </strong> My logical intelligence.
+              </li>
+              <li>
+                I've been travelling away from home for a while{" "}
+                <strong>.. even though .. </strong> I have the best family and
+                friends supporting me back home
+              </li>
+
+              <li>
+                I've learned to enjoy failures (so many failures...){" "}
+                <strong>.. even though .. </strong>I'm always working for
+                success.
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* ---------------------       Mate     ------------------------- */}
+      {/* ---------------------       Family     ------------------------- */}
 
       <div className="expertiseFlexItems">
         <div
