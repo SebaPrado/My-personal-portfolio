@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./section_2.css";
+import "./Section_2.css";
 import {
     FaHtml5,
     FaCss3,
