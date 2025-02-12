@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import matesito from "/matesito.png";
 import "./section_3_1.css";
+import "./section_3_2.css";
+
 
 const Section_3_2 = () => {
   const [expandedSections, setExpandedSections] = useState({});
@@ -21,8 +23,8 @@ const Section_3_2 = () => {
         </div>
       </div>
 
-      {/* ---------------------       1 AI Assistant Development    ------------------------- */}
-      <div className="expertiseFlexItems">
+      {/* ---------------------       1   AI Agents Developer      ------------------------- */}
+      <div className="expertiseFlexItems_ai">
         <div
           className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
           onClick={() => toggleSection("customAI")}
@@ -55,10 +57,10 @@ const Section_3_2 = () => {
             <ul>
               <li>
                 I create a custom Node.js API that interfaces with OpenAI's
-                platform for comprehensive AI assistants management
+                platform for AI assistants management
               </li>
               <li>
-                Complete lifecycle control, including creation, modification,
+                Complete lifecycle control: Creation, modification,
                 and monitoring of Assistants, Threads, Messages, Executions, and
                 States.
               </li>
@@ -71,8 +73,8 @@ const Section_3_2 = () => {
         </div>
       </div>
 
-      {/* ---------------------       2    ------------------------- */}
-      <div className="expertiseFlexItems">
+      {/* ---------------------       2    AI websites Widget      ------------------------- */}
+      <div className="expertiseFlexItems_ai">
         <div
           className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
           onClick={() => toggleSection("aiWidget")}
@@ -105,14 +107,14 @@ const Section_3_2 = () => {
             <ul>
               <li>
                 Developed a plug-and-play AI assistant widget deployable via
-                simple script integration
+                simple script integration (as in this website)
               </li>
               <li>
                 A 24/7 automated sales and support Agent that seamlessly
                 integrates into any website
               </li>
               <li>
-                Built with Nodejs + React + Webpack for performance and minimal
+                I built it with Nodejs + React + Webpack for performance and minimal
                 resource consumption
               </li>
             </ul>
@@ -120,8 +122,8 @@ const Section_3_2 = () => {
         </div>
       </div>
 
-      {/* ---------------------       3  ------------------------- */}
-      <div className="expertiseFlexItems">
+      {/* ---------------------       3   Prompt Engineering and training ------------------------- */}
+      <div className="expertiseFlexItems_ai">
         <div
           className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
           onClick={() => toggleSection("aiTraining")}
@@ -158,14 +160,14 @@ const Section_3_2 = () => {
                 Development of static and dinamic context base for the
                 assistant's training
               </li>
-              <li>Evaluation-Validation , Hyperparameter Tuning.</li>
+              <li> In progress: Evaluation-Validation, Hyperparameter Tuning.</li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* ---------------------      4   ------------------------- */}
-      {/* <div className="expertiseFlexItems">
+      {/* ---------------------     4  Social Media     ------------------------- */}
+      {/* <div className="expertiseFlexItems_ai">
         <div
           className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
           onClick={() => toggleSection("socialIntegration")}
@@ -205,8 +207,8 @@ const Section_3_2 = () => {
         </div>
       </div> */}
 
-      {/* ---------------------      5    ------------------------- */}
-      <div className="expertiseFlexItems">
+      {/* ---------------------     5  Open AI Function calling    ------------------------- */}
+      <div className="expertiseFlexItems_ai">
         <div
           className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
           onClick={() => toggleSection("autonomousAI")}
@@ -238,14 +240,14 @@ const Section_3_2 = () => {
           <div className="content_sub_container">
             <ul>
               <li>
-                Allow the AI agent freedom of action and the necessary
+                I give the AI agent freedom of action and the necessary
                 programming tools to act autonomously and execute functions of
                 significant scope.
               </li>
               <li>
-                AI agents capable of executing code . Through function calling,
-                the agent determine whether to execute any call or function ,
-                asking the client for any parameter needed to excecute the code.
+                Therefore I create AI agents capable of executing code . Through function calling,
+                the agent determine whether to execute any call or function , prior
+                asking the client for information needed to excecute the code (if needed).
               </li>
               <li>
                 Context-aware decision-making systems for automated operations.
@@ -254,8 +256,8 @@ const Section_3_2 = () => {
           </div>
         </div>
       </div>
-      {/* ---------------------      5    ------------------------- */}
-      <div className="expertiseFlexItems">
+      {/* ---------------------   6   Lancghain    ------------------------- */}
+      <div className="expertiseFlexItems_ai">
         <div
           className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
           onClick={() => toggleSection("LangChain")}
@@ -300,18 +302,89 @@ const Section_3_2 = () => {
                 embeddings, enabling processing of text datasets + Long term
                 conversation memory with ChatHistory or Upstash .
               </li>
-              <li>
-                Implemented LangChain tools for API orchestration, allowing
-                seamless integration with external services while maintaining
-                proper error handling and rate limiting.
-              </li>
+             
             </ul>
           </div>
         </div>
       </div>
+      {/* ---------------------     extras   ------------------------- */}
+
+      {/* <div className="expertiseFlexItems_ai">
+        <div
+          className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
+          onClick={() => toggleSection("extra")}
+        >
+          <div className="uno">
+            <h4> Extras</h4>
+          </div>
+          <div className="dos">
+            {expandedSections.extra ? (
+              <img
+                src="/contraer.svg"
+                alt="Contraer"
+                className="contraer cursor-pointer"
+              />
+            ) : (
+              <img
+                src="/contraer.svg"
+                alt="Expandir"
+                className="expandir cursor-pointer"
+              />
+            )}
+          </div>
+        </div>
+        <div className="expertiseFlexItems_sub">
+          <div
+            className={`content ${
+              expandedSections.extra ? "expanded" : "collapsed"
+            }`}
+          >
+            {" "}
+            <div
+              className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
+              onClick={() => toggleSection("extra1")}
+            >
+              <div className="uno">
+                <h4>Extra 1</h4>
+              </div>
+              <div className="dos">
+                {expandedSections.extra1 ? (
+                  <img
+                    src="/contraer.svg"
+                    alt="Contraer"
+                    className="contraer cursor-pointer"
+                  />
+                ) : (
+                  <img
+                    src="/contraer.svg"
+                    alt="Expandir"
+                    className="expandir cursor-pointer"
+                  />
+                )}
+              </div>
+            </div>
+            <div
+              className={`content ${
+                expandedSections.extra1 ? "expanded" : "collapsed"
+              }`}
+            >
+              <div className="content_sub_container">
+                <ul>
+                  <li>
+                   Accuracy optimization(OpenAI) 
+                  </li>
+                  <li>
+                  Evals (OpenAI). Library to evaluate task performance of models and prompts.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
       {/* ---------------------       Mate     ------------------------- */}
 
-      <div className="expertiseFlexItems">
+      {/* <div className="expertiseFlexItems_ai">
         <div
           className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer"
           onClick={() => toggleSection("weapon")}
@@ -364,7 +437,7 @@ const Section_3_2 = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

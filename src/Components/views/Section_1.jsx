@@ -41,11 +41,10 @@ const Section_1 = () => {
         <div className="  scrollAnimation ">
           <p className="helloText ">
             Hey ! I'm Sebastian, a full stack developer specializing in{" "}
-            <strong>Open AI </strong>,  <strong>Node.js </strong> and
-            <strong> React </strong>. I develop both Websites and Agents AI for businesses and
-            individuals. My focus on{" "}
-            <strong>personalized service from start to finish </strong>
-            ensures that your ideas are perfectly reflected in the project.
+            <strong>Open AI </strong>, <strong>Node.js </strong> and
+            <strong> React </strong>. I develop both <strong>Websites   </strong> and<strong> Agents AI </strong> for
+            businesses and individuals. I'm an enthusiast of working for
+            <strong> objectives</strong> instead of rate, joining goals and <strong>earning trust</strong> . 
             Let's bring your vision to life!
           </p>
           {/* <p className="letsTalk  ">Let's Talk...</p> */}

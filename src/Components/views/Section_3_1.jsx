@@ -72,7 +72,7 @@ const Section_3_1 = () => {
                 <span></span> <span></span>
               </li>
               <li>
-                <strong>Private agricultural advisory | 2019 2020 </strong>
+                <strong>Private agricultural advisory | 2013-2020 </strong>
                 <br />
                 Developing Sustainable Dairy Land Management Plans. Soil and
                 hydric erosion loss mitigation .
@@ -125,10 +125,10 @@ const Section_3_1 = () => {
           <div className="content_sub_container">
             <ul>
               <li>
-                I have a high <strong>English level</strong> as I lived in
+                I have a very good <strong>English level</strong> as I lived in
                 Australia for 5.5 years and took international English exams to
                 objectively prove this skill (Proven English level: Superior -
-                C1 / PTE - 90 pts && CAE - band 8).
+                C1 / PTE-90pts and CAE-band 8).
               </li>
               <li>
                 I studied <strong>Trading </strong> as additional education .
@@ -185,7 +185,7 @@ const Section_3_1 = () => {
           <div className="content_sub_container">
             <ul>
               <li>
-                <strong>.. My balanced life ..</strong>
+                <strong>.. A bit of my  life ..</strong>
               </li>
               <li>
                 I had a great happy childhood
