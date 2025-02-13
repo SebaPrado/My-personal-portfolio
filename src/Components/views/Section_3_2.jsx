@@ -15,7 +15,7 @@ const Section_3_2 = () => {
   };
 
   return (
-    <div className="expertiseFlexContainer ">
+    <div className="expertiseFlexContainer  ">
       <div className="seccciones bkc2">
         <div className="titles">
           <div> AI</div>

@@ -140,7 +140,7 @@ function FramerMotion() {
 
       {/* ========================   AI developer    ===========================  */}
 
-      <section className="section3 containerLarge" id="ai">
+      <section className="section3 containerLarge" >
         <Section_3_2 />
       </section>
 
