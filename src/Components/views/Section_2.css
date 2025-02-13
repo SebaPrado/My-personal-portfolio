@@ -1,18 +1,7 @@
-.iconsSection {
-  position: relative;
-  height: 20rem;
-  background: linear-gradient(to right, #f4f5f6af, var(--color1));
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  margin-top: 12rem;
-  z-index: 20;
-  /* margin-bottom: -2px !important; */
-}
 
-/* Añadido para crear la curva convexa en la parte superior */
+/* ----------        curva concava  superior      ------------*/
+
 .iconsSection::before {
   content: "";
   position: absolute;
@@ -21,22 +10,34 @@
   right: 0;
   height: 90px; /* Ajusta según sea necesario */
   background: linear-gradient(to right, #f4f5f6af, var(--color1));
-
   border-radius: 100% 40% 0 0; /* Crea la curva convexa */
   z-index: 10; /* Asegura que esté detrás del contenido */
 }
 
-/* Añadido para crear la curva convexa en la parte inferior */
+/* ----------        curva convexa  inferior     ------------*/
 .iconsSection::after {
   content: "";
   position: absolute;
-  top: 320px; /* Ajusta según sea necesario */
+  top: 320px; 
   left: 0;
   right: -0px;
-  height: 90px; /* Ajusta según sea necesario */
+  height: 90px; 
   background: linear-gradient(to right, #f4f5f6af, var(--color1));
   border-radius: 0 0% 100% 40%; /* Crea la curva convexa */
 }
+
+.iconsSection {
+    position: relative;
+    height: 20rem;
+    background: linear-gradient(to right, #f4f5f6af, var(--color1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 12rem;
+    z-index: 20;
+    overflow-x: hidden; /* Add this to prevent horizontal scroll */
+ }
 
 .slider-container {
   width: 100vw;
@@ -54,19 +55,25 @@
   width: 100%;
 }
 .slider-icons {
-    display: flex;
-    animation: slide 3s linear infinite;
-    /* width: 100%; */
-  }
+  display: flex;
+  animation: slide 3s linear infinite;
+}
 
-  .slider-icons:hover {
-    animation-play-state: paused;
-  }
-  
-  
+.slider-icons:hover {
+  animation-play-state: paused;
+}
+
+.slider-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 18px 50px;
+
+}
 .icon {
   font-size: 2rem;
 }
 .iconName {
   margin-top: 9px;
-}
+} 
+ 
