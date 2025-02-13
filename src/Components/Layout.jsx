@@ -26,9 +26,9 @@ function Layout() {
   } else {
     return (
       <div className={`fade-in ${fadeOutElse ? "fade-out-else" : ""}`}>
-        {/* <div className="navbar-container">
+        <div className="navbar-container">
           <Navbar />
-        </div> */}
+        </div>
         <Outlet />
       </div>
     );

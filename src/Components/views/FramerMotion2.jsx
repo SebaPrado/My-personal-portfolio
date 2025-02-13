@@ -165,7 +165,7 @@ export default function FramerMotion2() {
           <h4>Check the cards in your hand with me on your team...</h4>
         </div>
         <div>
-          <div className="card-grid">
+          {/* <div className="card-grid">
             {food.map(([image, hueA, hueB], index) => (
               <Card
                 image={image}
@@ -175,7 +175,7 @@ export default function FramerMotion2() {
                 key={index}
               />
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
