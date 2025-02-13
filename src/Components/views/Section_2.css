@@ -53,6 +53,17 @@
   animation: slide 40s linear infinite;
   width: 100%;
 }
+.slider-icons {
+    display: flex;
+    animation: slide 3s linear infinite;
+    /* width: 100%; */
+  }
+
+  .slider-icons:hover {
+    animation-play-state: paused;
+  }
+  
+  
 .icon {
   font-size: 2rem;
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 // import { motion } from "framer-motion";
-import "animate.css";
+// import "animate.css";
+
 import Hero from "./Hero.jsx";
 import Section_1 from "./Section_1.jsx";
 import Section_2 from "./Section_2.jsx";
@@ -32,34 +33,34 @@ const hue = (h) => `hsl(${h}, 50%, 20%)`;
 function Card({ image, hueA, hueB, index }) {
   const background = `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
 
-  return (
-    <motion.div
-      className="card-container"
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{ once: true, amount: 0.5 }}
-    >
-      <div className="splash" style={{ background }} />
-      <motion.div className="card" variants={cardVariants(index)}>
-        <img
-          src={image}
-          alt="food"
-          className="card-image"
-          style={{
-            objectFit: "cover",
-            width: "100%",
-            height: "100%",
-            borderRadius: "1%",
-          }}
-        />
-      </motion.div>
-    </motion.div>
-  );
+//   return (
+    // <motion.div
+    //   className="card-container"
+    //   initial="offscreen"
+    //   whileInView="onscreen"
+    //   viewport={{ once: true, amount: 0.5 }}
+    // >
+    //   <div className="splash" style={{ background }} />
+    //   <motion.div className="card" variants={cardVariants(index)}>
+    //     <img
+    //       src={image}
+    //       alt="food"
+    //       className="card-image"
+    //       style={{
+    //         objectFit: "cover",
+    //         width: "100%",
+    //         height: "100%",
+    //         borderRadius: "1%",
+    //       }}
+    //     />
+    //   </motion.div>
+    // </motion.div>
+//   );
 }
 
 function FramerMotion() {
-  const [displayedWord, setDisplayedWord] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
+//   const [displayedWord, setDisplayedWord] = useState("");
+//   const [isDeleting, setIsDeleting] = useState(false);
   const words = ["    with a creative twist... ", " with a designing mind"];
   const [wordIndex, setWordIndex] = useState(0);
   const sectionRef = useRef(null);
@@ -72,35 +73,35 @@ function FramerMotion() {
 
   const animatedDivRef = useRef(null);
 
-  useEffect(() => {
-    let timer;
+//   useEffect(() => {
+//     let timer;
 
-    const typeEffect = () => {
-      const currentWord = words[wordIndex];
+//     const typeEffect = () => {
+//       const currentWord = words[wordIndex];
 
-      if (!isDeleting) {
-        if (displayedWord.length < currentWord.length) {
-          setDisplayedWord(currentWord.slice(0, displayedWord.length + 1));
-          timer = setTimeout(typeEffect, 250);
-        } else {
-          timer = setTimeout(() => setIsDeleting(true), 9000);
-        }
-      } else {
-        if (displayedWord.length > 0) {
-          setDisplayedWord(currentWord.slice(0, displayedWord.length - 1));
-          timer = setTimeout(typeEffect, 50);
-        } else {
-          setIsDeleting(false);
-          setWordIndex((prev) => (prev + 1) % words.length);
-          timer = setTimeout(typeEffect, 50);
-        }
-      }
-    };
+//       if (!isDeleting) {
+//         if (displayedWord.length < currentWord.length) {
+//           setDisplayedWord(currentWord.slice(0, displayedWord.length + 1));
+//           timer = setTimeout(typeEffect, 250);
+//         } else {
+//           timer = setTimeout(() => setIsDeleting(true), 9000);
+//         }
+//       } else {
+//         if (displayedWord.length > 0) {
+//           setDisplayedWord(currentWord.slice(0, displayedWord.length - 1));
+//           timer = setTimeout(typeEffect, 50);
+//         } else {
+//           setIsDeleting(false);
+//           setWordIndex((prev) => (prev + 1) % words.length);
+//           timer = setTimeout(typeEffect, 50);
+//         }
+//       }
+//     };
 
-    timer = setTimeout(typeEffect, 100);
+//     timer = setTimeout(typeEffect, 100);
 
-    return () => clearTimeout(timer);
-  }, [displayedWord, isDeleting, wordIndex, words]);
+//     return () => clearTimeout(timer);
+//   }, [displayedWord, isDeleting, wordIndex, words]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -128,7 +129,7 @@ function FramerMotion() {
   }, []);
 
   return (
-    <div>
+    <div className="padre">
       <section id="home">
         {Hero ? <Hero /> : <p>Error al cargar el componente Hero.</p>}
       </section>
@@ -164,9 +165,9 @@ function FramerMotion() {
       </section>
 
       {/* ========================   technologies icons  slider      ===========================  */}
-      <section>
+      {/* <section>
         <Section_2 />
-      </section>
+      </section> */}
 
       {/* ========================   Empty      ===========================  */}
       <section>
