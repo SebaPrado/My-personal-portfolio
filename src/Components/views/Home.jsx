@@ -165,9 +165,9 @@ function FramerMotion() {
       </section>
 
       {/* ========================   technologies icons  slider      ===========================  */}
-      {/* <section>
+      <section>
         <Section_2 />
-      </section> */}
+      </section>
 
       {/* ========================   Empty      ===========================  */}
       <section>

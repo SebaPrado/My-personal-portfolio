@@ -1,63 +1,87 @@
+.padre_sliders{
+    rotate: -3deg;
+    background-color: var(--color1);
+    padding-top: 14rem;
+    margin-top: 18rem;
+    padding-bottom: 18rem;
+    border-radius: 20px;
 
+}
 
 /* ----------        curva concava  superior      ------------*/
-
 .iconsSection::before {
-  content: "";
-  position: absolute;
-  top: -90px; /* Ajusta según sea necesario */
-  left: 0;
-  right: 0;
-  height: 90px; /* Ajusta según sea necesario */
-  background: linear-gradient(to right, #f4f5f6af, var(--color1));
-  border-radius: 100% 40% 0 0; /* Crea la curva convexa */
-  z-index: 10; /* Asegura que esté detrás del contenido */
-}
+    content: "";
+    position: absolute;
+    top: -90px;
+    left: 0;
+    right: 0;
+    height: 90px;
+    background: linear-gradient(to right, #f4f5f6af, var(--color1));
+    border-radius: 100% 40% 0 0;
+    z-index: 10;
+    width: 100%;
+    transform: translateY(1px); /* Esto ayuda a eliminar cualquier línea fina que pueda aparecer */
+ }
+ 
+ /* Corregimos el pseudo-elemento inferior */
+ .iconsSection::after {
+    content: "";
+    position: absolute;
+    bottom: -90px; /* Cambiamos top por bottom para un posicionamiento más preciso */
+    left: 0;
+    right: 0;
+    height: 90px !important;
+    background: linear-gradient(to right, #f4f5f6af, var(--color1));
+    border-radius: 0 0 100% 40%;
+    width: 100%;
+    transform: translateY(-1px); /* Esto ayuda a eliminar cualquier línea fina que pueda aparecer */
+ }
 
-/* ----------        curva convexa  inferior     ------------*/
-.iconsSection::after {
-  content: "";
-  position: absolute;
-  top: 320px; 
-  left: 0;
-  right: -0px;
-  height: 90px; 
-  background: linear-gradient(to right, #f4f5f6af, var(--color1));
-  border-radius: 0 0% 100% 40%; /* Crea la curva convexa */
-}
 
 .iconsSection {
+  position: relative;
+  height: 10rem;
+  background: linear-gradient(to right, #f4f5f6,#f4f5f642, var(--color1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 5rem;
+  z-index: 20;
+  overflow: hidden; /* Add this to prevent horizontal scroll */
+}
+.iconsSection2 {
     position: relative;
-    height: 20rem;
-    background: linear-gradient(to right, #f4f5f6af, var(--color1));
+    height: 10rem;
+    background: linear-gradient(to left, #f4f5f6ea, var(--color1));
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    margin-top: 12rem;
+    margin-top: 5rem;
     z-index: 20;
-    overflow-x: hidden; /* Add this to prevent horizontal scroll */
- }
+    overflow: hidden; /* Add this to prevent horizontal scroll */
+  }
 
 .slider-container {
-  width: 100vw;
-  margin-left: -5vw;
-  margin-right: -5vw;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 20;
 }
-.slider-container {
-  width: 100vw;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
+
 .slider-icons {
   display: flex;
   animation: slide 40s linear infinite;
-  width: 100%;
+  gap: 100px;
+  padding: 18px 0;
 }
-.slider-icons {
-  display: flex;
-  animation: slide 3s linear infinite;
-}
+.slider-icons2 {
+    display: flex;
+    animation: slide2 40s linear infinite;
+    gap: 100px;
+    padding: 18px 0;
+  }
 
 .slider-icons:hover {
   animation-play-state: paused;
@@ -67,13 +91,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 18px 50px;
-
+  flex-shrink: 0; 
 }
 .icon {
   font-size: 2rem;
 }
 .iconName {
   margin-top: 9px;
-} 
- 
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); 
+  }
+}
+
+@keyframes slide2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(
+        50%
+      ); 
+    }
+  }
