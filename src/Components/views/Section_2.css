@@ -1,15 +1,14 @@
-.padre_sliders{
-    rotate: -3deg;
-    background-color: var(--color1);
-    padding-top: 14rem;
-    margin-top: 18rem;
-    padding-bottom: 18rem;
-    border-radius: 20px;
-
+.padre_sliders {
+  rotate: -3deg;
+  background-color: #001a27;
+  padding-top: 14rem;
+  margin-top: 18rem;
+  padding-bottom: 18rem;
+  border-radius: 20px;
 }
 
 /* ----------        curva concava  superior      ------------*/
-.iconsSection::before {
+/* .iconsSection::before {
     content: "";
     position: absolute;
     top: -90px;
@@ -20,28 +19,40 @@
     border-radius: 100% 40% 0 0;
     z-index: 10;
     width: 100%;
-    transform: translateY(1px); /* Esto ayuda a eliminar cualquier línea fina que pueda aparecer */
- }
+    transform: translateY(1px); 
+ } 
  
  /* Corregimos el pseudo-elemento inferior */
- .iconsSection::after {
+/* .iconsSection::after {
     content: "";
     position: absolute;
-    bottom: -90px; /* Cambiamos top por bottom para un posicionamiento más preciso */
+    bottom: -90px; 
     left: 0;
     right: 0;
     height: 90px !important;
     background: linear-gradient(to right, #f4f5f6af, var(--color1));
     border-radius: 0 0 100% 40%;
     width: 100%;
-    transform: translateY(-1px); /* Esto ayuda a eliminar cualquier línea fina que pueda aparecer */
- }
-
+    transform: translateY(-1px);
+ }  */
 
 .iconsSection {
   position: relative;
   height: 10rem;
-  background: linear-gradient(to right, #f4f5f6,#f4f5f642, var(--color1));
+  background: linear-gradient(to right, #233b536d, #001a27ce, #001a27);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 5rem;
+  z-index: 20;
+  overflow: hidden; /* Add this to prevent horizontal scroll */
+  border: none;
+}
+.iconsSection2 {
+  position: relative;
+  height: 10rem;
+  background: linear-gradient(to left,#233b536d, #001a27d8, #001a27);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,18 +61,6 @@
   z-index: 20;
   overflow: hidden; /* Add this to prevent horizontal scroll */
 }
-.iconsSection2 {
-    position: relative;
-    height: 10rem;
-    background: linear-gradient(to left, #f4f5f6ea, var(--color1));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    margin-top: 5rem;
-    z-index: 20;
-    overflow: hidden; /* Add this to prevent horizontal scroll */
-  }
 
 .slider-container {
   width: 100%;
@@ -77,11 +76,11 @@
   padding: 18px 0;
 }
 .slider-icons2 {
-    display: flex;
-    animation: slide2 40s linear infinite;
-    gap: 100px;
-    padding: 18px 0;
-  }
+  display: flex;
+  animation: slide2 40s linear infinite;
+  gap: 100px;
+  padding: 18px 0;
+}
 
 .slider-icons:hover {
   animation-play-state: paused;
@@ -91,7 +90,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 .icon {
   font-size: 2rem;
@@ -104,19 +103,15 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(
-      -50%
-    ); 
+    transform: translateX(-50%);
   }
 }
 
 @keyframes slide2 {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(
-        50%
-      ); 
-    }
+  0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(50%);
+  }
+}

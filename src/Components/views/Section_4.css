@@ -11,7 +11,7 @@ h3 {
 #projects {
   margin-top: 12vw;
   background-color: var(--color1);
-  background: linear-gradient(to bottom, var(--color1), var(--white));
+  background: linear-gradient(to bottom, #001a27, var(--color1));
 
   width: 99vw;
   border-radius: 30px 2px;

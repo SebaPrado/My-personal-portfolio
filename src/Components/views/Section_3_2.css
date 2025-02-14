@@ -1,7 +1,7 @@
 /* ------------------          expertiseFlexItems    >>>      ------------------- */
-.ai_1{
-    background-color: aquamarine;
-    /* margin-left: 90px !important ; */
+.ai_1 {
+  background-color: aquamarine;
+  /* margin-left: 90px !important ; */
 }
 .expertiseFlexItems_ai {
   box-sizing: border-box;
@@ -47,4 +47,45 @@
   }
 }
 @media (width <= 450px) {
+}
+
+.bckimg {
+  /* First, set up the initial background state */
+  position: relative; /* Needed for absolute positioning of pseudo-element */
+  background-size: cover;
+  background-position: center;
+}
+
+.bckimg::before {
+  /* Create a pseudo-element for the hover image */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; /* Start fully transparent */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+  border-radius: 1px 30px;
+}
+.ai1::before {
+  background-image: url("/ai1.jpg");
+}
+.ai2::before {
+  background-image: url("/ai2.jpg");
+}
+.ai3::before {
+  background-image: url("/ai3.jpg");
+}
+.ai4::before {
+  background-image: url("/rain.jpg");
+}
+.ai5::before {
+  background-image: url("/ai5.jpg");
+}
+
+.bckimg:hover::before {
+  opacity: 0.15; /* Your requested opacity on hover */
 }

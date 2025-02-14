@@ -3,11 +3,11 @@ import React, { useState, useEffect, useRef } from "react";
 // import "animate.css";
 
 import Hero from "./Hero.jsx";
-import Section_1 from "./Section_1.jsx";
+import Section_3_1_farming from "./Section_3_1_farming.jsx";
 import Section_2 from "./Section_2.jsx";
-import Section_3_1 from "./Section_3_1.jsx";
-import Section_3_2 from "./Section_3_2.jsx";
-import Section_3_3 from "./Section_3_3.jsx";
+import Section_3_1 from "./Section_3_1_farming.jsx";
+import Section_3_2_ai from "./Section_3_2_ai.jsx";
+import Section_3_3_dev from "./Section_3_3_dev.jsx";
 import Section_4 from "./Section_4.jsx";
 import Section_5 from "./Section_5.jsx";
 
@@ -33,34 +33,34 @@ const hue = (h) => `hsl(${h}, 50%, 20%)`;
 function Card({ image, hueA, hueB, index }) {
   const background = `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
 
-//   return (
-    // <motion.div
-    //   className="card-container"
-    //   initial="offscreen"
-    //   whileInView="onscreen"
-    //   viewport={{ once: true, amount: 0.5 }}
-    // >
-    //   <div className="splash" style={{ background }} />
-    //   <motion.div className="card" variants={cardVariants(index)}>
-    //     <img
-    //       src={image}
-    //       alt="food"
-    //       className="card-image"
-    //       style={{
-    //         objectFit: "cover",
-    //         width: "100%",
-    //         height: "100%",
-    //         borderRadius: "1%",
-    //       }}
-    //     />
-    //   </motion.div>
-    // </motion.div>
-//   );
+  //   return (
+  // <motion.div
+  //   className="card-container"
+  //   initial="offscreen"
+  //   whileInView="onscreen"
+  //   viewport={{ once: true, amount: 0.5 }}
+  // >
+  //   <div className="splash" style={{ background }} />
+  //   <motion.div className="card" variants={cardVariants(index)}>
+  //     <img
+  //       src={image}
+  //       alt="food"
+  //       className="card-image"
+  //       style={{
+  //         objectFit: "cover",
+  //         width: "100%",
+  //         height: "100%",
+  //         borderRadius: "1%",
+  //       }}
+  //     />
+  //   </motion.div>
+  // </motion.div>
+  //   );
 }
 
 function FramerMotion() {
-//   const [displayedWord, setDisplayedWord] = useState("");
-//   const [isDeleting, setIsDeleting] = useState(false);
+  //   const [displayedWord, setDisplayedWord] = useState("");
+  //   const [isDeleting, setIsDeleting] = useState(false);
   const words = ["    with a creative twist... ", " with a designing mind"];
   const [wordIndex, setWordIndex] = useState(0);
   const sectionRef = useRef(null);
@@ -73,35 +73,35 @@ function FramerMotion() {
 
   const animatedDivRef = useRef(null);
 
-//   useEffect(() => {
-//     let timer;
+  //   useEffect(() => {
+  //     let timer;
 
-//     const typeEffect = () => {
-//       const currentWord = words[wordIndex];
+  //     const typeEffect = () => {
+  //       const currentWord = words[wordIndex];
 
-//       if (!isDeleting) {
-//         if (displayedWord.length < currentWord.length) {
-//           setDisplayedWord(currentWord.slice(0, displayedWord.length + 1));
-//           timer = setTimeout(typeEffect, 250);
-//         } else {
-//           timer = setTimeout(() => setIsDeleting(true), 9000);
-//         }
-//       } else {
-//         if (displayedWord.length > 0) {
-//           setDisplayedWord(currentWord.slice(0, displayedWord.length - 1));
-//           timer = setTimeout(typeEffect, 50);
-//         } else {
-//           setIsDeleting(false);
-//           setWordIndex((prev) => (prev + 1) % words.length);
-//           timer = setTimeout(typeEffect, 50);
-//         }
-//       }
-//     };
+  //       if (!isDeleting) {
+  //         if (displayedWord.length < currentWord.length) {
+  //           setDisplayedWord(currentWord.slice(0, displayedWord.length + 1));
+  //           timer = setTimeout(typeEffect, 250);
+  //         } else {
+  //           timer = setTimeout(() => setIsDeleting(true), 9000);
+  //         }
+  //       } else {
+  //         if (displayedWord.length > 0) {
+  //           setDisplayedWord(currentWord.slice(0, displayedWord.length - 1));
+  //           timer = setTimeout(typeEffect, 50);
+  //         } else {
+  //           setIsDeleting(false);
+  //           setWordIndex((prev) => (prev + 1) % words.length);
+  //           timer = setTimeout(typeEffect, 50);
+  //         }
+  //       }
+  //     };
 
-//     timer = setTimeout(typeEffect, 100);
+  //     timer = setTimeout(typeEffect, 100);
 
-//     return () => clearTimeout(timer);
-//   }, [displayedWord, isDeleting, wordIndex, words]);
+  //     return () => clearTimeout(timer);
+  //   }, [displayedWord, isDeleting, wordIndex, words]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -135,19 +135,19 @@ function FramerMotion() {
       </section>
 
       <section className="Section1Home1">
-        <Section_1 />
+        <Section_3_1_farming />
       </section>
 
       {/* ========================   AI developer    ===========================  */}
 
-      <section className="section3 containerLarge" >
-        <Section_3_2 />
+      <section className="section3 containerLarge">
+        <Section_3_2_ai />
       </section>
 
       {/* ========================   Fullstack developer    ===========================  */}
 
       <section className="section3 containerLarge">
-        <Section_3_3 />
+        <Section_3_3_dev />
       </section>
 
       {/* ========================   Section 4_SLIDER      ===========================  */}
@@ -158,15 +158,15 @@ function FramerMotion() {
         </div>
       </section>
 
+      {/* ========================   technologies icons  slider      ===========================  */}
+      <section>
+        <Section_2 />
+      </section>
+
       {/* ========================   About myself      ===========================  */}
 
       <section className="section3 containerLarge">
         <Section_3_1 />
-      </section>
-
-      {/* ========================   technologies icons  slider      ===========================  */}
-      <section>
-        <Section_2 />
       </section>
 
       {/* ========================   Empty      ===========================  */}
