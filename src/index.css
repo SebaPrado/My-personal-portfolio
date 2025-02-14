@@ -704,7 +704,7 @@ h5 {
 }
 
 .lets-talk-flexItem h2 {
-  color: #001415;
+  color: #010220;
   font-size: 100px;
   margin: 0;
   margin-top: 10vw;
@@ -854,7 +854,7 @@ section div {
 
 .footer {
   position: relative;
-  background-color: #001415;
+  background-color: #010220;
   color: rgb(255, 255, 255) !important;
   padding: 20px 0 !important;
   display: block !important; /* Asegura que el footer se muestre */
@@ -1084,7 +1084,7 @@ header {
 
 .email-button {
   background-color: var(--color6);
-  color: #001415 !important;
+  color: #010220 !important;
   padding: 14px 3vw;
   text-decoration: none;
   border-radius: 30px 2px;

@@ -19,41 +19,6 @@
   width: 100%;
   padding-right: 7vw !important;
 }
-
-/* .bkc1 {
-  background: linear-gradient(
-    to bottom,
-    var(--color1),
-    #023047ea,
-    #0e4553d4,
-    rgba(84, 150, 95, 0.952),
-    rgba(90, 184, 104, 0.817),
-    #219dbc08
-  );
-} */
-/* .bkc1 {
-  background: linear-gradient(
-    to bottom,
-    black,
-    rgb(1, 40, 6),
-    rgb(1, 81, 14),
-    rgba(1, 81, 14, 0.574),
-    rgba(224, 234, 226, 0.214)
-  );
-} */
-
-/* .bkc2 {
-  background: linear-gradient(
-    to bottom,
-    var(--color1),
-    #023047ea,
-    #0e4553c5,
-    #426b946c,
-    #f5e26576,
-    #f2dc4a94,
-    #eddc7113
-  );
-} */
 /* farming section */
 .bkc1 {
   background-image: url("/ai9.jpg");
