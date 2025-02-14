@@ -704,7 +704,7 @@ h5 {
 }
 
 .lets-talk-flexItem h2 {
-  color: var(--color1);
+  color: #001415;
   font-size: 100px;
   margin: 0;
   margin-top: 10vw;
@@ -729,11 +729,7 @@ h5 {
   view-timeline: --scroll;
 }
 
-.lets-talk-flexItem{
-  animation: 
-  scale-up both ease-in-out,
-  fade-away both linear;
-} */
+
 
 /* .appleExample{
   position: relative;
@@ -858,7 +854,7 @@ section div {
 
 .footer {
   position: relative;
-  background-color: var(--color1);
+  background-color: #001415;
   color: rgb(255, 255, 255) !important;
   padding: 20px 0 !important;
   display: block !important; /* Asegura que el footer se muestre */
@@ -1088,7 +1084,7 @@ header {
 
 .email-button {
   background-color: var(--color6);
-  color: var(--color1) !important;
+  color: #001415 !important;
   padding: 14px 3vw;
   text-decoration: none;
   border-radius: 30px 2px;
@@ -1104,7 +1100,8 @@ header {
   font-weight: bolder !important;
 
   background-color: var(--white);
-  color: var(--color1) !important;
+  color: #001415 !important;
+
 }
 
 /* Ajustes responsivos para el correo electrónico */
