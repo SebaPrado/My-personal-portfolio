@@ -3,9 +3,9 @@ import React, { useState, useEffect, useRef } from "react";
 // import "animate.css";
 
 import Hero from "./Hero.jsx";
-import Section_3_1_farming from "./Section_3_1_farming.jsx";
+import Section_1 from "./Section_1.jsx";
 import Section_2 from "./Section_2.jsx";
-import Section_3_1 from "./Section_3_1_farming.jsx";
+import Section_3_1_farming from "./Section_3_1_farming.jsx";
 import Section_3_2_ai from "./Section_3_2_ai.jsx";
 import Section_3_3_dev from "./Section_3_3_dev.jsx";
 import Section_4 from "./Section_4.jsx";
@@ -30,33 +30,6 @@ const cardVariants = (index) => ({
 
 const hue = (h) => `hsl(${h}, 50%, 20%)`;
 
-function Card({ image, hueA, hueB, index }) {
-  const background = `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
-
-  //   return (
-  // <motion.div
-  //   className="card-container"
-  //   initial="offscreen"
-  //   whileInView="onscreen"
-  //   viewport={{ once: true, amount: 0.5 }}
-  // >
-  //   <div className="splash" style={{ background }} />
-  //   <motion.div className="card" variants={cardVariants(index)}>
-  //     <img
-  //       src={image}
-  //       alt="food"
-  //       className="card-image"
-  //       style={{
-  //         objectFit: "cover",
-  //         width: "100%",
-  //         height: "100%",
-  //         borderRadius: "1%",
-  //       }}
-  //     />
-  //   </motion.div>
-  // </motion.div>
-  //   );
-}
 
 function FramerMotion() {
   //   const [displayedWord, setDisplayedWord] = useState("");
@@ -135,7 +108,7 @@ function FramerMotion() {
       </section>
 
       <section className="Section1Home1">
-        <Section_3_1_farming />
+        <Section_1 />
       </section>
 
       {/* ========================   AI developer    ===========================  */}
@@ -166,7 +139,7 @@ function FramerMotion() {
       {/* ========================   About myself      ===========================  */}
 
       <section className="section3 containerLarge">
-        <Section_3_1 />
+        <Section_3_1_farming />
       </section>
 
       {/* ========================   Empty      ===========================  */}

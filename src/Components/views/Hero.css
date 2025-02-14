@@ -9,14 +9,7 @@
     #011520ad,
     #01152086
   );
-  /* background: linear-gradient(
-      to left,
-      #012537,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0)
-    ),
-    url("/ai1.jpg"); */
-    background-color: #00141d;
+  background: linear-gradient(to right, #010220 60%, #0b367fa7 100%);
   background-size: cover;
   background-position: center;
   transform: rotate(-3deg);
@@ -27,6 +20,22 @@
   margin-bottom: 3rem;
   padding-top: 3.8rem;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/ai1.jpg");
+  opacity: 0.35;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px 2px;
+  z-index: -1;
+}
+
 .presentacion {
   padding-left: 4rem;
   padding-right: -8rem;
@@ -58,7 +67,7 @@
   padding: 1rem;
 }
 .hablity_agriculturalengineer {
-  background: linear-gradient(to right, var(--white), #012537);
+  background: linear-gradient(to right, white 10%, #0102205f 60%, #010220 100%);
   margin-left: 1rem;
   padding-left: 14vw;
   margin-right: -1vw;
@@ -67,19 +76,22 @@
 
 .hablity_ai_agent_creator {
   margin: 20px 0;
-  background: linear-gradient(to left, rgb(255, 255, 255),  #00141d);
+  /* background: linear-gradient(to left, rgb(255, 255, 255),#010220, #010220); */
   background-size: cover;
   background-position: center;
   margin-right: 2rem;
   margin-left: 3rem;
   padding-left: 15vw;
   border-radius: 2px 30px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
   color: white;
 }
 
 .hablity_web_developer {
   margin-left: -1rem;
-  background: linear-gradient(to right, rgb(255, 255, 255), #012537);
+  background: linear-gradient(to right, rgb(255, 255, 255), #0a014e);
+  box-shadow: 0 4px 8px rgba(242, 243, 249, 0.5);
+
   padding-left: 24vw;
   border-radius: 30px 2px;
 }

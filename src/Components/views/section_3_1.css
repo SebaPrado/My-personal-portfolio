@@ -54,41 +54,45 @@
     #eddc7113
   );
 } */
+/* farming section */
 .bkc1 {
-    background-image: url("/clove.jpg");
-    background-size: cover;
-    background-position: center;
-  }
+  background-image: url("/ai9.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/*ai section  */
 .bkc2 {
   background-image: url("/ai1.jpg");
   background-size: cover;
   background-position: center;
 }
+/* dev section */
 .bkc3 {
-    background-image: url("/ai7.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-/* .bkc3 {
-  background: linear-gradient(
-    to bottom,
-    var(--color1),
-    #023047ea,
-    #125869cf,
-    #1d87a2a9,
-    #45b5d1a1,
-    white
-  );
-} */
+  background-image: url("/ai7.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
 .bkc1_subtitle {
-  background: linear-gradient(to right, black, rgb(0, 34, 6),rgb(0, 85, 74),rgb(0, 85, 74));
+  /* background: linear-gradient(to right, black, rgb(0, 34, 6),rgb(0, 85, 74),rgb(0, 85, 74)); */
+  background: linear-gradient(to right, #020331 60%, #05317ebf 100%);
 }
 .bkc2_subtitle {
-  background: linear-gradient(to right, #012537, #023047f3, #2e0125);
+  background: linear-gradient(
+    to right,
+    #001415 0%,
+    #001415 60%,
+    #002a2dd4 100%
+  );
 }
 .bkc3_subtitle {
-  background: linear-gradient(to right, #002232, #062939, #0b3c53, var(--color2));
+  background: linear-gradient(
+    to right,
+    #020331,
+    #062939,
+    #0b3c53,
+    var(--color2)
+  );
 }
 
 .section3 {
@@ -124,8 +128,6 @@ p {
   padding: 20px;
   border-radius: 1px 10px;
   margin-top: 10px;
-  /* border: 1px solid var(--color1); */
-  /* background-color: #56687028; */
 }
 
 /* ------------------      <<<     expertiseFlexItems          --------------------- */
@@ -217,10 +219,7 @@ p {
 }
 
 .expanded {
-  /* max-height: 600px; */
   opacity: 1;
-  /* padding: 1rem 0; */
-  /* transform: rotate(4deg); */
 }
 
 .expandir {
@@ -273,7 +272,6 @@ p {
 @media (width <= 552px) {
   .expertiseFlexItems {
     width: 100% !important;
-    background-color: rgb(255, 47, 213);
   }
   .list_title_div {
     padding-left: 1rem;
