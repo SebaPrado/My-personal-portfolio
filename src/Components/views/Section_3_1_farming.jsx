@@ -21,7 +21,7 @@ const Section_3_1_farming = () => {
       </div>
       {/* ---------------------      Agricultural Engineering      ------------------------- */}
 
-      <div className="expertiseFlexItems content">
+      <div className="expertiseFlexItems content ero">
         <div
           className="h4_boton bkc1_subtitle rotacion list_title_div cursor-pointer bckimg ai4"
           onClick={() => toggleSection("backend")}
@@ -185,33 +185,33 @@ const Section_3_1_farming = () => {
           <div className="content_sub_container">
             <ul>
               <li>
-                <strong>.. A bit of my  life ..</strong>
+                <strong>A bit of myself ..</strong>
               </li>
               <li>
                 I had a great happy childhood
-                <strong>.. even though ..</strong> I had to drive tractors at
+                <strong> ..even though</strong> I had to drive tractors at
                 age 11 and trucks by age 15 to asume responsibilies on my dad's
                 farm.
               </li>
               
               <li>
                 Always taking one step in the risky unknown{" "}
-                <strong>.. even though .. </strong> My logical intelligence.
+                <strong> ..even though</strong> My logical intelligence.
               </li>
-              <li>
+              {/* <li>
                 I've been travelling away from home{" "}
                 <strong>.. even though .. </strong> I have great family and
                 friends missing me back home
-              </li>
+              </li> */}
 
               <li>
-                I've learned to enjoy failures (so many failures...){" "}
-                <strong>.. even though .. </strong>I'm always working for
+                I've learned to enjoy failures (so many...){" "}
+                <strong> ..even though </strong>I'm always working for
                 success.
               </li>
               <li>
                 I have big plans for the future{" "}
-                <strong>.. even though .. </strong> Life is today
+                <strong> ..even though</strong> Life is today
               </li>
             </ul>
           </div>

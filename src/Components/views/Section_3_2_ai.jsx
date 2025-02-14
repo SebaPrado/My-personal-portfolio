@@ -23,7 +23,7 @@ const Section_3_2_ai = () => {
       </div>
 
       {/* ---------------------       1   AI Agents Developer      ------------------------- */}
-      <div className="expertiseFlexItems_ai">
+      <div className="expertiseFlexItems_ai ero">
         <div
           className="h4_boton bkc2_subtitle rotacion list_title_div cursor-pointer bckimg ai1"
           onClick={() => toggleSection("customAI")}

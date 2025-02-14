@@ -21,9 +21,9 @@
 }
 /* farming section */
 .bkc1 {
-  background-image: url("/ai9.jpg");
-  background-size: cover;
-  background-position: center;
+    background-image: url("/ai9.jpg");
+    background-size: cover;
+    background-position: center;
 }
 /*ai section  */
 .bkc2 {
@@ -92,7 +92,6 @@ p {
   letter-spacing: 1.1px;
   padding: 20px;
   border-radius: 1px 10px;
-  margin-top: 10px;
 }
 
 /* ------------------      <<<     expertiseFlexItems          --------------------- */
@@ -147,7 +146,10 @@ p {
 .impar {
   margin-top: 5vw;
 }
-
+.ero{
+ /* background-color: yellowgreen; */
+ margin-top: -84px;
+}
 /* -------------      efecto rotacion      ---------- */
 
 .rotacion {
