@@ -5,7 +5,7 @@
 }
 
 .loading {
-  color: rgb(245, 234, 234);
+  color: rgba(255, 255, 255, 0.918);
   font-weight: 200;
   animation: loadingAnimation 1s infinite alternate;
 }
