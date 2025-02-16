@@ -5,7 +5,7 @@
 }
 
 .loading {
-  color: white;
+  color: rgb(245, 234, 234);
   font-weight: 200;
   animation: loadingAnimation 1s infinite alternate;
 }
