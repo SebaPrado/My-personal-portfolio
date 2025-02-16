@@ -4,11 +4,11 @@ import "./Section_2.css";
 import {
   FaHtml5,
   FaCss3,
+  FaFigma,
   FaReact,
   FaNodeJs,
   FaBootstrap,
   FaGitAlt,
-  FaFigma,
   FaGithub,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
@@ -26,7 +26,7 @@ const Section_2 = () => {
     { icon: FaReact, name: "React" },
     { icon: FaNodeJs, name: "NodeJS" },
     { icon: SiRedux, name: "Redux" },
-    { icon: FaBootstrap, name: "Bootstrap" },
+    // { icon: FaBootstrap, name: "Bootstrap" },
     { icon: FaGitAlt, name: "Git" },
     { icon: FaGithub, name: "Github" },
     { icon: SiInsomnia, name: "Insomnia" },

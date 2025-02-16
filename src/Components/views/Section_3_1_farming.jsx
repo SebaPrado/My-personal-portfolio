@@ -189,29 +189,24 @@ const Section_3_1_farming = () => {
               </li>
               <li>
                 I had a great happy childhood
-                <strong> ..even though</strong> I had to drive tractors at
-                age 11 and trucks by age 15 to asume responsibilies on my dad's
+                ..even though I had to drive tractors at
+                age 11 and trucks by age 15 to help on my dad's
                 farm.
               </li>
               
               <li>
                 Always taking one step in the risky unknown{" "}
-                <strong> ..even though</strong> My logical intelligence.
+                 ..even though My logical intelligence.
               </li>
-              {/* <li>
-                I've been travelling away from home{" "}
-                <strong>.. even though .. </strong> I have great family and
-                friends missing me back home
-              </li> */}
-
+          
               <li>
                 I've learned to enjoy failures (so many...){" "}
-                <strong> ..even though </strong>I'm always working for
+                ..even though I'm always working for
                 success.
               </li>
               <li>
                 I have big plans for the future{" "}
-                <strong> ..even though</strong> Life is today
+                 ..even though I'm aware Life is today
               </li>
             </ul>
           </div>
