@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import matesito from "/matesito.png";
 import "./section_3_1.css";
-import "./section_3_2.css";
+// import "./section_3_2.css";
 
 const Section_3_2_ai = () => {
   const [expandedSections, setExpandedSections] = useState({});
