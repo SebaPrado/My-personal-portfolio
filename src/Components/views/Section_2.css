@@ -7,35 +7,6 @@
   border-radius: 20px;
 }
 
-/* ----------        curva concava  superior      ------------*/
-/* .iconsSection::before {
-    content: "";
-    position: absolute;
-    top: -90px;
-    left: 0;
-    right: 0;
-    height: 90px;
-    background: linear-gradient(to right, #f4f5f6af, var(--color1));
-    border-radius: 100% 40% 0 0;
-    z-index: 10;
-    width: 100%;
-    transform: translateY(1px); 
- } 
- 
- /* Corregimos el pseudo-elemento inferior */
-/* .iconsSection::after {
-    content: "";
-    position: absolute;
-    bottom: -90px; 
-    left: 0;
-    right: 0;
-    height: 90px !important;
-    background: linear-gradient(to right, #f4f5f6af, var(--color1));
-    border-radius: 0 0 100% 40%;
-    width: 100%;
-    transform: translateY(-1px);
- }  */
-
 .iconsSection {
   position: relative;
   height: 10rem;
@@ -52,7 +23,7 @@
 .iconsSection2 {
   position: relative;
   height: 10rem;
-  background: linear-gradient(to left,#233b536d, #001a27d8, #001a27);
+  background: linear-gradient(to left, #233b536d, #001a27d8, #001a27);
   display: flex;
   align-items: center;
   justify-content: center;
