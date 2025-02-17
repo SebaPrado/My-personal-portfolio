@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-// import { motion } from "framer-motion";
-// import "animate.css";
 
 import Hero from "./Hero.jsx";
 import Section_1 from "./Section_1.jsx";
