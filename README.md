@@ -26,4 +26,5 @@ How many years of work experience do you have with :
 
 1)AI agent frameworks?
 2)vectorized databases?
-3)RAG?
+3)RAG??
+
