@@ -36,7 +36,7 @@ How many years of work experience do you have with :
 2)vectorized databases?
 3)RAG??
 
---------------------------               WORK EXP 1              -------------------------------
+--------------------------               WORK EXP 1              ---------------------------------
 
 AI Integration Specialist | Independent Developer
     11/2024 to date
