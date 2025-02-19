@@ -22,8 +22,14 @@ Sebastián Prado
 ( Por favor , de tener unos minutos, revisar mi portfolio  https://pradosebastian.vercel.app/  )
 
 --------------------------------------------------------
-How many years of work experience do you have with :
 
+I would appreciate the opportunity to take a challenging assessment if possible, as my capabilities are not fully reflected by my previous work experience.
+
+Regarding my right to work in the UK, I can start the necessary paperwork, as my girlfriend is British. Please feel free to take a look at my portfolio.
+
+--------------------------------------------------------
+
+How many years of work experience do you have with :
 1)AI agent frameworks?
 2)vectorized databases?
 3)RAG??
