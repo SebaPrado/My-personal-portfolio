@@ -36,9 +36,44 @@ How many years of work experience do you have with :
 2)vectorized databases?
 3)RAG??
 
---------------------------------------------------------
+--------------------------               WORK EXP 1              -------------------------------
 
 AI Integration Specialist | Independent Developer
-11/2024 to date
+    11/2024 to date
 
-I develop and deploy custom AI assistants and agents using Node.js , OpenAI API ,  LangChain framework, Supabase/mysql/Upstash and various API integrations (Googlesheet, Gmail, whatsapp , calendly) . So , I am capable of building end-to-end solutions.
+    I develop and deploy custom AI assistants and agents using Node.js , OpenAI API ,  LangChain framework, Supabase/mysql/Upstash and various API integrations (Googlesheet, Gmail, whatsapp , calendly) . So , I am capable of building end-to-end solutions.
+
+--------------------------               WORK EXP 2               -------------------------------
+
+Front-end developer 
+    agesic
+    05/2024 to 07/2024 
+
+    React.js and Redux ecosystem. Responsive user interfaces, state management solutions, and reusable component libraries. Scalable front-end architecture.
+
+--------------------------               WORK EXP 3               -------------------------------
+
+
+Agricultural engineer
+     09/2024 to date
+
+    Lead environmental projects focused on organic effluent mitigation in agricultural facilities within the Santa Lucia River basin. Design and implement soil conservation plans specializing in water erosion management. Expertise in sustainable agricultural practices and environmental compliance.
+
+--------------------------               WORK EXP 4               -------------------------------
+
+Agricultural engineer
+    Yaloak estate / terranova
+    06/2021 to 08/2023 
+
+    Prescision agriculture specialist. Soil nutrients analyst. Subsoil manuring contractor. 
+
+--------------------------               WORK EXP 5               -------------------------------
+
+Agricultural engineer
+    Maize seed chamber . Uruguay
+
+    Overseeing registration processes for modified seeds with IRM
+    technology, ensuring compliance with agricultural standards.
+    Managing agricultural practices for Insect Resistance Management (IRM).
+
+----------------------------------------------------------------------------------------------
