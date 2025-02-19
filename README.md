@@ -2,11 +2,13 @@ Sebastian
 Prado Melesi
 sebastian.pradomelesi@gmail.com
 +39 388 433 3145 
+98070
 +61 455 234 514 
 +61 487 175 193 (whatsapp)
 
 www.linkedin.com/in/sebastian-prado-b05862281
 
+Edgmond, Newport 
 -------------------------------------------------------
 
 Estimados ,
@@ -34,3 +36,9 @@ How many years of work experience do you have with :
 2)vectorized databases?
 3)RAG??
 
+--------------------------------------------------------
+
+AI Integration Specialist | Independent Developer
+11/2024 to date
+
+I develop and deploy custom AI assistants and agents using Node.js , OpenAI API ,  LangChain framework, Supabase/mysql/Upstash and various API integrations (Googlesheet, Gmail, whatsapp , calendly) . So , I am capable of building end-to-end solutions.
