@@ -27,7 +27,7 @@ How many years of work experience do you have with :
 AI Integration Specialist | Independent Developer
     11/2024 to date
 
-    I develop and deploy custom AI assistants and agents using Node.js , OpenAI API ,  LangChain framework, Supabase/mysql/Upstash and various API integrations (Googlesheet, Gmail, whatsapp , calendly) . So , I am capable of building end-to-end solutions.
+I develop and deploy custom AI assistants and agents using Node.js , OpenAI API ,  LangChain framework, Supabase/mysql/Upstash and various API integrations (Googlesheet, Gmail, whatsapp , calendly) . So , I am capable of building end-to-end solutions.
 
 --------------------------               WORK EXP 2               -------------------------------
 
@@ -35,7 +35,7 @@ Front-end developer
     agesic
     05/2024 to 07/2024 
 
-    React.js and Redux ecosystem. Responsive user interfaces, state management solutions, and reusable component libraries. Scalable front-end architecture.
+React.js and Redux ecosystem. Responsive user interfaces, state management solutions, and reusable component libraries. Scalable front-end architecture.
 
 --------------------------               WORK EXP 3               -------------------------------
 
