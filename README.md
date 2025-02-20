@@ -7,6 +7,7 @@ sebastian.pradomelesi@gmail.com
 +61 487 175 193 (whatsapp)
 
 www.linkedin.com/in/sebastian-prado-b05862281
+https://pradosebastian.vercel.app/
 
 Edgmond, Newport 
 -------------------------------------------------------
@@ -43,7 +44,7 @@ React.js and Redux ecosystem. Responsive user interfaces, state management solut
 Agricultural engineer
      09/2024 to date
 
-    Lead environmental projects focused on organic effluent mitigation in agricultural facilities within the Santa Lucia River basin. Design and implement soil conservation plans specializing in water erosion management. Expertise in sustainable agricultural practices and environmental compliance.
+Lead environmental projects focused on organic effluent mitigation in agricultural facilities within the Santa Lucia River basin. Design and implement soil conservation plans specializing in water erosion management. Expertise in sustainable agricultural practices and environmental compliance.
 
 --------------------------               WORK EXP 4               -------------------------------
 
@@ -51,16 +52,15 @@ Agricultural engineer
     Yaloak estate / terranova
     06/2021 to 08/2023 
 
-    Prescision agriculture specialist. Soil nutrients analyst. Subsoil manuring contractor. 
+Prescision agriculture specialist. Soil nutrients analyst. Subsoil manuring contractor. 
 
 --------------------------               WORK EXP 5               -------------------------------
 
 Agricultural engineer
     Maize seed chamber . Uruguay
+    Mar 2018 -Mar 2019
 
-    Overseeing registration processes for modified seeds with IRM
-    technology, ensuring compliance with agricultural standards.
-    Managing agricultural practices for Insect Resistance Management (IRM).
+Overseeing registration processes for modified seeds with IRM technology, ensuring compliance with agricultural standards. Managing agricultural practices for Insect Resistance Management (IRM).
 
 ----------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------
