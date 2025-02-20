@@ -175,8 +175,9 @@ p {
 /* -------------      efecto expancion container      ---------- */
 
 .content {
+  max-height: 0;
   overflow: hidden;
-  transition: all 1s ease-in-out;
+  transition: max-height 0.7s ease;
 }
 
 .collapsed {
@@ -187,6 +188,7 @@ p {
 
 .expanded {
   opacity: 1;
+  max-height: 500px;
 }
 
 .expandir {
