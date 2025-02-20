@@ -11,20 +11,6 @@ www.linkedin.com/in/sebastian-prado-b05862281
 Edgmond, Newport 
 -------------------------------------------------------
 
-Estimados ,
-
-Vista la oferta laboral AI trainer for Spanish Writer and Speakers ,  les hago llegar mis datos personales y profesionales a traves de mi Currículum Vitae a fin de ser tenido en cuenta como candidato, con la convicción de poseer el perfil requerido para un muy buen desempeño en el cargo a cubrir .
-
-Quedo a entera disposición para hablar mejor de la posicion y mi evaluacion , esperando una respuesta positiva, 
-
-Gracias por su tiempo . 
-
-Sebastián Prado
-
-( Por favor , de tener unos minutos, revisar mi portfolio  https://pradosebastian.vercel.app/  )
-
---------------------------------------------------------
-
 I would appreciate the opportunity to take a challenging assessment if possible, as my capabilities are not fully reflected by my previous work experience.
 
 Regarding my right to work in the UK, I can start the necessary paperwork, as my girlfriend is British. Please feel free to take a look at my portfolio.
@@ -77,3 +63,20 @@ Agricultural engineer
     Managing agricultural practices for Insect Resistance Management (IRM).
 
 ----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+
+
+Estimados ,
+
+Vista la oferta laboral AI trainer for Spanish Writer and Speakers ,  les hago llegar mis datos personales y profesionales a traves de mi Currículum Vitae a fin de ser tenido en cuenta como candidato, con la convicción de poseer el perfil requerido para un muy buen desempeño en el cargo a cubrir .
+
+Quedo a entera disposición para hablar mejor de la posicion y mi evaluacion , esperando una respuesta positiva, 
+
+Gracias por su tiempo . 
+
+Sebastián Prado
+
+( Por favor , de tener unos minutos, revisar mi portfolio  https://pradosebastian.vercel.app/  )
+
+--------------------------------------------------------
