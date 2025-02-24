@@ -244,7 +244,7 @@ const Section_3_3_dev = () => {
           <div className="content_sub_container">
             <ul>
               <li>
-                Ready to transform your vision into a fully functional
+                Ready to transform designs into a fully functional
                 e-commerce platform. Customized product pages, offer sections,
                 display by categories and secure checkout processes, every
                 detail is crafted.
@@ -291,8 +291,8 @@ const Section_3_3_dev = () => {
                 Turn static Figma files into dynamic, fully responsive
                 interfaces. Using handcrafted CSS or Js libraries ( FramerMotion
                 , Swiper , tailwind ) , I create interactive, visually
-                compelling experiences that retain the integrity of your design
-                vision. Let's bring your design to life
+                compelling experiences that retain the integrity of your 
+                vision.
               </li>
             </ul>
           </div>

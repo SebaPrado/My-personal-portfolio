@@ -191,7 +191,7 @@ const Section_3_1_farming = () => {
               <li>
                 I had a great happy childhood
                 ..even though I had to drive tractors at
-                age 11 and trucks by age 15 to help on my dad's
+                age 11 to help on my dad's
                 farm.
               </li>
               
@@ -201,7 +201,7 @@ const Section_3_1_farming = () => {
               </li>
           
               <li>
-                I've learned to enjoy failures (so many...){" "}
+                I've learned to enjoy failures{" "}
                 ..even though I'm always working for
                 success.
               </li>

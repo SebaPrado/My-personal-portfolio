@@ -103,18 +103,17 @@ const Section_3_2_ai = () => {
         >
           <div className="content_sub_container">
             <ul>
+                <li>
+                I developed a JavaScript widget using Webpack to bundle it, allowing it to be embedded in any webpage via a script integration. This widget serves as the frontend of the AI assistant and communicates with my Node.js backend.
+                </li>
+                <li>
+                The backend is responsible for processing the assistant's requests, interacting with the OpenAI API to generate responses and with Supabase to manage the database.
+                </li>
+            
               <li>
-                Developed a plug-and-play AI assistant widget deployable via
-                simple script integration (as in this website)
+                A 24/7 automated sales and support Agent into any website
               </li>
-              <li>
-                A 24/7 automated sales and support Agent that seamlessly
-                integrates into any website
-              </li>
-              <li>
-                I built it with Nodejs + React + Webpack for performance and
-                minimal resource consumption
-              </li>
+            
             </ul>
           </div>
         </div>
