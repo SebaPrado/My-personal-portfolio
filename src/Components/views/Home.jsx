@@ -102,9 +102,9 @@ function FramerMotion() {
   return (
     <div className="">
         
-      {/* <section id="home">
+      <section id="home">
         {Hero ? <Hero /> : <p>Error al cargar el componente Hero.</p>}
-      </section> */}
+      </section>
 
       <section className="Section1Home1">
         <Section_1 />
@@ -143,9 +143,12 @@ function FramerMotion() {
 
       {/* ========================   About myself      ===========================  */}
 
-      {/* <section className="section3 containerLarge">
+      <section className="sectionDev ">
+      <div className="containerLarge">
         <Section_3_1_farming />
-      </section> */}
+        </div>
+
+      </section>
 
       {/* ========================   Empty      ===========================  */}
       {/* <section>

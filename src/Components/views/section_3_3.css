@@ -1,6 +1,12 @@
 .sectionDev{
     margin-top: 10vw;
-    background-color:  #001a27;
+    background-color:   #001a27;
+    /* background-color:  #04aafd; */
+    background-image: 
+        linear-gradient(0deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 60px 60px;
+
     padding-top: 5vw;
     padding-bottom: 10vw;
     border-top: 1px solid  #001a27; 

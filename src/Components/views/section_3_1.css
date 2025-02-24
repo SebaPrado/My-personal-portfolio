@@ -1,29 +1,18 @@
 
-/* farming section */
-.secciones1{
-    font-size: 3rem;
-    color: var(--white);
-    background-color:  #020331;
-    /* border-radius: 10px; */
-    padding: 35px;
-    padding-left: 45px;
-    padding-top: 7rem;
-    padding-bottom: 5rem;
-    /* border-radius: 30px 2px; */
-    /* height: 20rem; */
-    margin-bottom: 5rem;
-    align-content: center;
-    line-height: 4rem;
-    font-weight: 200;
-    letter-spacing: 0.2rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-right: 7vw !important;
+.sectionAgr{
+    margin-top: 10vw;
+    background-color: #020331;
+    background-image: 
+        linear-gradient(0deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 60px 60px;
+    padding-top: 5vw;
+    padding-bottom: 10vw;
+    border-top: 1px solid  #001a27; 
+    border-radius: 0 100px  0 100px  ; 
+
 }
 .bkc1 {
-  /* background-image: url("/ai9.jpg"); */
-  /* background-color: #001415; */
   background-size: cover;
   background-position: center;
 }
@@ -41,8 +30,7 @@
 }
 
 .bkc1_subtitle {
-  /* background: linear-gradient(to right, black, rgb(0, 34, 6),rgb(0, 85, 74),rgb(0, 85, 74)); */
-  background: linear-gradient(to right, #020331 60%, #05317ebf 100%);
+  background: linear-gradient(to right, #00011c 60%, #042b6fbf 100%);
 }
 
 
@@ -55,8 +43,12 @@ p {
   font-size: 20px !important;
 }
 
-.titles {
-  /* rotate: 3deg; */
+.agrHeader{
+ margin-bottom: 55px ;
+ margin-top: 35px;
+font-size: 59px;
+color:#ffffff;
+/* background-color: aquamarine; */
 }
 /* ------------------          expertiseFlexItems    >>>      ------------------- */
 
@@ -64,6 +56,7 @@ p {
   box-sizing: border-box;
   width: 100%;
   height: fit-content;
+  /* background-color: aqua; */
 }
 
 .expertiseFlexItems p {
@@ -75,7 +68,7 @@ p {
 .expertiseFlexItems li {
   font-size: 13px !important;
   line-height: 160%;
-  color: var(--color1);
+  color: white;
   letter-spacing: 1.1px;
   padding: 20px;
   border-radius: 1px 10px;
@@ -135,10 +128,7 @@ p {
 .impar {
   margin-top: 5vw;
 }
-.ero{
-  /* background-color: yellowgreen; */
-  /* margin-top: -84px; */
-}
+
 /* -------------      efecto rotacion      ---------- */
 
 .rotacion {
@@ -313,7 +303,6 @@ p {
 }
 
 .bckimg::before {
-  /* Create a pseudo-element for the hover image */
   content: "";
   position: absolute;
   top: 0;

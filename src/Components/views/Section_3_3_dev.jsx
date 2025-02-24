@@ -24,7 +24,7 @@ const Section_3_3_dev = () => {
       </div>
       {/* ---------------------       Backend     ------------------------- */}
 
-      <div className="expertiseFlexItems_dev ero">
+      <div className="expertiseFlexItems_dev ">
         <div
           className="h4_boton bkc3_subtitle rotacion list_title_div cursor-pointer bckimg ai5"
           onClick={() => toggleSection("backend")}

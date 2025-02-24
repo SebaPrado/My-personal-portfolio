@@ -50,8 +50,7 @@ body {
   font-family: "Montserrat", sans-serif;
   /* overflow-x: hidden ; */
 }
-.padre{
-}
+
 h1 {
   color: rgb(18, 7, 7);
   font-weight: 300; /* Reducimos el grosor de la letra */
@@ -131,12 +130,7 @@ h5 {
 /* ======    Márgenes laterales responsivos   ====== */
 
 @media screen and (min-width: 768px) and (max-width: 1940px) {
-  .container {
-    /* margin-left: 112px !important; */
-    /* margin-right: 112px !important; */
-    /* width: calc(100% - 224px) !important;  */
-    background-color: yellow;
-  }
+
   .containerLarge {
     margin-left: 56px;
     margin-right: 56px;
