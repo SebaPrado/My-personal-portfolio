@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import matesito from "/matesito.png";
 import "./section_3_1.css";
-import "./section_3_3_dev.css";
+import "./section_3_3.css";
 
 
 const Section_3_3_dev = () => {
@@ -24,7 +24,7 @@ const Section_3_3_dev = () => {
       </div>
       {/* ---------------------       Backend     ------------------------- */}
 
-      <div className="expertiseFlexItems ero">
+      <div className="expertiseFlexItems_dev ero">
         <div
           className="h4_boton bkc3_subtitle rotacion list_title_div cursor-pointer bckimg ai5"
           onClick={() => toggleSection("backend")}
@@ -132,7 +132,7 @@ const Section_3_3_dev = () => {
 
       {/* ---------------------       Front end     ------------------------- */}
 
-      <div className="expertiseFlexItems">
+      <div className="expertiseFlexItems_dev">
         <div
           className="h4_boton bkc3_subtitle rotacion list_title_div cursor-pointer bckimg ai5"
           onClick={() => toggleSection("frontend")}
@@ -212,7 +212,7 @@ const Section_3_3_dev = () => {
 
       {/* ---------------------       Ecommerce   ------------------------- */}
 
-      <div className="expertiseFlexItems">
+      <div className="expertiseFlexItems_dev">
         <div
           className="h4_boton bkc3_subtitle rotacion list_title_div cursor-pointer bckimg ai5"
           onClick={() => toggleSection("commerce")}
@@ -256,7 +256,7 @@ const Section_3_3_dev = () => {
 
       {/* ---------------------       Figma    ------------------------- */}
 
-      <div className="expertiseFlexItems">
+      <div className="expertiseFlexItems_dev">
         <div
           className="h4_boton bkc3_subtitle rotacion list_title_div cursor-pointer bckimg ai5"
           onClick={() => toggleSection("designs")}
@@ -301,7 +301,7 @@ const Section_3_3_dev = () => {
 
       {/* ---------------------       Mate     ------------------------- */}
 
-      <div className="expertiseFlexItems">
+      <div className="expertiseFlexItems_dev">
         <div
           className="h4_boton bkc3_subtitle rotacion list_title_div cursor-pointer bckimg ai5"
           onClick={() => toggleSection("weapon")}
