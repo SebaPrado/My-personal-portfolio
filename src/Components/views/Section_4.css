@@ -14,7 +14,7 @@ h3 {
   margin-top: 12vw;
   background-color:  #001a27;
   /* background: linear-gradient(to bottom, #001a27, var(--color1)); */
-  width: 99vw;
+  width: 98vw;
   border-radius: 30px 2px;
   border: #2a353b19 solid 1px;
 
@@ -93,10 +93,12 @@ background-size: 60px 60px; */
     padding-top: 3rem;
   }
   h3 {
-    margin-left: calc(15vw - 20px);
+    /* margin-left: calc(15vw - 20px); */
     /* transform: rotate(4deg); */
     font-size:34px !important ;
   }
+  #projects {
+    width: 96vw;}
 }
 
 @media (768px <= width <= 960px) {
