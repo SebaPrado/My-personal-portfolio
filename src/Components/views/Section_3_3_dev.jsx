@@ -16,7 +16,7 @@ const Section_3_3_dev = () => {
 
   return (
     <div className="expertiseFlexContainer ">
-      <div className="seccciones bkc3">
+      <div className="devHeader">
         <div className="titles">
           <div> Full-stack</div>
           <div>Developer.</div>

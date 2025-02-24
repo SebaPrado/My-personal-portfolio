@@ -1,33 +1,34 @@
 .padre_sliders {
+    margin-right: 30px;
   /* rotate: -3deg; */
-  background-color: #001a27;
+  /* background-color: #001a27; */
   padding-top: 14rem;
-  margin-top: 18rem;
-  padding-bottom: 18rem;
+  margin-top: 11rem;
+  padding-bottom: 12rem;
   border-radius: 20px;
 }
 
 .iconsSection {
   position: relative;
   height: 10rem;
-  background: linear-gradient(to right, #233b536d, #001a27ce, #001a27);
+  /* background: linear-gradient(to right, #233b536d, #001a27ce, #001a27); */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #001a27;
   margin-top: 5rem;
   z-index: 20;
-  overflow: hidden; /* Add this to prevent horizontal scroll */
+  overflow: hidden; 
   border: none;
 }
 .iconsSection2 {
   position: relative;
   height: 10rem;
-  background: linear-gradient(to left, #233b536d, #001a27d8, #001a27);
+  /* background: linear-gradient(to left, #233b536d, #001a27d8, #001a27); */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color:#001a27;
   margin-top: 5rem;
   z-index: 20;
   overflow: hidden; /* Add this to prevent horizontal scroll */

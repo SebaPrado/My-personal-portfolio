@@ -44,23 +44,8 @@
   /* background: linear-gradient(to right, black, rgb(0, 34, 6),rgb(0, 85, 74),rgb(0, 85, 74)); */
   background: linear-gradient(to right, #020331 60%, #05317ebf 100%);
 }
-.bkc2_subtitle {
-  background: linear-gradient(
-    to right,
-    #001415 0%,
-    #001415 60%,
-    #002a2dd4 100%
-  );
-}
-.bkc3_subtitle {
-  background: linear-gradient(
-    to right,
-    #020331,
-    #062939,
-    #0b3c53,
-    var(--color2)
-  );
-}
+
+
 
 .section3 {
   margin-top: 150px;

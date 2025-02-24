@@ -16,7 +16,7 @@ import { SiRedux, SiInsomnia } from "react-icons/si";
 
 const Section_2 = () => {
     const OpenAIIconWrapper = () => (
-        <OpenAiLogo size={33} color="#ebebeb" weight="light" />
+        <OpenAiLogo size={34} color="#001a27" weight="light" />
       );
   const techIcons = [
     { icon: OpenAIIconWrapper, name : "OpenAI"},
@@ -43,7 +43,7 @@ const Section_2 = () => {
         <div className="slider-container">
           <div className="slider-icons">
             <div className="slider-icon">
-              <OpenAiLogo size={44} color="#ebebeb" weight="light" />
+              <OpenAiLogo size={34} color="#001a27" weight="light" />
               <span className="icon-name">OpenAI</span>
             </div>
             {[...techIcons, ...techIcons].map((tech, index) => (

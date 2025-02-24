@@ -13,7 +13,7 @@ const Section_3_2_ai = () => {
   };
 
   return (
-    <div className="expertiseFlexContainer" id="ai">
+    <div className="expertiseFlexContainer_ai" id="ai">
       <div className=" aiHeader">
         <div className="titles">
           <div> AI</div>
