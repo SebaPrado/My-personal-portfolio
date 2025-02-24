@@ -12,7 +12,7 @@
   background: linear-gradient(to right, #010220 60%, #0b367fa7 100%);
   background-size: cover;
   background-position: center;
-  transform: rotate(-3deg);
+  /* transform: rotate(-3deg); */
   height: 100vh;
   width: 94%;
   margin-left: 55px;
@@ -52,11 +52,11 @@
   gap: 15px;
 }
 .letters_s {
-  transform: rotate(3deg);
+  /* transform: rotate(3deg); */
   margin-left: 2.5rem;
 }
 .letters {
-  transform: rotate(3deg);
+  /* transform: rotate(3deg); */
   margin-left: 2rem;
 }
 

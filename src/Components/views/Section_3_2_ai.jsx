@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./section_3_1.css";
-// import "./section_3_2.css";
+import "./section_3_2.css";
 
 const Section_3_2_ai = () => {
   const [expandedSections, setExpandedSections] = useState({});
@@ -14,7 +14,7 @@ const Section_3_2_ai = () => {
 
   return (
     <div className="expertiseFlexContainer" id="ai">
-      <div className="seccciones bkc2">
+      <div className=" aiHeader">
         <div className="titles">
           <div> AI</div>
           <div> Integration & Development</div>

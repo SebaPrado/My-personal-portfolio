@@ -13,8 +13,8 @@ const Section_3_1_farming = () => {
   };
 
   return (
-    <div className="expertiseFlexContainer ">
-      <div className="seccciones bkc1">
+    <div className="expertiseFlexContainer secciones1">
+      <div className="secciones1 bkc1">
         <div className="titles">
           <div>About myself</div>
         </div>

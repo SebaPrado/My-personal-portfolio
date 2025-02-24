@@ -1,0 +1,18 @@
+.sectionDev{
+    background-color: #001a27;
+    padding-top: 5vw;
+    padding-bottom: 10vw;
+    border: 10px solid transparent; /* Añadir borde */
+    border-radius: 0 100px  0 100px  ; 
+
+}
+.devHeader{
+    margin-bottom: 55px ;
+    margin-top: 35px;
+    font-size: 49px;
+    color: white;
+    /* background-color: aquamarine; */
+}
+.expertiseFlexItems_dev li{
+    color: white;
+}

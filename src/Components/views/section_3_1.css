@@ -1,27 +1,29 @@
-.seccciones {
-  transform: rotate(-3deg);
-  font-size: 3rem;
-  color: var(--white);
-  border-radius: 10px;
-  padding: 35px;
-  padding-left: 45px;
-  padding-top: 7rem;
-  padding-bottom: 5rem;
-  border-radius: 30px 2px;
-  height: 20rem;
-  margin-bottom: 5rem;
-  align-content: center;
-  line-height: 4rem;
-  font-weight: 200;
-  letter-spacing: 0.2rem;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-right: 7vw !important;
-}
+
 /* farming section */
+.secciones1{
+    font-size: 3rem;
+    color: var(--white);
+    background-color:  #020331;
+    /* border-radius: 10px; */
+    padding: 35px;
+    padding-left: 45px;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    /* border-radius: 30px 2px; */
+    /* height: 20rem; */
+    margin-bottom: 5rem;
+    align-content: center;
+    line-height: 4rem;
+    font-weight: 200;
+    letter-spacing: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 7vw !important;
+}
 .bkc1 {
-  background-image: url("/ai9.jpg");
+  /* background-image: url("/ai9.jpg"); */
+  /* background-color: #001415; */
   background-size: cover;
   background-position: center;
 }
@@ -69,7 +71,7 @@ p {
 }
 
 .titles {
-  rotate: 3deg;
+  /* rotate: 3deg; */
 }
 /* ------------------          expertiseFlexItems    >>>      ------------------- */
 
@@ -128,6 +130,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border:1px solid white;
+
 }
 
 .list_title_div {
@@ -146,9 +150,9 @@ p {
 .impar {
   margin-top: 5vw;
 }
-.ero {
+.ero{
   /* background-color: yellowgreen; */
-  margin-top: -84px;
+  /* margin-top: -84px; */
 }
 /* -------------      efecto rotacion      ---------- */
 
@@ -288,7 +292,7 @@ p {
 .expertiseFlexItems_ai li {
   font-size: 13px !important;
   line-height: 160%;
-  color: var(--color1);
+  /* color: var(--color1); */
   letter-spacing: 1.1px;
   padding: 20px;
   border-radius: 1px 10px;
