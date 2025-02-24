@@ -3,11 +3,11 @@ Prado Melesi
 sebastian.pradomelesi@gmail.com
 +39 388 433 3145 
 98070
-+61 455 234 514 
 +61 487 175 193 (whatsapp)
 
 www.linkedin.com/in/sebastian-prado-b05862281
 https://pradosebastian.vercel.app/
+https://github.com/SebaPradoc
 
 Edgmond, Newport 
 -------------------------------------------------------

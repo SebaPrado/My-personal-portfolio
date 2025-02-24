@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 // import { motion } from "framer-motion";
 import "animate.css";
-import Navbar from "../Navbar";
+import Navbar from "./Navbar.jsx";
 import Hero from "./Hero.jsx";
 
 
