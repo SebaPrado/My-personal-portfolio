@@ -9,16 +9,18 @@
     #011520ad,
     #01152086
   );
-  background: linear-gradient(to right, #010220 60%, #0b367fa7 100%);
   background-size: cover;
   background-position: center;
   /* transform: rotate(-3deg); */
   height: 100vh;
-  width: 94%;
-  margin-left: 55px;
-  border-radius: 30px 2px;
+  margin-top: 39px;
+  /* width: 94%; */
+  /* margin-left: 55px; */
+  border-radius: 20% 20px;
   margin-bottom: 3rem;
   padding-top: 3.8rem;
+  /* background-image: url("/ai1.jpg"); */
+
 }
 
 .hero::before {
@@ -30,9 +32,11 @@
   bottom: 0;
   background-image: url("/ai1.jpg");
   opacity: 0.35;
+  opacity:1;
   background-size: cover;
   background-position: center;
-  border-radius: 30px 2px;
+  border-radius: 20% 20px;
+  /* width: 94%; */
   z-index: -1;
 }
 
