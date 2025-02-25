@@ -46,10 +46,9 @@ const Hero = () => {
         <div className="heroFlexText">
           <h2>Welcome</h2>
           <p>
-            I'm Sebastian, a fullstack developer specializing in AI-powered
-            web applications. Using the MERN stack with a focus on Node.js and
-            React, I create solutions that leverage OpenAI
-            technologies and AI assistants to solve complex problems.
+            I'm Sebastian, a fullstack developer specializing in AI agents with
+            OpenAI and Node.js. I create solutions using the MERN stack,
+            focusing on Node.js and React, to develop and integrate AI assistants.
           </p>
         </div>
         <div>
