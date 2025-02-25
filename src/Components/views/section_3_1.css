@@ -1,11 +1,11 @@
 
 .sectionAgr{
     margin-top: 10vw;
-    background-color: #020331;
-    background-image: 
-        linear-gradient(0deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-    background-size: 60px 60px;
+    background-color:  #0a001b;
+    /* background-image: 
+        linear-gradient(0deg, rgba(255, 255, 255, 0.042) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.042) 1px, transparent 1px);
+    background-size: 60px 60px; */
     padding-top: 5vw;
     padding-bottom: 10vw;
     border-top: 1px solid  #001a27; 
@@ -30,7 +30,17 @@
 }
 
 .bkc1_subtitle {
-  background: linear-gradient(to right, #00011c 60%, #042b6fbf 100%);
+  /* background: linear-gradient(to right, #0c2239b9 60%, #01173f69 100%); */
+  
+    background: linear-gradient(
+      to right,
+      /* #020331, */
+      #160214,
+      #1c0019 60%,
+      #d9d9d9 100%
+      /* var(--color1) */
+    );
+ 
 }
 
 
