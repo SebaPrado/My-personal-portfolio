@@ -46,10 +46,10 @@ const Hero = () => {
         <div className="heroFlexText">
           <h2>Welcome</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            iusto aut excepturi perferendis fuga placeat, possimus voluptatibus
-            sunt doloribus tempore voluptatem quaerat aliquid saepe est
-            cupiditate. Voluptates neque recusandae cum.
+            I'm Sebastian, a fullstack developer specializing in AI-powered
+            web applications. Using the MERN stack with a focus on Node.js and
+            React, I create solutions that leverage OpenAI
+            technologies and AI assistants to solve complex problems.
           </p>
         </div>
         <div>
