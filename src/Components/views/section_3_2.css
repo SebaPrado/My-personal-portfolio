@@ -2,12 +2,9 @@
     background-color: #0a001b;
     padding-top: 5vw;
     padding-bottom: 10vw;
-    border: 10px solid transparent; /* Añadir borde */
+    border: 10px solid transparent; 
     border-radius: 0 100px  0 100px  ; 
-    /* background-image: 
-    linear-gradient(0deg, rgba(255, 255, 255, 0.042) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255,0.042) 1px, transparent 1px);
-background-size: 60px 60px; */
+   
 }
 .aiHeader{
     margin-bottom: 55px ;
@@ -23,8 +20,8 @@ background-size: 60px 60px; */
 .bkc2_subtitle {
     background: linear-gradient(
       to right,
-      #001f2084 0%,
-      #001f20b6 60%,
+      #001314 0%,
+      #001415ec 60%,
       #d9d9d9 100%
     );
   }
