@@ -5,8 +5,7 @@ sebastian.pradomelesi@gmail.com
 98070
 +61 487 175 193 (whatsapp)
 
-+34 (esp)
-634 159 814 
++34 (esp)  634159814 
 
 www.linkedin.com/in/sebastian-prado-b05862281
 https://pradosebastian.vercel.app/
@@ -14,12 +13,6 @@ https://github.com/SebaPradoc
 
 Edgmond, Newport 
 -------------------------------------------------------
-
-I would appreciate the opportunity to take a challenging assessment if possible, as my capabilities are not fully reflected by my previous work experience.
-
-Regarding my right to work in the UK, I can start the necessary paperwork, as my girlfriend is British. Please feel free to take a look at my portfolio.
-
---------------------------------------------------------
 
 How many years of work experience do you have with :
 1)AI agent frameworks?
@@ -82,43 +75,42 @@ Sebastián Prado
 
 ( Por favor , de tener unos minutos, revisar mi portfolio  https://pradosebastian.vercel.app/  )
 
---------------------------------------------------------
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+
 
 About the job
 En ZETRACK, estamos revolucionando el sector agrícola a través de la tecnología. Desarrollamos soluciones de software para maquinaria agrícola, integrando IoT, automatización y telemetría para mejorar la eficiencia y sostenibilidad del campo. Buscamos un Desarrollador Full Stack apasionado por la tecnología y la agricultura que quiera formar parte de un equipo innovador.
 
 
-
 Responsabilidades
-
 
 
 Desarrollar software Full Stack para la monitorización y control de maquinaria agrícola.
 
-Integrar sensores IoT, GNSS, CAN Bus (ISOBUS, J1939), MQTT y protocolos de comunicación industrial.
+1)Integrar sensores IoT, GNSS, CAN Bus (ISOBUS, J1939), MQTT y protocolos de comunicación industrial.
 
 Crear interfaces web y móviles (React, Angular, Flutter) para la gestión de equipos agrícolas.
 
-Implementar APIs y microservicios en la nube (AWS IoT, Google Cloud, Azure).
+2)Implementar APIs y microservicios en la nube (AWS IoT, Google Cloud, Azure).
 
-Desarrollar algoritmos para procesamiento de datos geoespaciales y telemetría de maquinaria.
+3)Desarrollar algoritmos para procesamiento de datos geoespaciales y telemetría de maquinaria.
 
-Trabajar con machine learning y visión por computador para detección de cultivos y optimización de maquinaria.
-
+4)Trabajar con machine learning y visión por computador para detección de cultivos y optimización de maquinaria.
 
 
 Requisitos
-
 
 
 Experiencia en desarrollo Full Stack (Frontend: React/Angular/Vue, Backend: Python/Node.js/Java).
 
 Conocimientos en IoT y sistemas embebidos (C++, Python, Rust, RTOS).
 
-Familiaridad con protocolos de comunicación en maquinaria agrícola (CAN Bus, RS-232, Modbus, MQTT).
+5)Familiaridad con protocolos de comunicación en maquinaria agrícola (CAN Bus, RS-232, Modbus, MQTT).
 
-Experiencia en bases de datos (PostgreSQL/PostGIS, Firebase, MySQL).
+6)Experiencia en bases de datos (PostgreSQL/PostGIS, Firebase, MySQL).
 
-Conocimientos en visión por computador y AI (OpenCV, TensorFlow, PyTorch).
+7)Conocimientos en visión por computador y AI (OpenCV, TensorFlow, PyTorch).
 
 Pasión por la innovación en tecnología agrícola y automatización de maquinaria.
