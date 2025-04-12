@@ -1,160 +1,45 @@
 import React, { useState, useEffect, useRef } from "react";
 // import { motion } from "framer-motion";
 import "animate.css";
-import Navbar from "./Navbar.jsx";
-import Hero from "./Hero.jsx";
-
+// import Navbar from "./Navbar.jsx";
+import HeroPastoreo from "../pastoreo/HeroPastoreo.jsx";
 
 import matesito from "/matesito.png";
 
-const cardVariants = (index) => ({
-  offscreen: {
-    y: 300,
-  },
-  onscreen: {
-    y: 50,
-    rotate: -7,
-    transition: {
-      type: "spring",
-      bounce: 0.4,
-      duration: 1.2,
-      delay: index <= 3 ? index * 0.4 : 0,
-    },
-  },
-});
-
-const hue = (h) => `hsl(${h}, 50%, 20%)`;
-
-function Card({ image, hueA, hueB, index }) {
-  const background = `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
-
-  return (
-    <motion.div
-      className="card-container"
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{ once: true, amount: 0.5 }}
-    >
-      <div className="splash" style={{ background }} />
-      <motion.div className="card" variants={cardVariants(index)}>
-        <img
-          src={image}
-          alt="food"
-          className="card-image"
-          style={{
-            objectFit: "cover",
-            width: "100%",
-            height: "100%",
-            borderRadius: "1%",
-          }}
-        />
-      </motion.div>
-    </motion.div>
-  );
-}
-
 function FramerMotion() {
-  const [displayedWord, setDisplayedWord] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
-  const words = ["    with a creative twist... ", " with a designing mind"];
-  const [wordIndex, setWordIndex] = useState(0);
-  const sectionRef = useRef(null);
-
-//   const techIcons = [
-//     { icon: FaHtml5, name: "HTML" },
-//     { icon: FaCss3, name: "CSS" },
-//     { icon: IoLogoJavascript, name: "JavaScript" },
-//     { icon: FaReact, name: "React" },
-//     { icon: FaNodeJs, name: "NodeJS" },
-//     { icon: SiRedux, name: "Redux" },
-//     { icon: FaBootstrap, name: "Bootstrap" },
-//     { icon: FaGitAlt, name: "Git" },
-//     { icon: FaGithub, name: "Github" },
-//     { icon: SiInsomnia, name: "Insomnia" },
-//     { icon: FaFigma, name: "Figma" },
-//     { icon: FaHtml5, name: "HTML" },
-//     { icon: FaCss3, name: "CSS" },
-//     { icon: IoLogoJavascript, name: "JavaScript" },
-//   ];
-
-  const food = [
-    ["public/logoseba.png", 30, 40],
-    ["public/fakeflix.jpeg", 230, 230],
-    ["public/alusur.jpeg", 200, 220],
-  ];
-
   const animatedDivRef = useRef(null);
-
-  useEffect(() => {
-    let timer;
-
-    const typeEffect = () => {
-      const currentWord = words[wordIndex];
-
-      if (!isDeleting) {
-        if (displayedWord.length < currentWord.length) {
-          setDisplayedWord(currentWord.slice(0, displayedWord.length + 1));
-          timer = setTimeout(typeEffect, 250);
-        } else {
-          timer = setTimeout(() => setIsDeleting(true), 9000);
-        }
-      } else {
-        if (displayedWord.length > 0) {
-          setDisplayedWord(currentWord.slice(0, displayedWord.length - 1));
-          timer = setTimeout(typeEffect, 50);
-        } else {
-          setIsDeleting(false);
-          setWordIndex((prev) => (prev + 1) % words.length);
-          timer = setTimeout(typeEffect, 50);
-        }
-      }
-    };
-
-    timer = setTimeout(typeEffect, 100);
-
-    return () => clearTimeout(timer);
-  }, [displayedWord, isDeleting, wordIndex, words]);
-
- 
 
   return (
     <div>
       <section id="home">
-        {Hero ? <Hero /> : <p>Error al cargar el componente Hero.</p>}
-        {/* <div className="heroBigContainer">
-          <div className="heroH1Container">
-            <h1 className="heroH1">Website developer</h1>
-          </div>
-          <div className="prueba">
-            <div className="heroH2Container">
-              <h2 className="displayedWord">{displayedWord}</h2>
-            </div>
-          </div>
-        </div> */}
+        {HeroPastoreo ? (
+          <HeroPastoreo />
+        ) : (
+          <p>Error al cargar el componente Hero.</p>
+        )}
       </section>
 
       <section className="Section1Home1">
         <div className="personalPresentation">
           <div className="textPersonalSection">
             <div>
+                <p className="letsTalk  ">Algo sobre mi</p>
               <img
-                ref={animatedDivRef}
-                className="profilePicture hidden"
-                src="/fotoperfil.png"
-                alt=""
+                // ref={animatedDivRef}
+                className="profilePicture "
+                src="../fotoperfil.png"
+                alt="foto perfil"
               />
             </div>
             <div className=" scrollAnimation ">
               <p className="helloText ">
-                Hey ! I'm Sebastian, a full stack developer specializing in{" "}
-                <strong>React</strong> and
-                <strong> Node.js</strong>. I develop websites for businesses and
-                individuals. My focus on{" "}
-                <strong>personalized service from start to finish </strong>
-                ensures that your ideas are perfectly reflected in the project.
-                Let's bring your vision to life!
+                Un poco de mi persona. Soy Sebastian Prado , Ingeniero Agronomo
+                ( UDELAR ) y programador Iot . Incursionado como programador Iot en una
+                empresa Espanola de automatizaciones en maquinaria agricola (Zetrack). 
               </p>
-              <p className="letsTalk  ">Let's Talk...</p>
+              <p className="helloText ">Estudio areas de la programacion que
+                creo que pueden ayudar mucho al agro, como el entrenamiento de modelos matematicos y redes neuronales (IA) y la obtencion + procesamiento de indices de
+                vegetacion de imagenes satelitales. Lejos de ser cosas separadas, uno es el sustrato ( img sat ) del otro (modeloAI) </p>
             </div>
 
             <div>
@@ -172,22 +57,7 @@ function FramerMotion() {
       </section>
 
       <section className="iconsSection ">
-        <div className="slider-container">
-          {/* <div className="slider-icons">
-            {techIcons.map((tech, index) => (
-              <div key={index} className="slider-icon">
-                <tech.icon className="icon" />
-                <span className="icon-name">{tech.name} </span>
-              </div>
-            ))}
-            {techIcons.map((tech, index) => (
-              <div key={index} className="slider-icon">
-                <tech.icon className="icon" />
-                <span className="icon-name">{tech.name} </span>
-              </div>
-            ))}
-          </div> */}
-        </div>
+        <div className="slider-container"></div>
       </section>
 
       <section className="section5 containerLarge" id="expertise">
@@ -198,9 +68,6 @@ function FramerMotion() {
           {/* ---------------------       Backend     ------------------------- */}
 
           <div className="expertiseFlexItems">
-            {/* <div class="containerrot">
-              <div class="rotacion">Rotando</div>
-            </div> */}
             <h4 className="rotacion">
               <span className="dot"></span> Your Back-end Developer
             </h4>
@@ -392,7 +259,7 @@ function FramerMotion() {
 
       {/*                               SLIDER                                   */}
 
-      <section className="projectsSection containerLarge" id="projects">
+      {/* <section className="projectsSection containerLarge" id="projects">
         <div className="titleH3">
           <h3>Some projects to check out </h3>
         </div>
@@ -444,8 +311,8 @@ function FramerMotion() {
             </a>
           </div>
           {/* <div className="divola"><h4>Titulo</h4></div> */}
-        </div>
-      </section>
+      {/* </div> */}
+      {/* </section> */}
 
       {/* =====================        LETS TALK         ======================== */}
 

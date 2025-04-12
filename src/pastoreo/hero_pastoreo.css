@@ -1,0 +1,227 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(
+      to right,
+      #011520,
+      #011520da,
+      #011520ad,
+      #01152086
+    );
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 39px;
+    border-radius: 20% 20px;
+    margin-bottom: 3rem;
+    padding-top: 3.8rem;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/ai1.jpg");
+    opacity: 0.35;
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20% 20px;
+    /* width: 94%; */
+    z-index: -1;
+  }
+  
+  .presentacion {
+    padding-left: 4rem;
+    margin-bottom: 3rem !important;
+  }
+  .mi_nombre {
+    font-size: 3rem;
+    color: var(--white);
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .letters_s {
+    margin-left: 2.5rem;
+  }
+  .letters {
+    margin-left: 2rem;
+  }
+  
+  .skill {
+    font-size: 1.5rem;
+    color: var(--color1);
+    font-weight: 400;
+    padding: 1rem;
+  }
+  
+  /* -------------------          Subtitulos en Hero section        ------------------------ */
+  .hablity_agriculturalengineer {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.412) 10%,
+      #0102205f 80%,
+      #010220 100%
+    );
+    color: #010220;
+  
+    margin-left: 1rem;
+    padding-left: 14vw;
+    border-radius: 30px 2px;
+    width: 50%;
+  }
+  
+  .hablity_ai_agent_creator {
+    margin: 20px 0;
+    background-size: cover;
+    background-position: center;
+    margin-right: 2rem;
+    margin-left: 3rem;
+    padding-left: 15vw;
+    border-radius: 2px 30px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.722);
+  }
+  
+  .hablity_web_developer {
+    margin-right: 2rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.477), #05002ce4);
+    box-shadow: 0 4px 8px rgba(242, 243, 249, 0.5);
+    padding-left: 24vw;
+    border-radius: 30px 2px;
+    color: #010220;
+  }
+  
+  /* Estilos responsivos */
+  @media (width <= 768px) {
+    .mi_nombre {
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+    }
+    .hero {
+      height: fit-content;
+      padding-bottom: 25vh;
+    }
+  
+    .presentacion {
+      font-size: 2.5rem;
+      padding-left: 30px;
+    }
+  
+    .mi_nombre {
+      font-weight: 400;
+      font-size: 2.5rem;
+    }
+  
+    .skill {
+      font-size: 1rem;
+      color: white;
+      font-weight: 400;
+      padding: 1rem;
+    }
+    .hablity_web_developer {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* --------------------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------------------- */
+  
+  .heroContainer {
+      height: 100vh;
+      background-color: #0a001b;
+      position: relative;
+      overflow: hidden;
+      z-index: 0; /* Cambiado de -1 a 0 */
+    }
+    
+    .heroContainer::after {
+      content: "";
+      position: absolute;
+      width: 120%; /* Aumentado un poco más */
+      height: 80px; /* Altura un poco mayor */
+      bottom: -40px; /* Aumentado para compensar */
+      left: -10%;
+      background-color: #fbfcfc;
+      border-radius: 90%;
+      z-index: 1;
+      transform: translateY(1px); /* Esta es la clave para eliminar la línea */
+    }
+  .heroContainer h2 {
+    color: white; 
+    font-size: 75px;
+    font-weight: 200;
+    margin: 0;
+    /* background-color: #030783; */
+  }
+  .heroContainer h6 {
+    color: white; 
+    font-size: 45px;
+    font-weight: 200;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* background-color: #030783; */
+  }
+  
+  .heroflex1 {
+    padding-top: 5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    /* background-color: darkblue; */
+  }
+  .heroflex1 img {
+    height: 23rem;
+  }
+  .heroflex1 p {
+      color: white;
+      font-size: 15px !important;
+      /* background-color: #030783; */
+    }
+  
+    .heroFlexText{
+      flex-direction: column;
+      color: white;
+    }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) { /* Cambiado de width a max-width */
+      .heroContainer {
+        height: auto; /* Cambiado de 100vh a auto */
+        padding: 2rem; /* Añadido padding para mejor espaciado */
+      }
+    
+      .heroContainer h2 {
+        font-size: 65px;
+        margin-bottom: 2.5rem; /* Reducido tamaño de fuente para pantallas pequeñas */
+      }
+    
+      .heroflex1 {
+        flex-direction: column; /* Cambiado a columna para mejor disposición */
+        padding-left: 2rem; /* Ajustado padding para pantallas pequeñas */
+        padding-right: 2rem; /* Ajustado padding para pantallas pequeñas */
+      }
+    
+      .heroflex1 img {
+        height: auto; /* Cambiado a auto para mantener proporciones */
+        max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
+      }
+    
+      .heroflex1 p {
+        font-size: 12px; /* Reducido tamaño de fuente para pantallas pequeñas */
+      }
+    }

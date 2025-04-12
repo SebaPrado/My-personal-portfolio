@@ -1,7 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import "./Hero.css";
-import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
 
 const Hero = () => {
   const animatedDivRef = useRef(null);
@@ -30,17 +28,7 @@ const Hero = () => {
     };
   }, []);
   return (
-    // <div className="hero">
-    //   <div className="presentacion">
-    //     <div className="mi_nombre">
-    //       <div className="letters_s"> I am</div>
-    //       <div className="letters">Sebastian Prado.</div>
-    //     </div>
-    //   </div>
-    //   <div className="hablity_agriculturalengineer skill"> Agricultural engineer</div>
-    //   <div className="hablity_ai_agent_creator skill"> Ai agent creator</div>
-    //   <div className="hablity_web_developer skill"> Fullstack web developer</div>
-    // </div>
+
     <div className="heroContainer">
       <div className="heroflex1">
         <div className="heroFlexText">
