@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-// import { motion } from "framer-motion";
 import "animate.css";
-// import Navbar from "./Navbar.jsx";
 import HeroPastoreo from "../pastoreo/HeroPastoreo.jsx";
-
 import matesito from "/matesito.png";
+import "./pastoreo_presicion.css";
 
 function FramerMotion() {
   const animatedDivRef = useRef(null);
@@ -23,9 +21,8 @@ function FramerMotion() {
         <div className="personalPresentation">
           <div className="textPersonalSection">
             <div>
-                <p className="letsTalk  ">Algo sobre mi</p>
+              <p className="letsTalk  ">Un poco sobre mi</p>
               <img
-                // ref={animatedDivRef}
                 className="profilePicture "
                 src="../fotoperfil.png"
                 alt="foto perfil"
@@ -33,13 +30,19 @@ function FramerMotion() {
             </div>
             <div className=" scrollAnimation ">
               <p className="helloText ">
-                Un poco de mi persona. Soy Sebastian Prado , Ingeniero Agronomo
-                ( UDELAR ) y programador Iot . Incursionado como programador Iot en una
-                empresa Espanola de automatizaciones en maquinaria agricola (Zetrack). 
+                Soy Sebastian Prado (34) , Ingeniero Agronomo de profesion ( UDELAR
+                ). Trabajo como programador Iot . Incursionado como programador
+                Iot en una empresa Espanola de automatizaciones en maquinaria
+                agricola (Zetrack).
               </p>
-              <p className="helloText ">Estudio areas de la programacion que
-                creo que pueden ayudar mucho al agro, como el entrenamiento de modelos matematicos y redes neuronales (IA) y la obtencion + procesamiento de indices de
-                vegetacion de imagenes satelitales. Lejos de ser cosas separadas, uno es el sustrato ( img sat ) del otro (modeloAI) </p>
+              <p className="helloText ">
+                Estudio ademas areas de la programacion que creo que pueden
+                ayudar mucho al agro, como el entrenamiento de modelos de
+                analisis de datos y redes neuronales (IA) + el procesamiento de
+                indices de vegetacion a traves de imagenes satelitales. Lejos de
+                ser cosas separadas, uno (img sat) es el sustrato del otro
+                (modelo AI){" "}
+              </p>
             </div>
 
             <div>
@@ -56,89 +59,42 @@ function FramerMotion() {
         </div>
       </section>
 
-      <section className="iconsSection ">
+      {/* <section className="iconsSection ">
         <div className="slider-container"></div>
-      </section>
+      </section> */}
 
       <section className="section5 containerLarge" id="expertise">
         <div className="titleH3">
-          <h3>Your partner in development</h3>
+          <h3>Porque le escribo a Pablo</h3>
         </div>
         <div className="expertiseFlexContainer ">
           {/* ---------------------       Backend     ------------------------- */}
 
           <div className="expertiseFlexItems">
-            <h4 className="rotacion">
-              <span className="dot"></span> Your Back-end Developer
-            </h4>
+            <h2 className="rotacion">Your Back-end Developer</h2>
             <p>
-              I build backend infrastructures using{" "}
-              <span>
-                {" "}
-                <strong>Node.js</strong>
-              </span>{" "}
-              and
-              <span>
-                <strong> Express</strong>
-              </span>
-              , building{" "}
-              <span>
-                <strong>RESTful APIs </strong>
-              </span>
-              with asynchronous functions for data handling. Middlewares for{" "}
-              <span>
-                <strong>Authentication </strong>
-              </span>
-              and route controllers are integrated to manage operations.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Explicabo eveniet vel voluptatem blanditiis quos unde adipisci
+              doloribus repellat omnis repudiandae quae, incidunt quod laborum.
+              Quisquam atque deserunt suscipit vitae tempore.
             </p>
             <p>
-              I organize code following the
-              <span>
-                <strong> MVC architecture</strong>
-              </span>{" "}
-              pattern, separating{" "}
-              <span>
-                <strong>Models </strong>
-              </span>
-              for data structures and{" "}
-              <span>
-                <strong>Controllers</strong>
-              </span>{" "}
-              for business logic.
-              <span>
-                <strong> CRUD operations</strong>
-              </span>{" "}
-              (Create, Read, Update, Delete) are implemented and tested using
-              tools like{" "}
-              <span>
-                <strong>Insomnia. </strong>
-              </span>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+              voluptatibus necessitatibus architecto animi aut voluptatum
+              aperiam quo asperiores doloribus facilis modi aliquam, rem facere
+              et consectetur fugit eveniet ad esse.
             </p>
             <p>
-              I work with databases like
-              <span>
-                <strong> MongoDB</strong>
-              </span>
-              ,{" "}
-              <span>
-                <strong>MySQL</strong>
-              </span>
-              , and
-              <span>
-                <strong> PostgreSQL</strong>
-              </span>{" "}
-              to address storage needs.
-            </p>{" "}
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+              aperiam, odio ut nisi incidunt porro assumenda reiciendis
+              veritatis expedita eaque. Deleniti soluta unde quaerat facere
+              quisquam! Itaque autem magnam deleniti?
+            </p>
             <p>
-              Authentication systems are implemented using sessions with{" "}
-              <span>
-                <strong>Passport.js</strong>
-              </span>{" "}
-              and API authentication with
-              <span>
-                <strong> JWT</strong>
-              </span>
-              .
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+              ratione aspernatur sequi dolorem eaque deleniti corporis provident
+              doloribus facere est, commodi ab magni reprehenderit harum sed
+              nesciunt consequuntur maiores esse!
             </p>
           </div>
 

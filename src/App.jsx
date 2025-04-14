@@ -7,6 +7,7 @@ import Home from "./Components/views/Home";
 import Home0 from "./Components/views/Home0";
 import PastoreoPresicion from "./pastoreo/PastoreoPresicion";
 import FramerMotion2 from "./Components/views/FramerMotion2";
+import Bizkaia from "./situacion_fiscal_Bizkaia/Bizcaya";
 
 import { useState } from "react";
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "pastoreo",
         element: <PastoreoPresicion />,
+      },
+      {
+        path: "biz",
+        element: <Bizkaia />,
       },
       {
         path: "fm2",

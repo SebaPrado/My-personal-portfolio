@@ -1,0 +1,9 @@
+.s{
+    display: flex;
+    justify-content: center;
+}
+.d{
+    background-color: rgba(252, 15, 15, 0.288);
+    padding: 5px;
+    border-radius: 10px;
+}
