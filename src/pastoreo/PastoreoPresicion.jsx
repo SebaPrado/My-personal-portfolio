@@ -20,6 +20,119 @@ function FramerMotion() {
       <section className="Section1Home1">
         <div className="personalPresentation">
           <div className="textPersonalSection">
+            <p className="letsTalk  "> Contexto de la propuesta</p>
+            <h4> General :</h4>
+            <p className="helloText ">
+              Que el productor tenga en tiempo real ( 2 veces por semana) una
+              presupuestacion forrajera de su plataforma de pastoreo. Mapeo
+              satelital periodico de sus parcelas.
+            </p>
+            <h4> Bajado a tierra </h4>
+            <p className="helloText ">
+              Mi propuesta en terminos generales: Ayudar a que el productor
+              lechero y ganadero intensivoacceda a lo nuevo en tecnologia :
+              mapeo de potreros , adquisicion indicadores de cantidad y calidad
+              de forraje, ia que procese y prediga cantidad de forraje en tiempo
+              real .
+            </p>{" "}
+            <h4> Metodologia </h4>
+            <p className="helloText ">
+              1 ) Nos encargamos de generar un modelo matematico que prediga con
+              cierta presicion una funcion "calcular_materia_seca". (nada nuevo,
+              vi tesis que lo hacen desde hace mucho. La pregunta es, si pudiera
+              "re" definir y "re" validar la funcion en base a nuevos datos , e
+              incluso a la incorporacion en la funcion de nuevas variables?? ) (
+              lo que antes haciamos una vez por experimento , lo podriamos hacer
+              miles de veces por dia)
+              <br />
+              1.a) entrenamos un algoritmo con informacion de la pastura +
+              indices de biomasa y los resultados de mediciones historicas.{" "}
+              <br />
+              1.a.a) info de la pastura : especie + fecha ( version avanzada +
+              composicion (tallo , lamina, senecente) + tipo de suelo + % Agua
+              disponible). <br />
+              1.a.b) indice NDVI extraido para el poligono. <br />
+              1.a.c ) resultado de f (x,y,z) = X kg ms / ha <br />
+            </p>
+            <p className="helloText ">
+              Resultado : Tabla de Imputs ( [x,y,z]) y sus respectivos Outputs
+              (f(x,y,z)), materia prima para entrenar a un modelo de deep
+              learning (AI). <br />
+              Dicho modelo, que hara ? : Entrenara, validara, y reeptira el
+              proceso semana a semana , devilviendo la funcion que mejor se
+              adapte a explicar los pares Input-Output
+            </p>
+            <p className="helloText ">3)</p>
+            <p className="helloText ">4)</p>
+          </div>
+        </div>
+        <div className="personalPresentation">
+          <div className="textPersonalSection">
+            <div>
+              <p className="letsTalk "> Prestaciones </p>
+            </div>
+
+            <div className=" scrollAnimation ">
+              <h4><strong> /\ ndvi </strong> mayor a <strong> Consumo </strong></h4>
+              <h5>
+                {" "}
+                Modelo " tu superhabit forrajero es de 1000 kg ms/dia y el modelo predice un valor de 2000 kg ms/dia para el 20/9, dando un acumulado
+                de 45 tt "
+              </h5>
+              <br />
+              <h5>
+                Grafico 1 : Consumo diario de forraje ( tt ms /dia ).
+                Actualizacion c/3 dias.
+              </h5>{" "}
+              <br />
+              <h5>
+                Grafico 2 : Crecimiento diario de tus pasturas ( tt ms /dia ).
+                Actualizacion c/3 dias.
+              </h5>
+              <br />
+              <h5>
+                Grafico 3 : Superhabit/deficit diario de forraje ( tt ms /dia ).
+                Actualizacion c/3 dias.
+              </h5>
+              <br />
+              <h5>
+                {" "}
+                Recomendaciones : Modelo analiza cientas de posibles
+                alternativas, filtramos y proponemos segun nuestro criterio
+                humano :{" "}
+              </h5>
+              <br />
+              <h5>
+                {" "}
+                Recomendacion 1 : Podrias cerrar 15 has de tu plataforma (10%
+                del area) para reservas, sin reducir el consumo del rodeo.
+              </h5>{" "}
+              <br />
+              <h5>
+                {" "}
+                Recomendacion 2 : Podrias traer la recria ( 'x' kg de peso vivo
+                ) y dejar empastar el campo natural , que no pierde
+                digestivilidad tan rapido + adecuado para la recria en 70 dias
+              </h5>
+              <p className="helloText ">
+                Cierro potrero para reserva || reduzco suministro reservas ||
+                bajo concentrado
+              </p>
+              <p className="helloText ">
+                Estudio ademas areas de la programacion que creo que pueden
+                ayudar mucho al agro, como el entrenamiento de modelos de
+                analisis de datos y redes neuronales (IA) + el procesamiento de
+                indices de vegetacion a traves de imagenes satelitales. Lejos de
+                ser cosas separadas, uno (img sat) es el sustrato del otro
+                (modelo AI){" "}
+              </p>
+            </div>
+
+            <div></div>
+          </div>
+        </div>
+        <div className="personalPresentation">
+          <div className="textPersonalSection">
             <div>
               <p className="letsTalk  ">Un poco sobre mi</p>
               <img
@@ -28,12 +141,13 @@ function FramerMotion() {
                 alt="foto perfil"
               />
             </div>
+
             <div className=" scrollAnimation ">
               <p className="helloText ">
-                Soy Sebastian Prado (34) , Ingeniero Agronomo de profesion ( UDELAR
-                ). Trabajo como programador Iot . Incursionado como programador
-                Iot en una empresa Espanola de automatizaciones en maquinaria
-                agricola (Zetrack).
+                Soy Sebastian Prado (34) , Ingeniero Agronomo de profesion (
+                UDELAR ). Trabajo como programador Iot . Incursionado como
+                programador Iot en una empresa Espanola de automatizaciones en
+                maquinaria agricola (Zetrack).
               </p>
               <p className="helloText ">
                 Estudio ademas areas de la programacion que creo que pueden
@@ -46,14 +160,14 @@ function FramerMotion() {
             </div>
 
             <div>
-              <a
+              {/* <a
                 href="mailto:sebastian.pradomelesi@gmail.com "
                 className="email-button email-link "
                 onMouseEnter={(e) => (e.target.style.color = "orange")}
                 onMouseLeave={(e) => (e.target.style.color = "white")}
               >
                 sebastian.pradomelesi@gmail.com
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
