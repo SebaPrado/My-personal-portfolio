@@ -5,7 +5,7 @@ sebastian.pradomelesi@gmail.com
 98070
 +61 487 175 193 (whatsapp)
 
-+34 (esp)  634159814 
++34634159814  (esp) 
 
 www.linkedin.com/in/sebastian-prado-b05862281
 https://pradosebastian.vercel.app/
