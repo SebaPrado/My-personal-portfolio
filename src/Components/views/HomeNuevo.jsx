@@ -246,7 +246,7 @@ const HomeNuevo = () => {
             <p style={{ color: 'rgb(129, 80, 2)' }}>Connecting devices to the cloud. Mqtt. Events. Rules.</p>
           </div>
           <div className="box ligthBox">
-            <h3 style={{ color: 'rgb(250, 165, 29)', fontWeight: 300, letterSpacing: '0.05em', fontSize: '1.2em' }}>Lambda Functions</h3>
+            <h3 style={{ color: 'rgb(250, 165, 29)', fontWeight: 300, letterSpacing: '0.05em', fontSize: '1em' }}>Lambda Functions</h3>
             <p style={{ color: 'rgb(129, 80, 2)' }}>Automated workflows. Serverless functions.</p>
           </div>
           <div className="box ligthBox">
