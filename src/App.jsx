@@ -4,6 +4,7 @@ import Layout from "./Components/views/Layout";
 import About from "./Components/views/About";
 import NotFound from "./Components/views/NotFound";
 import Home from "./Components/views/Home";
+import HomeNuevo from "./Components/views/HomeNuevo";
 import Home0 from "./Components/views/Home0";
 import PastoreoPresicion from "./pastoreo/PastoreoPresicion";
 import FramerMotion2 from "./Components/views/FramerMotion2";
@@ -18,13 +19,16 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Home />,
+        element: <HomeNuevo />,
       },
       {
         path: "about",
         element: <About />,
       },
-
+      {
+        path: "home",
+        element: <Home />,
+      },
       {
         path: "home0",
         element: <Home0 />,

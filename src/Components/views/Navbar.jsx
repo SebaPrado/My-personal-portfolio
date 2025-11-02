@@ -40,18 +40,28 @@ function Navbar() {
     window.open(resumePDF, "_blank");
   };
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId, useOffset = true) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const elementPosition = section.getBoundingClientRect().top;
+      // Offset de +100 píxeles solo si useOffset es true (todos excepto Home)
+      const offset = useOffset ? 100 : 0;
+      const offsetPosition = elementPosition + window.pageYOffset + offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
   };
 
   const menuItems = [
-    { label: "Home", onClick: () => scrollToSection("home") },
-    { label: "AI", onClick: () => scrollToSection("ai") },
-    { label: "Projects", onClick: () => scrollToSection("projects") },
-    { label: "Resume", onClick: handleResumeClick },
+    { label: "Home", onClick: () => scrollToSection("home", false) },
+    { label: "fields", onClick: () => scrollToSection("fields") },
+    { label: "clouds", onClick: () => scrollToSection("cloud") },
+    { label: "waves", onClick: () => scrollToSection("section-surf") },
+    { label: "atoms", onClick: () => scrollToSection("atoms") },
+    // { label: "Resume", onClick: handleResumeClick },
   ];
 
   return (

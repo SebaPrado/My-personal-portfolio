@@ -1,0 +1,648 @@
+/* ===========================================
+   IMPORTACIÓN DE FUENTES
+=========================================== */
+@import url('https://fonts.googleapis.com/css2?display=swap&family=Montserrat:wght@400;500;700;900&family=Be+Vietnam+Pro:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900');
+
+/* ===========================================
+   RESET Y CONFIGURACIÓN BASE
+=========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', 'Be Vietnam Pro', 'Noto Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Scroll suave personalizado */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===========================================
+   NAVBAR TRANSPARENTE HORIZONTAL
+=========================================== */
+.navbar-transparent {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 15px 30px;
+  border-radius: 25px;
+}
+
+.navbar-transparent a {
+  color: transparent;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  padding: 8px 16px;
+  border-radius: 15px;
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.navbar-transparent a:hover {
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.95), rgba(111, 111, 112, 0.95));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transform: translateY(-2px);
+}
+
+.navbar-transparent a::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  transition: width 0.3s ease;
+  border-radius: 1px;
+}
+
+.navbar-transparent a:hover::before {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .navbar-transparent {
+    top: 10px;
+    gap: 15px;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 90%;
+  }
+  
+  .navbar-transparent a {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-transparent {
+    gap: 10px;
+    padding: 8px 15px;
+  }
+  
+  .navbar-transparent a {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+}
+
+/* -------------------               flex2columns               ----------------------------------- */
+
+.flex2columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-left: 120px;
+  padding-right: 120px;
+  width: 100%;
+  align-items: center;
+}
+.flex2columns div {
+  width: calc(50% - 20px);
+}
+@media (max-width: 760px) {
+  .flex2columns div {
+    width: 100%;
+  }
+  .flex2columns {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* -------------------         Clases base para las secciones        ----------------------------------- */
+.section {
+  position: relative;
+  min-height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-fixed {
+  background-attachment: fixed;
+}
+
+.section-scroll {
+  background-attachment: scroll;
+}
+
+/* -------------------         Efectos de blur        ----------------------------------- */
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: inherit;
+  background-position: inherit;
+  background-attachment: inherit;
+  filter: blur(0px);
+  z-index: 1;
+}
+
+/* -------------------         Contenedores y cajas        ----------------------------------- */
+
+.section-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.box {
+  padding: 40px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0px);
+  font-weight: 300;
+}
+
+.box h2 {
+  margin-bottom: 15px;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.box p {
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Clase box2 con estilos específicos */
+.box2 {
+  padding: 40px;
+  border-radius: 20px;
+  border: none;
+  color: rgb(21, 0, 57);
+  max-width: 600px;
+  backdrop-filter: blur(0px);
+  font-weight: 300;
+}
+
+.box2 h2 {
+  font-size: 1.8em;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  padding-bottom: 15px;
+}
+
+.box2 p {
+  line-height: 1.6;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+.box2 a {
+  display: inline-block;
+  color: rgb(21, 0, 57);
+  background-color: rgb(252, 252, 252);
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(21, 0, 57, 0.3);
+  border: 2px solid rgb(21, 0, 57);
+  margin-top: 10px;
+}
+
+.box2 a:hover {
+  background-color: rgb(21, 0, 57);
+  color: rgb(255, 255, 255);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(21, 0, 57, 0.4);
+}
+
+.boxcow a:hover {
+  background-color: #2d0b1c;
+  color: rgb(255, 255, 255);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(21, 0, 57, 0.4);
+}
+
+.boxcow a  {
+  display: inline-block;
+  color: rgb(21, 0, 57);
+  background-color: rgb(252, 252, 252);
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(21, 0, 57, 0.3);
+  margin-top: 10px;
+}
+
+/* -------------------         Boxes líght        ----------------------------------- */
+
+.ligthBox {
+  background-color: rgb(255, 255, 255, 0.8);
+  color: rgba(255, 176, 50, 0.967);
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.darkBox {
+  background-color: rgb(21, 0, 57, 0.5);
+  color: rgba(253, 190, 89, 0.856);
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+/* -------------------         Badges indicadores        ----------------------------------- */
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.badge-fixed {
+  background-color: rgba(76, 175, 80, 0.8);
+}
+
+.badge-scroll {
+  background-color: rgba(33, 150, 243, 0.8);
+}
+
+/* -------------------         Secciones principales (nítidas)        ----------------------------------- */
+
+.section-1 {
+  background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4');
+}
+
+.section-2 {
+  background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e');
+}
+
+.section-3 {
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+}
+
+.section-5 {
+  background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564');
+}
+
+.section-7 {
+  background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b');
+}
+
+.section-8 {
+  background-image: url('https://images.unsplash.com/photo-1518837695005-2083093ee35b');
+}
+
+/* -------------------         Secciones beta (con blur)        ----------------------------------- */
+
+.section-8beta {
+  background-image: url('https://images.unsplash.com/photo-1518837695005-2083093ee35b');
+}
+
+/* -------------------         Aplicar blur a las secciones beta        ----------------------------------- */
+
+.section-8beta::before {
+  filter: blur(8px);
+}
+
+/* -------------------         Hero section        ----------------------------------- */
+
+.section-hero {
+  background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b');
+  min-height: 200vh;
+  align-items: flex-start;
+  padding-top: 50vh;
+}
+
+.box-hero {
+  position: relative;
+  top: 25%;
+  color: white;
+}
+
+/* -------------------         Capa difusa con transición continua usando máscara de gradiente        ----------------------------------- */
+
+.section-hero::before {
+  filter: blur(3px);
+  mask: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 10%,
+    rgba(0, 0, 0, 0.1) 25%,
+    rgba(0, 0, 0, 0.3) 30%,
+    rgba(0, 0, 0, 0.6) 35%,
+    rgba(0, 0, 0, 0.8) 40%,
+    rgba(0, 0, 0, 1) 45%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  -webkit-mask: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 10%,
+    rgba(0, 0, 0, 0.1) 25%,
+    rgba(0, 0, 0, 0.3) 30%,
+    rgba(0, 0, 0, 0.6) 35%,
+    rgba(0, 0, 0, 0.8) 40%,
+    rgba(0, 0, 0, 1) 45%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+/* -------------------         Otras secciones adicionales        ----------------------------------- */
+
+.section-10 {
+  background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564');
+}
+
+.section-aws {
+  background-image: url('https://assets.aboutamazon.com/dims4/default/c10a70d/2147483647/strip/true/crop/2543x1430+0+0/resize/1320x742!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F66%2Fec%2F85b5b7d345aea64c048abf240903%2Fbuckets2.jpg');
+  filter: saturate(60%);
+}
+
+.section-aws2 {
+  background-image: url('https://assets.aboutamazon.com/dims4/default/c10a70d/2147483647/strip/true/crop/2543x1430+0+0/resize/1320x742!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F66%2Fec%2F85b5b7d345aea64c048abf240903%2Fbuckets2.jpg');
+}
+
+.section-aws2::before {
+  filter: blur(8px);
+}
+
+.section-gradient {
+  background-color: white;
+  background-attachment: scroll;
+}
+
+.section-electric {
+  background-image: url('https://electric-sql.com/img/integrations/electric-supabase.jpg');
+  filter: saturate(60%);
+  filter: contrast(0.8);
+}
+
+.section-electric2 {
+  background-image: url('https://electric-sql.com/img/integrations/electric-supabase.jpg');
+}
+
+.section-electric2::before {
+  filter: blur(8px);
+}
+
+.section-dark {
+  background-color: #ffffff;
+  background-attachment: scroll;
+}
+
+.section-wheat {
+  background-image: url('/wheat.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.section-wheat::before {
+  filter: blur(8px);
+}
+
+.section-intermediate {
+  background-color: #e9edc9;
+  background-attachment: scroll;
+}
+
+.section-wheat2 {
+  background-image: url('/wheat2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.section-wheat2::before {
+  filter: blur(8px);
+}
+
+.section-maps1 {
+  background-image: url('/maps1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-cow {
+  background-image: url('/cow.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-gradient-soft {
+  background-color: #e9edc9;
+  background-attachment: scroll;
+}
+
+.section-work {
+  background-image: url('/work.jpg');
+  background-size: cover;
+  background-position: center top;
+  min-height: 100vh;
+}
+
+.section-gradient-blue {
+  background-color: white;
+  background-attachment: scroll;
+}
+
+.section-surf {
+  background-image: url('/surf.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-spring {  
+  background-image: url('/spring.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-white {
+  background-color: white;
+  background-attachment: scroll;
+}
+
+/* Sección blanca simple - SECTION 6 */
+.section-white-simple {
+  background-color: white;
+  background-attachment: scroll;
+  min-height: 100vh;
+}
+
+/* Quitar sombreado de texto para Sección 10 - SECTION 10 */
+.section-10 .box h2 {
+  text-shadow: none;
+}
+
+.section-10 .box p {
+  text-shadow: none;
+}
+
+/* ===========================================
+   ELEMENTOS ESPECIALES
+=========================================== */
+.section-electric .overlay-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  font-size: clamp(32px, 10vw, 120px);
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.85);
+  pointer-events: none;
+  text-transform: uppercase;
+}
+
+/* ===========================================
+   INICIO - SECCIÓN LINTERNA - CSS y JS
+   Esta sección crea un efecto de "linterna" que sigue al cursor,
+   revelando una imagen oculta debajo. 
+=========================================== */
+
+/* Contenedor principal - Como una caja que contiene todo */
+.container-linterna {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Imagen de fondo - La imagen que está siempre visible */
+.fondo-linterna {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 5;
+}
+
+/* Capa superior con efecto de linterna */
+.nubes-linterna {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/surf.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: 10;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Efecto de máscara circular que sigue al cursor */
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.9) 10%,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 0.6) 35%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.2) 65%,
+    rgba(0, 0, 0, 0.1) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: -9999px -9999px;
+  -webkit-mask-size: 1200px 1200px;
+
+  /* Versión no-webkit del efecto de máscara para otros navegadores */
+  mask-image: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.9) 8%,
+    rgba(0, 0, 0, 0.8) 16%,
+    rgba(0, 0, 0, 0.6) 24%,
+    rgba(0, 0, 0, 0.4) 32%,
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 0.1) 48%,
+    rgba(0, 0, 0, 0) 56%
+  );
+  mask-repeat: no-repeat;
+  mask-position: -9999px -9999px;
+  mask-size: 1200px 1200px;
+
+  /* Hace que el movimiento de la linterna sea suave */
+  transition: mask-position 0.05s, -webkit-mask-position 0.05s;
+}
+
+/* Estilos para el texto que aparece con la linterna */
+.texto-linterna {
+  text-align: center;
+  color: white;
+}
+
+.texto-linterna h2 {
+  font-size: 2.5em;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.85);
+}
+
+.texto-linterna p {
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.85);
+}
+
+.section-linterna {
+  min-height: 100vh;
+  background: #000;
+  cursor: none;
+  padding: 0;
+}
+
