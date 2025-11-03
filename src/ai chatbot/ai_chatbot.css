@@ -1,0 +1,120 @@
+/* ============================    AI CHATBOT THEME    ========================== */
+
+:root {
+  /* Color de fondo translúcido para el panel del chat (similar al navbar) */
+  --chat-bg: rgba(10, 0, 27, 0.2);
+  --chat-shadow: 0 1px 3px rgba(255, 255, 255, 0.3);
+  --chat-radius: 16px;
+  /* Color del trigger/launcher visible antes de abrir el chat */
+  --chat-trigger-bg: #65646478; /* cámbialo aquí (puede ser rgba(...)) */
+  --chat-trigger-color: #ffffff;
+}
+
+/* Contenedor principal del widget (inyectado por el script) */
+.ai-chat-widget {
+  /* No forzamos posición; el script ya la gestiona */
+  z-index: 2147483647 !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+/* Ventana/panel del chat (intenta cubrir nombres comunes) */
+.ai-chat-widget .chat-window,
+.ai-chat-widget .chat-container,
+.ai-chat-widget .ai-chat-panel,
+.ai-chat-widget .ai-chat-window {
+  background-color: var(--chat-bg) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  box-shadow: var(--chat-shadow) !important;
+  border-radius: var(--chat-radius) !important;
+}
+
+/* Cabecera del chat si existe */
+.ai-chat-widget .chat-header,
+.ai-chat-widget .ai-chat-header {
+  background-color: var(--chat-bg) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-top-left-radius: var(--chat-radius) !important;
+  border-top-right-radius: var(--chat-radius) !important;
+}
+
+/* Área de mensajes */
+.ai-chat-widget .messages,
+.ai-chat-widget .chat-body,
+.ai-chat-widget .ai-chat-messages {
+  background-color: transparent !important;
+}
+
+/* Input/Composer */
+.ai-chat-widget .composer,
+.ai-chat-widget .input,
+.ai-chat-widget .ai-chat-composer {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  border-radius: 12px !important;
+}
+
+/* Botón/trigger que abre el chat */
+.ai-chat-widget .chat-trigger,
+.chat-trigger {
+  background-color: var(--chat-trigger-bg) !important;
+  color: var(--chat-trigger-color) !important;
+}
+
+/* Título de la cabecera: tamaño normal (sin x-large) */
+.ai-chat-widget .chat-header h4,
+.ai-chat-widget .ai-chat-header h4 {
+  font-size: 1rem !important; /* tamaño "normal" */
+  line-height: 1.4 !important;
+}
+
+/* Botón flotante (launcher) si existe */
+.ai-chat-widget .launcher-button,
+.ai-chat-widget .ai-chat-launcher,
+.ai-chat-widget button.launcher {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Botón de enviar: opaco y blanco */
+.ai-chat-widget .send_button,
+.ai-chat-widget button.send_button,
+.ai-chat-widget .composer .send_button {
+  background-color: #555454 !important;
+  /* color: #cdcbcb !important; */
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-radius: 10px !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12) !important;
+}
+
+.ai-chat-widget .send_button:hover {
+  filter: brightness(0.96) !important;
+}
+
+/* Texto dentro del widget */
+.ai-chat-widget,
+.ai-chat-widget * {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+/* Ajustes responsivos mínimos */
+@media (max-width: 480px) {
+  .ai-chat-widget .chat-window,
+  .ai-chat-widget .chat-container,
+  .ai-chat-widget .ai-chat-panel,
+  .ai-chat-widget .ai-chat-window {
+    border-radius: 12px !important;
+  }
+}
+
+/* Nota: si el widget usa iframe o Shadow DOM, estos estilos no aplicarán dentro. 
+   En ese caso, configura colores vía la API de inicialización del proveedor. */
+
+

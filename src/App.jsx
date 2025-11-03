@@ -1,4 +1,5 @@
 import "./App.css";
+import "./ai chatbot/ai_chatbot.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Components/views/Layout";
 import About from "./Components/views/About";
