@@ -145,7 +145,7 @@ html {
 }
 
 .section-fixed {
-  background-attachment: fixed;
+  background-attachment: scroll; /* Cambiado de 'fixed' a 'scroll' para evitar scroll jank */
 }
 
 .section-scroll {
