@@ -245,6 +245,11 @@ html {
   margin-top: 10px;
 }
 
+/* Espacio entre los dos botones dentro de .box2 */
+.box2 a + a {
+  margin-left: 12px;
+}
+
 .box2 a:hover {
   background-color: rgb(21, 0, 57);
   color: rgb(255, 255, 255);
@@ -272,6 +277,13 @@ html {
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(21, 0, 57, 0.3);
   margin-top: 10px;
+}
+
+/* Hacer flex el contenedor para controlar separación */
+.boxcow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 /* -------------------         Boxes líght        ----------------------------------- */
