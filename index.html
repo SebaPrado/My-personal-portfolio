@@ -22,15 +22,24 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script src="https://website-ai-agent-widget.vercel.app/widget.js"></script>
+    <!-- Carga y inicialización segura del widget -->
     <script>
-      window.addEventListener("load", function () {
-        if (window.initAIChat) {
-          window.initAIChat();
-        } else {
-          console.error("initAIChat is not defined!");
-        }
-      });
+      function loadWidget(apiKey, position) {
+        const script = document.createElement("script");
+        script.src = "https://website-ai-agent-widget.vercel.app/widget.js";
+        script.onload = () => {
+          window.initAIChat({ apiKey, position });
+        };
+        script.onerror = () => console.error("No se pudo cargar el widget");
+        document.body.appendChild(script);
+      }
+    
+      // Cargar el widget derecho
+      loadWidget("asst_FWYpAe5YTsAi2cz8IGoKXEI9", "right");
+    
+      // Cargar el widget izquierdo
+      loadWidget("asst_Oh3EOHwb9x5TowODwDlj56Fq", "left");
     </script>
+    
   </body>
 </html>
