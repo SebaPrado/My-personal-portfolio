@@ -24,22 +24,54 @@
     <script type="module" src="/src/main.jsx"></script>
     <!-- Carga y inicialización segura del widget -->
     <script>
-      function loadWidget(apiKey, position) {
+      function loadWidget(config) {
         const script = document.createElement("script");
         script.src = "https://website-ai-agent-widget.vercel.app/widget.js";
         script.onload = () => {
-          window.initAIChat({ apiKey, position });
+          window.initAIChat(config);
         };
-        script.onerror = () => console.error("No se pudo cargar el widget");
         document.body.appendChild(script);
       }
     
-      // Cargar el widget derecho
-      loadWidget("asst_FWYpAe5YTsAi2cz8IGoKXEI9", "right");
+      // Widget flotante
+      loadWidget({
+        apiKey: "asst_FWYpAe5YTsAi2cz8IGoKXEI9",
+        position: "right"
+      });
     
-      // Cargar el widget izquierdo
-      loadWidget("asst_Oh3EOHwb9x5TowODwDlj56Fq", "left");
+      // Widget embebido - esperamos a que el elemento exista
+      function waitForElement(selector, callback) {
+        // Primero verificamos si ya existe
+        const element = document.querySelector(selector);
+        if (element) {
+          callback();
+          return;
+        }
+    
+        // Si no existe, observamos el DOM hasta que aparezca
+        const observer = new MutationObserver(() => {
+          const element = document.querySelector(selector);
+          if (element) {
+            callback();
+            observer.disconnect(); // Dejamos de observar
+          }
+        });
+    
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+      }
+    
+      waitForElement("#whatsapp_widget_agro1", () => {
+        loadWidget({
+          apiKey: "asst_Oh3EOHwb9x5TowODwDlj56Fq",
+          targetSelector: "#whatsapp_widget_agro1",
+          openByDefault: true
+        });
+      });
     </script>
+    
     
   </body>
 </html>

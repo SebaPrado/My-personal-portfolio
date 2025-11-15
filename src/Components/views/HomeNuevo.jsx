@@ -116,6 +116,30 @@ const HomeNuevo = () => {
     };
   }, []);
 
+  // ================ ALTERNATIVA : Cargar widget de WhatsApp desde el archivo index.html ================  //
+  // useEffect(() => {
+   
+  //   if (window.initAIChat) {
+  //     window.initAIChat({
+  //       apiKey: "asst_Oh3EOHwb9x5TowODwDlj56Fq",
+  //       targetSelector: "#whatsapp_widget_agro1",
+  //       openByDefault: true
+  //     });
+  //   } else {
+  //     const script = document.createElement("script");
+  //     script.src = "https://website-ai-agent-widget.vercel.app/widget.js";
+  //     script.onload = () => {
+  //       window.initAIChat({
+  //         apiKey: "asst_Oh3EOHwb9x5TowODwDlj56Fq",
+  //         targetSelector: "#whatsapp_widget_agro1",
+  //         openByDefault: true
+  //       });
+  //     };
+  //     document.body.appendChild(script);
+  //   }
+  // }, []); 
+  
+// ================ FIN ALTERNATIVA : Cargar widget de WhatsApp desde el archivo index.html ================  //
   return (
     <>
       {/* NAVBAR TRANSPARENTE */}
@@ -352,7 +376,10 @@ const HomeNuevo = () => {
       {/* SECCIÓN BLANCA - SECTION 16 */}
       <section className="section section-white section-scroll">
         <div className="section-content">
-          {/* Contenido comentado */}
+          <div
+            id="whatsapp_widget_agro1"
+            style={{ maxWidth: "400px", maxHeight: "750px" }}
+          ></div>
         </div>
       </section>
 
