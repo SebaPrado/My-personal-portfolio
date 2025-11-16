@@ -114,7 +114,6 @@
   }
 }
 
-/* Nota: si el widget usa iframe o Shadow DOM, estos estilos no aplicarán dentro. 
-   En ese caso, configura colores vía la API de inicialización del proveedor. */
+
 
 

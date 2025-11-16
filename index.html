@@ -26,7 +26,7 @@
     <script>
       function loadWidget(config) {
         const script = document.createElement("script");
-        script.src = "https://website-ai-agent-widget.vercel.app/widget.js";
+        script.src = "http://localhost:3010/widget.js";
         script.onload = () => {
           window.initAIChat(config);
         };
@@ -65,7 +65,7 @@
     
       waitForElement("#whatsapp_widget_agro1", () => {
         loadWidget({
-          apiKey: "asst_Oh3EOHwb9x5TowODwDlj56Fq",
+          apiKey: "asst_uei23IzNOmasS3m6FEa0hEJu",
           targetSelector: "#whatsapp_widget_agro1",
           openByDefault: true
         });
