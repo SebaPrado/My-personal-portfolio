@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import './homeNuevo.css';
-import './sectionDiagrama_chatbot.css';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import AgenteLogistica from './AgenteLogistica';
 
