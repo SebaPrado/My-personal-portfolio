@@ -390,38 +390,27 @@ const HomeNuevo = () => {
       {/* SECCIÓN 8: DESIERTO (NÍTIDA) - SECTION 28 */}
       <section id="section-2" className="section section-2 section-fixed">
         <div className="section-content">
-          <div className="box">
+          {/* <div className="box">
             <h2>Deep roots, bold branches</h2>
             <p>Requirements into solutions</p>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* SECCIÓN 8: DESIERTO (NÍTIDA) - SECTION 28 */}
       <section id="section-8" className="section section-8 section-fixed">
         <div className="section-content">
-          <div className="box">
-            <h2>Sección 8: Oceano</h2>
+          {/*<div className="box">
+             <h2>Sección 8: Oceano</h2>
             <p>
               Imagen nítida del oceano con fondo fijo. Cada transición entre
               secciones ofrece una experiencia única.
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
 
-      {/* SECCIÓN 8 BETA: DESIERTO (CON BLUR) - SECTION 29 */}
-      <section className="section section-8beta section-fixed">
-        <div className="section-content">
-          <div className="box">
-            <h2>Sección 8 Beta: Oceano</h2>
-            <p>
-              Versión con blur de la sección Oceano. El fondo está desenfocado
-              para crear un efecto visual diferente.
-            </p>
-          </div>
-        </div>
-      </section>
+  
 
       {/* SECCIÓN COLOR OSCURO - SECTION 31 */}
       <section className="section section-dark section-scroll">
@@ -431,7 +420,7 @@ const HomeNuevo = () => {
       </section>
 
       {/* SECCIÓN WORK - SECTION 32 */}
-      <section id="section-work" className="section section-work section-fixed">
+      {/* <section id="section-work" className="section section-work section-fixed">
         <div className="section-content">
           <div className="box">
             <h2>Sección Work</h2>
@@ -440,10 +429,10 @@ const HomeNuevo = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* SECCIÓN GRADIENTE SUAVE - SECTION 35 */}
-      <section className="section section-gradient-soft section-scroll">
+      {/* <section className="section section-gradient-soft section-scroll">
         <div className="section-content">
           <div className="box">
             <h2>Sección Gradiente Suave</h2>
@@ -453,7 +442,7 @@ const HomeNuevo = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* =====================         FOOTER        ======================== */}
       <section>
