@@ -365,13 +365,13 @@ const HomeNuevo = () => {
       {/* SECCIÓN SPRING - SECTION 15 */}
       <section className="section section-spring section-fixed">
         <div className="section-content">
-          <div className="box">
+          {/* <div className="box">
             <h2>Sección Spring</h2>
             <p>
               Fondo fijo con imagen local spring.jpg. Primavera y renacimiento de
               la naturaleza.
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
 
