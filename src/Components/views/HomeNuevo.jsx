@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import './homeNuevo.css';
 import './sectionDiagrama_chatbot.css';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import AgenteLogistica from './AgenteLogistica';
 
 const HomeNuevo = () => {
   const nubesLinternaRef = useRef(null);
@@ -378,73 +379,8 @@ const HomeNuevo = () => {
 {/*                                               \/                                                  */}
 
 <section id="diagrama_chatbot" className="section section-white section-scroll">
-  <div className="section-content diagrama-content">
-    
-    {/* 1. TÍTULO + DOLOR DEL DISTRIBUIDOR */}
-    <div className="header-pain">
-      <h2>¿40 consultas de cupos por día?</h2>
-      <p className="subtitle">
-        Tu asistente virtual responde automáticamente mientras vos te dedicás a lo importante.
-      </p>
-    </div>
-
-    {/* 2. FLUJO VISUAL SIMPLE (3 PASOS) */}
-    <div className="flujo-simple">
-      <div className="paso">
-        <span className="icon">📄</span>
-        <p className="paso-titulo">1. Subís tu planilla</p>
-        <p className="paso-descripcion">Excel o Google Drive</p>
-      </div>
-      
-      <span className="flecha">→</span>
-      
-      <div className="paso">
-        <span className="icon">🤖</span>
-        <p className="paso-titulo">2. El bot responde</p>
-        <p className="paso-descripcion">24/7, automático</p>
-      </div>
-      
-      <span className="flecha">→</span>
-      
-      <div className="paso">
-        <span className="icon">📱</span>
-        <p className="paso-titulo">3. Cliente obtiene cupo</p>
-        <p className="paso-descripcion">Sin esperar</p>
-      </div>
-    </div>
-
-    {/* 3. DEMO DEL CHAT */}
-    <div className="demo-chat-wrapper">
-      <p className="demo-titulo">
-        <strong>Probá cómo funciona desde el lado del cliente:</strong>
-      </p>
-      
-      {/* Tu widget se monta acá */}
-      <div id="whatsapp_widget_agro1" className="chat-widget-container"></div>
-      
-      <p className="demo-hint">
-        💡 Ejemplo: "¿Tengo cupo disponible para 500 toneladas de soja?"
-      </p>
-    </div>
-
-    {/* 4. BENEFICIO + CTA */}
-    <div className="beneficio-cta">
-      <p className="beneficio-texto">
-        ⏱️ Ahorrá 2-3 horas diarias respondiendo consultas repetitivas
-      </p>
-      <a 
-        href="https://wa.me/549XXXXXXXXX?text=Hola,%20quiero%20info%20sobre%20el%20asistente%20de%20cupos" 
-        className="btn-primary"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Quiero mi asistente de cupos →
-      </a>
-      <p className="tranquilizante">
-        Se integra con tu sistema actual. Setup en 1 día.
-      </p>
-    </div>
-
+  <div>
+    <AgenteLogistica />
   </div>
 </section>
 
