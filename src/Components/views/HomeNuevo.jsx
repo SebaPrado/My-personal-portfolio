@@ -175,19 +175,19 @@ const HomeNuevo = () => {
       <section className="section section-white-simple section-scroll" style={{ minHeight: '130vh' }}>
         <div className="section-content">
           <div className="box2">
-            <h2>What we build</h2>
+            <h2>I have what you need</h2>
             <p>
-              From concept to deployment. Applications, AI systems, cloud
-              infrastructure. Any idea?
+              From concept to deployment. Apps, AI agents, cloud
+              infrastructure. What do you need?
             </p>
-            <a href="mailto:sebastian@sebastianprado.com">Email us your idea</a>
-            <a href="https://wa.me/61487175193">Whatsapp us</a>
+            <a href="mailto:sebastian@sebastianprado.com">Email me your idea</a>
+            <a href="https://wa.me/61487175193">Whatsapp me</a>
           </div>
         </div>
       </section>
 
       {/* FIELDS FROM ABOVE - SECTION 17 */}
-      <section id="fields" className="section section-maps1 section-fixed">
+      <section id="fields" className="section  section-fixed">
         <div className="section-content">
           <div className="box">
           <div> 
