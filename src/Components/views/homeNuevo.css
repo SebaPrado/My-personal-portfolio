@@ -241,8 +241,8 @@ html {
 }
 .box2 a {
   display: inline-block;
-  color: rgb(21, 0, 57);
-  background-color: rgb(252, 252, 252);
+  color: white;
+  background-color: var(--color-blue-dark);
   padding: 12px 24px;
   border-radius: 25px;
   text-decoration: none;
@@ -251,7 +251,7 @@ html {
   letter-spacing: 0.05em;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(21, 0, 57, 0.3);
-  border: 2px solid rgb(21, 0, 57);
+  border: 2px solid var(--color-blue-dark);
   margin-top: 10px;
 }
 
@@ -261,16 +261,16 @@ html {
 }
 
 .box2 a:hover {
-  background-color: rgb(21, 0, 57);
-  color: rgb(255, 255, 255);
+  background-color: var(--color-blue-dark);
+  color: white ;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(21, 0, 57, 0.4);
+  box-shadow: 0 6px 20px rgba(var(--color-blue-dark), 0.4);
 }
 
 .boxcow a:hover {
   background-color: #2d0b1c;
   color: rgb(255, 255, 255);
-  transform: translateY(-2px);
+  transform: translateY(-20px);
   box-shadow: 0 6px 20px rgba(21, 0, 57, 0.4);
 }
 
@@ -415,6 +415,28 @@ html {
 }
 
 /* -------------------         Otras secciones adicionales        ----------------------------------- */
+#fields {
+  background-image: url('/spring2.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.fields1 {
+  /* background-image: url('/tresSatelites.png'); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.fields1 img {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  max-width: 100%;
+  display: block;
+}
 
 .section-10 {
   background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564');

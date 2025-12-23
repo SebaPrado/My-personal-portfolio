@@ -199,6 +199,11 @@ const HomeNuevo = () => {
       </section>
 
       {/* TECH STACK SECTION */}
+      <section className="" >
+        <div className="fields1">
+         <img src="/tresSatelites.png" alt="Tres Satelites" className="fields1-image" />
+        </div>
+      </section>
       <section className="section section-white section-scroll" style={{ minHeight: '130vh', background: 'white' }}>
         <div className="section-content">
           <div className="box ligthBox">
