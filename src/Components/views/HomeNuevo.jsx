@@ -175,7 +175,7 @@ const HomeNuevo = () => {
       <section className="section section-white-simple section-scroll" style={{ minHeight: '130vh' }}>
         <div className="section-content">
           <div className="box2">
-            <h2>I have what you need</h2>
+           
             <p>
               From concept to deployment. Apps, AI agents, cloud
               infrastructure. What do you need?
@@ -192,16 +192,97 @@ const HomeNuevo = () => {
           <div className="box">
           <div> 
             <h2 >Fields from above</h2>
-            <p >Satellite imagery and NDVI analysis for precision agriculture</p>
+            <p > Para empresas agropecuarias</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* TECH STACK SECTION */}
-      <section className="" >
+      
+      <div className="titulopasturas">
+      <h2>Pasturas</h2>
+      </div>
+      <section className="">
         <div className="fields1">
-         <img src="/tresSatelites.png" alt="Tres Satelites" className="fields1-image" />
+          <div className="fields1-image-container1">
+            <img src="/poligonovertices.png" alt="Tres Satelites" className="fields1-image" />
+          </div>
+          <div className="texto">
+            <p>Guardas tus parcelas</p>
+          </div>
+        </div>
+        <div className="fields1">
+          <div>
+            <img src="/pastoyflecha.png" alt="Tres Satelites" className="fields1-image" />
+          </div>
+          <div className="texto">
+            <p>Tus mediciones linkeadas a indicadores satelitales</p>
+            <p>Raigras//E284//13 de Mayo//vegetativo// ndvi:70 </p>
+            <p>Kg MS/ha: 2000</p>
+
+          </div>
+        </div>
+        <div className="fields1">
+          <div>
+            <img src="/satsebaneural.png" alt="Tres Satelites" className="fields1-image" />
+          </div>
+          <div className="texto">
+            <p>Funcion aprendida (desde tus mediciones)</p>
+          </div>
+        </div>
+        <div className="fields1">
+          <div>
+            <img src="/tresSatelites.png" alt="Tres Satelites" className="fields1-image" />
+          </div>
+          <div className="texto">
+            <p>"Esta semana tu raigras creció 220 kg/ha"</p>
+            <p>"Tu alfalfa está para cortar en 12 dias "</p>
+            <p>"Se te juntan 3 parcelas para pastoreo, cierra una de ellas"</p>
+
+          </div>
+        </div>
+      </section>
+      <div className="titulopasturas">
+      <h2>Cultivos </h2>
+      </div>
+      <section className="">
+        <div className="fields1">
+          <div className="fields1-image-container1">
+            <img src="/poligonovertices.png" alt="Tres Satelites" className="fields1-image" />
+          </div>
+          <div className="texto">
+            <p>Guardas tus parcelas</p>
+          </div>
+        </div>
+        <div className="fields1">
+          <div>
+            <img src="/pastoyflecha.png" alt="Tres Satelites" className="fields1-image" />
+          </div>
+          <div className="texto">
+            <p>Tus rendimientos historicos linkeados a indicadores satelitales</p>
+            <p>Trigo// Baguette 620//13 de Mayo// p.c.15 set//radiacion p.c:1234// ndvi:86 </p>
+            <p>tt/ha: 5000</p>
+
+          </div>
+        </div>
+        <div className="fields1">
+          <div>
+            <img src="/satsebaneural.png" alt="Tres Satelites" className="fields1-image" />
+          </div>
+          <div className="texto">
+            <p>Funcion aprendida (desde tus mediciones)</p>
+          </div>
+        </div>
+        <div className="fields1">
+          <div>
+            <img src="/tresSatelites.png" alt="Tres Satelites" className="fields1-image" />
+          </div>
+          <div className="texto">
+            <p>"Tu Baguette 620 en parcela 2 tiene un potencial de 4500 tt/ha. Estas bien de Nitrogeno "</p>
+            <p>"Tu trigo ACA 360 en parcela 3 tiene un potencial de 5500 tt/ha. Deberias aplicar 60 de Nitrogeno "</p>
+
+          </div>
         </div>
       </section>
       <section className="section section-white section-scroll" style={{ minHeight: '130vh', background: 'white' }}>

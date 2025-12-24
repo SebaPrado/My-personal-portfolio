@@ -415,28 +415,70 @@ html {
 }
 
 /* -------------------         Otras secciones adicionales        ----------------------------------- */
+
+/*============================================================================================================  */
+
+.titulopasturas h2 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  margin-bottom: 100px;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.85);
+  margin-top: 100px;
+  margin-bottom: 60px;
+
+}
+
 #fields {
   background-image: url('/spring2.png');
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
+  margin-bottom: 150px;
+
 }
 
 .fields1 {
-  /* background-image: url('/tresSatelites.png'); */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  /* height: 80vh; */
+  gap: 50px;
+  /* padding-top: 220px; */
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .fields1 img {
-  width: 400px;
+  width: 300px;
   height: auto;
   object-fit: contain;
   max-width: 100%;
   display: block;
 }
+
+.fields1-image-container1 {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  max-width: 100%;
+  display: block;
+  padding-left: 80px;
+  padding-right: 80px;
+  opacity: 0.9;
+}
+
+.texto {
+  font-size: 0.6rem;
+  min-width: 450px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.85);
+}
+
+/*============================================================================================================  */
 
 .section-10 {
   background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564');
