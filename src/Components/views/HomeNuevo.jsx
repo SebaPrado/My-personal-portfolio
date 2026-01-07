@@ -200,91 +200,109 @@ const HomeNuevo = () => {
 
       {/* TECH STACK SECTION */}
       
+{/* ==========================================  Fields from above - Pasturas  =========================================== */}
+
       <div className="titulopasturas">
-      <h2>Pasturas</h2>
+       <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+         <div>
+           <h2>Pasturas</h2>
+         </div>
+       </div>
       </div>
       <section className="">
         <div className="fields1">
-          <div className="fields1-image-container1">
-            <img src="/poligonovertices.png" alt="Tres Satelites" className="fields1-image" />
-          </div>
-          <div className="texto">
-            <p>Guardas tus parcelas</p>
-          </div>
-        </div>
-        <div className="fields1">
-          <div>
-            <img src="/pastoyflecha.png" alt="Tres Satelites" className="fields1-image" />
-          </div>
-          <div className="texto">
-            <p>Tus mediciones linkeadas a indicadores satelitales</p>
-            <p>Raigras//E284//13 de Mayo//vegetativo// ndvi:70 </p>
-            <p>Kg MS/ha: 2000</p>
+          <div className="fields1-image-container">
+          <img src="/3paddocks.png" alt="Tres Satelites" />
 
           </div>
+          <div className="texto">
+            <p >Tus parcelas y mediciones historicas</p>
+          </div>
         </div>
         <div className="fields1">
-          <div>
-            <img src="/satsebaneural.png" alt="Tres Satelites" className="fields1-image" />
+          <div className="fields1-image-container">
+            <img src="/pastoyndvi2.png" alt="Mediciones satelitales" />
+          </div>
+          <div className="texto">
+            <p>Entrenamiento: Mediciones + Variables + Indices satelitales</p>
+            <p>Caso1:Raigras//E284//13 de Mayo//vegetativo// ndvi:70 </p>
+
+            <p>Kg MS/ha: 2000</p>
+          </div>
+        </div>
+        <div className="fields1">
+          <div className="fields1-image-container">
+            <img src="/satsebaneural.png" alt="Funcion aprendida" />
           </div>
           <div className="texto">
             <p>Funcion aprendida (desde tus mediciones)</p>
+            <p>Caso 1, caso 2, caso 3... caso 200 </p>
           </div>
         </div>
         <div className="fields1">
-          <div>
-            <img src="/tresSatelites.png" alt="Tres Satelites" className="fields1-image" />
+          <div className="fields1-image-container">
+            <img src="/tresSatelites.png" alt="Predicciones" />
           </div>
           <div className="texto">
-            <p>"Esta semana tu raigras creció 220 kg/ha"</p>
+            <p>"Esta semana tu raigras tiene 2200 kg/ha"</p>
             <p>"Tu alfalfa está para cortar en 12 dias "</p>
             <p>"Se te juntan 3 parcelas para pastoreo, cierra una de ellas"</p>
-
+          </div>
+        </div>
+        <div className="fields1" style={{textAlign: 'center'}}>
+          <div style={{textAlign: 'center' , width: '100%'}}>
+             <p style={{textAlign: 'center'}}>Conclusion 1 </p>
           </div>
         </div>
       </section>
+
+{/* ==========================================  Fields from above - Cultivos  =========================================== */}
+
+
       <div className="titulopasturas">
-      <h2>Cultivos </h2>
+      <h2>------ Cultivos ------</h2>
       </div>
       <section className="">
         <div className="fields1">
-          <div className="fields1-image-container1">
-            <img src="/poligonovertices.png" alt="Tres Satelites" className="fields1-image" />
+          <div className="fields1-image-container">
+            <img src="/3paddocks.png" alt="Tres Satelites" />
           </div>
           <div className="texto">
-            <p>Guardas tus parcelas</p>
+            <p>Tus parcelas y rindes historicos</p>
           </div>
         </div>
         <div className="fields1">
-          <div>
-            <img src="/pastoyflecha.png" alt="Tres Satelites" className="fields1-image" />
+          <div className="fields1-image-container">
+            <img src="/crop.png" alt="Tres Satelites" />
           </div>
           <div className="texto">
             <p>Tus rendimientos historicos linkeados a indicadores satelitales</p>
             <p>Trigo// Baguette 620//13 de Mayo// p.c.15 set//radiacion p.c:1234// ndvi:86 </p>
             <p>tt/ha: 5000</p>
-
           </div>
         </div>
         <div className="fields1">
-          <div>
-            <img src="/satsebaneural.png" alt="Tres Satelites" className="fields1-image" />
+          <div className="fields1-image-container">
+            <img src="/satsebaneural.png" alt="Tres Satelites" />
           </div>
           <div className="texto">
             <p>Funcion aprendida (desde tus mediciones)</p>
           </div>
         </div>
         <div className="fields1">
-          <div>
-            <img src="/tresSatelites.png" alt="Tres Satelites" className="fields1-image" />
+          <div className="fields1-image-container">
+            <img src="/crop2.png" alt="Tres Satelites" />
           </div>
           <div className="texto">
             <p>"Tu Baguette 620 en parcela 2 tiene un potencial de 4500 tt/ha. Estas bien de Nitrogeno "</p>
             <p>"Tu trigo ACA 360 en parcela 3 tiene un potencial de 5500 tt/ha. Deberias aplicar 60 de Nitrogeno "</p>
-
           </div>
         </div>
       </section>
+
+{/* ==========================================  Fields from above , divs con descripcion  =========================================== */}
+
+
       <section className="section section-white section-scroll" style={{ minHeight: '130vh', background: 'white' }}>
         <div className="section-content">
           <div className="box ligthBox">
@@ -320,7 +338,7 @@ const HomeNuevo = () => {
           <div className="box">
             <h2>Yes, looking at you</h2>
             <div className="boxcow">
-              <a href="mailto:sebastian@sebastianprado.com">Email us your idea</a>
+              <a href="mailto:sebastian@sebastianprado.com">Email me your idea</a>
               <a href="https://wa.me/61487175193">Start a conversation</a>
             </div>
           </div>

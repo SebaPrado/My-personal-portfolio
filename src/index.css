@@ -75,8 +75,8 @@ h5 {
 /* =====      p       === */
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   p {
-    font-size: 15px !important;
-    line-height: 200% !important;
+    /* font-size: 15px !important; */
+    /* line-height: 200% !important; */
   }
 }
 
