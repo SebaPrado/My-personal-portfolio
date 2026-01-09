@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotlight Difuminado sobre Nubes</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        cursor: none; /* opcional: oculta el cursor */
+        background: #000;
+      }
+
+      .container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      /* Fondo: océano azul */
+      .fondo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 5;
+      }
+
+      /* Nubes con máscara difuminada */
+      .nubes {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('surf.jpg') no-repeat center center;
+        background-size: cover;
+        z-index: 10;
+        pointer-events: none;
+
+        /* Inicialmente nada se ve */
+        -webkit-mask-image: radial-gradient(
+          circle 450px at center,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        -webkit-mask-size: 300px 300px;
+
+        mask-image: radial-gradient(
+          circle 450px at center,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: 300px 300px;
+
+        transition: mask-position 0.05s, -webkit-mask-position 0.05s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="spring.jpg" class="fondo" />
+      <div class="nubes"></div>
+    </div>
+
+    <script>
+      const nubes = document.querySelector('.nubes');
+      const radius = 500; // radio del foco en px
+
+      document.addEventListener('mousemove', (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+
+        // Actualiza la posición de la máscara centrando el gradiente en el cursor
+        const posX = x - radius;
+        const posY = y - radius;
+
+        nubes.style.webkitMaskPosition = `${posX}px ${posY}px`;
+        nubes.style.maskPosition = `${posX}px ${posY}px`;
+
+        // Tamaño fijo del área visible
+        const size = radius * 2;
+        nubes.style.webkitMaskSize = `${size}px ${size}px`;
+        nubes.style.maskSize = `${size}px ${size}px`;
+      });
+    </script>
+  </body>
+</html>
