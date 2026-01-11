@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Matías - Sistema de Inventario</title>
+    <style>
+        /* Estilos minimalistas con bajo font-weight como solicitaste */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            font-weight: 300;
+            background: #f7f5f2;
+            color: #3d4240; 
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navegación entre secciones */
+        .navegacion {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .nav-opciones {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-logo img {
+            max-width: 80px;
+            height: auto;
+        }
+
+        .navegacion button {
+            background: none;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 300;
+            color: #666;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .navegacion button.activo {
+            color: #3d4240;
+            border-bottom-color: #3d4240;
+        }
+
+        /* Alertas de stock bajo */
+        .alertas-stock {
+            background: rgba(221, 214, 205, 0.5);
+            border: 1px solid #b8ae9c;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .alertas-stock h3 {
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #3d4240;
+        }
+
+        .alertas-stock ul {
+            list-style: none;
+        }
+
+        .alertas-stock li {
+            font-size: 13px;
+            padding: 5px 0;
+            color: #5a5652;
+        }
+
+        /* Header de secciones */
+        .header-seccion {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header-seccion h2 {
+            font-weight: 400;
+            font-size: 24px;
+            color: #3d4240;
+        }
+
+        /* Botones */
+        button {
+            background: #327662;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 300;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background: #265a4b;
+        }
+
+        button.secundario {
+            background: #6c757d;
+        }
+
+        button.secundario:hover {
+            background: #545b62;
+        }
+
+        button.peligro {
+            background: #dc3545;
+        }
+
+        button.peligro:hover {
+            background: #c82333;
+        }
+
+        /* Tablas */
+        table {
+            width: 100%;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        thead {
+            background: #f8f9fa;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+            font-weight: 300;
+        }
+
+        th {
+            font-weight: 400;
+            color: #495057;
+            font-size: 13px;
+        }
+
+        td {
+            font-size: 14px;
+        }
+
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+
+        /* Resaltar productos con stock bajo */
+        tr.stock-bajo {
+            background: rgba(221, 214, 205, 0.4);
+        }
+
+        tr.stock-bajo:hover {
+            background: rgba(221, 214, 205, 0.7);
+        }
+
+        /* Modales */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal h3 {
+            font-weight: 400;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #3d4240;
+        }
+
+        .form-grupo {
+            margin-bottom: 15px;
+        }
+
+        .form-grupo label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 13px;
+            color: #495057;
+            font-weight: 400;
+        }
+
+        .form-grupo input,
+        .form-grupo select {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .modal-botones {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: flex-end;
+        }
+
+        /* Sección de facturación */
+        .factura-items {
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .item-factura {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .item-factura:last-child {
+            border-bottom: none;
+        }
+
+        .total-factura {
+            font-size: 18px;
+            font-weight: 400;
+            text-align: right;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .lista-facturas {
+            display: grid;
+            gap: 15px;
+        }
+
+        .factura-card {
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .factura-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .factura-info {
+            font-size: 13px;
+            color: #6c757d;
+        }
+
+        .oculto {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        // ESTADO CENTRALIZADO - La única fuente de verdad de toda la aplicación
+        // Este objeto contiene absolutamente toda la información necesaria para renderizar la interfaz
+        const state = {
+            // Datos fuente de verdad - Lo único que eventualmente irá a Supabase
+            productos: [
+                {
+                    id: 1,
+                    nombre: 'Ivermectina 500ml',
+                    categoria: 'Antiparasitarios',
+                    subcategoria: 'Endectocidas',
+                    cantidad_stock: 15,
+                    precio: 12500,
+                    umbral_minimo: 20
+                },
+                {
+                    id: 2,
+                    nombre: 'Oxitetraciclina LA 200ml',
+                    categoria: 'Antibióticos',
+                    subcategoria: 'Tetraciclinas',
+                    cantidad_stock: 45,
+                    precio: 8900,
+                    umbral_minimo: 15
+                },
+                {
+                    id: 3,
+                    nombre: 'Vitamina ADE 100ml',
+                    categoria: 'Vitaminas',
+                    subcategoria: 'Multivitamínicos',
+                    cantidad_stock: 8,
+                    precio: 4500,
+                    umbral_minimo: 10
+                },
+                {
+                    id: 4,
+                    nombre: 'Penicilina G Procaínica 250ml',
+                    categoria: 'Antibióticos',
+                    subcategoria: 'Penicilinas',
+                    cantidad_stock: 30,
+                    precio: 7800,
+                    umbral_minimo: 12
+                },
+                {
+                    id: 5,
+                    nombre: 'Calcio Borogluconato 500ml',
+                    categoria: 'Minerales',
+                    subcategoria: 'Hipocalcemia',
+                    cantidad_stock: 25,
+                    precio: 6200,
+                    umbral_minimo: 15
+                },
+                {
+                    id: 6,
+                    nombre: 'Fipronil Pour On 1L',
+                    categoria: 'Antiparasitarios',
+                    subcategoria: 'Ectoparasiticidas',
+                    cantidad_stock: 12,
+                    precio: 18900,
+                    umbral_minimo: 8
+                },
+                {
+                    id: 7,
+                    nombre: 'Ketoprofeno 100ml',
+                    categoria: 'Antiinflamatorios',
+                    subcategoria: 'AINES',
+                    cantidad_stock: 5,
+                    precio: 9500,
+                    umbral_minimo: 10
+                },
+                {
+                    id: 8,
+                    nombre: 'Complejo B 100ml',
+                    categoria: 'Vitaminas',
+                    subcategoria: 'Grupo B',
+                    cantidad_stock: 40,
+                    precio: 3800,
+                    umbral_minimo: 15
+                },
+                {
+                    id: 9,
+                    nombre: 'Oxitocina 50ml',
+                    categoria: 'Hormonas',
+                    subcategoria: 'Reproductivas',
+                    cantidad_stock: 18,
+                    precio: 5600,
+                    umbral_minimo: 10
+                },
+                {
+                    id: 10,
+                    nombre: 'Albendazol Suspensión 1L',
+                    categoria: 'Antiparasitarios',
+                    subcategoria: 'Antihelmínticos',
+                    cantidad_stock: 22,
+                    precio: 11200,
+                    umbral_minimo: 12
+                }
+            ],
+            facturas: [],
+            devoluciones: [],
+            
+            // Estado de UI - Información sobre la interfaz, no sobre los datos de negocio
+            seccionActual: 'productos', // 'productos' | 'facturas' | 'devoluciones'
+            
+            // Estados de formularios - Datos temporales mientras el usuario está llenando formularios
+            formNuevoProducto: {
+                nombre: '',
+                categoria: '',
+                subcategoria: '',
+                cantidad_stock: 0,
+                precio: 0,
+                umbral_minimo: 10
+            },
+            
+            formIngresoStock: {
+                productoId: null,
+                cantidad: 0
+            },
+            
+            formNuevaFactura: {
+                items: [], // Array de {productoId, cantidad, precioUnitario, nombreProducto}
+                clienteNombre: '',
+                productoSeleccionado: null,
+                cantidadSeleccionada: 1
+            },
+            
+            formDevolucion: {
+                facturaId: null,
+                items: [] // Array de {productoId, cantidad, nombreProducto}
+            },
+            
+            // Estados de control - Qué modales están abiertos, qué está cargando, etc
+            modalAbierto: null, // null | 'nuevoProducto' | 'ingresoStock' | etc
+            cargando: false
+        };
+
+        // FUNCIONES DE MODIFICACIÓN DE ESTADO
+        // Cada una de estas funciones modifica el estado y luego llama a render()
+        // Cuando migres a React, estas se convertirán en funciones que usan setters de hooks
+
+        function handleCrearProducto() {
+            // Validación básica
+            if (!state.formNuevoProducto.nombre.trim()) {
+                alert('El nombre del producto es obligatorio');
+                return;
+            }
+
+            // Creamos el nuevo producto con un ID único basado en timestamp
+            const nuevoProducto = {
+                id: Date.now(),
+                nombre: state.formNuevoProducto.nombre,
+                categoria: state.formNuevoProducto.categoria,
+                subcategoria: state.formNuevoProducto.subcategoria,
+                cantidad_stock: parseFloat(state.formNuevoProducto.cantidad_stock),
+                precio: parseFloat(state.formNuevoProducto.precio),
+                umbral_minimo: parseFloat(state.formNuevoProducto.umbral_minimo)
+            };
+            
+            // Agregamos al array de productos
+            state.productos.push(nuevoProducto);
+            
+            // Reseteamos el formulario a sus valores iniciales
+            state.formNuevoProducto = {
+                nombre: '',
+                categoria: '',
+                subcategoria: '',
+                cantidad_stock: 0,
+                precio: 0,
+                umbral_minimo: 10
+            };
+            
+            // Cerramos el modal
+            state.modalAbierto = null;
+            
+            // Re-renderizamos la interfaz completa
+            render();
+        }
+
+        function handleIngresoStock() {
+            // Encontramos el producto en el array
+            const producto = state.productos.find(p => p.id === state.formIngresoStock.productoId);
+            
+            if (producto && state.formIngresoStock.cantidad > 0) {
+                // Incrementamos el stock
+                producto.cantidad_stock += parseFloat(state.formIngresoStock.cantidad);
+                
+                // Reseteamos el formulario
+                state.formIngresoStock = {
+                    productoId: null,
+                    cantidad: 0
+                };
+                
+                // Cerramos el modal
+                state.modalAbierto = null;
+                
+                render();
+            }
+        }
+
+        function handleAgregarItemFactura() {
+            const productoId = state.formNuevaFactura.productoSeleccionado;
+            const cantidad = parseFloat(state.formNuevaFactura.cantidadSeleccionada);
+            
+            if (!productoId || cantidad <= 0) {
+                alert('Selecciona un producto y una cantidad válida');
+                return;
+            }
+
+            const producto = state.productos.find(p => p.id === parseInt(productoId));
+            
+            if (!producto) {
+                alert('Producto no encontrado');
+                return;
+            }
+
+            // Validamos que haya suficiente stock
+            if (producto.cantidad_stock < cantidad) {
+                alert(`Stock insuficiente. Disponible: ${producto.cantidad_stock}`);
+                return;
+            }
+
+            // Agregamos el item a la factura en progreso
+            state.formNuevaFactura.items.push({
+                productoId: producto.id,
+                nombreProducto: producto.nombre,
+                cantidad: cantidad,
+                precioUnitario: producto.precio
+            });
+
+            // Reseteamos la selección
+            state.formNuevaFactura.productoSeleccionado = null;
+            state.formNuevaFactura.cantidadSeleccionada = 1;
+
+            render();
+        }
+
+        function handleEliminarItemFactura(index) {
+            // Eliminamos el item del array usando splice
+            state.formNuevaFactura.items.splice(index, 1);
+            render();
+        }
+
+        function handleCrearFactura() {
+            if (state.formNuevaFactura.items.length === 0) {
+                alert('Agrega al menos un producto a la factura');
+                return;
+            }
+
+            if (!state.formNuevaFactura.clienteNombre.trim()) {
+                alert('Ingresa el nombre del cliente');
+                return;
+            }
+
+            // Validamos stock suficiente para todos los items
+            const stockSuficiente = state.formNuevaFactura.items.every(item => {
+                const producto = state.productos.find(p => p.id === item.productoId);
+                return producto && producto.cantidad_stock >= item.cantidad;
+            });
+
+            if (!stockSuficiente) {
+                alert('Stock insuficiente para algunos productos');
+                return;
+            }
+
+            // Restamos el stock de todos los productos
+            state.formNuevaFactura.items.forEach(item => {
+                const producto = state.productos.find(p => p.id === item.productoId);
+                producto.cantidad_stock -= item.cantidad;
+            });
+
+            // Creamos la factura
+            const nuevaFactura = {
+                id: Date.now(),
+                fecha: new Date().toLocaleString('es-AR'),
+                clienteNombre: state.formNuevaFactura.clienteNombre,
+                items: [...state.formNuevaFactura.items]
+            };
+
+            state.facturas.push(nuevaFactura);
+
+            // Reseteamos el formulario
+            state.formNuevaFactura = {
+                items: [],
+                clienteNombre: '',
+                productoSeleccionado: null,
+                cantidadSeleccionada: 1
+            };
+
+            state.modalAbierto = null;
+            render();
+        }
+
+        function handleAgregarItemDevolucion() {
+            const facturaId = state.formDevolucion.facturaId;
+            
+            if (!facturaId) {
+                alert('Primero selecciona una factura');
+                return;
+            }
+
+            // Este modal se abrirá desde la selección de una factura específica
+            // Aquí simplemente confirmamos la devolución
+            render();
+        }
+
+        function handleProcesarDevolucion(facturaId, item) {
+            const producto = state.productos.find(p => p.id === item.productoId);
+            
+            if (producto) {
+                // Devolvemos el stock
+                producto.cantidad_stock += item.cantidad;
+            }
+
+            // Registramos la devolución
+            const nuevaDevolucion = {
+                id: Date.now(),
+                fecha: new Date().toLocaleString('es-AR'),
+                facturaId: facturaId,
+                item: {...item}
+            };
+
+            state.devoluciones.push(nuevaDevolucion);
+            
+            render();
+        }
+
+        // FUNCIONES DE RENDERIZADO
+        // Estas funciones son PURAS - dado el mismo estado, generan el mismo HTML
+        // No modifican el estado, solo lo leen
+
+        function render() {
+            const app = document.getElementById('app');
+            app.innerHTML = generateHTML();
+            attachEventListeners();
+        }
+
+        function generateHTML() {
+            return `
+                <div class="container">
+                    ${generateNavegacion()}
+                    ${state.seccionActual === 'productos' ? generateSeccionProductos() : ''}
+                    ${state.seccionActual === 'facturas' ? generateSeccionFacturas() : ''}
+                    ${state.seccionActual === 'devoluciones' ? generateSeccionDevoluciones() : ''}
+                    ${generateModales()}
+                </div>
+            `;
+        }
+
+        function generateNavegacion() {
+            return `
+                <nav class="navegacion">
+                    <div class="nav-opciones">
+                        <button 
+                            class="${state.seccionActual === 'productos' ? 'activo' : ''}"
+                            data-action="cambiarSeccion" 
+                            data-seccion="productos">
+                            Inventario
+                        </button>
+                        <button 
+                            class="${state.seccionActual === 'facturas' ? 'activo' : ''}"
+                            data-action="cambiarSeccion" 
+                            data-seccion="facturas">
+                            Facturas
+                        </button>
+                        <button 
+                            class="${state.seccionActual === 'devoluciones' ? 'activo' : ''}"
+                            data-action="cambiarSeccion" 
+                            data-seccion="devoluciones">
+                            Devoluciones
+                        </button>
+                    </div>
+                    <div class="nav-logo">
+                        <img src="losceibos.png" alt="Agropecuaria Los Ceibos">
+                    </div>
+                </nav>
+            `;
+        }
+
+        function generateAlarmasStockBajo(productosConStockBajo) {
+            return `
+                <div class="alertas-stock">
+                    <h3>⚠️ Productos con stock bajo</h3>
+                    <ul>
+                        ${productosConStockBajo.map(p => `
+                            <li>
+                                ${p.nombre} - Stock: ${p.cantidad_stock} (mínimo: ${p.umbral_minimo})
+                            </li>
+                        `).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+
+        function generateSeccionProductos() {
+            // Calculamos productos con stock bajo
+            const productosConStockBajo = state.productos.filter(
+                p => p.cantidad_stock < p.umbral_minimo
+            );
+
+            return `
+                <div class="seccion-productos">
+                    <div class="header-seccion">
+                        <h2>Inventario de Productos</h2>
+                        <button data-action="abrirModalNuevoProducto">+ Nuevo Producto</button>
+                    </div>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Categoría</th>
+                                <th>Subcategoría</th>
+                                <th>Stock</th>
+                                <th>Precio</th>
+                                <th>Umbral Mínimo</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${state.productos.map(p => `
+                                <tr class="${p.cantidad_stock < p.umbral_minimo ? 'stock-bajo' : ''}">
+                                    <td>${p.nombre}</td>
+                                    <td>${p.categoria}</td>
+                                    <td>${p.subcategoria}</td>
+                                    <td><strong>${p.cantidad_stock}</strong></td>
+                                    <td>$${p.precio.toLocaleString('es-AR')}</td>
+                                    <td>${p.umbral_minimo}</td>
+                                    <td>
+                                        <button 
+                                            data-action="abrirModalIngresoStock" 
+                                            data-producto-id="${p.id}">
+                                            + Stock
+                                        </button>
+                                    </td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                    
+                    ${productosConStockBajo.length > 0 ? generateAlarmasStockBajo(productosConStockBajo) : ''}
+                </div>
+            `;
+        }
+
+        function generateSeccionFacturas() {
+            // Calculamos el total de la factura en progreso (dato derivado)
+            const totalFacturaEnProgreso = state.formNuevaFactura.items.reduce(
+                (sum, item) => sum + (item.cantidad * item.precioUnitario), 
+                0
+            );
+
+            return `
+                <div class="seccion-facturas">
+                    <div class="header-seccion">
+                        <h2>Nueva Factura</h2>
+                    </div>
+                    
+                    <div class="factura-items">
+                        <div class="form-grupo">
+                            <label>Cliente</label>
+                            <input 
+                                type="text" 
+                                data-form-field="formNuevaFactura.clienteNombre"
+                                value="${state.formNuevaFactura.clienteNombre}"
+                                placeholder="Nombre del cliente">
+                        </div>
+
+                        <div class="form-grupo">
+                            <label>Agregar Producto</label>
+                            <div style="display: flex; gap: 10px;">
+                                <select data-form-field="formNuevaFactura.productoSeleccionado">
+                                    <option value="">Seleccionar producto...</option>
+                                    ${state.productos.map(p => `
+                                        <option value="${p.id}">
+                                            ${p.nombre} - Stock: ${p.cantidad_stock} - $${p.precio.toLocaleString('es-AR')}
+                                        </option>
+                                    `).join('')}
+                                </select>
+                                <input 
+                                    type="number" 
+                                    min="1"
+                                    data-form-field="formNuevaFactura.cantidadSeleccionada"
+                                    value="${state.formNuevaFactura.cantidadSeleccionada}"
+                                    style="width: 100px;"
+                                    placeholder="Cant.">
+                                <button data-action="agregarItemFactura">Agregar</button>
+                            </div>
+                        </div>
+
+                        <h3 style="margin-top: 20px; margin-bottom: 10px; font-weight: 400;">Items de la Factura</h3>
+                        
+                        ${state.formNuevaFactura.items.length === 0 ? 
+                            '<p style="color: #6c757d; font-size: 14px;">No hay items agregados aún</p>' :
+                            state.formNuevaFactura.items.map((item, index) => `
+                                <div class="item-factura">
+                                    <div style="flex: 1;">
+                                        <strong>${item.nombreProducto}</strong><br>
+                                        <small style="color: #6c757d;">
+                                            ${item.cantidad} x $${item.precioUnitario.toLocaleString('es-AR')} = 
+                                            $${(item.cantidad * item.precioUnitario).toLocaleString('es-AR')}
+                                        </small>
+                                    </div>
+                                    <button 
+                                        class="peligro" 
+                                        data-action="eliminarItemFactura" 
+                                        data-index="${index}">
+                                        Eliminar
+                                    </button>
+                                </div>
+                            `).join('')
+                        }
+
+                        ${state.formNuevaFactura.items.length > 0 ? `
+                            <div class="total-factura">
+                                <strong>Total: $${totalFacturaEnProgreso.toLocaleString('es-AR')}</strong>
+                            </div>
+                            <div style="text-align: right; margin-top: 15px;">
+                                <button data-action="crearFactura">Finalizar Factura</button>
+                            </div>
+                        ` : ''}
+                    </div>
+
+                    <div class="header-seccion" style="margin-top: 40px;">
+                        <h2>Historial de Facturas</h2>
+                    </div>
+
+                    <div class="lista-facturas">
+                        ${state.facturas.length === 0 ? 
+                            '<p style="color: #6c757d;">No hay facturas registradas aún</p>' :
+                            state.facturas.map(factura => {
+                                const totalFactura = factura.items.reduce(
+                                    (sum, item) => sum + (item.cantidad * item.precioUnitario), 
+                                    0
+                                );
+                                return `
+                                    <div class="factura-card">
+                                        <div class="factura-header">
+                                            <div>
+                                                <strong>Factura #${factura.id}</strong><br>
+                                                <span class="factura-info">Cliente: ${factura.clienteNombre}</span>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <span class="factura-info">${factura.fecha}</span><br>
+                                                <strong>$${totalFactura.toLocaleString('es-AR')}</strong>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            ${factura.items.map(item => `
+                                                <div style="display: flex; justify-content: space-between; padding: 5px 0; font-size: 13px;">
+                                                    <span>${item.nombreProducto} (x${item.cantidad})</span>
+                                                    <span>$${(item.cantidad * item.precioUnitario).toLocaleString('es-AR')}</span>
+                                                </div>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                `;
+                            }).join('')
+                        }
+                    </div>
+                </div>
+            `;
+        }
+
+        function generateSeccionDevoluciones() {
+            return `
+                <div class="seccion-devoluciones">
+                    <div class="header-seccion">
+                        <h2>Devoluciones</h2>
+                    </div>
+
+                    <p style="margin-bottom: 20px; color: #6c757d;">
+                        Selecciona una factura y los items que deseas devolver. El stock se devolverá automáticamente.
+                    </p>
+
+                    <div class="lista-facturas">
+                        ${state.facturas.length === 0 ? 
+                            '<p style="color: #6c757d;">No hay facturas para procesar devoluciones</p>' :
+                            state.facturas.map(factura => {
+                                const totalFactura = factura.items.reduce(
+                                    (sum, item) => sum + (item.cantidad * item.precioUnitario), 
+                                    0
+                                );
+                                return `
+                                    <div class="factura-card">
+                                        <div class="factura-header">
+                                            <div>
+                                                <strong>Factura #${factura.id}</strong><br>
+                                                <span class="factura-info">Cliente: ${factura.clienteNombre}</span>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <span class="factura-info">${factura.fecha}</span><br>
+                                                <strong>$${totalFactura.toLocaleString('es-AR')}</strong>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            ${factura.items.map((item, itemIndex) => `
+                                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0; font-size: 13px; border-top: 1px solid #dee2e6;">
+                                                    <div>
+                                                        <div>${item.nombreProducto}</div>
+                                                        <small style="color: #6c757d;">Cantidad: ${item.cantidad} - Precio: $${item.precioUnitario.toLocaleString('es-AR')}</small>
+                                                    </div>
+                                                    <button 
+                                                        class="secundario"
+                                                        data-action="procesarDevolucion"
+                                                        data-factura-id="${factura.id}"
+                                                        data-item-index="${itemIndex}">
+                                                        Devolver
+                                                    </button>
+                                                </div>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                `;
+                            }).join('')
+                        }
+                    </div>
+
+                    ${state.devoluciones.length > 0 ? `
+                        <div class="header-seccion" style="margin-top: 40px;">
+                            <h2>Historial de Devoluciones</h2>
+                        </div>
+                        <div class="lista-facturas">
+                            ${state.devoluciones.map(devolucion => `
+                                <div class="factura-card">
+                                    <div class="factura-header">
+                                        <div>
+                                            <strong>Devolución #${devolucion.id}</strong><br>
+                                            <span class="factura-info">Factura origen: #${devolucion.facturaId}</span>
+                                        </div>
+                                        <div style="text-align: right;">
+                                            <span class="factura-info">${devolucion.fecha}</span>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 5px 0; font-size: 13px;">
+                                        ${devolucion.item.nombreProducto} - Cantidad devuelta: ${devolucion.item.cantidad}
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+
+        function generateModales() {
+            if (!state.modalAbierto) return '';
+
+            if (state.modalAbierto === 'nuevoProducto') {
+                return `
+                    <div class="modal-overlay">
+                        <div class="modal">
+                            <h3>Crear Nuevo Producto</h3>
+                            
+                            <div class="form-grupo">
+                                <label>Nombre del Producto</label>
+                                <input 
+                                    type="text" 
+                                    data-form-field="formNuevoProducto.nombre"
+                                    value="${state.formNuevoProducto.nombre}">
+                            </div>
+
+                            <div class="form-grupo">
+                                <label>Categoría</label>
+                                <input 
+                                    type="text" 
+                                    data-form-field="formNuevoProducto.categoria"
+                                    value="${state.formNuevoProducto.categoria}"
+                                    placeholder="Ej: Antibióticos">
+                            </div>
+
+                            <div class="form-grupo">
+                                <label>Subcategoría</label>
+                                <input 
+                                    type="text" 
+                                    data-form-field="formNuevoProducto.subcategoria"
+                                    value="${state.formNuevoProducto.subcategoria}"
+                                    placeholder="Ej: Penicilinas">
+                            </div>
+
+                            <div class="form-grupo">
+                                <label>Cantidad Stock Inicial</label>
+                                <input 
+                                    type="number" 
+                                    min="0"
+                                    data-form-field="formNuevoProducto.cantidad_stock"
+                                    value="${state.formNuevoProducto.cantidad_stock}">
+                            </div>
+
+                            <div class="form-grupo">
+                                <label>Precio</label>
+                                <input 
+                                    type="number" 
+                                    min="0"
+                                    step="0.01"
+                                    data-form-field="formNuevoProducto.precio"
+                                    value="${state.formNuevoProducto.precio}">
+                            </div>
+
+                            <div class="form-grupo">
+                                <label>Umbral Mínimo</label>
+                                <input 
+                                    type="number" 
+                                    min="0"
+                                    data-form-field="formNuevoProducto.umbral_minimo"
+                                    value="${state.formNuevoProducto.umbral_minimo}">
+                            </div>
+
+                            <div class="modal-botones">
+                                <button class="secundario" data-action="cerrarModal">Cancelar</button>
+                                <button data-action="crearProducto">Crear Producto</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            if (state.modalAbierto === 'ingresoStock') {
+                const producto = state.productos.find(p => p.id === state.formIngresoStock.productoId);
+                
+                return `
+                    <div class="modal-overlay">
+                        <div class="modal">
+                            <h3>Ingreso de Stock</h3>
+                            
+                            ${producto ? `
+                                <p style="margin-bottom: 20px; color: #6c757d;">
+                                    Producto: <strong>${producto.nombre}</strong><br>
+                                    Stock actual: <strong>${producto.cantidad_stock}</strong>
+                                </p>
+
+                                <div class="form-grupo">
+                                    <label>Cantidad a Ingresar</label>
+                                    <input 
+                                        type="number" 
+                                        min="1"
+                                        data-form-field="formIngresoStock.cantidad"
+                                        value="${state.formIngresoStock.cantidad}">
+                                </div>
+
+                                <div class="modal-botones">
+                                    <button class="secundario" data-action="cerrarModal">Cancelar</button>
+                                    <button data-action="ingresoStock">Ingresar Stock</button>
+                                </div>
+                            ` : '<p>Producto no encontrado</p>'}
+                        </div>
+                    </div>
+                `;
+            }
+
+            return '';
+        }
+
+        // ADJUNTAR EVENT LISTENERS
+        // Esta función se ejecuta después de cada render para conectar los eventos del DOM con nuestras funciones
+
+        function attachEventListeners() {
+            const app = document.getElementById('app');
+
+            // Delegación de eventos - un solo listener que maneja todos los clicks
+            app.addEventListener('click', (e) => {
+                const action = e.target.dataset.action;
+
+                // Cambio de sección en la navegación
+                if (action === 'cambiarSeccion') {
+                    state.seccionActual = e.target.dataset.seccion;
+                    render();
+                }
+
+                // Abrir modales
+                if (action === 'abrirModalNuevoProducto') {
+                    state.modalAbierto = 'nuevoProducto';
+                    render();
+                }
+
+                if (action === 'abrirModalIngresoStock') {
+                    state.formIngresoStock.productoId = parseInt(e.target.dataset.productoId);
+                    state.formIngresoStock.cantidad = 0;
+                    state.modalAbierto = 'ingresoStock';
+                    render();
+                }
+
+                // Cerrar modal
+                if (action === 'cerrarModal') {
+                    state.modalAbierto = null;
+                    render();
+                }
+
+                // Acciones de productos
+                if (action === 'crearProducto') {
+                    handleCrearProducto();
+                }
+
+                if (action === 'ingresoStock') {
+                    handleIngresoStock();
+                }
+
+                // Acciones de facturación
+                if (action === 'agregarItemFactura') {
+                    handleAgregarItemFactura();
+                }
+
+                if (action === 'eliminarItemFactura') {
+                    handleEliminarItemFactura(parseInt(e.target.dataset.index));
+                }
+
+                if (action === 'crearFactura') {
+                    handleCrearFactura();
+                }
+
+                // Acciones de devoluciones
+                if (action === 'procesarDevolucion') {
+                    const facturaId = parseInt(e.target.dataset.facturaId);
+                    const itemIndex = parseInt(e.target.dataset.itemIndex);
+                    const factura = state.facturas.find(f => f.id === facturaId);
+                    
+                    if (factura && factura.items[itemIndex]) {
+                        if (confirm(`¿Confirmas la devolución de ${factura.items[itemIndex].nombreProducto}?`)) {
+                            handleProcesarDevolucion(facturaId, factura.items[itemIndex]);
+                        }
+                    }
+                }
+            });
+
+            // Listener para cambios en inputs (texto, número)
+            // Esto actualiza automáticamente el estado mientras el usuario escribe
+            app.addEventListener('input', (e) => {
+                if (e.target.dataset.formField) {
+                    // Parseamos el path del campo: "formNuevoProducto.nombre"
+                    const [formName, fieldName] = e.target.dataset.formField.split('.');
+                    
+                    // Determinamos el valor correcto según el tipo de input
+                    let value = e.target.value;
+                    if (e.target.type === 'number') {
+                        value = e.target.value === '' ? 0 : parseFloat(e.target.value);
+                    }
+                    
+                    // Actualizamos el estado
+                    state[formName][fieldName] = value;
+                    
+                    // No llamamos a render() aquí porque sería muy costoso re-renderizar
+                    // en cada tecla presionada. El estado se actualiza, pero el render
+                    // se dispara solo cuando el usuario hace una acción (click en botón)
+                }
+            });
+
+            // Listener para cambios en selects
+            // Los <select> disparan 'change' en lugar de 'input'
+            app.addEventListener('change', (e) => {
+                if (e.target.dataset.formField) {
+                    const [formName, fieldName] = e.target.dataset.formField.split('.');
+                    state[formName][fieldName] = e.target.value;
+                }
+            });
+
+            // Cerrar modal al hacer click en el overlay
+            app.addEventListener('click', (e) => {
+                if (e.target.classList.contains('modal-overlay')) {
+                    state.modalAbierto = null;
+                    render();
+                }
+            });
+        }
+
+        // INICIALIZACIÓN - Renderizamos la aplicación por primera vez
+        render();
+    </script>
+</body>
+</html>
