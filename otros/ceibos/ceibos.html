@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veterinaria Matías - Sistema de Inventario</title>
+    <title>Los Ceibos</title>
     <style>
         /* Estilos minimalistas con bajo font-weight como solicitaste */
         * {
@@ -104,8 +104,8 @@
 
         /* Botones */
         button {
-            background: #327662;
-            color: white;
+            /* background: #327662; */
+            color: #004110;
             border: none;
             padding: 8px 16px;
             border-radius: 4px;
@@ -116,7 +116,7 @@
         }
 
         button:hover {
-            background: #265a4b;
+            background: white;
         }
 
         button.secundario {
@@ -145,7 +145,7 @@
         }
 
         thead {
-            background: #f8f9fa;
+            background: #014b08;
         }
 
         th, td {
@@ -157,7 +157,7 @@
 
         th {
             font-weight: 400;
-            color: #495057;
+            color: #ffffff;
             font-size: 13px;
         }
 
@@ -656,7 +656,7 @@
                             class="${state.seccionActual === 'productos' ? 'activo' : ''}"
                             data-action="cambiarSeccion" 
                             data-seccion="productos">
-                            Inventario
+                            Mis Productos
                         </button>
                         <button 
                             class="${state.seccionActual === 'facturas' ? 'activo' : ''}"
@@ -681,7 +681,7 @@
         function generateAlarmasStockBajo(productosConStockBajo) {
             return `
                 <div class="alertas-stock">
-                    <h3>⚠️ Productos con stock bajo</h3>
+                    <h3>⚠️ Productos con bajo stock</h3>
                     <ul>
                         ${productosConStockBajo.map(p => `
                             <li>
@@ -702,7 +702,7 @@
             return `
                 <div class="seccion-productos">
                     <div class="header-seccion">
-                        <h2>Inventario de Productos</h2>
+                        <h2>Mis Productos</h2>
                         <button data-action="abrirModalNuevoProducto">+ Nuevo Producto</button>
                     </div>
                     
