@@ -1,0 +1,182 @@
+{
+  "vidrios": {
+    "simple": [
+      {
+        "id": "simple_2mm",
+        "nombre": "Vidrio Simple 2mm",
+        "categoria": "simple",
+        "grosor": "2mm",
+        "unidad": "m2",
+        "precio": 4500
+      },
+      {
+        "id": "simple_3mm",
+        "nombre": "Vidrio Simple 3mm",
+        "categoria": "simple",
+        "grosor": "3mm",
+        "unidad": "m2",
+        "precio": 5200
+      },
+      {
+        "id": "simple_4mm",
+        "nombre": "Vidrio Simple 4mm",
+        "categoria": "simple",
+        "grosor": "4mm",
+        "unidad": "m2",
+        "precio": 6100
+      },
+      {
+        "id": "simple_5mm",
+        "nombre": "Vidrio Simple 5mm",
+        "categoria": "simple",
+        "grosor": "5mm",
+        "unidad": "m2",
+        "precio": 7200
+      },
+      {
+        "id": "simple_6mm",
+        "nombre": "Vidrio Simple 6mm",
+        "categoria": "simple",
+        "grosor": "6mm",
+        "unidad": "m2",
+        "precio": 8500
+      },
+      {
+        "id": "simple_8mm",
+        "nombre": "Vidrio Simple 8mm",
+        "categoria": "simple",
+        "grosor": "8mm",
+        "unidad": "m2",
+        "precio": 10800
+      },
+      {
+        "id": "simple_10mm",
+        "nombre": "Vidrio Simple 10mm",
+        "categoria": "simple",
+        "grosor": "10mm",
+        "unidad": "m2",
+        "precio": 13500
+      }
+    ],
+    "doble": [
+      {
+        "id": "doble_2+2",
+        "nombre": "DVH 2+2mm",
+        "categoria": "doble",
+        "grosor": "2+2",
+        "unidad": "m2",
+        "precio": 12000
+      },
+      {
+        "id": "doble_3+3",
+        "nombre": "DVH 3+3mm",
+        "categoria": "doble",
+        "grosor": "3+3",
+        "unidad": "m2",
+        "precio": 14200
+      },
+      {
+        "id": "doble_4+4",
+        "nombre": "DVH 4+4mm",
+        "categoria": "doble",
+        "grosor": "4+4",
+        "unidad": "m2",
+        "precio": 16800
+      },
+      {
+        "id": "doble_5+5",
+        "nombre": "DVH 5+5mm",
+        "categoria": "doble",
+        "grosor": "5+5",
+        "unidad": "m2",
+        "precio": 19500
+      },
+      {
+        "id": "doble_6+6",
+        "nombre": "DVH 6+6mm",
+        "categoria": "doble",
+        "grosor": "6+6",
+        "unidad": "m2",
+        "precio": 23000
+      },
+      {
+        "id": "doble_8+8",
+        "nombre": "DVH 8+8mm",
+        "categoria": "doble",
+        "grosor": "8+8",
+        "unidad": "m2",
+        "precio": 28500
+      },
+      {
+        "id": "doble_10+10",
+        "nombre": "DVH 10+10mm",
+        "categoria": "doble",
+        "grosor": "10+10",
+        "unidad": "m2",
+        "precio": 35000
+      }
+    ],
+    "templado": [
+      {
+        "id": "templado_2mm",
+        "nombre": "Vidrio Templado 2mm",
+        "categoria": "templado",
+        "grosor": "2mm",
+        "unidad": "m2",
+        "precio": 8500
+      },
+      {
+        "id": "templado_3mm",
+        "nombre": "Vidrio Templado 3mm",
+        "categoria": "templado",
+        "grosor": "3mm",
+        "unidad": "m2",
+        "precio": 9800
+      },
+      {
+        "id": "templado_4mm",
+        "nombre": "Vidrio Templado 4mm",
+        "categoria": "templado",
+        "grosor": "4mm",
+        "unidad": "m2",
+        "precio": 11500
+      },
+      {
+        "id": "templado_5mm",
+        "nombre": "Vidrio Templado 5mm",
+        "categoria": "templado",
+        "grosor": "5mm",
+        "unidad": "m2",
+        "precio": 13500
+      },
+      {
+        "id": "templado_6mm",
+        "nombre": "Vidrio Templado 6mm",
+        "categoria": "templado",
+        "grosor": "6mm",
+        "unidad": "m2",
+        "precio": 16000
+      },
+      {
+        "id": "templado_8mm",
+        "nombre": "Vidrio Templado 8mm",
+        "categoria": "templado",
+        "grosor": "8mm",
+        "unidad": "m2",
+        "precio": 20500
+      },
+      {
+        "id": "templado_10mm",
+        "nombre": "Vidrio Templado 10mm",
+        "categoria": "templado",
+        "grosor": "10mm",
+        "unidad": "m2",
+        "precio": 25500
+      }
+    ]
+  }
+}
+
+
+
+

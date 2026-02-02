@@ -1,0 +1,88 @@
+{
+  "perfiles": [
+    {
+      "id": "201",
+      "nombre": "Perfil 201",
+      "descripcion": "Marco perimetral liviano",
+      "unidad": "metro",
+      "kg_mt": 0.35,
+      "precio": 2800
+    },
+    {
+      "id": "202",
+      "nombre": "Perfil 202",
+      "descripcion": "Hoja de ventana estándar",
+      "unidad": "metro",
+      "kg_mt": 0.42,
+      "precio": 3200
+    },
+    {
+      "id": "204",
+      "nombre": "Perfil 204",
+      "descripcion": "Jamba lateral reforzada",
+      "unidad": "metro",
+      "kg_mt": 0.55,
+      "precio": 3800
+    },
+    {
+      "id": "205",
+      "nombre": "Perfil 205",
+      "descripcion": "Travesaño horizontal",
+      "unidad": "metro",
+      "kg_mt": 0.48,
+      "precio": 3500
+    },
+    {
+      "id": "210",
+      "nombre": "Perfil 210",
+      "descripcion": "Riel inferior corredizo",
+      "unidad": "metro",
+      "kg_mt": 0.68,
+      "precio": 4200
+    },
+    {
+      "id": "2501",
+      "nombre": "Perfil 2501",
+      "descripcion": "Marco perimetral pesado",
+      "unidad": "metro",
+      "kg_mt": 0.85,
+      "precio": 5200
+    },
+    {
+      "id": "2502",
+      "nombre": "Perfil 2502",
+      "descripcion": "Hoja de puerta corrediza",
+      "unidad": "metro",
+      "kg_mt": 1.10,
+      "precio": 6400
+    },
+    {
+      "id": "2504",
+      "nombre": "Perfil 2504",
+      "descripcion": "Jamba de puerta reforzada",
+      "unidad": "metro",
+      "kg_mt": 1.35,
+      "precio": 7200
+    },
+    {
+      "id": "2505",
+      "nombre": "Perfil 2505",
+      "descripcion": "Travesaño estructural",
+      "unidad": "metro",
+      "kg_mt": 1.20,
+      "precio": 6800
+    },
+    {
+      "id": "2510",
+      "nombre": "Perfil 2510",
+      "descripcion": "Riel inferior puerta pesada",
+      "unidad": "metro",
+      "kg_mt": 1.55,
+      "precio": 8500
+    }
+  ]
+}
+
+
+
+

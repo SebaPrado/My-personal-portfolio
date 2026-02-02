@@ -1,0 +1,85 @@
+{
+  "accesorios": [
+    {
+      "id": "felpa",
+      "nombre": "Felpa",
+      "descripcion": "Felpa de sellado para ventanas",
+      "unidad": "metro",
+      "precio": 850
+    },
+    {
+      "id": "angulo",
+      "nombre": "Ángulo",
+      "descripcion": "Ángulo de unión para perfiles",
+      "unidad": "unidad",
+      "precio": 1200
+    },
+    {
+      "id": "rueda_corrediza1",
+      "nombre": "Rueda Corrediza 1",
+      "descripcion": "Rueda corrediza simple - carga liviana",
+      "unidad": "par",
+      "precio": 2500
+    },
+    {
+      "id": "rueda_corrediza2",
+      "nombre": "Rueda Corrediza 2",
+      "descripcion": "Rueda corrediza reforzada - carga media",
+      "unidad": "par",
+      "precio": 3800
+    },
+    {
+      "id": "rueda_corrediza3",
+      "nombre": "Rueda Corrediza 3",
+      "descripcion": "Rueda corrediza premium - carga pesada",
+      "unidad": "par",
+      "precio": 5200
+    },
+    {
+      "id": "manijas",
+      "nombre": "Manijas",
+      "descripcion": "Manija estándar para ventana/puerta",
+      "unidad": "unidad",
+      "precio": 4500
+    },
+    {
+      "id": "cierres",
+      "nombre": "Cierres",
+      "descripcion": "Cierre de seguridad para abertura",
+      "unidad": "unidad",
+      "precio": 3200
+    },
+    {
+      "id": "anclajes",
+      "nombre": "Anclajes",
+      "descripcion": "Anclaje de fijación a muro",
+      "unidad": "unidad",
+      "precio": 950
+    },
+    {
+      "id": "burlete1",
+      "nombre": "Burlete 1",
+      "descripcion": "Burlete de goma estándar",
+      "unidad": "metro",
+      "precio": 650
+    },
+    {
+      "id": "burlete2",
+      "nombre": "Burlete 2",
+      "descripcion": "Burlete de EPDM reforzado",
+      "unidad": "metro",
+      "precio": 980
+    },
+    {
+      "id": "burlete3",
+      "nombre": "Burlete 3",
+      "descripcion": "Burlete premium hermético",
+      "unidad": "metro",
+      "precio": 1350
+    }
+  ]
+}
+
+
+
+
