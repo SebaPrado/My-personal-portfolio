@@ -16,6 +16,7 @@
     "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.7",
     "@phosphor-icons/react": "^2.1.7",
+    "@supabase/supabase-js": "^2.93.3",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
     "animate.css": "^4.1.1",

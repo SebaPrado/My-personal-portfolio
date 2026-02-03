@@ -1,67 +1,112 @@
 /**
- * Configuración simple de clientes y sus funcionalidades
+ * Configuración de clientes: colores, features, emails
  */
 
 export const clients = {
   alusur: {
     name: 'Alusur',
-    features: ['supabase-tables', 'green-indices']
+    email: 'alusur@gmail.com',
+    features: ['supabase-tables', 'green-indices'],
+    colors: ['#8ecae6', '#219ebc', '#023047', '#ffb703'],
+    primaryColor: '#219ebc',
+    secondaryColor: '#023047'
   },
-  'los-ceibos': {
+  losceibos: {
     name: 'Los Ceibos',
-    features: ['supabase-tables', 'green-indices', 'predictive-ml']
+    email: 'losceibos@gmail.com',
+    features: ['supabase-tables', 'green-indices', 'predictive-ml'],
+    colors: ['#264653', '#2a9d8f', '#e9c46a', '#f4a261', '#e76f51'],
+    primaryColor: '#2a9d8f',
+    secondaryColor: '#264653'
   },
   agroconceptos: {
     name: 'Agroconceptos',
-    features: ['supabase-tables', 'predictive-ml']
+    email: 'agroconceptos@gmail.com',
+    features: ['supabase-tables', 'predictive-ml'],
+    colors: ['#ff685d', '#6f9666', '#fedcd3', '#013b51', '#005a51'],
+    primaryColor: '#6f9666',
+    secondaryColor: '#013b51'
   },
-  'pulso-forrajero': {
-    name: 'PulsoForrajero',
-    features: ['supabase-tables', 'green-indices', 'predictive-ml']
+  pulsoforrajero: {
+    name: 'Pulso Forrajero',
+    email: 'pulsoforrajero@gmail.com',
+    features: ['supabase-tables', 'green-indices', 'predictive-ml'],
+    colors: ['#004e64', '#00a5cf', '#9fffcb', '#25a18e', '#7ae582'],
+    primaryColor: '#00a5cf',
+    secondaryColor: '#004e64'
   },
-  'sofia-munoz': {
-    name: 'SofiaMuñoz',
-    features: ['supabase-tables']
+  hernanbueno: {
+    name: 'Hernan Bueno',
+    email: 'hernanbueno@gmail.com',
+    features: ['supabase-tables', 'green-indices'],
+    colors: ['#009fff', '#00b3c9', '#87cbac', '#90ffdc', '#8de4ff', '#ffff49', '#003b49'],
+    primaryColor: '#00b3c9',
+    secondaryColor: '#003b49'
   },
-  'hernan-bueno': {
-    name: 'HernanBueno',
-    features: ['supabase-tables', 'green-indices']
-  },
-  'cuatro-hojas': {
-    name: 'CuatroHojas',
-    features: ['supabase-tables']
-  },
-  cui: {
-    name: 'Cui',
-    features: ['supabase-tables', 'predictive-ml']
+  cuatrohojas: {
+    name: 'Cuatro Hojas',
+    email: 'cuatrohojas@gmail.com',
+    features: ['supabase-tables'],
+    colors: ['#004b23', '#006400', '#007200', '#008000', '#38b000', '#70e000', '#9ef01a', '#ccff33'],
+    primaryColor: '#38b000',
+    secondaryColor: '#004b23'
   },
   agrocentro: {
     name: 'Agrocentro',
-    features: ['supabase-tables', 'green-indices']
+    email: 'agrocentro@gmail.com',
+    features: ['supabase-tables', 'green-indices'],
+    colors: ['#264653', '#2a9d8f', '#e9c46a', '#f4a261', '#e76f51'],
+    primaryColor: '#2a9d8f',
+    secondaryColor: '#264653'
   },
   pensagro: {
     name: 'PensAgro',
-    features: ['supabase-tables', 'green-indices', 'predictive-ml']
+    email: 'pensagro@gmail.com',
+    features: ['supabase-tables', 'green-indices', 'predictive-ml'],
+    colors: ['#009fff', '#00b3c9', '#87cbac', '#90ffdc', '#8de4ff', '#ffff49', '#003b49'],
+    primaryColor: '#009fff',
+    secondaryColor: '#003b49'
   },
   agrofertil: {
     name: 'AgroFertil',
-    features: ['supabase-tables']
+    email: 'agrofertil@gmail.com',
+    features: ['supabase-tables'],
+    colors: ['#ff685d', '#6f9666', '#fedcd3', '#013b51', '#005a51'],
+    primaryColor: '#6f9666',
+    secondaryColor: '#013b51'
   },
-  'soc-dolores': {
-    name: 'SocDolores',
-    features: ['supabase-tables', 'green-indices']
+  lossauces: {
+    name: 'Los Sauces',
+    email: 'lossauces@gmail.com',
+    features: ['supabase-tables', 'green-indices'],
+    colors: ['#33b180', '#128268', '#005a51', '#ade1bb', '#20876a'],
+    primaryColor: '#33b180',
+    secondaryColor: '#005a51'
   },
-  'juan-pedro-lopez': {
-    name: 'JuanPedroLopez',
-    features: ['supabase-tables']
+  dalessandromatias: {
+    name: "D'Alessandro Matías",
+    email: 'dalessandromatias@gmail.com',
+    features: ['supabase-tables'],
+    colors: ['#004e64', '#00a5cf', '#9fffcb', '#25a18e', '#7ae582'],
+    primaryColor: '#00a5cf',
+    secondaryColor: '#004e64'
+  },
+  // Clientes adicionales (usando paletas repetidas)
+  prolesa: {
+    name: 'Prolesa',
+    email: 'prolesa@gmail.com',
+    features: ['supabase-tables', 'green-indices', 'predictive-ml'],
+    colors: ['#33b180', '#128268', '#005a51', '#ade1bb', '#20876a'],
+    primaryColor: '#33b180',
+    secondaryColor: '#005a51'
   },
   pineyrua: {
     name: 'Piñeyrua',
-    features: ['supabase-tables', 'predictive-ml']
-  },
-  prolesa: {
-    name: 'Prolesa',
-    features: ['supabase-tables', 'green-indices', 'predictive-ml']
+    email: 'pineyrua@gmail.com',
+    features: ['supabase-tables', 'predictive-ml'],
+    colors: ['#8ecae6', '#219ebc', '#023047', '#ffb703'],
+    primaryColor: '#219ebc',
+    secondaryColor: '#023047'
   }
 };
 
@@ -69,7 +114,8 @@ export const clients = {
  * Obtiene un cliente por su subdominio
  */
 export function getClientBySubdomain(subdomain) {
-  const normalized = subdomain.toLowerCase().replace(/\s+/g, '-');
+  if (!subdomain) return null;
+  const normalized = subdomain.toLowerCase().replace(/-/g, '');
   return clients[normalized] || null;
 }
 
@@ -82,7 +128,7 @@ export function getCurrentSubdomain() {
   // En desarrollo, usar parámetro de URL o localStorage
   if (hostname === 'localhost' || hostname === '127.0.0.1') {
     const urlParams = new URLSearchParams(window.location.search);
-    const cliente = urlParams.get('cliente') || urlParams.get('tenant') || localStorage.getItem('dev_cliente') || localStorage.getItem('dev_tenant');
+    const cliente = urlParams.get('cliente') || urlParams.get('tenant') || localStorage.getItem('dev_cliente');
     return cliente;
   }
   
@@ -93,4 +139,12 @@ export function getCurrentSubdomain() {
   }
   
   return null;
+}
+
+/**
+ * Obtiene la configuración del cliente actual
+ */
+export function getCurrentClient() {
+  const subdomain = getCurrentSubdomain();
+  return subdomain ? getClientBySubdomain(subdomain) : null;
 }
